@@ -101,7 +101,7 @@ Use [Autoprefixer](https://github.com/postcss/autoprefixer) (as a postcss plugin
 
 ### Colours
 
-Use [HSLA](http://css-tricks.com/yay-for-hsla/) to define colours.
+Use [RGBa](https://docs.webplatform.org/wiki/css/color#RGBA_Notation) to define colours.
 
 Colours are first defined as descriptive colours e.g. `white-alabaster`, then as functional colours that reference descriptive colours e.g. `--colour-brand-green`.
 
