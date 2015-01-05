@@ -26,6 +26,7 @@ gulp.task('styles', function () {
     require('postcss-color-function')(),
     require('postcss-color-gray')(),
     require('postcss-calc')(),
+    require('postcss-media-minmax')(),
     require('autoprefixer-core')({
         browsers: ['last 2 versions', 'IE >= 10', 'Safari >= 7.1', 'iOS >= 7.1'],
         cascade: false

@@ -23,6 +23,6 @@ video {
  *
  * TODO: These breakpoints are boilerplate and need fixing.
  */
-@custom-media --sm-viewport (min-width:320px) and (max-width:640px);
-@custom-media --md-viewport (min-width:640px) and (max-width:960px);
-@custom-media --lg-viewport (min-width:960px);
+@custom-media --sm-viewport (width >= 320px) and (width <= 640px);
+@custom-media --md-viewport (width >= 640px) and (width <= 960px);
+@custom-media --lg-viewport (width >= 960px);
