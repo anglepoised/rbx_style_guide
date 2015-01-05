@@ -15,15 +15,15 @@
 * Names from: http://chir.ag/projects/name-that-color/
 */
 :root {
-    --colour-gray-shark: hsla(220, 9%, 13%, 1);
-    --colour-gray-tuna: hsla(240, 5%, 22%, 1);
-    --colour-gray-trout: hsla(223, 8%, 33%, 1);
-    --colour-gray-regent: hsla(215, 11%, 60%, 1);
-    --colour-gray-ghost: hsla(215, 19%, 81%, 1);
-    --colour-gray-mystic: hsla(212, 27%, 89%, 1);
-    --colour-white-catskill: hsla(212, 27%, 89%, 1);
-    --colour-white-alabaster: hsla(0, 0%, 99%, 1);
-    --colour-white: hsla(0, 0%, 100%, 1);
+    --colour-gray-shark: rgba(31, 31, 31, 1.0);
+    --colour-gray-tuna: rgba(54, 54, 54, 1.0);
+    --colour-gray-trout: rgba(78, 78, 78, 1.0);
+    --colour-gray-regent: rgba(142, 142, 142, 1.0);
+    --colour-gray-ghost: rgba(198, 198, 198, 1.0);
+    --colour-gray-mystic: rgba(220, 220, 220, 1.0);
+    --colour-white-catskill: rgba(220, 220, 220, 1.0);
+    --colour-white-alabaster: rgba(253, 253, 253, 1.0);
+    --colour-white: rgba(255, 255, 255, 1.0);
 }
 
 
@@ -31,9 +31,9 @@
 * Green palette
 */
 :root {
-    --colour-green: hsla(156, 54%, 48%, 1);
-    --colour-green-dark: hsla(156, 54%, 37%, 1);
-    --colour-green-light: hsla(159, 44%, 94%, 1);
+    --colour-green: rgba(56, 188, 136, 1);
+    --colour-green-dark: rgba(43, 145, 105, 1);
+    --colour-green-light: rgba(233, 246, 242, 1);
 }
 
 
@@ -41,9 +41,9 @@
 * Blue palette
 */
 :root {
-    --colour-blue: hsla(213, 75%, 58%, 1);
-    --colour-blue-dark: hsla(213, 56%, 40%, 1);
-    --colour-blue-light: hsla(213, 47%, 96%, 1);
+    --colour-blue: rgba(68, 140, 228, 1);
+    --colour-blue-dark: rgba(45, 96, 159, 1);
+    --colour-blue-light: rgba(240, 244, 250, 1);
 }
 
 
@@ -51,9 +51,9 @@
 * Orange palette
 */
 :root {
-    --colour-orange: hsla(30, 83%, 58%, 1);
-    --colour-orange-dark: hsla(30, 62%, 44%, 1);
-    --colour-orange-light: hsla(30, 62%, 94%, 1);
+    --colour-orange: rgba(237, 148, 59, 1);
+    --colour-orange-dark: rgba(182, 112, 43, 1);
+    --colour-orange-light: rgba(249, 240, 230, 1);
 }
 
 
@@ -61,9 +61,9 @@
 * Red palette
 */
 :root {
-    --colour-red: hsla(0, 50%, 53%, 1);
-    --colour-red-dark: hsla(0, 49%, 42%, 1);
-    --colour-red-light: hsla(0, 60%, 95%, 1);
+    --colour-red: rgba(195, 75, 75, 1);
+    --colour-red-dark: rgba(160, 55, 55, 1);
+    --colour-red-light: rgba(250, 235, 235, 1);
 }
 
 
