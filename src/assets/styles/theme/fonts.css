@@ -1,0 +1,44 @@
+/* Fonts
+   ========================================================================== */
+
+
+/**
+ * Proportional text
+ */
+
+
+/**
+ * Maven Pro Light 300
+ *
+ * See: http://www.losttype.com/font/?name=maven
+ */
+@font-face {
+    font-family: "Maven Pro";
+    src:
+        url("../fonts/mavenprolight/300.woff") format("woff"),
+        url("../fonts/mavenprolight/300.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+/**
+ * Maven Pro Normal, Medium and Bold
+ *
+ * See: http://www.google.com/fonts/specimen/Maven+Pro
+ */
+
+
+/**
+ * Monospaced text
+ *
+ * Fix monospace elements with nicer fonts in a reasonable stack and explicitly
+ * set size.
+ */
+pre,
+code,
+kbd,
+samp {
+    font-family: var(--font-family-monospaced);
+    font-size: var(--font-size-small);
+}

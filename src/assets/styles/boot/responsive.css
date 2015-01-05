@@ -1,0 +1,28 @@
+/**
+ * Layout
+ *
+ * Media queries, scaling for media elements.
+ */
+
+
+/**
+* Responsive elements
+*/
+canvas,
+iframe,
+img,
+svg,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+
+/**
+ * Breakpoints
+ *
+ * TODO: These breakpoints are boilerplate and need fixing.
+ */
+@custom-media --sm-viewport (width >= 320px) and (width <= 640px);
+@custom-media --md-viewport (width >= 640px) and (width <= 960px);
+@custom-media --lg-viewport (width >= 960px);
