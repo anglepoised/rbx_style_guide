@@ -10,6 +10,7 @@ TODO: Some of this should live in the styleguide itself, not README.
 
 ## Getting started
 
+* Install Gulp globally with `npm install -g gulp`.
 * Install with `npm install`.
 * Run `gulp watch`.
 
