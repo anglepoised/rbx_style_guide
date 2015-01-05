@@ -1,0 +1,128 @@
+/**
+ * Colours
+ *
+ * Defining colours.
+ */
+
+
+/**
+* Descriptive colours
+*/
+
+
+/**
+* Neutral palette
+* Names from: http://chir.ag/projects/name-that-color/
+*/
+:root {
+    --colour-gray-shark: hsla(220, 9%, 13%, 1);
+    --colour-gray-tuna: hsla(240, 5%, 22%, 1);
+    --colour-gray-trout: hsla(223, 8%, 33%, 1);
+    --colour-gray-regent: hsla(215, 11%, 60%, 1);
+    --colour-gray-ghost: hsla(215, 19%, 81%, 1);
+    --colour-gray-mystic: hsla(212, 27%, 89%, 1);
+    --colour-white-catskill: hsla(212, 27%, 89%, 1);
+    --colour-white-alabaster: hsla(0, 0%, 99%, 1);
+    --colour-white: hsla(0, 0%, 100%, 1);
+}
+
+
+/**
+* Green palette
+*/
+:root {
+    --colour-green: hsla(156, 54%, 48%, 1);
+    --colour-green-dark: hsla(156, 54%, 37%, 1);
+    --colour-green-light: hsla(159, 44%, 94%, 1);
+}
+
+
+/**
+* Blue palette
+*/
+:root {
+    --colour-blue: hsla(213, 75%, 58%, 1);
+    --colour-blue-dark: hsla(213, 56%, 40%, 1);
+    --colour-blue-light: hsla(213, 47%, 96%, 1);
+}
+
+
+/**
+* Orange palette
+*/
+:root {
+    --colour-orange: hsla(30, 83%, 58%, 1);
+    --colour-orange-dark: hsla(30, 62%, 44%, 1);
+    --colour-orange-light: hsla(30, 62%, 94%, 1);
+}
+
+
+/**
+* Red palette
+*/
+:root {
+    --colour-red: hsla(0, 50%, 53%, 1);
+    --colour-red-dark: hsla(0, 49%, 42%, 1);
+    --colour-red-light: hsla(0, 60%, 95%, 1);
+}
+
+
+/* Descriptive colour utility classes
+   ========================================================================== */
+
+.u-colourGrayShark { background: var(--colour-gray-shark); };
+.u-colourGrayTuna { background: var(--colour-gray-tuna); };
+.u-colourGrayTrout { background: var(--colour-gray-trout); };
+.u-colourGrayRegent { background: var(--colour-gray-regent); };
+.u-colourGrayGhost { background: var(--colour-gray-ghost); };
+.u-colourGrayMystic { background: var(--colour-gray-mystic); };
+.u-colourWhiteCatskill { background: var(--colour-white-catskill); };
+.u-colourWhiteAlabaster { background: var(--colour-white-alabaster); };
+.u-colourWhite { background: var(--colour-white); };
+.u-colourGreenLight { background: var(--colour-green-light); };
+.u-colourGreen { background: var(--colour-green); };
+.u-colourGreenDark { background: var(--colour-green-dark); };
+.u-colourBlueLight { background: var(--colour-blue-light); };
+.u-colourBlue { background: var(--colour-blue); };
+.u-colourBlueDark { background: var(--colour-blue-dark); };
+.u-colourOrangeLight { background: var(--colour-orange-light); };
+.u-colourOrange { background: var(--colour-orange); };
+.u-colourOrangeDark { background: var(--colour-orange-dark); };
+.u-colourRedLight { background: var(--colour-red-light); }
+.u-colourRed { background: var(--colour-red); }
+.u-colourRedDark { background: var(--colour-red-dark); }
+
+
+/**
+* Functional colours
+*/
+:root {
+    --colour-brand-green: var(--colour-green);
+    --colour-brand-gray: var(--colour-gray-tuna);
+    --colour-base-font: var(--colour-gray-tuna);
+    --colour-base-background: var(--colour-white-alabaster);
+    --colour-base-link-default: var(--colour-blue);
+    --colour-base-link-hover: var(--colour-blue-dark);
+    --colour-form-field-background: var(--colour-white);
+}
+
+
+/* Functional colour utility classes
+   ========================================================================== */
+
+.u-colourBrandGreen { background: var(--colour-green); }
+.u-colourBrandGray { background: var(--colour-gray-tuna); }
+.u-colourBaseFont { background: var(--colour-gray-tuna); }
+.u-colourBaseBackground { background: var(--colour-white-alabaster); }
+.u-colourBaseLinkDefault { background: var(--colour-blue); }
+.u-colourBaseLinkHover { background: var(--colour-blue-dark); }
+.u-colourFieldBackground { background: var(--colour-white); }
+
+
+/**
+* Base colours
+*/
+body {
+    background: var(--colour-base-background);
+    color: var(--colour-base-font);
+}

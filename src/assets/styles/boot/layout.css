@@ -1,0 +1,22 @@
+/**
+ * Layout
+ *
+ * How things sit.
+ */
+
+
+/**
+ * TODO: Temporary spacing to make Rob happy. Remove when building furniture.
+ */
+body {
+    margin: 2em;
+}
+
+section {
+    outline: 1px solid var(--colour-gray-regent);
+    padding: 1em;
+}
+
+section + section {
+    margin-top: 2em;
+}
