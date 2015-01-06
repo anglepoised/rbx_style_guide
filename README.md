@@ -119,8 +119,6 @@ The primary font, Maven Pro, does not have an italic style, so avoid the use of 
 
 All working. Set up Chrome properly and you can edit CSS directly in DevTools.
 
-TODO: Document CSS sourcemaps.
-
 ### Utility classes
 
 Once made and used once, they cannot *ever* be amended or removed. Make new ones as necessary, but ensure they can be used for as long as you can possibly imagine as they will sit in the CSS of the project for EVER.
