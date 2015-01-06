@@ -129,8 +129,6 @@ Once made and used once, they cannot *ever* be amended or removed. Make new ones
 
 All SVG, all the time. Save SVG images at 1x resolution, NOT 2x or 3x.
 
-TODO: Document SVG sprite tool.
-
 ## JavaScript
 
 TBC
