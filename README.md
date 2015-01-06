@@ -33,8 +33,6 @@ Use [.editorconfig](http://editorconfig.org/) for consistent formatting styles a
 
 Adhere to the [SuitCSS HTML and CSS styleguide](https://github.com/suitcss/suit/blob/master/doc/STYLE.md).
 
-TODO: This needs forking and tweaking to match Rockabox in-house style. But it's an excellent start.
-
 ### Architecture
 
 Follow the [SuitCSS design principles](https://github.com/suitcss/suit/blob/master/doc/design-principles.md) and use the [SuitCSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md).
