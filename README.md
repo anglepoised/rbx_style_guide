@@ -1,8 +1,6 @@
 rbx_style_guide
 ===============
 
-TODO: Some of this should live in the styleguide itself, not README.
-
 ## Prerequisites
 
 * [Node](http://nodejs.org/)
@@ -34,8 +32,6 @@ Use [.editorconfig](http://editorconfig.org/) for consistent formatting styles a
 ### Styleguide
 
 Adhere to the [SuitCSS HTML and CSS styleguide](https://github.com/suitcss/suit/blob/master/doc/STYLE.md).
-
-TODO: This needs forking and tweaking to match Rockabox in-house style. But it's an excellent start.
 
 ### Architecture
 
@@ -101,7 +97,7 @@ Use [Autoprefixer](https://github.com/postcss/autoprefixer) (as a postcss plugin
 
 ### Colours
 
-Use [HSLA](http://css-tricks.com/yay-for-hsla/) to define colours.
+Use [RGBa](https://docs.webplatform.org/wiki/css/color#RGBA_Notation) to define colours.
 
 Colours are first defined as descriptive colours e.g. `white-alabaster`, then as functional colours that reference descriptive colours e.g. `--colour-brand-green`.
 
@@ -123,8 +119,6 @@ The primary font, Maven Pro, does not have an italic style, so avoid the use of 
 
 All working. Set up Chrome properly and you can edit CSS directly in DevTools.
 
-TODO: Document CSS sourcemaps.
-
 ### Utility classes
 
 Once made and used once, they cannot *ever* be amended or removed. Make new ones as necessary, but ensure they can be used for as long as you can possibly imagine as they will sit in the CSS of the project for EVER.
@@ -132,8 +126,6 @@ Once made and used once, they cannot *ever* be amended or removed. Make new ones
 ## Images
 
 All SVG, all the time. Save SVG images at 1x resolution, NOT 2x or 3x.
-
-TODO: Document SVG sprite tool.
 
 ## JavaScript
 

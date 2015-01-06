@@ -5,7 +5,6 @@ gulp.task('html', function () {
     var args = require('yargs').argv,
         gulpIf = require('gulp-if'),
         minifyHTML = require('gulp-minify-html'),
-        swig = require('gulp-swig'),
         typogr = require('gulp-typogr'),
         isProduction = args.type === 'production',
         paths = {
@@ -14,11 +13,6 @@ gulp.task('html', function () {
         };
 
     return gulp.src(paths.src)
-    .pipe(swig({
-        defaults: {
-            cache: false
-        }
-    }))
     .pipe(typogr({
         only: ['widont', 'smartypants', 'caps']
     }))
