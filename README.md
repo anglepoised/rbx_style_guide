@@ -1,8 +1,6 @@
 rbx_style_guide
 ===============
 
-TODO: Some of this should live in the styleguide itself, not README.
-
 ## Prerequisites
 
 * [Node](http://nodejs.org/)
