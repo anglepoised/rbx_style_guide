@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
-<g id="Ended">
-	<rect x="13" y="11" width="4" height="4"/>
-	<path d="M5,5V4c0-1.1-0.9-2-2-2S1,2.9,1,4v1v16v5h4v-5h22V5H5z M25,11h-4v4h4v4h-4v-4h-4v4h-4v-4H9v4H5v-4h4v-4H5V7h4v4h4V7h4v4h4
-		V7h4V11z"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" enable-background="new 0 0 28 28"><g><path d="M13 11h4v4h-4zM5 5V4c0-1.1-.9-2-2-2s-2 .9-2 2v22h4v-5h22V5H5zm20 6h-4v4h4v4h-4v-4h-4v4h-4v-4H9v4H5v-4h4v-4H5V7h4v4h4V7h4v4h4V7h4v4z"/></g></svg>

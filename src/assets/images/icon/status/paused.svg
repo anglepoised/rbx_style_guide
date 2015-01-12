@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
-<path id="Pause_1_" d="M14,2C7.4,2,2,7.4,2,14s5.4,12,12,12s12-5.4,12-12S20.6,2,14,2z M13,18.5c0,0.3-0.2,0.5-0.5,0.5h-2
-	c-0.3,0-0.5-0.2-0.5-0.5v-9C10,9.2,10.2,9,10.5,9h2C12.8,9,13,9.2,13,9.5V18.5z M18,18.5c0,0.3-0.2,0.5-0.5,0.5h-2
-	c-0.3,0-0.5-0.2-0.5-0.5v-9C15,9.2,15.2,9,15.5,9h2C17.8,9,18,9.2,18,9.5V18.5z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" enable-background="new 0 0 28 28"><path d="M14 2C7.4 2 2 7.4 2 14s5.4 12 12 12 12-5.4 12-12S20.6 2 14 2zm-1 16.5c0 .3-.2.5-.5.5h-2c-.3 0-.5-.2-.5-.5v-9c0-.3.2-.5.5-.5h2c.3 0 .5.2.5.5v9zm5 0c0 .3-.2.5-.5.5h-2c-.3 0-.5-.2-.5-.5v-9c0-.3.2-.5.5-.5h2c.3 0 .5.2.5.5v9z"/></svg>
