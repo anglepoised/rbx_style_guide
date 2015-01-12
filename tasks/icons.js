@@ -19,7 +19,7 @@ gulp.task('icons', function () {
             }
         },
         paths = {
-            src: 'src/assets/icons/**/*.{svg}',
+            src: 'src/assets/icons/**/*.svg',
             dest: 'dist/assets/icons'
         };
 
