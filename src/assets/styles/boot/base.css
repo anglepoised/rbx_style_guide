@@ -19,3 +19,11 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
+/**
+ * Icons
+ */
+
+.Icon {
+    display: block;
+}
