@@ -7,7 +7,7 @@ gulp.task('icons', function () {
         spriter = {
             mode: {
                 css: {
-                    prefix: 'Icon-',
+                    prefix: 'Icon--',
                     bust: true, // explictly set for clarity
                     example: true,
                     dimensions: true,
