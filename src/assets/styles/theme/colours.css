@@ -4,11 +4,9 @@
  * Defining colours.
  */
 
-
 /**
 * Descriptive colours
 */
-
 
 /**
 * Neutral palette
@@ -26,7 +24,6 @@
     --colour-white: rgba(255, 255, 255, 1.0);
 }
 
-
 /**
 * Green palette
 */
@@ -35,7 +32,6 @@
     --colour-green-dark: rgba(43, 145, 105, 1);
     --colour-green-light: rgba(233, 246, 242, 1);
 }
-
 
 /**
 * Blue palette
@@ -46,7 +42,6 @@
     --colour-blue-light: rgba(240, 244, 250, 1);
 }
 
-
 /**
 * Orange palette
 */
@@ -56,7 +51,6 @@
     --colour-orange-light: rgba(249, 240, 230, 1);
 }
 
-
 /**
 * Red palette
 */
@@ -65,7 +59,6 @@
     --colour-red-dark: rgba(160, 55, 55, 1);
     --colour-red-light: rgba(250, 235, 235, 1);
 }
-
 
 /* Descriptive colour utility classes
    ========================================================================== */
@@ -92,7 +85,6 @@
 .u-colourRed { background: var(--colour-red); }
 .u-colourRedDark { background: var(--colour-red-dark); }
 
-
 /**
 * Functional colours
 */
@@ -106,7 +98,6 @@
     --colour-form-field-background: var(--colour-white);
 }
 
-
 /* Functional colour utility classes
    ========================================================================== */
 
@@ -117,7 +108,6 @@
 .u-colourBaseLinkDefault { background: var(--colour-blue); }
 .u-colourBaseLinkHover { background: var(--colour-blue-dark); }
 .u-colourFieldBackground { background: var(--colour-white); }
-
 
 /**
 * Base colours

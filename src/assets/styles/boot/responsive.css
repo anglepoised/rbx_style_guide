@@ -4,7 +4,6 @@
  * Media queries, scaling for media elements.
  */
 
-
 /**
 * Responsive elements
 */
@@ -16,7 +15,6 @@ video {
     height: auto;
     max-width: 100%;
 }
-
 
 /**
  * Breakpoints
