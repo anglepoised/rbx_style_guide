@@ -30,6 +30,7 @@
  * Basics, common to all products
  */
 @import "boot/base.css";
+@import "boot/icons.css";
 @import "boot/layout.css";
 @import "boot/responsive.css";
 
