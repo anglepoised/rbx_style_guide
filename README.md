@@ -31,7 +31,10 @@ Use [.editorconfig](http://editorconfig.org/) for consistent formatting styles a
 
 ### Styleguide
 
-Adhere to the [SUIT CSS HTML and CSS styleguide](https://github.com/suitcss/suit/blob/master/doc/STYLE.md).
+Adhere to the [SUIT CSS HTML and CSS styleguide](https://github.com/suitcss/suit/blob/master/doc/STYLE.md), with the following exceptions:
+
+* Use **4** spaces for indentation, rather than 2 spaces.
+* Keep line-length to a sensible maximum of **120 columns**, rather than 80 columns.
 
 ### Architecture
 
