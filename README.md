@@ -31,11 +31,11 @@ Use [.editorconfig](http://editorconfig.org/) for consistent formatting styles a
 
 ### Styleguide
 
-Adhere to the [SuitCSS HTML and CSS styleguide](https://github.com/suitcss/suit/blob/master/doc/STYLE.md).
+Adhere to the [SUIT CSS HTML and CSS styleguide](https://github.com/suitcss/suit/blob/master/doc/STYLE.md).
 
 ### Architecture
 
-Follow the [SuitCSS design principles](https://github.com/suitcss/suit/blob/master/doc/design-principles.md) and use the [SuitCSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md).
+Follow the [SUIT CSS design principles](https://github.com/suitcss/suit/blob/master/doc/design-principles.md) and use the [SUIT CSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md).
 
 ### Naming of descendants
 
