@@ -2,28 +2,6 @@
  * rbx_style_guide
  */
 
-
-/**
- * Third-party libraries
- *
- * TODO: Review all Suit CSS libraries, decide what to include by default.
- * TODO: Add used Suit classes to styleguide.
- */
-@import "suitcss-base";
-@import "suitcss-utils-align";
-@import "suitcss-utils-display";
-@import "suitcss-utils-layout";
-@import "suitcss-utils-link";
-@import "suitcss-utils-offset";
-@import "suitcss-utils-position";
-@import "suitcss-utils-size";
-@import "suitcss-utils-text";
-/* @import "suitcss-components-arrange"; */
-/* @import "suitcss-components-button"; */
-/* @import "suitcss-components-flex-embed"; */
-/* @import "suitcss-components-grid"; */
-
-
 /**
  * Boot
  *

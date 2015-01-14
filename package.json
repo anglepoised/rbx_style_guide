@@ -35,19 +35,6 @@
     "postcss-media-minmax": "~1.1.0",
     "require-dir": "~0.1.0",
     "run-sequence": "~1.0.2",
-    "suitcss-base": "~0.8.0",
-    "suitcss-components-arrange": "~0.6.2",
-    "suitcss-components-button": "~4.0.0",
-    "suitcss-components-flex-embed": "~2.0.2",
-    "suitcss-components-grid": "~2.0.2",
-    "suitcss-utils-align": "~0.2.2",
-    "suitcss-utils-display": "~0.4.2",
-    "suitcss-utils-layout": "~0.4.2",
-    "suitcss-utils-link": "~0.5.2",
-    "suitcss-utils-offset": "~0.5.1",
-    "suitcss-utils-position": "~0.2.2",
-    "suitcss-utils-size": "~0.7.2",
-    "suitcss-utils-text": "~0.4.2",
     "yargs": "~1.3.3"
   }
 }

@@ -258,7 +258,6 @@ a:hover {
 /**
  * Weights
  *
- * TODO: Cross-check these against SUIT CSS utilities.
  */
 
 
@@ -304,7 +303,6 @@ a:hover {
  * For form labels.
  *
  * TODO: Move to forms later.
- * TODO: Should be more granular, ie. use Suit helpers?
  */
 .u-textLabel {
     font-size: var(--font-size-small);
