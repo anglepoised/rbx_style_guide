@@ -117,7 +117,11 @@ The primary font, Maven Pro, does not have an italic style, so avoid the use of 
 
 ### CSS Sourcemaps
 
-All working. Set up Chrome properly and you can edit CSS directly in DevTools.
+The included [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps) module generates CSS sourcemaps, meaning CSS can be edited in-brower using:
+
+* [Chrome](https://developer.chrome.com/devtools/docs/css-preprocessors)
+* [Firefox](https://hacks.mozilla.org/2014/02/live-editing-sass-and-less-in-the-firefox-developer-tools/)
+* [Safari](https://www.webkit.org/blog/2518/state-of-web-inspector/#styles)
 
 ### Utility classes
 
