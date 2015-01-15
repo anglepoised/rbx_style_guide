@@ -14,7 +14,7 @@ gulp.task('default', ['clean'], function (cb) {
         'styles:lint'
     ], [
         'html',
-        'images',
+        'icons',
         'raw',
         'scripts',
         'styles'
