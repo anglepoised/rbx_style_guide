@@ -4,7 +4,6 @@
  * Typographical features.
  */
 
-
 /**
  * Base type variables
  */
@@ -17,7 +16,6 @@
     --line-height: 1.5;
 }
 
-
 /**
  * Base font size, for easy to understand values
  *
@@ -27,7 +25,6 @@ html {
     font-size: 62.5%;
 }
 
-
 /**
  * Default font family, sizing and line-height
  */
@@ -36,7 +33,6 @@ body {
     font-size: var(--font-size);
     line-height: var(--line-height);
 }
-
 
 /**
  * Set normal style on italic-by-default elements
@@ -52,7 +48,6 @@ i,
 var {
     font-style: normal;
 }
-
 
 /**
  * Code
@@ -85,10 +80,8 @@ pre code {
     color: var(--colour-gray-mystic);
 }
 
-
 /* Headings
    ========================================================================== */
-
 
 /**
  * Flatten headings and use classes, as visual designs rarely fit with an actual
@@ -133,19 +126,15 @@ h6,
     text-transform: uppercase;
 }
 
-
 /* Paragraphs
    ========================================================================== */
-
 
 /**
  * Placeholder. Nothing set explicitly on paragraphs yet.
  */
 
-
 /* Quotes
    ========================================================================== */
-
 
 /**
  * Blockquote
@@ -162,10 +151,8 @@ blockquote {
     padding-left: 1em;
 }
 
-
 /* Lists
    ========================================================================== */
-
 
 /**
  * Unordered list
@@ -173,7 +160,6 @@ blockquote {
  * They're used too much outside standard content for element to take much
  * styling, so encapsulated within `.Copy`.
  */
-
 
 /**
  * Ordered list
@@ -194,10 +180,8 @@ dt {
     font-weight: 500;
 }
 
-
 /* Tables
    ========================================================================== */
-
 
 /**
  * Plain table
@@ -234,10 +218,8 @@ tbody tr:nth-child(even) {
     background: var(--colour-green-light);
 }
 
-
 /* Inline elements
    ========================================================================== */
-
 
 /**
  * Standard link
@@ -250,22 +232,18 @@ a:hover {
     color: var(--colour-base-link-hover);
 }
 
-
 /* Text utilities
    ========================================================================== */
-
 
 /**
  * Weights
  *
  */
 
-
 .u-textLight { font-weight: 300; }
 .u-textRegular { font-weight: 400; }
 .u-textMedium { font-weight: 500; }
 .u-textBold { font-weight: 700; }
-
 
 /**
  * Default type
@@ -276,7 +254,6 @@ a:hover {
     font-size: var(--font-size);
 }
 
-
 /**
  * Large type
  *
@@ -286,7 +263,6 @@ a:hover {
     font-size: var(--font-size-large);
 }
 
-
 /**
  * Small type
  *
@@ -295,7 +271,6 @@ a:hover {
 .u-textSmall {
     font-size: var(--font-size-small);
 }
-
 
 /**
  * Label type
@@ -309,14 +284,12 @@ a:hover {
     text-transform: uppercase;
 }
 
-
 /**
  * Copy
  *
  * Wrapper for blocks of copy. This approach avoids having to set margins on
  * elements at the root level, reducing countless resets.
  */
-
 
 /**
  * Copy lobotomized owl
@@ -326,7 +299,6 @@ a:hover {
 .Copy * + * {
     margin-top: 1.6rem;
 }
-
 
 /**
  * Copy heading follow-on fix
@@ -338,7 +310,6 @@ a:hover {
 .Copy h5 + h6 {
     margin-top: 0;
 }
-
 
 /**
  * Copy unordered list
@@ -355,14 +326,12 @@ a:hover {
     margin-top: 1.6rem; /* fixes nested unordered list */
 }
 
-
 /**
  * Copy ordered list
  */
 .Copy li > ol {
     margin-top: 1.6rem; /* fixes nested ordred list */
 }
-
 
 /**
  * Copy definition list

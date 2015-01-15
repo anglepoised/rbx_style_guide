@@ -13,12 +13,10 @@
 @import "boot/layout.css";
 @import "boot/responsive.css";
 
-
 /**
  * Everything from here on could be included as a series of separate layers or
  * components.
  */
-
 
 /**
  * Theme
@@ -26,7 +24,6 @@
 @import "theme/colours.css";
 @import "theme/fonts.css";
 @import "theme/typography.css";
-
 
 /**
  * Components
@@ -36,7 +33,6 @@
  * TODO: Pretty much everything.
  */
 @import "components/styleguide.css"
-
 
 /**
  * Modules
