@@ -142,7 +142,7 @@ h6,
  * TODO: Stop using raw colour variable here.
  */
 blockquote {
-    border-left: .25em solid var(--colour-green);
+    border-left: .25em solid var(--colour-green-base);
     padding-left: 1em;
 }
 
@@ -195,7 +195,7 @@ td {
 }
 
 thead {
-    background: var(--colour-green-light);
+    background: var(--colour-green-accent);
     border-bottom: 1px solid var(--colour-gray-regent);
 }
 
@@ -210,7 +210,7 @@ th {
 
 /* Zebra striping */
 tbody tr:nth-child(even) {
-    background: var(--colour-green-light);
+    background: var(--colour-green-accent);
 }
 
 /* Inline elements

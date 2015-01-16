@@ -28,36 +28,40 @@
 * Green palette
 */
 :root {
-    --colour-green: rgba(56, 188, 136, 1);
-    --colour-green-dark: rgba(43, 145, 105, 1);
-    --colour-green-light: rgba(233, 246, 242, 1);
+    --colour-green-accent: rgba(233, 246, 242, 1);
+    --colour-green-base: rgba(56, 188, 136, 1);
+    --colour-green-hover: rgba(48, 172, 123, 1);
+    --colour-green-shadow: rgba(43, 145, 105, 1);
 }
 
 /**
 * Blue palette
 */
 :root {
-    --colour-blue: rgba(68, 140, 228, 1);
-    --colour-blue-dark: rgba(45, 96, 159, 1);
-    --colour-blue-light: rgba(240, 244, 250, 1);
+    --colour-blue-accent: rgba(240, 244, 250, 1);
+    --colour-blue-base: rgba(68, 140, 228, 1);
+    --colour-blue-hover: rgba(58, 123, 201, 1);
+    --colour-blue-shadow: rgba(45, 96, 159, 1);
 }
 
 /**
 * Orange palette
 */
 :root {
-    --colour-orange: rgba(237, 148, 59, 1);
-    --colour-orange-dark: rgba(182, 112, 43, 1);
-    --colour-orange-light: rgba(249, 240, 230, 1);
+    --colour-orange-accent: rgba(249, 240, 230, 1);
+    --colour-orange-base: rgba(237, 148, 59, 1);
+    --colour-orange-hover: rgba(211, 130, 50, 1);
+    --colour-orange-shadow: rgba(182, 112, 43, 1);
 }
 
 /**
 * Red palette
 */
 :root {
-    --colour-red: rgba(195, 75, 75, 1);
-    --colour-red-dark: rgba(160, 55, 55, 1);
-    --colour-red-light: rgba(250, 235, 235, 1);
+    --colour-red-accent: rgba(250, 235, 235, 1);
+    --colour-red-base: rgba(195, 75, 75, 1);
+    --colour-red-hover: rgba(177, 63, 63, 1);
+    --colour-red-shadow: rgba(160, 55, 55, 1);
 }
 
 /* Descriptive colour utility classes
@@ -72,41 +76,45 @@
 .u-colourWhiteCatskill { background: var(--colour-white-catskill); };
 .u-colourWhiteAlabaster { background: var(--colour-white-alabaster); };
 .u-colourWhite { background: var(--colour-white); };
-.u-colourGreenLight { background: var(--colour-green-light); };
-.u-colourGreen { background: var(--colour-green); };
-.u-colourGreenDark { background: var(--colour-green-dark); };
-.u-colourBlueLight { background: var(--colour-blue-light); };
-.u-colourBlue { background: var(--colour-blue); };
-.u-colourBlueDark { background: var(--colour-blue-dark); };
-.u-colourOrangeLight { background: var(--colour-orange-light); };
-.u-colourOrange { background: var(--colour-orange); };
-.u-colourOrangeDark { background: var(--colour-orange-dark); };
-.u-colourRedLight { background: var(--colour-red-light); }
-.u-colourRed { background: var(--colour-red); }
-.u-colourRedDark { background: var(--colour-red-dark); }
+.u-colourGreenAccent { background: var(--colour-green-accent); };
+.u-colourGreenBase { background: var(--colour-green-base); };
+.u-colourGreenHover { background: var(--colour-green-hover); };
+.u-colourGreenShadow { background: var(--colour-green-shadow); };
+.u-colourBlueAccent { background: var(--colour-blue-accent); };
+.u-colourBlueBase { background: var(--colour-blue-base); };
+.u-colourBlueHover { background: var(--colour-blue-hover); };
+.u-colourBlueShadow { background: var(--colour-blue-shadow); };
+.u-colourOrangeAccent { background: var(--colour-orange-accent); };
+.u-colourOrangeBase { background: var(--colour-orange-base); };
+.u-colourOrangeHover { background: var(--colour-orange-hover); };
+.u-colourOrangeShadow { background: var(--colour-orange-shadow); };
+.u-colourRedAccent { background: var(--colour-red-accent); }
+.u-colourRedBase { background: var(--colour-red-base); }
+.u-colourRedHover { background: var(--colour-red-hover); }
+.u-colourRedShadow { background: var(--colour-red-shadow); }
 
 /**
 * Functional colours
 */
 :root {
-    --colour-brand-green: var(--colour-green);
+    --colour-brand-green: var(--colour-green-base);
     --colour-brand-gray: var(--colour-gray-tuna);
     --colour-base-font: var(--colour-gray-tuna);
     --colour-base-background: var(--colour-white-alabaster);
-    --colour-base-link-default: var(--colour-blue);
-    --colour-base-link-hover: var(--colour-blue-dark);
+    --colour-base-link-default: var(--colour-blue-base);
+    --colour-base-link-hover: var(--colour-blue-hover);
     --colour-form-field-background: var(--colour-white);
 }
 
 /* Functional colour utility classes
    ========================================================================== */
 
-.u-colourBrandGreen { background: var(--colour-green); }
+.u-colourBrandGreen { background: var(--colour-green-base); }
 .u-colourBrandGray { background: var(--colour-gray-tuna); }
 .u-colourBaseFont { background: var(--colour-gray-tuna); }
 .u-colourBaseBackground { background: var(--colour-white-alabaster); }
-.u-colourBaseLinkDefault { background: var(--colour-blue); }
-.u-colourBaseLinkHover { background: var(--colour-blue-dark); }
+.u-colourBaseLinkDefault { background: var(--colour-blue-base); }
+.u-colourBaseLinkHover { background: var(--colour-blue-shadow); }
 .u-colourFieldBackground { background: var(--colour-white); }
 
 /**
