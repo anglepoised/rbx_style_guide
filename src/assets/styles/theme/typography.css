@@ -280,6 +280,16 @@ a:hover {
 }
 
 /**
+ * Monospaced type
+ *
+ * For explicit monospaced type.
+ */
+.u-textMonospaced {
+    font-family: var(--font-family-monospaced);
+}
+
+
+/**
  * Label type
  *
  * For form labels.
