@@ -158,7 +158,7 @@ blockquote {
  * Ordered list
  */
 ol {
-    margin-left: 1.4em;
+    margin-left: 0;
 }
 
 ol li {
@@ -339,8 +339,13 @@ a:hover {
     margin-left: 1.8em;
 }
 
+.copy li + li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 .Copy li > ul {
-    margin-top: 1.6rem; /* fixes nested unordered list */
+    margin-top: 0.5em; /* fixes nested unordered list */
 }
 
 /**
