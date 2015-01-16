@@ -16,6 +16,8 @@
     --font-size-large: 1.8rem;
     --font-size-small: 1.4rem;
     --line-height: 1.5;
+    --line-height-tighter: 1.4;
+    --line-height-looser: 1.8;
 }
 
 /**
