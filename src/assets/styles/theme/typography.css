@@ -9,11 +9,15 @@
  */
 :root {
     --font-family-monospaced: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    --font-family-proportional: "Maven Pro", sans-serif;
+    --font-family-proportional: "ProximaNova", sans-serif;
+    --font-family-proportional-light: "ProximaNova-Light", sans-serif;
+    --font-family-proportional-semibold: "ProximaNova-Semibold", sans-serif;
     --font-size: 1.6rem;
     --font-size-large: 1.8rem;
     --font-size-small: 1.4rem;
     --line-height: 1.5;
+    --line-height-tighter: 1.4;
+    --line-height-looser: 1.8;
 }
 
 /**
@@ -32,21 +36,6 @@ body {
     font-family: var(--font-family-proportional);
     font-size: var(--font-size);
     line-height: var(--line-height);
-}
-
-/**
- * Set normal style on italic-by-default elements
- *
- * Maven Pro has no italic style and we want to avoid any faux italics.
- *
- * See: http://alistapart.com/article/say-no-to-faux-bold
- */
-cite,
-dfn,
-em,
-i,
-var {
-    font-style: normal;
 }
 
 /**
@@ -89,24 +78,28 @@ pre code {
  */
 h1,
 .u-heading1 {
+    font-family: 'ProximaNova-Light';
     font-size: 3.2rem;
     font-weight: 300;
 }
 
 h2,
 .u-heading2 {
+    font-family: 'ProximaNova-Light';
     font-size: 2.5rem;
     font-weight: 300;
 }
 
 h3,
 .u-heading3 {
+    font-family: 'ProximaNova';
     font-size: 1.9rem;
     font-weight: 400;
 }
 
 h4,
 .u-heading4 {
+    font-family: 'ProximaNova-Semibold';
     font-size: 1.6rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -114,6 +107,7 @@ h4,
 
 h5,
 .u-heading5 {
+    font-family: 'ProximaNova-Semibold';
     font-size: 1.4rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -121,6 +115,7 @@ h5,
 
 h6,
 .u-heading6 {
+    font-family: 'ProximaNova-Semibold';
     font-size: 1.3rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -165,7 +160,7 @@ blockquote {
  * Ordered list
  */
 ol {
-    margin-left: 1.4em;
+    margin-left: 0;
 }
 
 ol li {
@@ -177,7 +172,7 @@ ol li {
  * Definition list
  */
 dt {
-    font-weight: 500;
+    font-family: 'ProximaNova-Semibold';
 }
 
 /* Tables
@@ -239,11 +234,25 @@ a:hover {
  * Weights
  *
  */
+.u-textLight {
+    font-family: var(--font-family-proportional-light);
+    font-weight: 300;
+}
 
-.u-textLight { font-weight: 300; }
-.u-textRegular { font-weight: 400; }
-.u-textMedium { font-weight: 500; }
-.u-textBold { font-weight: 700; }
+.u-textRegular {
+    font-family: var(--font-family-proportional);
+    font-weight: 400;
+}
+
+.u-textSemibold {
+    font-family: var(--font-family-proportional-semibold);
+    font-weight: 500;
+}
+
+.u-textBold {
+    font-family: var(--font-family-proportional);
+    font-weight: 700;
+}
 
 /**
  * Default type
@@ -271,6 +280,16 @@ a:hover {
 .u-textSmall {
     font-size: var(--font-size-small);
 }
+
+/**
+ * Monospaced type
+ *
+ * For explicit monospaced type.
+ */
+.u-textMonospaced {
+    font-family: var(--font-family-monospaced);
+}
+
 
 /**
  * Label type
@@ -322,8 +341,13 @@ a:hover {
     margin-left: 1.8em;
 }
 
+.copy li + li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 .Copy li > ul {
-    margin-top: 1.6rem; /* fixes nested unordered list */
+    margin-top: 0.5em; /* fixes nested unordered list */
 }
 
 /**
