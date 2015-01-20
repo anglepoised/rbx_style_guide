@@ -79,6 +79,9 @@
             <li class="StyleguideNav-item">
                 <a href="#copy-wrapper">Copy wrapper</a>
             </li>
+            <li class="StyleguideNav-item">
+                <a href="#button">Button</a>
+            </li>
         </ol>
     </nav>
     <section class="Copy" id="colours">
@@ -742,6 +745,176 @@
         <p>
             TODO: <code>.Copy</code> Probably mention this above block and inline elements as a wrapper.
         </p>
+    </section>
+    <section class="Copy" id="button">
+        <h2 class="u-headingStyleguide">
+            Button
+        </h2>
+        <p>
+            Button styles can be applied to <code>&lt;button&gt;</code>,
+            <code>&lt;a&gt;</code> and <code>&lt;input type="submit"&gt;</code>
+            elements.
+        </p>
+        <p>
+<pre>&lt;button class="Button Button--default" type="button"&gt;
+    Button
+&lt;/button&gt;
+
+&lt;a class="Button Button--default" href="{{url}}"&gt;
+    Link
+&lt;/a&gt;
+
+&lt;input class="Button Button--default" type="submit" value="Submit"&gt;</pre>
+        </p>
+        <div>
+            <button class="Button Button--default" type="button">
+                Button
+            </button>
+        </div>
+        <div>
+            <a class="Button Button--default" href="{{url}}">
+                Link
+            </a>
+        </div>
+        <div>
+            <input class="Button Button--default" type="submit" value="Submit">
+        </div>
+        <p>
+            Combinations of states can be applied by stacking class modifiers.
+            For example:
+        </p>
+        <p>
+<pre>&lt;button class="Button Button--large Button--orange is-disabled"&gt;
+    Large Orange Disabled Button
+&lt;/button&gt;</pre>
+        </p>
+        <p>
+            Gives:
+        </p>
+        <button class="Button Button--large Button--orange is-disabled">
+            Large Orange Disabled Button
+        </button>
+        <h4 class="u-headingStyleguide">
+            Core states
+        </h4>
+        <h3 class="u-headingStyleguide">
+            Default
+        </h3>
+        <p>
+            Buttons without modifier classes default to the standard size and
+            blue colour and should be used for the majority of actions.
+        </p>
+        <div>
+            <button class="Button Button--default" type="button">
+                Standard Button
+            </button>
+        </div>
+        <h4 class="u-headingStyleguide">
+            Disabled
+        </h4>
+        <p>
+            Set by adding the <code>.is-disabled</code> class. For
+            <code>&lt;a&gt;</code> elements, you should also remove the
+            <code>href</code> attribute and prevent JavaScript event handlers
+            from firing.
+        </p>
+        <p>
+<pre>&lt;button class="Button is-disabled"&gt;
+    Disabled Button
+&lt;/button&gt;</pre>
+            </p>
+        <div>
+            <button class="Button Button--default is-disabled" type="button" disabled>
+                Disabled Button
+            </button>
+        </div>
+        <h4 class="u-headingStyleguide">
+            Pressed
+        </h4>
+        <p>
+            The <code>.is-pressed</code> class is used here to demonstrate this
+            state, but should never be used in raw HTML.
+        </p>
+        <p>
+<pre>&lt;button class="Button is-pressed" type="button"&gt;
+    Pressed Button
+&lt;/button&gt;</pre>
+        </p>
+        <div>
+            <button class="Button is-pressed" type="button">
+                Pressed Button
+            </button>
+        </div>
+        <h3 class="u-headingStyleguide">
+            Size variants
+        </h3>
+        <h4 class="u-headingStyleguide">
+            Large
+        </h4>
+        <p>
+            Large buttons should be used for primary save actions.
+        </p>
+        <p>
+<pre>&lt;button class="Button Button--large" type="button"&gt;
+    Large Button
+&lt;/button&gt;</pre>
+        </p>
+        <div>
+            <button class="Button Button--large" type="button">
+                Large Button
+            </button>
+        </div>
+        <h3 class="u-headingStyleguide">
+            Colour variants
+        </h3>
+        <h4 class="u-headingStyleguide">
+            Green
+        </h4>
+        <p>
+            TODO: Green buttons are used to signify XXX actions.
+        </p>
+        <p>
+<pre>&lt;button class="Button Button--green" type="button"&gt;
+    Green Button
+&lt;/button&gt;</pre>
+        </p>
+        <div>
+            <button class="Button Button--green" type="button">
+                Green Button
+            </button>
+        </div>
+        <h4 class="u-headingStyleguide">
+            Orange
+        </h4>
+        <p>
+            TODO: Orange buttons are used to signify XXX actions.
+        </p>
+        <p>
+<pre>&lt;button class="Button Button--orange" type="button"&gt;
+    Orange Button
+&lt;/button&gt;</pre>
+        </p>
+        <div>
+            <button class="Button Button--orange" type="button">
+                Orange Button
+            </button>
+        </div>
+        <h4 class="u-headingStyleguide">
+            Red
+        </h4>
+        <p>
+            TODO: Red buttons are used to signify XXX actions.
+        </p>
+        <p>
+<pre>&lt;button class="Button Button--red" type="button"&gt;
+    Red Button
+&lt;/button&gt;</pre>
+        </p>
+        <div>
+            <button class="Button Button--red" type="button">
+                Red Button
+            </button>
+        </div>
     </section>
     <script src="/assets/scripts/main.js"></script>
 </body>

@@ -1,0 +1,190 @@
+/**
+ * TODO: Icon variants. Hopefully a single `.Button--icon`, but might need an additional class for icon with no text.
+ */
+
+/** @define Button; use strict */
+
+:root {
+    --Button-border-radius: 2px;
+    --Button-box-shadow: inset 0px -3px 0px 0px;
+    --Button-color: var(--colour-white-alabaster);
+    --Button-disabled-opacity: 0.5;
+    --Button-font: inherit;
+    --Button-padding: 0.34375em 0.3125em;
+    --Button--default-background-hover: var(--colour-blue-hover);
+    --Button--default-background-shadow: var(--colour-blue-shadow);
+    --Button--default-background: var(--colour-blue-base);
+    --Button--green-background-hover: var(--colour-green-hover);
+    --Button--green-background-shadow: var(--colour-green-shadow);
+    --Button--green-background: var(--colour-green-base);
+    --Button--large-font-size: var(--font-size-large);
+    --Button--large-padding: 0.527777778em 0.4166665em;
+    --Button--orange-background-hover: var(--colour-orange-hover);
+    --Button--orange-background-shadow: var(--colour-orange-shadow);
+    --Button--orange-background: var(--colour-orange-base);
+    --Button--red-background-hover: var(--colour-red-hover);
+    --Button--red-background-shadow: var(--colour-red-shadow);
+    --Button--red-background: var(--colour-red-base);
+}
+
+/**
+ * The button classes are best applied to links, buttons, and submit inputs.
+ * These components can be used in forms, as calls to action, or as part of the
+ * general UI of the site/app.
+ */
+
+/**
+ * 1. Corrects inability to style clickable `input` types in iOS.
+ * 2. Normalize `line-height`. For `input`, it can't be changed from `normal` in Firefox 4+.
+ * 3. Ensure no `text-decoration` on anchors.
+ * 4. Prevent button text from being selectable.
+ * 5. Make sure `input` will wrap text across multiple lines.
+ */
+
+.Button {
+    -webkit-appearance: none; /* 1 */
+    background-color: var(--Button--default-background);
+    border-radius: var(--Button-border-radius);
+    border-style: none;
+    border-width: 0;
+    box-shadow: var(--Button-box-shadow) var(--Button--default-background-shadow);
+    color: var(--Button-color);
+    cursor: pointer;
+    display: inline-block;
+    font: var(--Button-font);
+    line-height: normal; /* 2 */
+    margin: 0;
+    padding: var(--Button-padding);
+    position: relative;
+    text-align: center;
+    text-decoration: none; /* 3 */
+    user-select: none; /* 4 */
+    white-space: normal; /* 5 */
+}
+
+/**
+ * Remove excess padding and border in Firefox 4+
+ */
+
+.Button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * Work around a Firefox/IE bug where the transparent `button` background
+ * results in a loss of the default `button` focus styles.
+ */
+
+.Button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+/**
+ * UI states
+ */
+
+.Button:hover,
+.Button:focus {
+    background-color: var(--Button--default-background-hover);
+    color: var(--Button-color);
+    text-decoration: none;
+}
+
+.Button:hover {
+    outline: none;
+}
+
+.Button:active,
+.Button.is-pressed {
+    background-color: var(--Button--default-background-shadow);
+}
+
+.Button:disabled,
+.Button.is-disabled {
+    background: var(--Button--default-background);
+    cursor: default;
+    opacity: var(--Button-disabled-opacity);
+}
+
+/**
+ * Large variant
+ */
+
+.Button--large {
+    font-size: var(--Button--large-font-size);
+    padding: var(--Button--large-padding);
+}
+
+/**
+ * Green variant
+ */
+
+.Button--green {
+    background-color: var(--Button--green-background);
+    box-shadow: var(--Button-box-shadow) var(--Button--green-background-shadow);
+}
+
+.Button--green:hover,
+.Button--green:focus {
+    background-color: var(--Button--green-background-hover);
+}
+
+.Button--green:active,
+.Button--green.is-pressed {
+    background-color: var(--Button--green-background-shadow);
+}
+
+.Button--green:disabled,
+.Button--green.is-disabled {
+    background-color: var(--Button--green-background);
+}
+
+/**
+ * Orange variant
+ */
+
+.Button--orange {
+    background-color: var(--Button--orange-background);
+    box-shadow: var(--Button-box-shadow) var(--Button--orange-background-shadow);
+}
+
+.Button--orange:hover,
+.Button--orange:focus {
+    background-color: var(--Button--orange-background-hover);
+}
+
+.Button--orange:active,
+.Button--orange.is-pressed {
+    background-color: var(--Button--orange-background-shadow);
+}
+
+.Button--orange:disabled,
+.Button--orange.is-disabled {
+    background-color: var(--Button--orange-background);
+}
+
+/**
+ * Red variant
+ */
+
+.Button--red {
+    background-color: var(--Button--red-background);
+    box-shadow: var(--Button-box-shadow) var(--Button--red-background-shadow);
+}
+
+.Button--red:hover,
+.Button--red:focus {
+    background-color: var(--Button--red-background-hover);
+}
+
+.Button--red:active,
+.Button--red.is-pressed {
+    background-color: var(--Button--red-background-shadow);
+}
+
+.Button--red:disabled,
+.Button--red.is-disabled {
+    background-color: var(--Button--red-background);
+}
