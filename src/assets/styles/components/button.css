@@ -70,18 +70,23 @@
     outline: 1px dotted #212121;
 }
 
+/**
  * UI states
+ *
+ * 1. Prevent link :hover styles change colour
+ * 2. Prevent link :hover styles change text-decoration
+ * 3. Remove outline on :hover (but preserve for :focus)
  */
 
 .Button:hover,
 .Button:focus {
     background-color: var(--Button-background-hover);
-    color: var(--Button-color);
-    text-decoration: none;
+    color: var(--Button-color); /* 1 */
+    text-decoration: none; /* 2 */
 }
 
 .Button:hover {
-    outline: none;
+    outline: none; /* 3 */
 }
 
 .Button:active,
