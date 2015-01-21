@@ -73,6 +73,14 @@
 }
 
 /**
+ * Restore default Firefox focus style, but add *outside* element (as opposed to
+  the default inside, which looks poor with RBX button style).
+ */
+
+.Button:-moz-focusring {
+    outline: 1px dotted #212121;
+}
+
  * UI states
  */
 
