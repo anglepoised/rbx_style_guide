@@ -5,15 +5,15 @@
 /** @define Button; use strict */
 
 :root {
+    --Button-background-hover: var(--colour-blue-hover);
+    --Button-background-shadow: var(--colour-blue-shadow);
+    --Button-background: var(--colour-blue-base);
     --Button-border-radius: 2px;
     --Button-box-shadow: inset 0px -3px 0px 0px;
     --Button-color: var(--colour-white-alabaster);
     --Button-disabled-opacity: 0.5;
     --Button-font: inherit;
     --Button-padding: 0.34375em 0.3125em;
-    --Button--default-background-hover: var(--colour-blue-hover);
-    --Button--default-background-shadow: var(--colour-blue-shadow);
-    --Button--default-background: var(--colour-blue-base);
     --Button--green-background-hover: var(--colour-green-hover);
     --Button--green-background-shadow: var(--colour-green-shadow);
     --Button--green-background: var(--colour-green-base);
@@ -43,11 +43,11 @@
 
 .Button {
     -webkit-appearance: none; /* 1 */
-    background-color: var(--Button--default-background);
+    background-color: var(--Button-background);
     border-radius: var(--Button-border-radius);
     border-style: none;
     border-width: 0;
-    box-shadow: var(--Button-box-shadow) var(--Button--default-background-shadow);
+    box-shadow: var(--Button-box-shadow) var(--Button-background-shadow);
     color: var(--Button-color);
     cursor: pointer;
     display: inline-block;
@@ -78,7 +78,7 @@
 
 .Button:hover,
 .Button:focus {
-    background-color: var(--Button--default-background-hover);
+    background-color: var(--Button-background-hover);
     color: var(--Button-color);
     text-decoration: none;
 }
@@ -89,12 +89,12 @@
 
 .Button:active,
 .Button.is-pressed {
-    background-color: var(--Button--default-background-shadow);
+    background-color: var(--Button-background-shadow);
 }
 
 .Button:disabled,
 .Button.is-disabled {
-    background: var(--Button--default-background);
+    background: var(--Button-background);
     cursor: default;
     opacity: var(--Button-disabled-opacity);
 }
