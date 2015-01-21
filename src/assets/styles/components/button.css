@@ -14,17 +14,6 @@
     --Button-disabled-opacity: 0.5;
     --Button-font: inherit;
     --Button-padding: 0.34375em 0.3125em;
-    --Button--green-background-hover: var(--colour-green-hover);
-    --Button--green-background-shadow: var(--colour-green-shadow);
-    --Button--green-background: var(--colour-green-base);
-    --Button--large-font-size: var(--font-size-large);
-    --Button--large-padding: 0.527777778em 0.4166665em;
-    --Button--orange-background-hover: var(--colour-orange-hover);
-    --Button--orange-background-shadow: var(--colour-orange-shadow);
-    --Button--orange-background: var(--colour-orange-base);
-    --Button--red-background-hover: var(--colour-red-hover);
-    --Button--red-background-shadow: var(--colour-red-shadow);
-    --Button--red-background: var(--colour-red-base);
 }
 
 /**
@@ -111,6 +100,11 @@
  * Large variant
  */
 
+:root {
+    --Button--large-font-size: var(--font-size-large);
+    --Button--large-padding: 0.527777778em 0.4166665em;
+}
+
 .Button--large {
     font-size: var(--Button--large-font-size);
     padding: var(--Button--large-padding);
@@ -119,6 +113,12 @@
 /**
  * Green variant
  */
+
+:root {
+    --Button--green-background-hover: var(--colour-green-hover);
+    --Button--green-background-shadow: var(--colour-green-shadow);
+    --Button--green-background: var(--colour-green-base);
+}
 
 .Button--green {
     background-color: var(--Button--green-background);
@@ -144,6 +144,12 @@
  * Orange variant
  */
 
+:root {
+    --Button--orange-background-hover: var(--colour-orange-hover);
+    --Button--orange-background-shadow: var(--colour-orange-shadow);
+    --Button--orange-background: var(--colour-orange-base);
+}
+
 .Button--orange {
     background-color: var(--Button--orange-background);
     box-shadow: var(--Button-box-shadow) var(--Button--orange-background-shadow);
@@ -167,6 +173,12 @@
 /**
  * Red variant
  */
+
+:root {
+    --Button--red-background-hover: var(--colour-red-hover);
+    --Button--red-background-shadow: var(--colour-red-shadow);
+    --Button--red-background: var(--colour-red-base);
+}
 
 .Button--red {
     background-color: var(--Button--red-background);
