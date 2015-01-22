@@ -24,14 +24,16 @@
 
 /**
  * 1. Corrects inability to style clickable `input` types in iOS.
- * 2. Normalize `line-height`. For `input`, it can't be changed from `normal` in Firefox 4+.
- * 3. Ensure no `text-decoration` on anchors.
- * 4. Prevent button text from being selectable.
- * 5. Make sure `input` will wrap text across multiple lines.
+ * 2. Hide back face for transition.
+ * 3. Normalize `line-height`. For `input`, it can't be changed from `normal` in Firefox 4+.
+ * 4. Ensure no `text-decoration` on anchors.
+ * 5. Prevent button text from being selectable.
+ * 6. Make sure `input` will wrap text across multiple lines.
  */
 
 .Button {
     -webkit-appearance: none; /* 1 */
+    backface-visibility: hidden; /* 2 */
     background-color: var(--Button-background);
     border-radius: var(--Button-border-radius);
     border-style: none;
@@ -41,14 +43,16 @@
     cursor: pointer;
     display: inline-block;
     font: var(--Button-font);
-    line-height: normal; /* 2 */
+    line-height: normal; /* 3 */
     margin: 0;
     padding: var(--Button-padding);
     position: relative;
     text-align: center;
-    text-decoration: none; /* 3 */
-    user-select: none; /* 4 */
-    white-space: normal; /* 5 */
+    text-decoration: none; /* 4 */
+    transition-duration: 0.3s;
+    transition-property: background-color;
+    user-select: none; /* 5 */
+    white-space: normal; /* 6 */
 }
 
 /**
