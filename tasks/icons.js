@@ -7,7 +7,7 @@ gulp.task('icons', function (callback) {
 
     var paths = {
             src: 'src/assets/icons/black/*.svg',
-            dest: 'src/assets/icons/'
+            dest: 'dist/tmp/icons/'
         },
         tasks;
 
