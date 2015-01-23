@@ -1,31 +1,26 @@
-var gulp = require ('gulp');
+var gulp = require ('gulp'),
+    cheerio = require ('gulp-cheerio'),
+    merge = require('merge-stream'),
+    path = require('path');
 
-gulp.task('icons', function () {
+gulp.task('icons', function (callback) {
 
-    var changed = require('gulp-changed'),
-        svgSprite = require('gulp-svg-sprite'),
-        spriter = {
-            mode: {
-                css: {
-                    prefix: 'Icon--',
-                    bust: true, // explictly set for clarity
-                    example: true,
-                    dimensions: true,
-                    dest: '', // we don't need a destination
-                    render: {
-                        css: true
-                    }
-                }
-            }
+    var paths = {
+            src: 'src/assets/icons/black/*.svg',
+            dest: 'dist/tmp/icons/'
         },
-        paths = {
-            src: 'src/assets/icons/**/*.svg',
-            dest: 'dist/assets/icons'
-        };
+        tasks;
 
-    return gulp.src(paths.src)
-    .pipe(changed(paths.dest))
-    .pipe(svgSprite(spriter))
-    .pipe(gulp.dest(paths.dest));
+    tasks = iconColoursList.map(function (colour) {
+        return gulp.src(paths.src)
+        .pipe(cheerio({
+            run: function ($) {
+                $('[fill]').attr('fill', colour.code);
+            },
+            parserOptions: {xmlMode: true}
+        }))
+        .pipe(gulp.dest(path.join(paths.dest, colour.name)));
+    });
 
+    return merge(tasks);
 });
