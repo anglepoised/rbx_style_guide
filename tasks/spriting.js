@@ -5,6 +5,11 @@ gulp.task('spriting', ['icons'], function () {
     var changed = require('gulp-changed'),
         svgSprite = require('gulp-svg-sprite'),
         spriter = {
+            shape : {
+                id : {
+                    separator: '-'
+                }
+            },
             mode: {
                 css: {
                     prefix: 'Icon--',
