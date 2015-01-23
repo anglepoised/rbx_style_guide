@@ -4,19 +4,21 @@
  * Typographical features.
  */
 
-
 /**
  * Base type variables
  */
 :root {
     --font-family-monospaced: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    --font-family-proportional: "Maven Pro", sans-serif;
+    --font-family-proportional: "ProximaNova", sans-serif;
+    --font-family-proportional-light: "ProximaNova-Light", sans-serif;
+    --font-family-proportional-semibold: "ProximaNova-Semibold", sans-serif;
     --font-size: 1.6rem;
     --font-size-large: 1.8rem;
     --font-size-small: 1.4rem;
     --line-height: 1.5;
+    --line-height-tighter: 1.4;
+    --line-height-looser: 1.8;
 }
-
 
 /**
  * Base font size, for easy to understand values
@@ -27,7 +29,6 @@ html {
     font-size: 62.5%;
 }
 
-
 /**
  * Default font family, sizing and line-height
  */
@@ -36,23 +37,6 @@ body {
     font-size: var(--font-size);
     line-height: var(--line-height);
 }
-
-
-/**
- * Set normal style on italic-by-default elements
- *
- * Maven Pro has no italic style and we want to avoid any faux italics.
- *
- * See: http://alistapart.com/article/say-no-to-faux-bold
- */
-cite,
-dfn,
-em,
-i,
-var {
-    font-style: normal;
-}
-
 
 /**
  * Code
@@ -85,10 +69,8 @@ pre code {
     color: var(--colour-gray-mystic);
 }
 
-
 /* Headings
    ========================================================================== */
-
 
 /**
  * Flatten headings and use classes, as visual designs rarely fit with an actual
@@ -96,24 +78,28 @@ pre code {
  */
 h1,
 .u-heading1 {
+    font-family: 'ProximaNova-Light';
     font-size: 3.2rem;
     font-weight: 300;
 }
 
 h2,
 .u-heading2 {
+    font-family: 'ProximaNova-Light';
     font-size: 2.5rem;
     font-weight: 300;
 }
 
 h3,
 .u-heading3 {
+    font-family: 'ProximaNova';
     font-size: 1.9rem;
     font-weight: 400;
 }
 
 h4,
 .u-heading4 {
+    font-family: 'ProximaNova-Semibold';
     font-size: 1.6rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -121,6 +107,7 @@ h4,
 
 h5,
 .u-heading5 {
+    font-family: 'ProximaNova-Semibold';
     font-size: 1.4rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -128,24 +115,21 @@ h5,
 
 h6,
 .u-heading6 {
+    font-family: 'ProximaNova-Semibold';
     font-size: 1.3rem;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-
 /* Paragraphs
    ========================================================================== */
-
 
 /**
  * Placeholder. Nothing set explicitly on paragraphs yet.
  */
 
-
 /* Quotes
    ========================================================================== */
-
 
 /**
  * Blockquote
@@ -158,14 +142,12 @@ h6,
  * TODO: Stop using raw colour variable here.
  */
 blockquote {
-    border-left: .25em solid var(--colour-green);
+    border-left: .25em solid var(--colour-green-base);
     padding-left: 1em;
 }
 
-
 /* Lists
    ========================================================================== */
-
 
 /**
  * Unordered list
@@ -174,12 +156,11 @@ blockquote {
  * styling, so encapsulated within `.Copy`.
  */
 
-
 /**
  * Ordered list
  */
 ol {
-    margin-left: 1.4em;
+    margin-left: 0;
 }
 
 ol li {
@@ -191,13 +172,11 @@ ol li {
  * Definition list
  */
 dt {
-    font-weight: 500;
+    font-family: 'ProximaNova-Semibold';
 }
-
 
 /* Tables
    ========================================================================== */
-
 
 /**
  * Plain table
@@ -216,7 +195,7 @@ td {
 }
 
 thead {
-    background: var(--colour-green-light);
+    background: var(--colour-green-accent);
     border-bottom: 1px solid var(--colour-gray-regent);
 }
 
@@ -231,13 +210,11 @@ th {
 
 /* Zebra striping */
 tbody tr:nth-child(even) {
-    background: var(--colour-green-light);
+    background: var(--colour-green-accent);
 }
-
 
 /* Inline elements
    ========================================================================== */
-
 
 /**
  * Standard link
@@ -250,23 +227,32 @@ a:hover {
     color: var(--colour-base-link-hover);
 }
 
-
 /* Text utilities
    ========================================================================== */
-
 
 /**
  * Weights
  *
- * TODO: Cross-check these against SUIT CSS utilities.
  */
+.u-textLight {
+    font-family: var(--font-family-proportional-light);
+    font-weight: 300;
+}
 
+.u-textRegular {
+    font-family: var(--font-family-proportional);
+    font-weight: 400;
+}
 
-.u-textLight { font-weight: 300; }
-.u-textRegular { font-weight: 400; }
-.u-textMedium { font-weight: 500; }
-.u-textBold { font-weight: 700; }
+.u-textSemibold {
+    font-family: var(--font-family-proportional-semibold);
+    font-weight: 500;
+}
 
+.u-textBold {
+    font-family: var(--font-family-proportional);
+    font-weight: 700;
+}
 
 /**
  * Default type
@@ -277,7 +263,6 @@ a:hover {
     font-size: var(--font-size);
 }
 
-
 /**
  * Large type
  *
@@ -286,7 +271,6 @@ a:hover {
 .u-textLarge {
     font-size: var(--font-size-large);
 }
-
 
 /**
  * Small type
@@ -297,6 +281,15 @@ a:hover {
     font-size: var(--font-size-small);
 }
 
+/**
+ * Monospaced type
+ *
+ * For explicit monospaced type.
+ */
+.u-textMonospaced {
+    font-family: var(--font-family-monospaced);
+}
+
 
 /**
  * Label type
@@ -304,13 +297,11 @@ a:hover {
  * For form labels.
  *
  * TODO: Move to forms later.
- * TODO: Should be more granular, ie. use Suit helpers?
  */
 .u-textLabel {
     font-size: var(--font-size-small);
     text-transform: uppercase;
 }
-
 
 /**
  * Copy
@@ -318,7 +309,6 @@ a:hover {
  * Wrapper for blocks of copy. This approach avoids having to set margins on
  * elements at the root level, reducing countless resets.
  */
-
 
 /**
  * Copy lobotomized owl
@@ -328,7 +318,6 @@ a:hover {
 .Copy * + * {
     margin-top: 1.6rem;
 }
-
 
 /**
  * Copy heading follow-on fix
@@ -341,7 +330,6 @@ a:hover {
     margin-top: 0;
 }
 
-
 /**
  * Copy unordered list
  *
@@ -353,10 +341,14 @@ a:hover {
     margin-left: 1.8em;
 }
 
-.Copy li > ul {
-    margin-top: 1.6rem; /* fixes nested unordered list */
+.copy li + li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
+.Copy li > ul {
+    margin-top: 0.5em; /* fixes nested unordered list */
+}
 
 /**
  * Copy ordered list
@@ -364,7 +356,6 @@ a:hover {
 .Copy li > ol {
     margin-top: 1.6rem; /* fixes nested ordred list */
 }
-
 
 /**
  * Copy definition list

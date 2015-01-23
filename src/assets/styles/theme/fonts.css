@@ -1,33 +1,137 @@
 /* Fonts
    ========================================================================== */
 
-
 /**
  * Proportional text
  */
 
-
 /**
- * Maven Pro Light 300
+ * @license
+ * MyFonts Webfont Build ID 2954044, 2015-01-15T11:26:48-0500
  *
- * See: http://www.losttype.com/font/?name=maven
- */
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: ProximaNova-LightIt by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light-it/
+ *
+ * Webfont: ProximaNova-Light by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+ *
+ * Webfont: ProximaNova-RegularIt by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
+ *
+ * Webfont: ProximaNova-SemiboldIt by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold-it/
+ *
+ * Webfont: ProximaNova-Semibold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+ *
+ * Webfont: ProximaNova-BoldIt by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold-it/
+ *
+ * Webfont: ProximaNova-Regular by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+ *
+ * Webfont: ProximaNova-Bold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2954044
+ * Licensed pageviews: 1,000,000
+ * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ *
+ * © 2015 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2d133c");
+
+/* Standard family
+   ========================================================================== */
+
 @font-face {
-    font-family: "Maven Pro";
-    src:
-        url("../fonts/mavenprolight/300.woff") format("woff"),
-        url("../fonts/mavenprolight/300.ttf") format("truetype");
+    font-family: "ProximaNova";
+    font-weight: normal;
     font-style: normal;
-    font-weight: 300;
+    src:
+        url("../fonts/proximanova/2D133C_6_0.woff2") format("woff2"),
+        url("../fonts/proximanova/2D133C_6_0.woff") format("woff"),
+        url("../fonts/proximanova/2D133C_6_0.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "ProximaNova";
+    font-weight: bold;
+    font-style: normal;
+    src:
+        url("../fonts/proximanova/2D133C_7_0.woff2") format("woff2"),
+        url("../fonts/proximanova/2D133C_7_0.woff") format("woff"),
+        url("../fonts/proximanova/2D133C_7_0.ttf") format("truetype");
+}
 
-/**
- * Maven Pro Normal, Medium and Bold
- *
- * See: http://www.google.com/fonts/specimen/Maven+Pro
- */
+@font-face {
+    font-family: "ProximaNova";
+    font-weight: normal;
+    font-style: italic;
+    src:
+        url("../fonts/proximanova/2D133C_2_0.woff2") format("woff2"),
+        url("../fonts/proximanova/2D133C_2_0.woff") format("woff"),
+        url("../fonts/proximanova/2D133C_2_0.ttf") format("truetype");
+}
 
+@font-face {
+    font-family: "ProximaNova";
+    font-weight: bold;
+    font-style: italic;
+    src:
+        url("../fonts/proximanova/2D133C_5_0.woff2") format("woff2"),
+        url("../fonts/proximanova/2D133C_5_0.woff") format("woff"),
+        url("../fonts/proximanova/2D133C_5_0.ttf") format("truetype");
+}
+
+/* Light
+   ========================================================================== */
+
+@font-face {
+    font-family: "ProximaNova-Light";
+    font-style: italic;
+    src:
+        url("../fonts/proximanova/2D133C_0_0.woff2") format("woff2"),
+        url("../fonts/proximanova/2D133C_0_0.woff") format("woff"),
+        url("../fonts/proximanova/2D133C_0_0.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "ProximaNova-Light";
+    src:
+        url("../fonts/proximanova/2D133C_1_0.woff2") format("woff2"),
+        url("../fonts/proximanova/2D133C_1_0.woff") format("woff"),
+        url("../fonts/proximanova/2D133C_1_0.ttf") format("truetype");
+}
+
+/* Semibold
+   ========================================================================== */
+
+@font-face {
+    font-family: "ProximaNova-Semibold";
+    src:
+        url("../fonts/proximanova/2D133C_4_0.woff2") format("woff2"),
+        url("../fonts/proximanova/2D133C_4_0.woff") format("woff"),
+        url("../fonts/proximanova/2D133C_4_0.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "ProximaNova-Semibold";
+    font-style: italic;
+    src:
+        url("../fonts/proximanova/2D133C_3_0.woff2") format("woff2"),
+        url("../fonts/proximanova/2D133C_3_0.woff") format("woff"),
+        url("../fonts/proximanova/2D133C_3_0.ttf") format("truetype");
+}
 
 /**
  * Monospaced text
