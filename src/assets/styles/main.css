@@ -9,6 +9,7 @@
  */
 @import "boot/normalize.css";
 @import "boot/base.css";
+@import "boot/icons.css";
 @import "boot/box-sizing.css";
 @import "boot/layout.css";
 @import "boot/responsive.css";

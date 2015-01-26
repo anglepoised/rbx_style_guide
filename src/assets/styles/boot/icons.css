@@ -1,0 +1,20 @@
+/**
+ * Icons
+ */
+
+
+/**
+ * Base icon class
+ *
+ * Sets display type and hides any text content.
+ *
+ * Should always be used with a <span> (not an <i>) and paired with the relevant
+ * Icon modifier.
+ */
+
+.Icon {
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block
+}
