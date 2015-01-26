@@ -29,7 +29,8 @@ gulp.task('default', ['clean'], function (cb) {
         'raw',
         'scripts',
         'styles',
-        'spriting'
+        'spriting',
+        'cleandist'
     ],
     'html:lint', cb);
 
