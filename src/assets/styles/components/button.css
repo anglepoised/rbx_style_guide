@@ -8,7 +8,7 @@
     --Button-background-hover: var(--colour-blue-hover);
     --Button-background-shadow: var(--colour-blue-shadow);
     --Button-background: var(--colour-blue-base);
-    --Button-border-radius: 2px;
+    --Button-border-radius: 4px;
     --Button-box-shadow: inset 0px -3px 0px 0px;
     --Button-color: var(--colour-white-alabaster);
     --Button-disabled-opacity: 0.5;
