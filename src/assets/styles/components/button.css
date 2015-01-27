@@ -13,7 +13,7 @@
     --Button-color: var(--colour-white-alabaster);
     --Button-disabled-opacity: 0.5;
     --Button-font: inherit;
-    --Button-padding: 0.34375em 0.3125em;
+    --Button-padding: 0.9375em 1em;
 }
 
 /**
@@ -25,7 +25,7 @@
 /**
  * 1. Corrects inability to style clickable `input` types in iOS.
  * 2. Hide back face for transition.
- * 3. Normalize `line-height`. For `input`, it can't be changed from `normal` in Firefox 4+.
+ * 3. Proportional line height to strip vertical space from enclosed inline-block elements.
  * 4. Ensure no `text-decoration` on anchors.
  * 5. Prevent button text from being selectable.
  * 6. Make sure `input` will wrap text across multiple lines.
@@ -43,7 +43,7 @@
     cursor: pointer;
     display: inline-block;
     font: var(--Button-font);
-    line-height: normal; /* 3 */
+    line-height: 0.6%;  /* 3 */
     margin: 0;
     padding: var(--Button-padding);
     position: relative;
@@ -112,7 +112,7 @@
 
 :root {
     --Button--large-font-size: var(--font-size-large);
-    --Button--large-padding: 0.527777778em 0.4166665em;
+    --Button--large-padding: 1.111111111em;
 }
 
 .Button--large {
