@@ -7,11 +7,15 @@
     <link href="/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="/assets/styles/core.css" rel="stylesheet">
     <link href="/assets/icons/sprite.css" rel="stylesheet">
+    <script src="js/main.js"></script>
 </head>
-<body>
+<body ng-app="app" id="app">
     <h1 class="u-textHeading1">
-        rbx_style_guide
+        {{title}}
     </h1>
+    <div ng-controller="mainCtrl as main">
+        {{main.message}}
+    </div>
     <nav class="StyleguideNav">
         <ol class="StyleguideNav-items">
             <li class="StyleguideNav-item">

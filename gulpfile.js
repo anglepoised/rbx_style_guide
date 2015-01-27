@@ -1,5 +1,6 @@
 // dependencies
-var gulp = require('gulp');
+var gulp = require('gulp'),
+    args = require('yargs').argv;
 // global variables
 iconColoursList = [
             {name: 'black', code: '#000000'},
@@ -11,6 +12,7 @@ iconColoursList = [
             {name: 'orange-base', code: '#ed943c'},
             {name: 'red-base', code: '#c24a4a'}
           ];
+isProduction = args.production;
 
 // load specific tasks
 require('require-dir')('tasks');
@@ -22,6 +24,7 @@ gulp.task('default', ['clean'], function (cb) {
 
     runSequence([
         'scripts:lint',
+        'scripts:angular',
         'styles:lint'
     ], [
         'html',

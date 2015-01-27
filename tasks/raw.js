@@ -7,6 +7,7 @@ gulp.task('raw', function () {
         'src/.*',
         'src/**/*.*',
         '!src/**/*.html',
+        '!src/js/**/*.js',
         '!src/assets/icons/**/*.*',
         '!src/assets/scripts/**/*.*',
         '!src/assets/styles/**/*.*'

@@ -9,7 +9,9 @@ gulp.task('scripts:lint', function () {
             src: [
             'gulpfile.js',
             'tasks/*.js',
-            'src/assets/scripts/**/*.js'
+            'src/assets/scripts/**/*.js',
+            'src/js/**/*.js',
+            '!src/js/vendor/**/*.js'
             ]
         };
 
