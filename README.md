@@ -2,20 +2,22 @@
 
 [![Circle CI](https://circleci.com/gh/rockabox/rbx_style_guide.svg?style=shield&circle-token=3025f8d21ea5b4518eff75aef1ce8c128097d0ec)](https://circleci.com/gh/rockabox/rbx_style_guide)
 
-This project is a static website, compiled by [Gulp](http://gulpjs.com/).
-
-TODO: Revise "This project is.." section after Angular integration.
+This project is an angular website, compiled by [Gulp](http://gulpjs.com/).
 
 ## Dependencies
 
+* [Git](http://git-scm.com)
 * [Node.js](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)
 * [Gulp](http://gulpjs.com/): `npm install -g gulp`.
+* [Bower](http://bower.io): `npm install -g bower`.
 
 ## Getting started
 
+* Install git: (http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * Checkout the repo: `git clone git@github.com:rockabox/rbx_style_guide && cd rbx_style_guide`
 * Install project dependencies: `npm install`.
-* Run `gulp watch`.
+* Install bower packages: `bower install`.
+* Run `gulp watch`. (For production environment run `gulp watch --production`)
 * Browse to: <http://localhost:3000/>
 
 ## Tests
