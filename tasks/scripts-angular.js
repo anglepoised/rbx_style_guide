@@ -24,9 +24,9 @@ gulp.task('scripts:angular', function (cb) {
         };
 
     return gulp.src(angularModule.concat(vendorFiles).concat(jsFiles))
-    .pipe(ngAnnotate({'single_quotes': true}))
-    .pipe(gulpIf(isProduction, uglify()))
-    .pipe(concat('main.js'))
-    .pipe(gulp.dest(paths.dest));
+     .pipe(ngAnnotate({'single_quotes': true}))
+     .pipe(gulpIf(isProduction, uglify()))
+     .pipe(concat('main.js'))
+     .pipe(gulp.dest(paths.dest));
 
 });
