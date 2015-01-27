@@ -79,6 +79,9 @@
             <li class="StyleguideNav-item">
                 <a href="#copy-wrapper">Copy wrapper</a>
             </li>
+            <li class="StyleguideNav-item">
+                <a href="#button">Button</a>
+            </li>
         </ol>
     </nav>
     <section class="Copy" id="colours">
@@ -742,6 +745,252 @@
         <p>
             TODO: <code>.Copy</code> Probably mention this above block and inline elements as a wrapper.
         </p>
+    </section>
+    <section class="Copy" id="button">
+        <h2 class="u-headingStyleguide">
+            Button
+        </h2>
+        <p>
+            Standard button styles can be applied to <code>&lt;button&gt;</code>, <code>&lt;a&gt;</code> and
+            <code>&lt;input type="submit"&gt;</code> elements.
+        </p>
+        <p>
+<pre>&lt;button class="Button" type="button"&gt;
+    Button
+&lt;/button&gt;
+
+&lt;a class="Button" href="{{url}}"&gt;
+    Link
+&lt;/a&gt;
+
+&lt;input class="Button" type="submit" value="Submit"&gt;</pre>
+        </p>
+        <div>
+            <button class="Button" type="button">
+                Button
+            </button>
+        </div>
+        <div>
+            <a class="Button" href="{{url}}">
+                Link
+            </a>
+        </div>
+        <div>
+            <input class="Button" type="submit" value="Submit">
+        </div>
+        <p>
+            Combinations of states can be applied by stacking class modifiers.
+            For example:
+        </p>
+        <p>
+<pre>&lt;button class="Button Button--large Button--orange is-disabled" disabled&gt;
+    Large Orange Disabled Button
+&lt;/button&gt;</pre>
+        </p>
+        <p>
+            Gives:
+        </p>
+        <button class="Button Button--large Button--orange is-disabled" disabled>
+            Large Orange Disabled Button
+        </button>
+        <h4 class="u-headingStyleguide">
+            Core states
+        </h4>
+        <h3 class="u-headingStyleguide">
+            Default
+        </h3>
+        <p>
+            Buttons without modifier classes default to the standard size and
+            blue colour and should be used for the majority of actions.
+        </p>
+        <div>
+            <button class="Button" type="button">
+                Standard Button
+            </button>
+        </div>
+        <h4 class="u-headingStyleguide">
+            Disabled
+        </h4>
+        <p>
+            Set by adding a <code>disabled</code> attribute. The <code>.is-disabled</code> class can be added for
+            clarity.
+        </p>
+        <p>
+            For <code>&lt;a&gt;</code> elements, you should also remove the <code>href</code> attribute and prevent
+            JavaScript event handlers from firing.
+        </p>
+        <p>
+<pre>&lt;button class="Button is-disabled" disabled&gt;
+    Disabled Button
+&lt;/button&gt;</pre>
+        </p>
+        <div>
+            <button class="Button is-disabled" type="button" disabled>
+                Disabled Button
+            </button>
+        </div>
+        <h4 class="u-headingStyleguide">
+            Pressed
+        </h4>
+        <p>
+            The <code>.is-pressed</code> class is used here to demonstrate this
+            state, but should never be used in raw HTML.
+        </p>
+        <p>
+<pre>&lt;button class="Button is-pressed" type="button"&gt;
+    Pressed Button
+&lt;/button&gt;</pre>
+        </p>
+        <div>
+            <button class="Button is-pressed" type="button">
+                Pressed Button
+            </button>
+        </div>
+        <h3 class="u-headingStyleguide">
+            Size variants
+        </h3>
+        <h4 class="u-headingStyleguide">
+            Large
+        </h4>
+        <p>
+            Large buttons should be used for primary save actions.
+        </p>
+        <p>
+<pre>&lt;button class="Button Button--large" type="button"&gt;
+    Large Button
+&lt;/button&gt;</pre>
+        </p>
+        <div>
+            <button class="Button Button--large" type="button">
+                Large Button
+            </button>
+        </div>
+        <h3 class="u-headingStyleguide">
+            Colour variants
+        </h3>
+        <p>
+            Colour variants are used on buttons to distinguish between different types of action.
+        </p>
+        <h4 class="u-headingStyleguide">
+            Green
+        </h4>
+        <p>
+            Green buttons indicate a successful or positive action.
+        </p>
+        <p>
+<pre>&lt;button class="Button Button--green" type="button"&gt;
+    Green Button
+&lt;/button&gt;</pre>
+        </p>
+        <div>
+            <button class="Button Button--green" type="button">
+                Green Button
+            </button>
+        </div>
+        <h4 class="u-headingStyleguide">
+            Orange
+        </h4>
+        <p>
+            Orange buttons indicate that caution should be taken with this
+            action.
+        </p>
+        <p>
+<pre>&lt;button class="Button Button--orange" type="button"&gt;
+    Orange Button
+&lt;/button&gt;</pre>
+        </p>
+        <div>
+            <button class="Button Button--orange" type="button">
+                Orange Button
+            </button>
+        </div>
+        <h4 class="u-headingStyleguide">
+            Red
+        </h4>
+        <p>
+            Red buttons indicate a dangerous or potentially negative action.
+        </p>
+        <p>
+<pre>&lt;button class="Button Button--red" type="button"&gt;
+    Red Button
+&lt;/button&gt;</pre>
+        </p>
+        <div>
+            <button class="Button Button--red" type="button">
+                Red Button
+            </button>
+        </div>
+        <h3 class="u-headingStyleguide">
+            Icon variants
+        </h3>
+        <p>
+            Icon button styles can be applied to <code>&lt;button&gt;</code> and <code>&lt;a&gt;</code> elements but not
+            <code>&lt;input type="submit"&gt;</code> elements.
+        </p>
+        <p>
+            Icons can be used to provide additional context for buttons. They and accept the same class modifiers as
+            standard buttons. For example:
+        </p>
+        <p>
+<pre>&lt;button class="Button Button--icon Button--large Button--orange is-disabled" disabled type="button"&gt;
+    &lt;span class="Icon Icon--white-alabaster-8-plus"&gt;&lt;/span&gt;
+    Large Orange Disabled Icon Button
+&lt;/button&gt;</pre>
+        </p>
+        <p>Gives:</p>
+        <div>
+            <button button class="Button Button--icon Button--large Button--orange is-disabled" disabled type="button">
+                <span class="Icon Icon--white-alabaster-8-plus"></span>
+                Large Orange Disabled Icon Button
+            </button>
+        </div>
+        <p>
+            All button icons should be taken from the <code>white-alabaster</code> set.
+        </p>
+        <h4 class="u-headingStyleguide">
+            Default
+        </h4>
+        <p>
+            Default icon buttons must use 8px x 8px icons.
+        </p>
+        <div>
+            <button class="Button Button--icon" type="button">
+                <span class="Icon Icon--white-alabaster-8-plus"></span>
+                Icon Button
+            </button>
+        </div>
+        <h4 class="u-headingStyleguide">
+            Large variant
+        </h4>
+        <p>
+            Large variant icon buttons must use 12px x 12px icons.
+        </p>
+        <div>
+            <button class="Button Button--icon Button--large" type="button">
+                <span class="Icon Icon--white-alabaster-12-plus"></span>
+                <span>Icon Button Large</span>
+            </button>
+        </div>
+        <h4 class="u-headingStyleguide">
+            Hidden text variant
+        </h4>
+        <p>
+            Visible text on icon buttons is optional. If not used, button text should be enclosed between the icon
+            <code>&lt;span&gt;</code> element, rather than alongside. For example:
+        </p>
+        <p>
+<pre>&lt;button class="Button Button--icon" type="button"&gt;
+    &lt;span class="Icon Icon--white-alabaster-8-plus"&gt;Hidden Text&lt;/span&gt;
+&lt;/button&gt;</pre>
+        </p>
+        <p>
+            Gives:
+        </p>
+        <div>
+            <button class="Button Button--icon" type="button">
+                <span class="Icon Icon--white-alabaster-8-plus">Hidden Text</span>
+            </button>
+        </div>
     </section>
     <script src="/assets/scripts/main.js"></script>
 </body>
