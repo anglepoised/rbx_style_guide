@@ -1,5 +1,7 @@
 # RBX Style Guide
 
+[![Circle CI](https://circleci.com/gh/rockabox/rbx_style_guide.svg?style=shield&circle-token=3025f8d21ea5b4518eff75aef1ce8c128097d0ec)](https://circleci.com/gh/rockabox/rbx_style_guide)
+
 This project is a static website, compiled by [Gulp](http://gulpjs.com/).
 
 TODO: Revise "This project is.." section after Angular integration.
