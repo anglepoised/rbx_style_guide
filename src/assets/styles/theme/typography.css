@@ -78,28 +78,28 @@ pre code {
  */
 h1,
 .u-heading1 {
-    font-family: 'ProximaNova-Light';
+    font-family: var(--font-family-proportional-light);
     font-size: 3.2rem;
     font-weight: 300;
 }
 
 h2,
 .u-heading2 {
-    font-family: 'ProximaNova-Light';
+    font-family: var(--font-family-proportional-light);
     font-size: 2.5rem;
     font-weight: 300;
 }
 
 h3,
 .u-heading3 {
-    font-family: 'ProximaNova';
+    font-family: var(--font-family-proportional);
     font-size: 1.9rem;
     font-weight: 400;
 }
 
 h4,
 .u-heading4 {
-    font-family: 'ProximaNova-Semibold';
+    font-family: var(--font-family-proportional-semibold);
     font-size: 1.6rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -107,7 +107,7 @@ h4,
 
 h5,
 .u-heading5 {
-    font-family: 'ProximaNova-Semibold';
+    font-family: var(--font-family-proportional-semibold);
     font-size: 1.4rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -115,7 +115,7 @@ h5,
 
 h6,
 .u-heading6 {
-    font-family: 'ProximaNova-Semibold';
+    font-family: var(--font-family-proportional-semibold);
     font-size: 1.3rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -172,7 +172,7 @@ ol li {
  * Definition list
  */
 dt {
-    font-family: 'ProximaNova-Semibold';
+    font-family: var(--font-family-proportional-semibold);
 }
 
 /* Tables
