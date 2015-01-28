@@ -44,6 +44,6 @@
     "yargs": "~1.3.3"
   },
   "scripts": {
-    "a11y": "pa11y -s WCAG2AA -c pa11y.json http://0.0.0.0:3000/"
+    "a11y": "pa11y --standard WCAG2AA --config pa11y.json http://0.0.0.0:3000/"
   }
 }
