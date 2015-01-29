@@ -10,6 +10,8 @@ This project is an angular website, compiled by [Gulp](http://gulpjs.com/).
 * [Node.js](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)
 * [Gulp](http://gulpjs.com/): `npm install -g gulp`.
 * [Bower](http://bower.io): `npm install -g bower`.
+* [Selenium Server](https://www.npmjs.com/package/selenium-standalone): `npm install -g selenium-standalone`.
+* [Protractor](https://www.npmjs.com/package/protractor): `npm install -g protractor`.
 
 ## Getting started
 
@@ -26,3 +28,10 @@ This project is an angular website, compiled by [Gulp](http://gulpjs.com/).
 * [colorguard](https://github.com/SlexAxton/css-colorguard): warns when colours in CSS are too similar to ones that already exist.
 * [PostCSS BEM Linter](https://github.com/necolas/postcss-bem-linter/): tests CSS for conformance against SuitCSS/BEM conventions. Currently using "strict" mode.
 * [HTMLHint](https://github.com/yaniswang/HTMLHint/): lints and validates HTML. Currently using default ruleset.
+
+## Running functional tests with Protractor
+
+* Make sure you have installed a Selenium Server. Follow the instructions at:
+  https://www.npmjs.com/package/selenium-standalone
+* Make sure you point to the Selenium .jar in the protractor config file (protractor-base.conf.js)
+* Run `gulp func-tests`

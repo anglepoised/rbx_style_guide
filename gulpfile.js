@@ -13,6 +13,9 @@ iconColoursList = [
             {name: 'red-base', code: '#c24a4a'}
           ];
 isProduction = args.production;
+protractorConfigFile = 'protractor-func.conf.js';
+protractorURL = 'http://localhost:';
+protractorPort = '3000';
 
 // load specific tasks
 require('require-dir')('tasks');
@@ -35,6 +38,6 @@ gulp.task('default', ['clean'], function (cb) {
         'spriting',
         'cleandist'
     ],
-    'html:lint', cb);
+    ['html:lint'], cb);
 
 });
