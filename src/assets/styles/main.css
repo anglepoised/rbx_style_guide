@@ -19,9 +19,13 @@
 @import "theme/typography.css";
 
 /**
+ * Utilities
+ */
+@import "utils/styleguide.css";
+
+/**
  * Components
  */
-@import "components/styleguide.css";
 @import "components/icon.css";
 @import "components/button.css";
 @import "components/styleguidenav.css";
