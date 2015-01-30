@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
  * TODO: Stop using raw colour variable here.
  */
 blockquote {
-    border-left: .25em solid var(--colour-green-base);
+    border-left: .25em solid var(--colour-base-highlight);
     padding-left: 1em;
 }
 
@@ -123,7 +123,7 @@ td {
 }
 
 thead {
-    background: var(--colour-green-accent);
+    background: var(--colour-base-highlight);
     border-bottom: 1px solid var(--colour-gray-regent);
 }
 

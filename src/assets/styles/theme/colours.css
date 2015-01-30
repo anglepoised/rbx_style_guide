@@ -104,6 +104,7 @@
     --colour-base-background: var(--colour-white-alabaster);
     --colour-base-link-default: var(--colour-blue-base);
     --colour-base-link-hover: var(--colour-blue-hover);
+    --colour-base-highlight: var(--colour-green-base);
     --colour-form-field: var(--colour-white);
 }
 
@@ -116,6 +117,7 @@
 .u-colourBgBaseBackground { background: var(--colour-base-background); }
 .u-colourBgBaseLinkDefault { background: var(--colour-base-link-default); }
 .u-colourBgBaseLinkHover { background: var(--colour-base-link-hover); }
+.u-colourBgBaseHighlight { background: var(--colour-base-highlight); }
 .u-colourBgField { background: var(--colour-form-field); }
 
 /**
