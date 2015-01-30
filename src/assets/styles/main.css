@@ -26,7 +26,7 @@
 /**
  * Components
  */
-@import "components/icon.css";
-@import "components/button.css";
-@import "components/styleguidenav.css";
-@import "components/swatch.css";
+@import "components/core-button.css";
+@import "components/core-icon.css";
+@import "components/styleguide-nav.css";
+@import "components/styleguide-swatch.css";
