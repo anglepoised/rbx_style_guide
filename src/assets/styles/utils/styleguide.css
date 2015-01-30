@@ -1,18 +1,14 @@
 /**
- * Styleguide
+ * Styleguide Utilities
  *
- * Components and helpers used for styleguide app
+ * Used exclusively in Styleguide.
  */
-
-
-/* Utilities
-   ========================================================================== */
 
 
 /**
  * Styleguide heading
  *
- * Designed to be distinct from product headings.
+ * Designed to be distinct from standard headings.
  */
 .u-headingStyleguide {
     color: var(--colour-gray-shark);
