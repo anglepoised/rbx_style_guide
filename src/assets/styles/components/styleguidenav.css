@@ -1,0 +1,23 @@
+/** @define StyleguideNav; use strict */
+
+/**
+ * StyleguideNav
+ *
+ * Temporary jumplist for styleguide.
+ */
+.StyleguideNav {
+    margin-bottom: 1.6em;
+}
+
+.StyleguideNav-items {
+    margin-left: .4em;
+}
+
+.StyleguideNav-item {
+    margin-left: 1.6em;
+    list-style-type: decimal;
+}
+
+.StyleguideNav-item .StyleguideNav-item {
+    list-style-type: lower-roman;
+}

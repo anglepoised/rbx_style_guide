@@ -1,0 +1,22 @@
+/** @define Swatch; use strict */
+
+/**
+ * Swatch
+ *
+ * Palette boxes to show colours.
+ */
+.Swatch {
+    display: inline-block;
+    text-align: center;
+}
+
+.Swatch-colour {
+    display: block;
+    height: 4em;
+    width: 8em;
+    border: 1px solid var(--colour-gray-regent);
+}
+
+.Swatch-body {
+    text-align: center;
+}
