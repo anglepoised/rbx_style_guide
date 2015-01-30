@@ -5,10 +5,13 @@
  *
  * Wrapper for blocks of copy. This approach avoids having to set margins on
  * elements at the root level, reducing countless resets.
+ *
+ * Note that styles from some other basic modules will be duplicated in `.Copy`. These module styles should *not* be
+ * applied within `.Copy` blocks.
  */
 
 /**
- * Copy lobotomized owl
+ * Lobotomized owl
  *
  * See: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
  */
@@ -17,7 +20,7 @@
 }
 
 /**
- * Copy heading follow-on fix
+ * Heading follow-on fix
  */
 .Copy h1 + h2,
 .Copy h2 + h3,
@@ -28,7 +31,7 @@
 }
 
 /**
- * Copy unordered list
+ * Unordered list
  *
  * Set up margins and styling on lists within .Copy. Used too often outside this
  * context to have much default styling.
@@ -48,14 +51,14 @@
 }
 
 /**
- * Copy ordered list
+ * Ordered list
  */
 .Copy li > ol {
     margin-top: 1.6rem; /* fixes nested ordred list */
 }
 
 /**
- * Copy definition list
+ * Definition list
  */
 .Copy dd {
     margin-top: 0;
