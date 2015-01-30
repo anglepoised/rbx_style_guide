@@ -21,6 +21,7 @@
 /**
  * Utilities
  */
+@import "utils/core-text.css";
 @import "utils/styleguide.css";
 
 /**
