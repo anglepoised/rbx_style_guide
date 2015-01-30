@@ -118,7 +118,7 @@
 .u-colourBgBaseLinkDefault { background: var(--colour-base-link-default); }
 .u-colourBgBaseLinkHover { background: var(--colour-base-link-hover); }
 .u-colourBgBaseHighlight { background: var(--colour-base-highlight); }
-.u-colourBgField { background: var(--colour-form-field); }
+.u-colourBgFormField { background: var(--colour-form-field); }
 
 /**
 * Base colours
