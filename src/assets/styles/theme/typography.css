@@ -38,56 +38,15 @@ body {
     line-height: var(--line-height);
 }
 
-/* Headings
-   ========================================================================== */
-
 /**
+ * Headings
+ *
  * Flatten headings and use classes, as visual designs rarely fit with an actual
  * document outline and ability to override is helpful.
  */
-h1,
-.u-heading1 {
-    font-family: var(--font-family-proportional-light);
-    font-size: 3.2rem;
-    font-weight: 300;
-}
 
-h2,
-.u-heading2 {
-    font-family: var(--font-family-proportional-light);
-    font-size: 2.5rem;
-    font-weight: 300;
-}
-
-h3,
-.u-heading3 {
-    font-family: var(--font-family-proportional);
-    font-size: 1.9rem;
-    font-weight: 400;
-}
-
-h4,
-.u-heading4 {
-    font-family: var(--font-family-proportional-semibold);
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-h5,
-.u-heading5 {
-    font-family: var(--font-family-proportional-semibold);
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-h6,
-.u-heading6 {
-    font-family: var(--font-family-proportional-semibold);
-    font-size: 1.3rem;
-    font-weight: 500;
-    text-transform: uppercase;
+h1, h2, h3, h4, h5, h6 {
+    font-size: var(--font-size);
 }
 
 /* Paragraphs
