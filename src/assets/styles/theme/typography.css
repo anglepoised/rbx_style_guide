@@ -66,8 +66,6 @@ h1, h2, h3, h4, h5, h6 {
  *
  * There are currently no specific styles for `<q>`. Rely on browser defaults.
  * All supported browsers should automatically add appropriate quotemarks.
- *
- * TODO: Stop using raw colour variable here.
  */
 blockquote {
     border-left: .25em solid var(--colour-base-highlight);
@@ -110,7 +108,6 @@ dt {
  * Plain table
  *
  * TODO: Encapsulate (look at Rejn/SUIT for examples).
- * TODO: Stop using raw colour variable here.
  */
 table {
     width: 100%;
