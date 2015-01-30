@@ -1,0 +1,62 @@
+/** @define Copy; use strict */
+
+/**
+ * Copy
+ *
+ * Wrapper for blocks of copy. This approach avoids having to set margins on
+ * elements at the root level, reducing countless resets.
+ */
+
+/**
+ * Copy lobotomized owl
+ *
+ * See: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+ */
+.Copy * + * {
+    margin-top: 1.6rem;
+}
+
+/**
+ * Copy heading follow-on fix
+ */
+.Copy h1 + h2,
+.Copy h2 + h3,
+.Copy h3 + h4,
+.Copy h4 + h5,
+.Copy h5 + h6 {
+    margin-top: 0;
+}
+
+/**
+ * Copy unordered list
+ *
+ * Set up margins and styling on lists within .Copy. Used too often outside this
+ * context to have much default styling.
+ */
+.Copy ul li {
+    list-style-type: disc;
+    margin-left: 1.8em;
+}
+
+.copy li + li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.Copy li > ul {
+    margin-top: 0.5em; /* fixes nested unordered list */
+}
+
+/**
+ * Copy ordered list
+ */
+.Copy li > ol {
+    margin-top: 1.6rem; /* fixes nested ordred list */
+}
+
+/**
+ * Copy definition list
+ */
+.Copy dd {
+    margin-top: 0;
+}
