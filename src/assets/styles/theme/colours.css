@@ -104,19 +104,19 @@
     --colour-base-background: var(--colour-white-alabaster);
     --colour-base-link-default: var(--colour-blue-base);
     --colour-base-link-hover: var(--colour-blue-hover);
-    --colour-form-field-background: var(--colour-white);
+    --colour-form-field: var(--colour-white);
 }
 
 /* Functional colour utility classes
    ========================================================================== */
 
-.u-colourBgBrandGreen { background: var(--colour-green-base); }
-.u-colourBgBrandGray { background: var(--colour-gray-tuna); }
-.u-colourBgBaseFont { background: var(--colour-gray-tuna); }
-.u-colourBgBaseBackground { background: var(--colour-white-alabaster); }
-.u-colourBgBaseLinkDefault { background: var(--colour-blue-base); }
-.u-colourBgBaseLinkHover { background: var(--colour-blue-shadow); }
-.u-colourBgFieldBackground { background: var(--colour-white); }
+.u-colourBgBrandGreen { background: var(--colour-brand-green); }
+.u-colourBgBrandGray { background: var(--colour-brand-gray); }
+.u-colourBgBaseFont { background: var(--colour-base-font); }
+.u-colourBgBaseBackground { background: var(--colour-base-background); }
+.u-colourBgBaseLinkDefault { background: var(--colour-base-link-default); }
+.u-colourBgBaseLinkHover { background: var(--colour-base-link-hover); }
+.u-colourBgField { background: var(--colour-form-field); }
 
 /**
 * Base colours
