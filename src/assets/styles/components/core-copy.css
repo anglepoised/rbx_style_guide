@@ -108,6 +108,38 @@
 }
 
 /**
+ * Table
+ */
+.Copy table {
+    width: 100%;
+}
+
+.Copy th,
+.Copy td {
+    padding: .5rem 1rem;
+    text-align: left;
+}
+
+.Copy thead {
+    background: var(--colour-base-highlight);
+    border-bottom: 1px solid var(--colour-gray-regent);
+}
+
+.Copy th,
+.Copy td {
+    text-align: left;
+}
+
+.Copy th {
+    font-weight: 500;
+}
+
+/* Zebra striping */
+.Copy tbody tr:nth-child(even) {
+    background: var(--colour-green-accent);
+}
+
+/**
  * Code
  *
  * Duplicates styles from `.Code` for use within raw copy.

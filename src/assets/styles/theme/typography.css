@@ -101,43 +101,6 @@ dt {
     font-family: var(--font-family-proportional-semibold);
 }
 
-/* Tables
-   ========================================================================== */
-
-/**
- * Plain table
- *
- * TODO: Encapsulate (look at Rejn/SUIT for examples).
- */
-table {
-    width: 100%;
-}
-
-th,
-td {
-    padding: .5rem 1rem;
-    text-align: left;
-}
-
-thead {
-    background: var(--colour-base-highlight);
-    border-bottom: 1px solid var(--colour-gray-regent);
-}
-
-th,
-td {
-    text-align: left;
-}
-
-th {
-    font-weight: 500;
-}
-
-/* Zebra striping */
-tbody tr:nth-child(even) {
-    background: var(--colour-green-accent);
-}
-
 /* Inline elements
    ========================================================================== */
 
