@@ -100,6 +100,16 @@
 }
 
 /**
+ * Extra small type
+ *
+ * For time and decimalised figures in tables.
+ */
+
+.u-textXSmall {
+    font-size: var(--font-size-x-small);
+}
+
+/**
  * Monospaced type
  *
  * For explicit monospaced type.
