@@ -63,7 +63,7 @@
 }
 
 /**
- * Heading follow-on fix
+ * Fix heading + heading spacing
  */
 .Copy h1 + h2,
 .Copy h2 + h3,
