@@ -976,19 +976,20 @@
         </h4>
         <p>
             Visible text on icon buttons is optional. If not used, button text should be enclosed between the icon
-            <code>&lt;span&gt;</code> element, rather than alongside. For example:
+            <code>&lt;span&gt;</code> element rather than alongside, and a <code>title</code> attribute should be added.
+            For example:
         </p>
         <p>
-<pre>&lt;button class="Button Button--icon" type="button"&gt;
-    &lt;span class="Icon Icon--white-alabaster-8-plus"&gt;Hidden Text&lt;/span&gt;
+<pre>&lt;button class="Button Button--icon" title="Button Action" type="button"&gt;
+    &lt;span class="Icon Icon--white-alabaster-8-plus"&gt;Button Action&lt;/span&gt;
 &lt;/button&gt;</pre>
         </p>
         <p>
             Gives:
         </p>
         <div>
-            <button class="Button Button--icon" type="button">
-                <span class="Icon Icon--white-alabaster-8-plus">Hidden Text</span>
+            <button class="Button Button--icon" title="Button Action" type="button">
+                <span class="Icon Icon--white-alabaster-8-plus">Button Action</span>
             </button>
         </div>
     </section>
