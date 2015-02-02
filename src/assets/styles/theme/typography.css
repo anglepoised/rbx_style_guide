@@ -198,58 +198,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: var(--font-size);
 }
 
-/* Paragraphs
-   ========================================================================== */
-
-/**
- * Placeholder. Nothing set explicitly on paragraphs yet.
- */
-
-/* Quotes
-   ========================================================================== */
-
-/**
- * Blockquote
- *
- * Blockquotes have a keyline with spacing added to the left.
- *
- * There are currently no specific styles for `<q>`. Rely on browser defaults.
- * All supported browsers should automatically add appropriate quotemarks.
- */
-blockquote {
-    border-left: .25em solid var(--colour-base-highlight);
-    padding-left: 1em;
-}
-
-/* Lists
-   ========================================================================== */
-
-/**
- * Unordered list
- *
- * They're used too much outside standard content for element to take much
- * styling, so encapsulated within `.Copy`.
- */
-
-/**
- * Ordered list
- */
-ol {
-    margin-left: 0;
-}
-
-ol li {
-    list-style-type: decimal;
-    margin-left: 1.8em;
-}
-
-/**
- * Definition list
- */
-dt {
-    font-family: var(--font-family-proportional-semibold);
-}
-
 /* Inline elements
    ========================================================================== */
 

@@ -74,6 +74,19 @@
 }
 
 /**
+ * Blockquote
+ *
+ * Blockquotes have a keyline with spacing added to the left.
+ *
+ * There are currently no specific styles for `<q>`. Rely on browser defaults.
+ * All supported browsers should automatically add appropriate quotemarks.
+ */
+.Copy blockquote {
+    border-left: .25em solid var(--colour-base-highlight);
+    padding-left: 1em;
+}
+
+/**
  * Unordered list
  *
  * Set up margins and styling on lists within .Copy. Used too often outside this
@@ -96,6 +109,15 @@
 /**
  * Ordered list
  */
+.Copy ol {
+    margin-left: 0;
+}
+
+.Copy ol li {
+    list-style-type: decimal;
+    margin-left: 1.8em;
+}
+
 .Copy li > ol {
     margin-top: 1.6rem; /* fixes nested ordred list */
 }
@@ -103,6 +125,10 @@
 /**
  * Definition list
  */
+.Copy dt {
+    font-family: var(--font-family-proportional-semibold);
+}
+
 .Copy dd {
     margin-top: 0;
 }
