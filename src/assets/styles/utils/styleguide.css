@@ -11,9 +11,7 @@
  * Designed to be distinct from standard headings.
  */
 .u-headingStyleguide {
-    color: var(--colour-gray-shark);
-    font-weight: 700;
-    border-bottom: 1px solid var(--colour-gray-shark);
+    color: var(--colour-gray-regent);
     width: 100%;
     text-transform: uppercase;
 }

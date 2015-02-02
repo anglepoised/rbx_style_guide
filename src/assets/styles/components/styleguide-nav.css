@@ -15,10 +15,6 @@
 }
 
 .StyleguideNav-item {
-    margin-left: 1.6em;
     list-style-type: decimal;
-}
-
-.StyleguideNav-item .StyleguideNav-item {
-    list-style-type: lower-roman;
+    margin-left: 1.6em;
 }
