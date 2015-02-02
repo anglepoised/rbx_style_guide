@@ -16,24 +16,24 @@ gulp.task('styles', function () {
 
         processors = [
             require('postcss-import')({
-            path: [
-                'src/assets/styles',
-                'node_modules'
-            ]}
-        ),
-    require('postcss-custom-media')(),
-    require('postcss-custom-properties')(),
-    require('postcss-color-function')(),
-    require('postcss-color-gray')(),
-    require('postcss-calc')(),
-    require('postcss-media-minmax')(),
-    require('postcss-font-variant')(),
-    require('autoprefixer-core')({
-        browsers: ['last 2 versions', 'IE >= 10', 'Safari >= 7.1', 'iOS >= 7.1'],
-        remove: false,
-        cascade: false
-    })
-    ];
+                path: [
+                    'src/assets/styles',
+                    'node_modules'
+                ]}
+            ),
+            require('postcss-custom-media')(),
+            require('postcss-custom-properties')(),
+            require('postcss-color-function')(),
+            require('postcss-color-gray')(),
+            require('postcss-calc')(),
+            require('postcss-media-minmax')(),
+            require('postcss-font-variant')(),
+            require('autoprefixer-core')({
+                browsers: ['last 2 versions', 'IE >= 10', 'Safari >= 7.1', 'iOS >= 7.1'],
+                remove: false,
+                cascade: false
+            })
+        ];
 
     return gulp.src(paths.src)
     .pipe(sourcemaps.init())
