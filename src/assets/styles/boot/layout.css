@@ -12,11 +12,11 @@ body {
     margin: 2em;
 }
 
-section {
-    outline: 1px solid var(--colour-gray-regent);
-    padding: 1em;
-}
-
 section + section {
     margin-top: 2em;
+}
+
+article {
+    outline: 1px solid var(--colour-gray-regent);
+    padding: 1em;
 }

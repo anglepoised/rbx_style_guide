@@ -4,8 +4,6 @@
 
 /**
  * Boot
- *
- * Basics, common to all products
  */
 @import "boot/normalize.css";
 @import "boot/base.css";
@@ -14,33 +12,24 @@
 @import "boot/responsive.css";
 
 /**
- * Everything from here on could be included as a series of separate layers or
- * components.
- */
-
-/**
  * Theme
  */
 @import "theme/colours.css";
-@import "theme/fonts.css";
 @import "theme/typography.css";
 
 /**
- * Components
- * ...or atoms.
- *
- * TODO: Decide terminology.
- * TODO: Pretty much everything.
+ * Utilities
  */
-@import "components/styleguide.css";
-@import "components/icon.css";
-@import "components/button.css";
+@import "utils/core-link.css";
+@import "utils/core-text.css";
+@import "utils/styleguide.css";
 
 /**
- * Modules
- * ...or components.
- *
- * TODO: Decide terminology.
- * TODO: Everything else.
+ * Components
  */
-
+@import "components/core-button.css";
+@import "components/core-code.css";
+@import "components/core-copy.css";
+@import "components/core-icon.css";
+@import "components/styleguide-nav.css";
+@import "components/styleguide-swatch.css";
