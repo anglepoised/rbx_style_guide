@@ -38,37 +38,6 @@ body {
     line-height: var(--line-height);
 }
 
-/**
- * Code
- *
- * TODO: Tidy this up and work out whether to hang on class or tag(s).
- */
-code {
-    background: var(--colour-gray-mystic);
-    border-radius: 3px;
-    display: inline-block;
-    padding: .15em .5em .0;
-    white-space: nowrap;
-}
-
-pre {
-    background: var(--colour-gray-mystic);
-    border-radius: 3px;
-    padding: 1em;
-}
-
-pre code {
-    background: none;
-    direction: ltr;
-    display: inline-block;
-    padding: 0;
-    text-align: left;
-}
-
-.Code-comment {
-    color: var(--colour-gray-mystic);
-}
-
 /* Headings
    ========================================================================== */
 

@@ -63,3 +63,36 @@
 .Copy dd {
     margin-top: 0;
 }
+
+/**
+ * Code
+ *
+ * Duplicates styles from `.Code` for use within raw copy.
+ */
+
+/**
+ * Inline code
+ */
+.Copy code {
+    background: var(--colour-gray-mystic);
+    border-radius: 3px;
+    display: inline-block;
+    padding: .15em .5em .0;
+}
+
+/**
+ * Block code
+ */
+.Copy pre {
+    background: var(--colour-gray-mystic);
+    border-radius: 3px;
+    padding: 1em;
+}
+
+.Copy pre code {
+    background: none;
+    direction: ltr;
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+}

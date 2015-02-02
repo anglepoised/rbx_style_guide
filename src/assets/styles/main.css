@@ -28,6 +28,7 @@
  * Components
  */
 @import "components/core-button.css";
+@import "components/core-code.css";
 @import "components/core-copy.css";
 @import "components/core-icon.css";
 @import "components/styleguide-nav.css";

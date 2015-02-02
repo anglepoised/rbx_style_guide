@@ -67,6 +67,19 @@
 }
 
 /**
+ * Code type
+ *
+ * For inline code.
+ */
+.u-textCode {
+    background: var(--colour-gray-mystic);
+    border-radius: 3px;
+    display: inline-block;
+    padding: .15em .5em .0;
+    white-space: nowrap;
+}
+
+/**
  * Label type
  *
  * For form labels.
