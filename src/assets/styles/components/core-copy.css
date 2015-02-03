@@ -1,0 +1,199 @@
+/** @define Copy; use strict */
+
+/**
+ * Copy
+ *
+ * Wrapper for blocks of copy. This approach avoids having to set margins on
+ * elements at the root level, reducing countless resets.
+ *
+ * Note that styles from some other basic modules will be duplicated in `.Copy`. These module styles should *not* be
+ * applied within `.Copy` blocks.
+ */
+
+/**
+ * Lobotomized owl
+ *
+ * See: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+ */
+.Copy * + * {
+    margin-top: 1.6rem;
+}
+
+/**
+ * Headings
+ */
+
+.Copy h1 {
+    font-family: var(--font-family-proportional-light);
+    font-size: 3.2rem;
+    font-weight: 300;
+}
+
+.Copy h2 {
+    font-family: var(--font-family-proportional-light);
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.Copy h3 {
+    font-family: var(--font-family-proportional);
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+.Copy h4 {
+    font-family: var(--font-family-proportional-semibold);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.Copy h5 {
+    font-family: var(--font-family-proportional-semibold);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.Copy h6 {
+    font-family: var(--font-family-proportional-semibold);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/**
+ * Fix heading + heading spacing
+ */
+.Copy h1 + h2,
+.Copy h2 + h3,
+.Copy h3 + h4,
+.Copy h4 + h5,
+.Copy h5 + h6 {
+    margin-top: 0;
+}
+
+/**
+ * Blockquote
+ *
+ * Blockquotes have a keyline with spacing added to the left.
+ *
+ * There are currently no specific styles for `<q>`. Rely on browser defaults.
+ * All supported browsers should automatically add appropriate quotemarks.
+ */
+.Copy blockquote {
+    border-left: .25em solid var(--colour-base-highlight);
+    padding-left: 1em;
+}
+
+/**
+ * Unordered list
+ *
+ * Set up margins and styling on lists within .Copy. Used too often outside this
+ * context to have much default styling.
+ */
+.Copy ul li {
+    list-style-type: disc;
+    margin-left: 1.8em;
+}
+
+.Copy li + li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.Copy li > ul {
+    margin-top: 0.5em; /* fixes nested unordered list */
+}
+
+/**
+ * Ordered list
+ */
+.Copy ol {
+    margin-left: 0;
+}
+
+.Copy ol li {
+    list-style-type: decimal;
+    margin-left: 1.8em;
+}
+
+.Copy li > ol {
+    margin-top: 1.6rem; /* fixes nested ordred list */
+}
+
+/**
+ * Definition list
+ */
+.Copy dt {
+    font-family: var(--font-family-proportional-semibold);
+}
+
+.Copy dd {
+    margin-top: 0;
+}
+
+/**
+ * Table
+ */
+.Copy table {
+    width: 100%;
+}
+
+.Copy th,
+.Copy td {
+    padding: .5rem 1rem;
+    text-align: left;
+}
+
+.Copy thead {
+    background: var(--colour-base-highlight);
+    border-bottom: 1px solid var(--colour-gray-regent);
+}
+
+.Copy th,
+.Copy td {
+    text-align: left;
+}
+
+.Copy th {
+    font-weight: 500;
+}
+
+/* Zebra striping */
+.Copy tbody tr:nth-child(even) {
+    background: var(--colour-green-accent);
+}
+
+/**
+ * Code
+ *
+ * Duplicates styles from `.Code` for use within raw copy.
+ */
+
+/**
+ * Inline code
+ */
+.Copy code {
+    background: var(--colour-gray-mystic);
+    border-radius: 3px;
+    display: inline-block;
+    padding: .15em .5em .0;
+}
+
+/**
+ * Block code
+ */
+.Copy pre {
+    background: var(--colour-gray-mystic);
+    border-radius: 3px;
+    padding: 1em;
+}
+
+.Copy pre code {
+    background: none;
+    direction: ltr;
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+}

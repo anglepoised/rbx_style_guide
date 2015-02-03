@@ -1,0 +1,144 @@
+/* Text utilities
+   ========================================================================== */
+
+/**
+ * Headings
+ */
+
+.u-textHeading1 {
+    font-family: var(--font-family-proportional-light);
+    font-size: 3.2rem;
+    font-weight: 300;
+}
+
+.u-textHeading2 {
+    font-family: var(--font-family-proportional-light);
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.u-textHeading3 {
+    font-family: var(--font-family-proportional);
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+.u-textHeading4 {
+    font-family: var(--font-family-proportional-semibold);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.u-textHeading5 {
+    font-family: var(--font-family-proportional-semibold);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.u-textHeading6 {
+    font-family: var(--font-family-proportional-semibold);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/**
+ * Weights
+ *
+ */
+
+.u-textLight {
+    font-family: var(--font-family-proportional-light);
+    font-weight: 300;
+}
+
+.u-textRegular {
+    font-family: var(--font-family-proportional);
+    font-weight: 400;
+}
+
+.u-textSemibold {
+    font-family: var(--font-family-proportional-semibold);
+    font-weight: 500;
+}
+
+.u-textBold {
+    font-family: var(--font-family-proportional);
+    font-weight: 700;
+}
+
+/**
+ * Default type
+ *
+ * Standard body copy sizing, in case it needs specifying explicitly.
+ */
+
+.u-textDefault {
+    font-size: var(--font-size);
+}
+
+/**
+ * Large type
+ *
+ * For more important body copy.
+ */
+
+.u-textLarge {
+    font-size: var(--font-size-large);
+}
+
+/**
+ * Small type
+ *
+ * For less important body copy.
+ */
+
+.u-textSmall {
+    font-size: var(--font-size-small);
+}
+
+/**
+ * Extra small type
+ *
+ * For time and decimalised figures in tables.
+ */
+
+.u-textXSmall {
+    font-size: var(--font-size-x-small);
+}
+
+/**
+ * Monospaced type
+ *
+ * For explicit monospaced type.
+ */
+
+.u-textMonospaced {
+    font-family: var(--font-family-monospaced);
+}
+
+/**
+ * Code type
+ *
+ * For inline code.
+ */
+.u-textCode {
+    background: var(--colour-gray-mystic);
+    border-radius: 3px;
+    display: inline-block;
+    padding: .15em .5em .0;
+    white-space: nowrap;
+}
+
+/**
+ * Label type
+ *
+ * For form labels.
+ */
+
+.u-textLabel {
+    font-size: var(--font-size-small);
+    text-transform: uppercase;
+}

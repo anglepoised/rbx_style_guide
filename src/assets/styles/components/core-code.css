@@ -1,0 +1,24 @@
+/** @define Code; use strict */
+
+/**
+ * Code
+ *
+ * Style blocks of code. `.Code` should be used on `<pre>` elements. `.Code-body` should be used on a enclosed `<code>`
+ * element.
+ *
+ */
+
+.Code {
+    background: var(--colour-gray-mystic);
+    border-radius: 3px;
+    padding: 1em;
+}
+
+.Code-body {
+    background: none;
+    direction: ltr;
+    display: inline-block;
+    padding: 0;
+    text-align: left;
+    white-space: pre-wrap;
+}
