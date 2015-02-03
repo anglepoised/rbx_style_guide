@@ -2,20 +2,24 @@
 
 [![Circle CI](https://circleci.com/gh/rockabox/rbx_style_guide.svg?style=shield&circle-token=3025f8d21ea5b4518eff75aef1ce8c128097d0ec)](https://circleci.com/gh/rockabox/rbx_style_guide)
 
-This project is a static website, compiled by [Gulp](http://gulpjs.com/).
-
-TODO: Revise "This project is.." section after Angular integration.
+This project is an angular website, compiled by [Gulp](http://gulpjs.com/).
 
 ## Dependencies
 
+* [Git](http://git-scm.com)
 * [Node.js](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)
 * [Gulp](http://gulpjs.com/): `npm install -g gulp`.
+* [Bower](http://bower.io): `npm install -g bower`.
+* [Selenium Server](https://www.npmjs.com/package/selenium-standalone): `npm install -g selenium-standalone`.
+* [Protractor](https://www.npmjs.com/package/protractor): `npm install -g protractor`.
 
 ## Getting started
 
+* Install git: (http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * Checkout the repo: `git clone git@github.com:rockabox/rbx_style_guide && cd rbx_style_guide`
 * Install project dependencies: `npm install`.
-* Run `gulp watch`.
+* Install bower packages: `bower install`.
+* Run `gulp watch`. (For production environment run `gulp watch --production`)
 * Browse to: <http://localhost:3000/>
 
 ## Tests
@@ -24,3 +28,10 @@ TODO: Revise "This project is.." section after Angular integration.
 * [colorguard](https://github.com/SlexAxton/css-colorguard): warns when colours in CSS are too similar to ones that already exist.
 * [PostCSS BEM Linter](https://github.com/necolas/postcss-bem-linter/): tests CSS for conformance against SuitCSS/BEM conventions. Currently using "strict" mode.
 * [HTMLHint](https://github.com/yaniswang/HTMLHint/): lints and validates HTML. Currently using default ruleset.
+
+## Running functional tests with Protractor
+
+* Make sure you have installed a Selenium Server. Follow the instructions at:
+  https://www.npmjs.com/package/selenium-standalone
+* Make sure you point to the Selenium .jar in the protractor config file (protractor-base.conf.js)
+* Run `gulp func-tests`

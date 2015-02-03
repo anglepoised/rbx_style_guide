@@ -1,5 +1,6 @@
 // dependencies
-var gulp = require('gulp');
+var gulp = require('gulp'),
+    args = require('yargs').argv;
 // global variables
 iconColoursList = [
             {name: 'black', code: '#000000'},
@@ -11,6 +12,10 @@ iconColoursList = [
             {name: 'orange-base', code: '#ed943c'},
             {name: 'red-base', code: '#c24a4a'}
           ];
+isProduction = args.production;
+protractorConfigFile = 'protractor-func.conf.js';
+protractorURL = 'http://localhost:';
+protractorPort = '3000';
 
 // load specific tasks
 require('require-dir')('tasks');
@@ -22,6 +27,7 @@ gulp.task('default', ['clean'], function (cb) {
 
     runSequence([
         'scripts:lint',
+        'scripts:angular',
         'styles:lint'
     ], [
         'html',
@@ -32,6 +38,6 @@ gulp.task('default', ['clean'], function (cb) {
         'spriting',
         'cleandist'
     ],
-    'html:lint', cb);
+    ['html:lint'], cb);
 
 });

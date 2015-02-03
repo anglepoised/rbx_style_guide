@@ -2,8 +2,7 @@ var gulp = require ('gulp');
 
 gulp.task('styles', function () {
 
-    var args = require('yargs').argv,
-        gulpIf = require('gulp-if'),
+    var gulpIf = require('gulp-if'),
         minifyCSS = require('gulp-minify-css'),
         postcss = require('gulp-postcss'),
         sourcemaps = require('gulp-sourcemaps'),
@@ -11,8 +10,6 @@ gulp.task('styles', function () {
             src: 'src/assets/styles/*.css',
             dest: 'dist/assets/styles'
         },
-
-        isProduction = args.type === 'production',
 
         processors = [
             require('postcss-import')({
