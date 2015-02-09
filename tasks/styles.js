@@ -25,7 +25,6 @@ gulp.task('styles', function () {
             require('postcss-media-minmax')(),
             require('postcss-font-variant')(),
             require('autoprefixer-core')({
-                browsers: ['last 2 versions', 'IE >= 10', 'Safari >= 7.1', 'iOS >= 7.1'],
                 remove: false,
                 cascade: false
             })
