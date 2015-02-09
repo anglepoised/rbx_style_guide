@@ -14,8 +14,7 @@ gulp.task('styles', function () {
         processors = [
             require('postcss-import')({
                 path: [
-                    'src/assets/styles',
-                    'node_modules'
+                    'src/assets/styles'
                 ]}
             ),
             require('postcss-custom-media')(),
