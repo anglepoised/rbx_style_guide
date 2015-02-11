@@ -177,8 +177,7 @@
 .Copy code {
     background: var(--colour-gray-mystic);
     border-radius: 3px;
-    display: inline-block;
-    padding: .15em .5em .0;
+    padding: 4px 2px 3px;
 }
 
 /**
