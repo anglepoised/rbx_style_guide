@@ -12,6 +12,7 @@
     "del": "~1.1.1",
     "extend": "~2.0.0",
     "gulp": "~3.8.10",
+    "gulp-awspublish": "~1.0.1",
     "gulp-cached": "~1.0.2",
     "gulp-changed": "~1.1.1",
     "gulp-cheerio": "~0.6.2",
@@ -44,6 +45,7 @@
     "postcss-font-variant": "~1.1.0",
     "postcss-import": "~5.0.0",
     "postcss-media-minmax": "~1.1.0",
+    "read-yaml": "~1.0.0",
     "require-dir": "~0.1.0",
     "run-sequence": "~1.0.2",
     "yargs": "~2.3.0"
