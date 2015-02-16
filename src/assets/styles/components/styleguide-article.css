@@ -1,0 +1,14 @@
+/** @define Article; use strict */
+
+/**
+ * Article
+ */
+
+.Article {
+    outline: 1px solid var(--colour-gray-regent);
+    padding: 1em;
+}
+
+.Article + .Article {
+    margin-top: 1em;
+}
