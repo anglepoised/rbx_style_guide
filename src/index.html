@@ -96,6 +96,9 @@
                         <a href="#copy">Copy</a>
                     </li>
                     <li class="StyleguideNav-item">
+                        <a href="#footer">Footer</a>
+                    </li>
+                    <li class="StyleguideNav-item">
                         <a href="#icon">Icon</a>
                     </li>
                 </ol>
@@ -1039,9 +1042,59 @@
                     </table>
                 </div>
             </article>
+            <article class="Article" id="footer">
+                <h3 class="u-textHeadingStyleguide">
+                    Footer
+                </h3>
+                <div class="Copy">
+                    <p>
+                        The Footer component appears at the bottom of all pages.
+                    </p>
+<pre><code>&lt;footer class=&quot;Footer&quot; role=&quot;contentinfo&quot;&gt;
+    &lt;ul class=&quot;Footer-items&quot;&gt;
+        &lt;li class=&quot;Footer-item&quot;&gt;
+            &lt;a class=&quot;Footer-itemInner&quot; href=&quot;#&quot;&gt;Footer item&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;Footer-item&quot;&gt;
+            &lt;a class=&quot;Footer-itemInner&quot; href=&quot;#&quot;&gt;Footer item&lt;/a&gt;
+        &lt;/li&gt;
+        ...
+    &lt;/ul&gt;
+    &lt;div class=&quot;Footer-Copyright&quot;&gt;
+        &lt;p&gt;Copyright notice&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+                </div>
+                <div>
+                    <p>
+                        Which renders as:
+                    </p>
+                </div>
+                <div>
+                    <footer class="Footer" role="contentinfo">
+                        <ul class="Footer-items">
+                            <li class="Footer-item">
+                                <a class="Footer-itemInner" href="#">Footer item</a>
                             </li>
+                            <li class="Footer-item">
+                                <a class="Footer-itemInner" href="#">Footer item</a>
                             </li>
+                            <li class="Footer-item">
+                                <a class="Footer-itemInner" href="#">Footer item</a>
                             </li>
+                            <li class="Footer-item">
+                                <a class="Footer-itemInner" href="#">Footer item</a>
+                            </li>
+                            <li class="Footer-item">
+                                <a class="Footer-itemInner" href="#">Footer item</a>
+                            </li>
+                        </ul>
+                        <div class="Footer-Copyright">
+                            <p>Copyright notice</p>
+                        </div>
+                    </footer>
+                </div>
+            </article>
             <article class="Article Copy" id="icon">
                 <h3 class="u-textHeadingStyleguide">Icon</h3>
                 <p>
@@ -1055,6 +1108,11 @@
             </article>
         </section>
     </main>
+    <footer class="Footer" role="contentinfo">
+        <div class="Footer-Copyright">
+            <p>Copyright © 2014 Rockabox Limited</p>
+        </div>
+    </footer>
     <script src="/assets/scripts/main.js"></script>
 </body>
 </html>
