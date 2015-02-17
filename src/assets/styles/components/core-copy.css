@@ -6,8 +6,8 @@
  * Wrapper for blocks of copy. This approach avoids having to set margins on
  * elements at the root level, reducing countless resets.
  *
- * Note that styles from some other basic modules will be duplicated in `.Copy`. These module styles should *not* be
- * applied within `.Copy` blocks.
+ * Note that styles from some other basic components will be duplicated in `.Copy`. These component styles should *not*
+ be applied within `.Copy` blocks.
  */
 
 /**
