@@ -607,15 +607,17 @@
                     Standard button styles can be applied to <code>&lt;button&gt;</code>, <code>&lt;a&gt;</code> and
                     <code>&lt;input type="submit"&gt;</code> elements.
                 </p>
-<pre><code>&lt;button class="Button" type="button"&gt;
+<div hljs language="html">
+<button class="Button" type="button">
     Button
-&lt;/button&gt;
+</button>
 
-&lt;a class="Button" href="#"&gt;
+<a class="Button" href="#">
     Link
-&lt;/a&gt;
+</a>
 
-&lt;input class="Button" type="submit" value="Submit"&gt;</code></pre>
+<input class="Button" type="submit" value="Submit">
+</div>
                 <div>
                     <button class="Button" type="button">
                         Button
@@ -632,9 +634,11 @@
                 <p>
                     Combinations of states can be applied by stacking class modifiers. For example:
                 </p>
-<pre><code>&lt;button class="Button Button--large Button--orange is-disabled" disabled&gt;
+<div hljs language="html">
+<button class="Button Button--large Button--orange is-disabled" disabled>
     Large Orange Disabled Button
-&lt;/button&gt;</code></pre>
+</button>
+</div>
                 <p>
                     Gives:
                 </p>
@@ -667,9 +671,11 @@
                     For <code>&lt;a&gt;</code> elements, you should also remove the <code>href</code> attribute and prevent
                     JavaScript event handlers from firing.
                 </p>
-<pre><code>&lt;button class="Button is-disabled" disabled&gt;
+<div hljs language="html">
+<button class="Button is-disabled" disabled>
     Disabled Button
-&lt;/button&gt;</code></pre>
+</button>
+</div>
                 <div>
                     <button class="Button is-disabled" type="button" disabled>
                         Disabled Button
@@ -681,9 +687,11 @@
                 <p>
                     The <code>.is-pressed</code> class is used here to demonstrate this state, but should never be used.
                 </p>
-<pre><code>&lt;button class="Button is-pressed" type="button"&gt;
+<div hljs language="html">
+<button class="Button is-pressed" type="button">
     Pressed Button
-&lt;/button&gt;</code></pre>
+</button>
+</div>
                 <div>
                     <button class="Button is-pressed" type="button">
                         Pressed Button
@@ -698,9 +706,11 @@
                 <p>
                     Large buttons should be used for primary save actions.
                 </p>
-<pre><code>&lt;button class="Button Button--large" type="button"&gt;
+<div hljs language="html">
+<button class="Button Button--large" type="button">
     Large Button
-&lt;/button&gt;</code></pre>
+</button>
+</div>
                 <div>
                     <button class="Button Button--large" type="button">
                         Large Button
@@ -718,9 +728,11 @@
                 <p>
                     Green buttons indicate a successful or positive action.
                 </p>
-<pre><code>&lt;button class="Button Button--green" type="button"&gt;
+<div hljs language="html">
+<button class="Button Button--green" type="button">
     Green Button
-&lt;/button&gt;</code></pre>
+</button>
+</div>
                 <div>
                     <button class="Button Button--green" type="button">
                         Green Button
@@ -732,9 +744,11 @@
                 <p>
                     Orange buttons indicate that caution should be taken with this action.
                 </p>
-<pre><code>&lt;button class="Button Button--orange" type="button"&gt;
+<div hljs language="html">
+<button class="Button Button--orange" type="button">
     Orange Button
-&lt;/button&gt;</code></pre>
+</button>
+</div>
                 <div>
                     <button class="Button Button--orange" type="button">
                         Orange Button
@@ -746,9 +760,11 @@
                 <p>
                     Red buttons indicate a dangerous or potentially negative action.
                 </p>
-<pre><code>&lt;button class="Button Button--red" type="button"&gt;
+<div hljs language="html">
+<button class="Button Button--red" type="button">
     Red Button
-&lt;/button&gt;</code></pre>
+</button>
+</div>
                 <div>
                     <button class="Button Button--red" type="button">
                         Red Button
@@ -765,10 +781,12 @@
                     Icons can be used to provide additional context for buttons. They and accept the same class modifiers as
                     standard buttons. For example:
                 </p>
-<pre><code>&lt;button class="Button Button--icon Button--large Button--orange is-disabled" disabled type="button"&gt;
-    &lt;span class="Icon Icon--white-alabaster-8-plus"&gt;&lt;/span&gt;
+<div hljs language="html">
+<button class="Button Button--icon Button--large Button--orange is-disabled" disabled type="button">
+    <span class="Icon Icon--white-alabaster-8-plus"></span>
     Large Orange Disabled Icon Button
-&lt;/button&gt;</code></pre>
+</button>
+</div>
                 <p>Gives:</p>
                 <div>
                     <button class="Button Button--icon Button--large Button--orange is-disabled" disabled type="button">
@@ -810,9 +828,11 @@
                     Visible text on icon buttons is optional. If not used, button text should be enclosed between the icon
                     <code>&lt;span&gt;</code> element, rather than alongside. For example:
                 </p>
-<pre><code>&lt;button class="Button Button--icon" type="button"&gt;
-    &lt;span class="Icon Icon--white-alabaster-8-plus"&gt;Hidden Text&lt;/span&gt;
-&lt;/button&gt;</code></pre>
+<div hljs language="html">
+<button class="Button Button--icon" type="button">
+    <span class="Icon Icon--white-alabaster-8-plus">Hidden Text</span>
+</button>
+</div>
                 <p>
                     Gives:
                 </p>
@@ -1051,20 +1071,22 @@
                     <p>
                         The Footer component appears at the bottom of all pages.
                     </p>
-<pre><code>&lt;footer class=&quot;Footer&quot; role=&quot;contentinfo&quot;&gt;
-    &lt;ul class=&quot;Footer-items&quot;&gt;
-        &lt;li class=&quot;Footer-item&quot;&gt;
-            &lt;a class=&quot;Footer-itemInner&quot; href=&quot;#&quot;&gt;Footer item&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class=&quot;Footer-item&quot;&gt;
-            &lt;a class=&quot;Footer-itemInner&quot; href=&quot;#&quot;&gt;Footer item&lt;/a&gt;
-        &lt;/li&gt;
+<div hljs language="html">
+<footer class="Footer" role="contentinfo">
+    <ul class="Footer-items">
+        <li class="Footer-item">
+            <a class="Footer-itemInner" href="#">Footer item</a>
+        </li>
+        <li class="Footer-item">
+            <a class="Footer-itemInner" href="#">Footer item</a>
+        </li>
         ...
-    &lt;/ul&gt;
-    &lt;div class=&quot;Footer-Copyright&quot;&gt;
-        &lt;p&gt;Copyright notice&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/footer&gt;</code></pre>
+    </ul>
+    <div class="Footer-Copyright">
+        <p>Copyright notice</p>
+    </div>
+</footer>
+</div>
                 </div>
                 <div>
                     <p>
@@ -1102,7 +1124,9 @@
                     The icon class is used to display single-colour SVG icons as CSS backgrounds. Modifier classes are used
                     to select different icons, sizes and colours.
                 </p>
-<pre><code>&lt;span class="Icon Icon--green-base-175-logo-rockabox"&gt;&lt;/span&gt;</code></pre>
+<div hljs language="html">
+<span class="Icon Icon--green-base-175-logo-rockabox"></span>
+</div>
                 <div>
                     <span class="Icon Icon--green-base-175-logo-rockabox"></span>
                 </div>
