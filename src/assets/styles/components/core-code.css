@@ -11,14 +11,14 @@
 .Code {
     background: var(--colour-gray-mystic);
     border-radius: 3px;
-    padding: 1em;
+    margin: 1em 0;
+    padding: 1em 1em 0 1em;
 }
 
-.Code-body {
+.Code code {
     background: none;
     direction: ltr;
     display: inline-block;
     padding: 0;
     text-align: left;
-    white-space: pre-wrap;
 }

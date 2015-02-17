@@ -186,7 +186,8 @@
 .Copy pre {
     background: var(--colour-gray-mystic);
     border-radius: 3px;
-    padding: 1em;
+    margin: 1em 0;
+    padding: 1em 1em 0 1em;
 }
 
 .Copy pre code {
