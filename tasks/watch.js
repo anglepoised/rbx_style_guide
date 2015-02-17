@@ -3,6 +3,7 @@ var gulp = require ('gulp');
 gulp.task('watch', ['default'], function () {
 
     var browserSync = require('browser-sync'),
+        compression = require('compression'),
         reload = browserSync.reload,
         paths = {
             dist: 'dist',
@@ -21,7 +22,8 @@ gulp.task('watch', ['default'], function () {
     browserSync({
         open: false,
         server: {
-            baseDir: paths.dist
+            baseDir: paths.dist,
+            middleware: compression()
         }
     });
 
