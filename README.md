@@ -35,3 +35,7 @@ This project is an angular website, compiled by [Gulp](http://gulpjs.com/).
   https://www.npmjs.com/package/selenium-standalone
 * Make sure you point to the Selenium .jar in the protractor config file (protractor-base.conf.js)
 * Run `gulp func-tests`
+
+## Deployment
+
+To push to Amazon S3, run `gulp` to build the project, then run `gulp deploy`.

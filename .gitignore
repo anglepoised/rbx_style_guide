@@ -1,6 +1,7 @@
 # Logs
 logs
 *.log
+.awspublish*
 
 # Runtime data
 pids
@@ -32,3 +33,6 @@ dist
 
 # Bower directory
 /vendor/
+
+# Environment
+/env.yml
