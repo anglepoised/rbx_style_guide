@@ -4,14 +4,6 @@
  * How things sit.
  */
 
-
-/**
- * TODO: Temporary spacing to make Rob happy. Remove when building furniture.
- */
-body {
-    margin: 2em;
-}
-
 section + section {
     margin-top: 2em;
 }

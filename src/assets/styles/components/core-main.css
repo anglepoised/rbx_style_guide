@@ -1,0 +1,12 @@
+/** @define Main; use strict */
+
+/**
+ * The `.Main` class is generally attached to the `<main>` element.
+ * Used to create Stick Footer in conjunction with `.Site`.
+ * See: http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+ */
+
+.Main {
+    flex: 1;
+    margin: 2em;
+}

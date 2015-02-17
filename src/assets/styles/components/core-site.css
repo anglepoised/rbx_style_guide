@@ -1,0 +1,13 @@
+/** @define Site; use strict */
+
+/**
+ * The `.Site` class is generally attached to the `<body>` element.
+ * Used to create Stick Footer in conjunction with `.Main`.
+ * See: http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+ */
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}

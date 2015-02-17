@@ -1,0 +1,72 @@
+/** @define Footer; use strict */
+
+/**
+ * The `.Footer` module can be used across all products. It consists of an optional copyright line and any number of
+ * links. Links are linearised on small screens. `.Main` and `.Site` modules are necessary to fix the footer to the
+ * bottom of the viewport.
+ */
+
+:root {
+    --Footer-background: var(--colour-gray-tuna);
+    --Footer-color: var(--colour-gray-regent);
+    --Footer-color-hover: var(--colour-white-alabaster);
+    --Footer-font-size: var(--font-size-small);
+}
+
+/**
+ * 1. Reverse direction to allow correct source order
+ * 2. Reset line-height to control spacing
+ * 3. Add border to all but last item
+ * 4. Force copyright to left when no links present
+ */
+
+.Footer {
+    background: var(--Footer-background);
+    display: block;
+    font-size: var(--Footer-font-size);
+    padding: 0.571428571em 0.714285714em;
+}
+
+.Footer-itemInner {
+    color: var(--Footer-color);
+    text-decoration: none;
+}
+
+.Footer-itemInner:hover,
+.Footer-itemInner:focus {
+    color: var(--Footer-color-hover);
+}
+
+.Footer-Copyright {
+    color: var(--Footer-color);
+}
+
+@media (--md-viewport) {
+
+    .Footer {
+        display: flex;
+        flex-direction: row-reverse; /* 1 */
+        line-height: 1; /* 2 */
+        padding: 0.571428571em 0;
+    }
+
+    .Footer-items {
+        align-self: flex-end;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Footer-item:not(:last-child) {
+        border-right: 1px solid var(--Footer-color); /* 3 */
+    }
+
+    .Footer-itemInner {
+        padding: 0 0.714285714em;
+    }
+
+    .Footer-Copyright {
+        margin: 0 auto 0 0; /* 4 */
+        padding: 0 0.714285714em;
+    }
+
+}
