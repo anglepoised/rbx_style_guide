@@ -57,7 +57,7 @@
     }
 
     .Footer-item:not(:last-child) {
-        border-right: 1px solid var(--Footer-color); /* 2 */
+        border-right: 1px solid var(--Footer-color); /* 3 */
     }
 
     .Footer-itemInner {
