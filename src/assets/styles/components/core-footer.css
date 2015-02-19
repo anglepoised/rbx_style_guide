@@ -30,6 +30,7 @@
 
 .Footer-itemInner {
     color: var(--Footer-color);
+    cursor: pointer;
     text-decoration: none;
 }
 
