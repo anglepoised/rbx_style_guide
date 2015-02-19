@@ -11,6 +11,7 @@
     --Footer-color: var(--colour-gray-regent);
     --Footer-color-hover: var(--colour-white-alabaster);
     --Footer-font-size: var(--font-size-small);
+    --Footer-padding-vertical: var(0.642857143em);
 }
 
 /**
@@ -24,11 +25,12 @@
     background: var(--Footer-background);
     display: block;
     font-size: var(--Footer-font-size);
-    padding: 0.571428571em 0.714285714em;
+    padding: var(--Footer-padding-vertical) 0.714285714em;
 }
 
 .Footer-itemInner {
     color: var(--Footer-color);
+    cursor: pointer;
     text-decoration: none;
 }
 
@@ -47,7 +49,7 @@
         display: flex;
         flex-direction: row-reverse; /* 1 */
         line-height: 1; /* 2 */
-        padding: 0.571428571em 0;
+        padding: var(--Footer-padding-vertical) 0;
     }
 
     .Footer-items {
