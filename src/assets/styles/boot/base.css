@@ -52,6 +52,11 @@ ul {
   padding: 0;
 }
 
+th {
+    font-weight: normal;
+    text-align: left;
+}
+
 /**
  * Suppress the focus outline on links that cannot be accessed via keyboard.
  * This prevents an unwanted focus outline from appearing around elements that
