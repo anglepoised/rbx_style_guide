@@ -1,7 +1,8 @@
 /** @define Warning; use strict */
 
 /**
- * The `.Warning` component...
+ * The `.Warning` component displays a serious of warnings in a list structure. Each message consists of a simple text
+ message with a contextual link, followed by a single action.
  */
 
 :root {
