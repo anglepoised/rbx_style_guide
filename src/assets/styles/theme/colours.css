@@ -20,6 +20,12 @@
     --colour-gray-regent: rgba(141, 150, 163, 1.0);
 }
 
+.u-colourBgGrayShark { background: var(--colour-gray-shark); }
+.u-colourBgGrayTuna { background: var(--colour-gray-tuna); }
+.u-colourBgGrayTrout { background: var(--colour-gray-trout); }
+.u-colourBgGrayRegent { background: var(--colour-gray-regent); }
+
+
 /**
  * Light neutral palette
  */
@@ -31,6 +37,12 @@
     --colour-white: rgba(255, 255, 255, 1.0);
 }
 
+.u-colourBgGrayGhost { background: var(--colour-gray-ghost); }
+.u-colourBgGrayMystic { background: var(--colour-gray-mystic); }
+.u-colourBgWhiteCatskill { background: var(--colour-white-catskill); }
+.u-colourBgWhiteAlabaster { background: var(--colour-white-alabaster); }
+.u-colourBgWhite { background: var(--colour-white); }
+
 /**
  * Green palette
  */
@@ -40,6 +52,11 @@
     --colour-green-hover: rgba(48, 172, 123, 1.0);
     --colour-green-shadow: rgba(44, 147, 106, 1.0);
 }
+
+.u-colourBgGreenAccent { background: var(--colour-green-accent); }
+.u-colourBgGreenBase { background: var(--colour-green-base); }
+.u-colourBgGreenHover { background: var(--colour-green-hover); }
+.u-colourBgGreenShadow { background: var(--colour-green-shadow); }
 
 /**
  * Blue palette
@@ -51,6 +68,11 @@
     --colour-blue-shadow: rgba(44, 96, 158, 1.0);
 }
 
+.u-colourBgBlueAccent { background: var(--colour-blue-accent); }
+.u-colourBgBlueBase { background: var(--colour-blue-base); }
+.u-colourBgBlueHover { background: var(--colour-blue-hover); }
+.u-colourBgBlueShadow { background: var(--colour-blue-shadow); }
+
 /**
  * Orange palette
  */
@@ -60,6 +82,11 @@
     --colour-orange-hover: rgba(211, 130, 50, 1.0);
     --colour-orange-shadow: rgba(181, 111, 42, 1.0);
 }
+
+.u-colourBgOrangeAccent { background: var(--colour-orange-accent); }
+.u-colourBgOrangeBase { background: var(--colour-orange-base); }
+.u-colourBgOrangeHover { background: var(--colour-orange-hover); }
+.u-colourBgOrangeShadow { background: var(--colour-orange-shadow); }
 
 /**
  * Red palette
@@ -71,30 +98,6 @@
     --colour-red-shadow: rgba(158, 54, 54, 1.0);
 }
 
-/* Descriptive background colour utility classes
-   ========================================================================== */
-
-.u-colourBgGrayShark { background: var(--colour-gray-shark); }
-.u-colourBgGrayTuna { background: var(--colour-gray-tuna); }
-.u-colourBgGrayTrout { background: var(--colour-gray-trout); }
-.u-colourBgGrayRegent { background: var(--colour-gray-regent); }
-.u-colourBgGrayGhost { background: var(--colour-gray-ghost); }
-.u-colourBgGrayMystic { background: var(--colour-gray-mystic); }
-.u-colourBgWhiteCatskill { background: var(--colour-white-catskill); }
-.u-colourBgWhiteAlabaster { background: var(--colour-white-alabaster); }
-.u-colourBgWhite { background: var(--colour-white); }
-.u-colourBgGreenAccent { background: var(--colour-green-accent); }
-.u-colourBgGreenBase { background: var(--colour-green-base); }
-.u-colourBgGreenHover { background: var(--colour-green-hover); }
-.u-colourBgGreenShadow { background: var(--colour-green-shadow); }
-.u-colourBgBlueAccent { background: var(--colour-blue-accent); }
-.u-colourBgBlueBase { background: var(--colour-blue-base); }
-.u-colourBgBlueHover { background: var(--colour-blue-hover); }
-.u-colourBgBlueShadow { background: var(--colour-blue-shadow); }
-.u-colourBgOrangeAccent { background: var(--colour-orange-accent); }
-.u-colourBgOrangeBase { background: var(--colour-orange-base); }
-.u-colourBgOrangeHover { background: var(--colour-orange-hover); }
-.u-colourBgOrangeShadow { background: var(--colour-orange-shadow); }
 .u-colourBgRedAccent { background: var(--colour-red-accent); }
 .u-colourBgRedBase { background: var(--colour-red-base); }
 .u-colourBgRedHover { background: var(--colour-red-hover); }
