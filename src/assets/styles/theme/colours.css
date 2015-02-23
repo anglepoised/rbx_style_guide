@@ -116,7 +116,6 @@
     --colour-base-link-default: var(--colour-blue-base);
     --colour-base-link-hover: var(--colour-blue-hover);
     --colour-base-highlight: var(--colour-green-base);
-    --colour-form-field: var(--colour-white);
 }
 
 .u-colourBgBaseFont { background: var(--colour-base-font); }
@@ -124,7 +123,15 @@
 .u-colourBgBaseLinkDefault { background: var(--colour-base-link-default); }
 .u-colourBgBaseLinkHover { background: var(--colour-base-link-hover); }
 .u-colourBgBaseHighlight { background: var(--colour-base-highlight); }
-.u-colourBgFormField { background: var(--colour-form-field); }
+
+/**
+ * Form
+ */
+:root {
+    --colour-form-field-background: var(--colour-white);
+}
+
+.u-colourBgFormFieldBackground { background: var(--colour-form-field-background); }
 
 /**
  * Brand
