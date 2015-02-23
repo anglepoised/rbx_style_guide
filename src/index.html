@@ -140,16 +140,36 @@
                 Theme
             </h2>
             <article class="Article" id="colours">
-                <h3 class="u-headingStyleguide">
-                    Colours
-                </h3>
+                <div class="Copy">
+                    <h3 class="u-headingStyleguide">
+                        Colours
+                    </h3>
+                    <p>
+                        Two categories of colours are used. Functional colours specify the basic colour palette.
+                        Descriptive colours are colours used in a specific context.
+                    </p>
+                    <p>
+                        A functional colour must <strong>always</strong> alias a descriptive colour. For example, the
+                        <code>brand-green</code> functional colour aliases the <code>green-base</code> descriptive
+                        colour.
+                    </p>
+                </div>
+<div hljs language="css">
+:root {
+    --colour-brand-green: var(--colour-green-base);
+}
+</div>
+                <div class="Copy">
+                    <p>
+                        If a functional colour is used in only a single module, it should be defined in that component's
+                        variables block. If a functional colour is used for more than one component, it should be
+                        defined globally in <code>colours.css</code>.
+                    </p>
+                </div>
                 <div class="Copy" id="descriptive-colours">
                     <h4 class="u-headingStyleguide">
                         Descriptive Colours
                     </h4>
-                    <p>
-                        Basic colours. These should not be referenced directly. Use functional colours instead.
-                    </p>
                     <h5 class="u-headingStyleguide">
                         Neutral palette
                     </h5>
@@ -293,9 +313,9 @@
                     <h4 class="u-headingStyleguide">
                         Functional colours
                     </h4>
-                    <p>
-                        Descriptive colours used in a particular context.
-                    </p>
+                    <h5 class="u-headingStyleguide">
+                        Global
+                    </h5>
                     <ul>
                         <li class="Swatch">
                             <span class="Swatch-colour u-colourBgBrandGreen"></span>
