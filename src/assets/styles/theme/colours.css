@@ -111,8 +111,6 @@
  * Global and general
  */
 :root {
-    --colour-brand-green: var(--colour-green-base);
-    --colour-brand-gray: var(--colour-gray-tuna);
     --colour-base-font: var(--colour-gray-tuna);
     --colour-base-background: var(--colour-white-catskill);
     --colour-base-link-default: var(--colour-blue-base);
@@ -121,14 +119,23 @@
     --colour-form-field: var(--colour-white);
 }
 
-.u-colourBgBrandGreen { background: var(--colour-brand-green); }
-.u-colourBgBrandGray { background: var(--colour-brand-gray); }
 .u-colourBgBaseFont { background: var(--colour-base-font); }
 .u-colourBgBaseBackground { background: var(--colour-base-background); }
 .u-colourBgBaseLinkDefault { background: var(--colour-base-link-default); }
 .u-colourBgBaseLinkHover { background: var(--colour-base-link-hover); }
 .u-colourBgBaseHighlight { background: var(--colour-base-highlight); }
 .u-colourBgFormField { background: var(--colour-form-field); }
+
+/**
+ * Brand
+ */
+:root {
+    --colour-brand-green: var(--colour-green-base);
+    --colour-brand-gray: var(--colour-gray-tuna);
+}
+
+.u-colourBgBrandGreen { background: var(--colour-brand-green); }
+.u-colourBgBrandGray { background: var(--colour-brand-gray); }
 
 /**
  * Actions
