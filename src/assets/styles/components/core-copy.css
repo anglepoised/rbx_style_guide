@@ -175,7 +175,7 @@
  * Inline code
  */
 .Copy code {
-    background: var(--colour-gray-mystic);
+    background: var(--colour-code-background);
     border-radius: 3px;
     padding: 4px 2px 3px;
 }

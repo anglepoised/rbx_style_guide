@@ -116,6 +116,7 @@
     --colour-base-link-default: var(--colour-blue-base);
     --colour-base-link-hover: var(--colour-blue-hover);
     --colour-base-highlight: var(--colour-green-base);
+    --colour-code-background: var(--colour-gray-mystic);
 }
 
 .u-colourBgBaseFont { background: var(--colour-base-font); }
@@ -123,6 +124,7 @@
 .u-colourBgBaseLinkDefault { background: var(--colour-base-link-default); }
 .u-colourBgBaseLinkHover { background: var(--colour-base-link-hover); }
 .u-colourBgBaseHighlight { background: var(--colour-base-highlight); }
+.u-colourBgCodeBackground { background: var(--colour-code-background); }
 
 /**
  * Form
