@@ -11,13 +11,19 @@
  */
 
 /**
- * Neutral palette
+ * Dark neutral palette
  */
 :root {
     --colour-gray-shark: rgba(29, 31, 35, 1.0);
     --colour-gray-tuna: rgba(53, 53, 58, 1.0);
     --colour-gray-trout: rgba(77, 81, 91, 1.0);
     --colour-gray-regent: rgba(141, 150, 163, 1.0);
+}
+
+/**
+ * Light neutral palette
+ */
+:root {
     --colour-gray-ghost: rgba(196, 204, 215, 1.0);
     --colour-gray-mystic: rgba(220, 227, 235, 1.0);
     --colour-white-catskill: rgba(241, 244, 248, 1.0);
