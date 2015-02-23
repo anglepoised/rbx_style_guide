@@ -2,6 +2,8 @@
  * Colours
  *
  * Defining colours.
+ * Names from: http://chir.ag/projects/name-that-color/
+ * Hex to RGBA converter: http://hex2rgba.devoth.com/
  */
 
 /**
@@ -10,8 +12,6 @@
 
 /**
  * Neutral palette
- * Names from: http://chir.ag/projects/name-that-color/
- * Hex to RGBA converter: http://hex2rgba.devoth.com/
  */
 :root {
     --colour-gray-shark: rgba(29, 31, 35, 1.0);
