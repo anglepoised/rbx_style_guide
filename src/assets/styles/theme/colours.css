@@ -149,18 +149,18 @@
  * Campaign States
  */
 :root {
-    --colour-campaignstate-inbuild: var(--colour-gray-regent);
-    --colour-campaignstate-ready: var(--colour-blue-base);
-    --colour-campaignstate-live: var(--colour-green-base);
-    --colour-campaignstate-warning: var(--colour-orange-base);
-    --colour-campaignstate-ended: var(--colour-red-base);
+    --colour-status-inbuild: var(--colour-gray-regent);
+    --colour-status-ready: var(--colour-blue-base);
+    --colour-status-live: var(--colour-green-base);
+    --colour-status-warning: var(--colour-orange-base);
+    --colour-status-ended: var(--colour-red-base);
 }
 
-.u-colourBgCampaignStateInBuild { background: var(--colour-campaignstate-inbuild); }
-.u-colourBgCampaignStateReady { background: var(--colour-campaignstate-ready); }
-.u-colourBgCampaignStateLive { background: var(--colour-campaignstate-live); }
-.u-colourBgCampaignStateWarning { background: var(--colour-campaignstate-warning); }
-.u-colourBgCampaignStateEnded { background: var(--colour-campaignstate-ended); }
+.u-colourBgStatusInBuild { background: var(--colour-status-inbuild); }
+.u-colourBgStatusReady { background: var(--colour-status-ready); }
+.u-colourBgStatusLive { background: var(--colour-status-live); }
+.u-colourBgStatusWarning { background: var(--colour-status-warning); }
+.u-colourBgStatusEnded { background: var(--colour-status-ended); }
 
 /**
  * Base colours
