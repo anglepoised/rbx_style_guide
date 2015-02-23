@@ -97,6 +97,10 @@
 /**
  * Functional colours
  */
+
+/**
+ * Global and general
+ */
 :root {
     --colour-brand-green: var(--colour-green-base);
     --colour-brand-gray: var(--colour-gray-tuna);
@@ -108,9 +112,6 @@
     --colour-form-field: var(--colour-white);
 }
 
-/* Functional colour utility classes
-   ========================================================================== */
-
 .u-colourBgBrandGreen { background: var(--colour-brand-green); }
 .u-colourBgBrandGray { background: var(--colour-brand-gray); }
 .u-colourBgBaseFont { background: var(--colour-base-font); }
@@ -121,8 +122,40 @@
 .u-colourBgFormField { background: var(--colour-form-field); }
 
 /**
-* Base colours
-*/
+ * Actions
+ */
+:root {
+    --colour-action-neutral: var(--colour-green-base);
+    --colour-action-positive: var(--colour-green-base);
+    --colour-action-warning: var(--colour-green-base);
+    --colour-action-danger: var(--colour-green-base);
+}
+
+.u-colourBgActionNeutral { background: var(--colour-blue-base); }
+.u-colourBgActionPositive { background: var(--colour-green-base); }
+.u-colourBgActionWarning { background: var(--colour-orange-base); }
+.u-colourBgActionDanger { background: var(--colour-red-base); }
+
+/**
+ * Campaign States
+ */
+:root {
+    --colour-campaignstate-inbuild: var(--colour-gray-regent);
+    --colour-campaignstate-ready: var(--colour-blue-base);
+    --colour-campaignstate-live: var(--colour-green-base);
+    --colour-campaignstate-warning: var(--colour-orange-base);
+    --colour-campaignstate-ended: var(--colour-red-base);
+}
+
+.u-colourBgCampaignStateInBuild { background: var(--colour-campaignstate-inbuild); }
+.u-colourBgCampaignStateReady { background: var(--colour-campaignstate-ready); }
+.u-colourBgCampaignStateLive { background: var(--colour-campaignstate-live); }
+.u-colourBgCampaignStateWarning { background: var(--colour-campaignstate-warning); }
+.u-colourBgCampaignStateEnded { background: var(--colour-campaignstate-ended); }
+
+/**
+ * Base colours
+ */
 body {
     background: var(--colour-base-background);
     color: var(--colour-base-font);
