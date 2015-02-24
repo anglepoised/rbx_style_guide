@@ -11,6 +11,11 @@
     <script src="js/main.js"></script>
 </head>
 <body ng-app="app" id="app">
+    <header class="Header" role="banner">
+        <a class="Header-logo" href="/">
+            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+        </a>
+    </header>
     <h1 class="u-textHeading1">
         {{::title}}
     </h1>
@@ -98,6 +103,9 @@
                     </li>
                     <li class="StyleguideNav-item">
                         <a href="#Footer">Footer</a>
+                    </li>
+                    <li class="StyleguideNav-item">
+                        <a href="#Header">Header</a>
                     </li>
                     <li class="StyleguideNav-item">
                         <a href="#Icon">Icon</a>
@@ -1336,6 +1344,120 @@
                             <p>Copyright notice</p>
                         </div>
                     </footer>
+                </div>
+            </article>
+            <article class="Article" id="Header">
+                <div class="Copy">
+                    <h3 class="u-headingStyleguide">
+                        Header
+                    </h3>
+                    <p>
+                        The <code>.Header</code> component...
+                    </p>
+<div hljs language="html">
+<header class="Header" role="banner">
+    <a class="Header-logo" href="#">
+        <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+    </a>
+    <div class="Header-nav">
+        <nav class="Navigation" role="navigation">
+            <ul class="Navigation-items">
+                <li class="Navigation-item">
+                    <a class="Navigation-itemInner" href="#">Item</a>
+                </li>
+                <li class="Navigation-item">
+                    <a class="Navigation-itemInner is-active" href="#">Item active</a>
+                </li>
+                ...
+            </ul>
+        </nav>
+    </div>
+    <div class="Header-user">
+        <button class="User">
+            <ul class="User-items">
+                <li class="User-item">
+                    test@example.com
+                </li>
+                <li class="User-item">
+                    <a class="User-itemInner" href="#">Sign out</a>
+                </li>
+            </ul>
+        </button>
+    </div>
+</header>
+</div>
+                <p>
+                    Logo-only header:
+                </p>
+                </div>
+                <div>
+                    <header class="Header" role="banner">
+                        <a class="Header-logo" href="#">
+                            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+                        </a>
+                    </header>
+                </div>
+                <div class="Copy">
+                    Logo and user header:
+                </div>
+                <div>
+                    <header class="Header" role="banner">
+                        <a class="Header-logo" href="#">
+                            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+                        </a>
+                        <div class="Header-user">
+                            <button class="User">
+                                <ul class="User-items">
+                                    <li class="User-item">
+                                        test@example.com
+                                    </li>
+                                    <li class="User-item">
+                                        <a class="User-itemInner" href="#">Sign out</a>
+                                    </li>
+                                </ul>
+                            </button>
+                        </div>
+                    </header>
+                </div>
+                <div class="Copy">
+                    Full header:
+                </div>
+                <div>
+                    <header class="Header" role="banner">
+                        <a class="Header-logo" href="#">
+                            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+                        </a>
+                        <div class="Header-nav">
+                            <nav class="Navigation" role="navigation">
+                                <ul class="Navigation-items">
+                                    <li class="Navigation-item">
+                                        <a class="Navigation-itemInner" href="#">Item</a>
+                                    </li>
+                                    <li class="Navigation-item">
+                                        <a class="Navigation-itemInner is-active" href="#">Item active</a>
+                                    </li>
+                                    <li class="Navigation-item">
+                                        <a class="Navigation-itemInner" href="#">Item</a>
+                                    </li>
+                                    <li class="Navigation-item">
+                                        <a class="Navigation-itemInner" href="#">Item</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="Header-user">
+                            <button class="User">
+                                <ul class="User-items">
+                                    <li class="User-item">
+                                        test@example.com
+                                    </li>
+                                    <li class="User-item">
+                                        <a class="User-itemInner" href="#">Sign out</a>
+                                    </li>
+                                </ul>
+                            </button>
+                        </div>
+                    </header>
                 </div>
             </article>
             <article class="Article Copy" id="Icon">

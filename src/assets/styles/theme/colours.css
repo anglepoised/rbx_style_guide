@@ -9,6 +9,14 @@
  */
 
 /**
+ * Utility colours
+ */
+
+:root {
+    --colour-transparent: rgba(0, 0, 0, 0);
+}
+
+/**
  * Descriptive colours
  */
 
