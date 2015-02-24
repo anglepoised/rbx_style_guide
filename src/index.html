@@ -91,19 +91,19 @@
                 <a href="#components">Components</a>
                 <ol>
                     <li class="StyleguideNav-item">
-                        <a href="#button">Button</a>
+                        <a href="#Button">Button</a>
                     </li>
                     <li class="StyleguideNav-item">
-                        <a href="#copy">Copy</a>
+                        <a href="#Copy">Copy</a>
                     </li>
                     <li class="StyleguideNav-item">
-                        <a href="#footer">Footer</a>
+                        <a href="#Footer">Footer</a>
                     </li>
                     <li class="StyleguideNav-item">
-                        <a href="#icon">Icon</a>
+                        <a href="#Icon">Icon</a>
                     </li>
                     <li class="StyleguideNav-item">
-                        <a href="#warning">Warning</a>
+                        <a href="#Warning">Warning</a>
                     </li>
                 </ol>
             </li>
@@ -602,7 +602,7 @@
             <h2 class="u-headingStyleguide">
                 Components
             </h2>
-            <article class="Article Copy" id="button">
+            <article class="Article Copy" id="Button">
                 <h3 class="u-headingStyleguide">
                     Button
                 </h3>
@@ -845,17 +845,14 @@
                     </button>
                 </div>
             </article>
-            <article class="Article Copy" id="copy">
+            <article class="Article Copy" id="Copy">
                 <h3 class="u-headingStyleguide">
                     Copy
                 </h3>
                 <p>
-                    Typographic elements <strong>do not have any margins attached</strong>, to make them more flexible in
-                    where they can be used.
-                </p>
-                <p>
-                    The <code>.Copy</code> component should be used to wrap sections of plain, class-free HTML that require
-                    default typographical styles.
+                    The <code>.Copy</code> component is used to wrap sections of plain, class-free HTML that require
+                    default typographical styles and margins. Typographic elements used outside the context of
+                    <code>.Copy</code> <strong>do not have any margins attached</strong>.
                 </p>
                 <div id="paragraphs">
                     <h4 class="u-headingStyleguide">
@@ -1066,13 +1063,14 @@
                     </table>
                 </div>
             </article>
-            <article class="Article" id="footer">
+            <article class="Article" id="Footer">
                 <div class="Copy">
                     <h3 class="u-headingStyleguide">
                         Footer
                     </h3>
                     <p>
-                        The Footer component appears at the bottom of all pages.
+                        The <code>.Footer</code> component appears at the bottom of all pages and consists of a
+                        mandatory information section and an optional block containing links.
                     </p>
 <div hljs language="html">
 <footer class="Footer" role="contentinfo">
@@ -1119,13 +1117,13 @@
                     </footer>
                 </div>
             </article>
-            <article class="Article Copy" id="icon">
+            <article class="Article Copy" id="Icon">
                 <h3 class="u-headingStyleguide">
                     Icon
                 </h3>
                 <p>
-                    The icon class is used to display single-colour SVG icons as CSS backgrounds. Modifier classes are used
-                    to select different icons, sizes and colours.
+                    The <code>.Icon</code> module is used to display single-colour SVG icons as CSS backgrounds.
+                    Modifiers are used to determine alternative icons, sizes and colours.
                 </p>
 <div hljs language="html">
 <span class="Icon Icon--green-base-175-logo-rockabox"></span>
@@ -1134,7 +1132,7 @@
                     <span class="Icon Icon--green-base-175-logo-rockabox"></span>
                 </div>
             </article>
-            <article class="Article" id="warning">
+            <article class="Article" id="Warning">
                 <div class="Copy">
                     <h3 class="u-headingStyleguide">
                         Warning
