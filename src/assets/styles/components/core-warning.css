@@ -12,27 +12,22 @@
 }
 
 /**
- * 1. Force margin after module
- * 2. Prevent message and action wrapping onto separate lines
- * 3. Consistent spacing between all items bar last
- * 4. Enlarge link target area
+ * 1. Prevent message and action wrapping onto separate lines
+ * 2. Consistent spacing between all items bar last
+ * 3. Enlarge link target area
  */
-
-.Warning {
-    margin-bottom: 1em; /* 1 */
-}
 
 .Warning-item {
     background: var(--Warning-background);
     border: 1px solid var(--Warning-border);
     color: var(--Warning-color);
     display: flex;
-    flex-wrap: nowrap; /* 2 */
+    flex-wrap: nowrap; /* 1 */
     padding: 0.75em 0;
 }
 
 .Warning-item:not(:last-child) {
-    margin-bottom: 0.5em; /* 3 */
+    margin-bottom: 0.5em; /* 2 */
 }
 
 .Warning-itemMessage {
@@ -53,5 +48,5 @@
     display: block;
     flex: none;
     margin: 0 0.5em auto auto;
-    padding: 0.25em 0.5em; /* 4 */
+    padding: 0.25em 0.5em; /* 3 */
 }
