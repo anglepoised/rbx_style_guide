@@ -3,21 +3,59 @@
 /**
  * Swatch
  *
- * Palette boxes to show colours.
+ * Show colours with associated information.
+ */
+
+:root {
+    --Swatch-itemContent-highlight: color(var(--colour-gray-shark) alpha(50%));
+    --Swatch-itemContent-color: var(--colour-white-catskill);
+}
+
+/**
+ * 1. Push swatch info to bottom of swatch.
+ * 2. Set border for small viewport. Removed when swatches arranged in rows.
+ * 3. Prevent wrap on hyphens as colour name separator.
+ * 4. 4 swatches per line where possible.
  */
 
 .Swatch {
-    display: inline-block;
-    text-align: center;
+    margin: 1em 0 2em;
 }
 
-.Swatch-colour {
+.Swatch-items {
     display: block;
-    height: 4em;
-    width: 8em;
-    border: 1px solid var(--colour-gray-regent);
 }
 
-.Swatch-body {
+.Swatch-item {
+    align-items: flex-end; /* 1 */
+    border: 1px solid var(--Swatch-itemContent-highlight); /* 2 */
+    display: flex;
+    height: 7em;
+    margin-bottom: 0.5em;
+}
+
+.Swatch-itemContent {
+    background: var(--Swatch-itemContent-highlight);
+    color: var(--Swatch-itemContent-color);
+    padding: 0.5em;
     text-align: center;
+    white-space: nowrap; /* 3 */
+    width: 100%;
+}
+
+@media (--md-viewport) {
+
+    .Swatch-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Swatch-item {
+        align-items: flex-end;
+        border: none;
+        display: flex;
+        flex: 0 1 25%;  /* 4 */
+        margin: 0;
+    }
+
 }

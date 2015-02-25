@@ -4,8 +4,12 @@
  * Article
  */
 
+:root {
+    --Article-outline: var(--colour-gray-regent);
+}
+
 .Article {
-    outline: 1px solid var(--colour-gray-regent);
+    outline: 1px solid var(--Article-outline);
     padding: 1em;
 }
 
