@@ -7,7 +7,7 @@
  */
 
 .StyleguideNav {
-    margin-bottom: 1.6em;
+    margin: 2em var(--layout-gutter);
 }
 
 .StyleguideNav-items {

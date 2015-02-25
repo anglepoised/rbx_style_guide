@@ -4,6 +4,10 @@
  * How things sit.
  */
 
+:root {
+    --layout-gutter: 1.666666667%;
+}
+
 section + section {
     margin-top: 2em;
 }
