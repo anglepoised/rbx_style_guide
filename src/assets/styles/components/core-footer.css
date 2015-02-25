@@ -17,7 +17,7 @@
 /**
  * 1. Reverse direction to allow correct source order
  * 2. Reset line-height to control spacing
- * 3. Add border to all but last item
+ * 3. Remove border on last item
  * 4. Force copyright to left when no links present
  */
 
@@ -49,7 +49,7 @@
         display: flex;
         flex-direction: row-reverse; /* 1 */
         line-height: 1; /* 2 */
-        padding: var(--Footer-padding-vertical) 0;
+        padding: var(--Footer-padding-vertical) var(--layout-gutter);
     }
 
     .Footer-items {
@@ -58,17 +58,24 @@
         flex-wrap: wrap;
     }
 
-    .Footer-item:not(:last-child) {
-        border-right: 1px solid var(--Footer-color); /* 3 */
+    .Footer-item {
+        border-right: 1px solid var(--Footer-color);
+    }
+
+    .Footer-item:last-child {
+        border: none; /* 3 */
     }
 
     .Footer-itemInner {
         padding: 0 0.714285714em;
     }
 
+    .Footer-item:last-child .Footer-itemInner {
+        padding-right: 0;
+    }
+
     .Footer-Copyright {
         margin: 0 auto 0 0; /* 4 */
-        padding: 0 0.714285714em;
     }
 
 }
