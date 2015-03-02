@@ -165,11 +165,11 @@
  * Campaign States
  */
 :root {
-    --colour-status-inbuild: var(--colour-gray-regent);
+    --colour-status-inbuild: var(--colour-gray-shark);
     --colour-status-ready: var(--colour-blue-base);
     --colour-status-live: var(--colour-green-base);
     --colour-status-warning: var(--colour-orange-base);
-    --colour-status-ended: var(--colour-red-base);
+    --colour-status-ended: var(--colour-gray-regent);
 }
 
 .u-colourBgStatusInBuild { background: var(--colour-status-inbuild); }
