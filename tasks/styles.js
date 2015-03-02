@@ -20,7 +20,6 @@ gulp.task('styles', function () {
             require('postcss-custom-media')(),
             require('postcss-custom-properties')(),
             require('postcss-color-function')(),
-            require('postcss-color-gray')(),
             require('postcss-calc')(),
             require('postcss-media-minmax')(),
             require('postcss-font-variant')(),
