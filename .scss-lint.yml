@@ -1,0 +1,173 @@
+# For SCSS-Lint v0.34.0
+
+exclude: 'src/assets/styles/boot/normalize.css'
+
+linters:
+
+    BangFormat:
+        enabled: true
+        space_before_bang: true
+        space_after_bang: false
+
+    BorderZero:
+        enabled: true
+
+    ColorKeyword:
+        enabled: true
+
+    Comment:
+        enabled: false
+
+    DebugStatement:
+        enabled: false
+
+    DeclarationOrder:
+        enabled: false
+
+    DuplicateProperty:
+        enabled: true
+
+    ElsePlacement:
+        enabled: false
+
+    EmptyLineBetweenBlocks:
+        enabled: true
+        ignore_single_line_blocks: true
+
+    EmptyRule:
+        enabled: true
+
+    FinalNewline:
+        enabled: true
+        present: true
+
+    HexLength:
+        enabled: true
+        style: short
+
+    HexNotation:
+        enabled: true
+        style: lowercase
+
+    HexValidation:
+        enabled: true
+
+    IdSelector:
+        enabled: true
+
+    ImportantRule:
+        enabled: false
+
+    ImportPath:
+        enabled: false
+
+    Indentation:
+        enabled: true
+        character: space
+        width: 4
+
+    LeadingZero:
+        enabled: true
+        style: include_zero
+
+    MergeableSelector:
+        enabled: false
+
+    NameFormat:
+        enabled: false
+
+    NestingDepth:
+        enabled: true
+        max_depth: 1
+
+    PlaceholderInExtend:
+        enabled: false
+
+    PropertyCount:
+        enabled: false
+
+    PropertySortOrder:
+        enabled: true
+
+    PropertySpelling:
+        enabled: true
+        extra_properties: []
+
+    QualifyingElement:
+        enabled: true
+
+    SelectorDepth:
+        enabled: true
+        max_depth: 3
+
+    SelectorFormat:
+        enabled: true
+        convention: hyphenated_lowercase
+        class_convention: '^(?:u|is|has)\-[a-z][a-zA-Z0-9]*$|^(?!u|is|has)[a-zA-Z][a-zA-Z0-9]*(?:\-[a-z][a-zA-Z0-9]*)?(?:\-\-[a-z][a-zA-Z0-9]*)?$'
+
+    Shorthand:
+        enabled: true
+
+    SingleLinePerProperty:
+        enabled: true
+        allow_single_line_rule_sets: true
+
+    SingleLinePerSelector:
+        enabled: true
+
+    SpaceAfterComma:
+        enabled: true
+
+    SpaceAfterPropertyColon:
+        enabled: true
+        style: one_space
+
+    SpaceAfterPropertyName:
+        enabled: true
+
+    SpaceBeforeBrace:
+        enabled: true
+        style: space
+        allow_single_line_padding: true
+
+    SpaceBetweenParens:
+        enabled: true
+        spaces: 0
+
+    StringQuotes:
+        enabled: true
+        style: double_quotes
+
+    TrailingSemicolon:
+        enabled: true
+
+    TrailingZero:
+        enabled: true
+
+    UnnecessaryMantissa:
+        enabled: true
+
+    UnnecessaryParentReference:
+        enabled: false
+
+    UrlFormat:
+        enabled: false
+
+    UrlQuotes:
+        enabled: true
+
+    VariableForProperty:
+        enabled: false
+        properties: []
+
+    VendorPrefixes:
+        enabled: true
+        identifier_list: base
+        include: []
+        exclude: []
+
+    ZeroUnit:
+        enabled: true
+
+    Compass::*:
+        enabled: false
