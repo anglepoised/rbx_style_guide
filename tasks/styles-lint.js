@@ -5,8 +5,9 @@ gulp.task('styles:lint', function () {
     var cached = require('gulp-cached'),
         colorguard = require('gulp-colorguard'),
         postcss = require('gulp-postcss'),
+        scsslint = require('gulp-scss-lint'),
         paths = {
-            src: 'src/assets/styles/*.css'
+            src: 'src/assets/styles/**/*.css'
         },
         processors = [
             require('postcss-bem-linter')()
@@ -16,6 +17,7 @@ gulp.task('styles:lint', function () {
     .pipe(cached('styles'))
     .pipe(postcss(processors))
     .pipe(colorguard())
+    .pipe(scsslint({'config': '.scss-lint.yml'}))
     .on('error', function (err) {
         console.log(err.plugin, err.message);
         this.emit('end');

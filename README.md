@@ -12,6 +12,7 @@ This project is an angular website, compiled by [Gulp](http://gulpjs.com/).
 * [Bower](http://bower.io): `npm install -g bower`.
 * [Selenium Server](https://www.npmjs.com/package/selenium-standalone): `npm install -g selenium-standalone`.
 * [Protractor](https://www.npmjs.com/package/protractor): `npm install -g protractor`.
+* [SCSS-Lint](https://github.com/causes/scss-lint): `gem install scss-lint -v 0.34.0`
 
 ## Getting started
 
@@ -27,6 +28,7 @@ This project is an angular website, compiled by [Gulp](http://gulpjs.com/).
 * [pa11y](https://github.com/nature/pa11y/): tests build against [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/WCAG20/) AA. Currently excludes tests for sufficient contrast.
 * [colorguard](https://github.com/SlexAxton/css-colorguard): warns when colours in CSS are too similar to ones that already exist.
 * [PostCSS BEM Linter](https://github.com/necolas/postcss-bem-linter/): tests CSS for conformance against SuitCSS/BEM conventions. Currently using "strict" mode.
+* [SCSS-Lint](https://github.com/causes/scss-lint): lints CSS. Currently using custom ruleset.
 * [HTMLHint](https://github.com/yaniswang/HTMLHint/): lints and validates HTML. Currently using default ruleset.
 
 ## Running functional tests with Protractor
