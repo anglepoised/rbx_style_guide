@@ -52,6 +52,7 @@
     "yargs": "~2.3.0"
   },
   "scripts": {
+    "preinstall": "gem install scss-lint -v 0.34.0",
     "test": "gulp styles:lint && gulp html:lint",
     "a11y": "pa11y --standard WCAG2AA --config pa11y.json http://0.0.0.0:3000/"
   }
