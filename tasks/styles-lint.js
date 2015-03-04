@@ -15,7 +15,7 @@ gulp.task('styles:lint', function () {
     return gulp.src(paths.src)
     .pipe(cached('styles'))
     .pipe(postcss(processors))
-    .pipe(colorguard())
+    .pipe(colorguard({ignore: ['#ffffff','#fcfcfc', '#ffffff', '#f1f4f8' ]}))
     .on('error', function (err) {
         console.log(err.plugin, err.message);
         this.emit('end');
