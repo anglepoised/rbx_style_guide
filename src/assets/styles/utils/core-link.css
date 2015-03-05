@@ -48,11 +48,11 @@
 .u-linkComplex:hover,
 .u-linkComplex:focus,
 .u-linkComplex:active {
-  text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 .u-linkComplex:hover .u-linkComplexTarget,
 .u-linkComplex:focus .u-linkComplexTarget,
 .u-linkComplex:active .u-linkComplexTarget {
-  text-decoration: underline !important;
+    text-decoration: underline !important;
 }

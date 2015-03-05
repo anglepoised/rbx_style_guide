@@ -16,13 +16,13 @@ h6,
 figure,
 p,
 pre {
-  margin: 0;
+    margin: 0;
 }
 
 button {
-  background: transparent;
-  border: 0;
-  padding: 0;
+    background: transparent;
+    border: 0;
+    padding: 0;
 }
 
 /**
@@ -31,30 +31,30 @@ button {
  */
 
 button:focus {
-  outline: 1px dotted;
+    outline: 1px dotted;
 }
 
 @supports (-webkit-appearance:none) {
-  button:focus {
-    outline: 5px auto -webkit-focus-ring-color;
-  }
+    button:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+    }
 }
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 iframe {
-  border: 0;
+    border: 0;
 }
 
 ol,
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 th {
@@ -69,5 +69,5 @@ th {
  */
 
 [tabindex="-1"]:focus {
-  outline: none !important;
+    outline: none !important;
 }
