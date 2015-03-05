@@ -16,10 +16,10 @@
  * Dark neutral palette
  */
 :root {
-    --colour-gray-shark: rgba(29, 31, 35, 1); /* #1d1f23 */
-    --colour-gray-tuna: rgba(53, 53, 58, 1); /* #35353a */
-    --colour-gray-trout: rgba(77, 81, 91, 1); /* #4d515b */
     --colour-gray-regent: rgba(141, 150, 163, 1); /* #8d96a3 */
+    --colour-gray-shark: rgba(29, 31, 35, 1); /* #1d1f23 */
+    --colour-gray-trout: rgba(77, 81, 91, 1); /* #4d515b */
+    --colour-gray-tuna: rgba(53, 53, 58, 1); /* #35353a */
 }
 
 .u-colourBgGrayShark { background: var(--colour-gray-shark); }
@@ -34,9 +34,9 @@
 :root {
     --colour-gray-ghost: rgba(196, 204, 215, 1); /* #c4ccd7 */
     --colour-gray-mystic: rgba(220, 227, 235, 1); /* #dce3eb */
-    --colour-white-catskill: rgba(241, 244, 248, 1); /* #f1f4f8 */
-    --colour-white-alabaster: rgba(252, 252, 252, 1); /* #fcfcfc */
     --colour-white: rgba(255, 255, 255, 1); /* #fff */
+    --colour-white-alabaster: rgba(252, 252, 252, 1); /* #fcfcfc */
+    --colour-white-catskill: rgba(241, 244, 248, 1); /* #f1f4f8 */
 }
 
 .u-colourBgGrayGhost { background: var(--colour-gray-ghost); }
@@ -113,11 +113,11 @@
  * General
  */
 :root {
-    --colour-base-font: var(--colour-gray-tuna);
     --colour-base-background: var(--colour-white-catskill);
+    --colour-base-font: var(--colour-gray-tuna);
+    --colour-base-highlight: var(--colour-green-base);
     --colour-base-link-default: var(--colour-blue-base);
     --colour-base-link-hover: var(--colour-blue-hover);
-    --colour-base-highlight: var(--colour-green-base);
     --colour-code-background: var(--colour-gray-mystic);
 }
 
@@ -141,8 +141,8 @@
  * Brand
  */
 :root {
-    --colour-brand-green: var(--colour-green-base);
     --colour-brand-gray: var(--colour-gray-tuna);
+    --colour-brand-green: var(--colour-green-base);
 }
 
 .u-colourBgBrandGreen { background: var(--colour-brand-green); }
@@ -152,10 +152,10 @@
  * Actions
  */
 :root {
+    --colour-action-danger: var(--colour-green-base);
     --colour-action-neutral: var(--colour-green-base);
     --colour-action-positive: var(--colour-green-base);
     --colour-action-warning: var(--colour-green-base);
-    --colour-action-danger: var(--colour-green-base);
 }
 
 .u-colourBgActionNeutral { background: var(--colour-blue-base); }
@@ -167,11 +167,11 @@
  * Campaign States
  */
 :root {
-    --colour-status-inbuild: var(--colour-gray-shark);
-    --colour-status-ready: var(--colour-blue-base);
-    --colour-status-live: var(--colour-green-base);
-    --colour-status-warning: var(--colour-orange-base);
     --colour-status-ended: var(--colour-gray-regent);
+    --colour-status-inbuild: var(--colour-gray-shark);
+    --colour-status-live: var(--colour-green-base);
+    --colour-status-ready: var(--colour-blue-base);
+    --colour-status-warning: var(--colour-orange-base);
 }
 
 .u-colourBgStatusInBuild { background: var(--colour-status-inbuild); }

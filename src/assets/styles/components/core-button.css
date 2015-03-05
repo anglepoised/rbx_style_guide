@@ -1,9 +1,9 @@
 /** @define Button; use strict */
 
 :root {
+    --Button-background: var(--colour-blue-base);
     --Button-background-hover: var(--colour-blue-hover);
     --Button-background-shadow: var(--colour-blue-shadow);
-    --Button-background: var(--colour-blue-base);
     --Button-border-radius: 4px;
     --Button-box-shadow: inset 0 -3px 0 0;
     --Button-color: var(--colour-white-alabaster);
@@ -127,9 +127,9 @@
  */
 
 :root {
+    --Button--green-background: var(--colour-green-base);
     --Button--green-background-hover: var(--colour-green-hover);
     --Button--green-background-shadow: var(--colour-green-shadow);
-    --Button--green-background: var(--colour-green-base);
 }
 
 .Button--green {
@@ -157,9 +157,9 @@
  */
 
 :root {
+    --Button--orange-background: var(--colour-orange-base);
     --Button--orange-background-hover: var(--colour-orange-hover);
     --Button--orange-background-shadow: var(--colour-orange-shadow);
-    --Button--orange-background: var(--colour-orange-base);
 }
 
 .Button--orange {
@@ -187,9 +187,9 @@
  */
 
 :root {
+    --Button--red-background: var(--colour-red-base);
     --Button--red-background-hover: var(--colour-red-hover);
     --Button--red-background-shadow: var(--colour-red-shadow);
-    --Button--red-background: var(--colour-red-base);
 }
 
 .Button--red {
