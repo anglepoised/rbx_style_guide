@@ -33,7 +33,7 @@
 .Warning-itemMessage {
     color: var(--Warning-color);
     cursor: pointer;
-    margin: auto 1em auto 1em;
+    margin: auto 1em;
     text-decoration: none;
 }
 
