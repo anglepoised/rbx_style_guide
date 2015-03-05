@@ -9,6 +9,7 @@
     --Button-color: var(--colour-white-alabaster);
     --Button-disabled-opacity: 0.5;
     --Button-font: inherit;
+    --Button-moz-focusring-colour: var(--colour-gray-shark);
     --Button-padding: 0.9375em 1em;
 }
 
@@ -68,7 +69,7 @@
  */
 
 .Button:-moz-focusring {
-    outline: 1px dotted #212121;
+    outline: 1px dotted var(--Button-moz-focusring-colour);
 }
 
 /**
