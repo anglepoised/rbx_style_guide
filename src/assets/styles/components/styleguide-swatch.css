@@ -7,8 +7,8 @@
  */
 
 :root {
-    --Swatch-itemContent-highlight: color(var(--colour-gray-shark) alpha(50%));
     --Swatch-itemContent-color: var(--colour-white-catskill);
+    --Swatch-itemContent-highlight: color(var(--colour-gray-shark) alpha(50%));
 }
 
 /**
@@ -52,7 +52,7 @@
 
     .Swatch-item {
         align-items: flex-end;
-        border: none;
+        border: 0;
         display: flex;
         flex: 0 1 25%;  /* 4 */
         margin: 0;

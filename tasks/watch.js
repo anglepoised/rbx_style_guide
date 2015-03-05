@@ -10,7 +10,7 @@ gulp.task('watch', ['default'], function () {
             srcHtml: 'src/**/*.html',
             srcIcons: 'src/assets/icons/**/*.{svg}',
             srcStyles: 'src/assets/styles/**/*.css',
-            srcStylesLint: 'src/assets/styles/components/**/*.css',
+            srcStylesLint: 'src/assets/styles/**/*.css',
             srcScripts: 'src/assets/scripts/**/*.js',
             srcScriptsLint: [
             'gulpfile.js',

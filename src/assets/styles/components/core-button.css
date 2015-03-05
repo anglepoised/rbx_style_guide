@@ -1,14 +1,15 @@
 /** @define Button; use strict */
 
 :root {
+    --Button-background: var(--colour-blue-base);
     --Button-background-hover: var(--colour-blue-hover);
     --Button-background-shadow: var(--colour-blue-shadow);
-    --Button-background: var(--colour-blue-base);
     --Button-border-radius: 4px;
-    --Button-box-shadow: inset 0px -3px 0px 0px;
+    --Button-box-shadow: inset 0 -3px 0 0;
     --Button-color: var(--colour-white-alabaster);
     --Button-disabled-opacity: 0.5;
     --Button-font: inherit;
+    --Button-moz-focusring-colour: var(--colour-gray-shark);
     --Button-padding: 0.9375em 1em;
 }
 
@@ -59,7 +60,12 @@
 
 .Button:focus {
     outline: 1px dotted;
-    outline: 5px auto -webkit-focus-ring-color;
+}
+
+@supports (-webkit-appearance:none) {
+    .Button:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+    }
 }
 
 /**
@@ -68,7 +74,7 @@
  */
 
 .Button:-moz-focusring {
-    outline: 1px dotted #212121;
+    outline: 1px dotted var(--Button-moz-focusring-colour);
 }
 
 /**
@@ -121,9 +127,9 @@
  */
 
 :root {
+    --Button--green-background: var(--colour-green-base);
     --Button--green-background-hover: var(--colour-green-hover);
     --Button--green-background-shadow: var(--colour-green-shadow);
-    --Button--green-background: var(--colour-green-base);
 }
 
 .Button--green {
@@ -151,9 +157,9 @@
  */
 
 :root {
+    --Button--orange-background: var(--colour-orange-base);
     --Button--orange-background-hover: var(--colour-orange-hover);
     --Button--orange-background-shadow: var(--colour-orange-shadow);
-    --Button--orange-background: var(--colour-orange-base);
 }
 
 .Button--orange {
@@ -181,9 +187,9 @@
  */
 
 :root {
+    --Button--red-background: var(--colour-red-base);
     --Button--red-background-hover: var(--colour-red-hover);
     --Button--red-background-shadow: var(--colour-red-shadow);
-    --Button--red-background: var(--colour-red-base);
 }
 
 .Button--red {

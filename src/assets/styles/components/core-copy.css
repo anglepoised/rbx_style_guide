@@ -82,7 +82,7 @@
  * All supported browsers should automatically add appropriate quotemarks.
  */
 .Copy blockquote {
-    border-left: .25em solid var(--colour-base-highlight);
+    border-left: 0.25em solid var(--colour-base-highlight);
     padding-left: 1em;
 }
 
@@ -98,8 +98,8 @@
 }
 
 .Copy li + li {
-    margin-top: 0.5em;
     margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 
 .Copy li > ul {
@@ -142,7 +142,7 @@
 
 .Copy th,
 .Copy td {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     text-align: left;
 }
 
@@ -187,7 +187,7 @@
     background: var(--colour-gray-mystic);
     border-radius: 3px;
     margin: 1em 0;
-    padding: 1em 1em 0 1em;
+    padding: 1em 1em 0;
 }
 
 .Copy pre code {
