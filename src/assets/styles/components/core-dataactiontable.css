@@ -1,0 +1,144 @@
+/** @define DataActionTable; use strict */
+
+/**
+ * The `.DataActionTable` component...
+ */
+
+:root {
+    --DataActionTable-border-colour: var(--colour-green-base);
+    --DataActionTable-border-width: 1px;
+    --DataActionTable-cell-colour: var(--colour-gray-tuna);
+    --DataActionTable-cell-padding-horizontal: var(--layout-gutter);
+    --DataActionTable-cell-padding-vertical: 0.8125em;
+    --DataActionTable-cell-sorted-colour: var(--colour-green-base);
+    --DataActionTable-col-utility-width: 30px;
+    --DataActionTable-row-background: var(--colour-white-catskill);
+    --DataActionTable-row-background-hover: var(--colour-green-accent);
+    --DataActionTable-row-background-odd: var(--colour-white-alabaster);
+    --DataActionTable-row-background-selected: var(--colour-green-accent);
+}
+
+/**
+ * 1. Explicitly set table border model in scope of component for safety.
+ * 2. Calculate space for magical and hover row borders.
+ * 3. Force width of table to width of container.
+ * 4. Use global gutter value for left padding on first cell in each row: matches viewport-wide guttering inside table
+ *    while also allowing row background and borders to stretch across full viewport. Same value used for right padding
+ *    on all cells, forces centering within cell.
+ * 5. Create space for border on hover. Annoyingly magical: `1px solid transparent` doesn't work, neither does
+ *    same-colour border.
+ * 6. Stripe odd rows in body of table.
+ * 7. Force minimum width on utility columns to prevent collapse. These only need to be used once per column, in head
+ *    row.
+ * 8. Disallow wrapping of cell contents to increase scanability.
+ */
+
+/**
+ * Toolbar
+ */
+
+.DataActionTable-toolbar {
+    display: flex;
+}
+
+.DataActionTable-search {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+/**
+ * Table layout
+ */
+
+.DataActionTable-main {
+    border-collapse: collapse; /* 1 */
+    max-width: calc(100% - (2 * var(--DataActionTable-border-width))); /* 2 */
+    width: 100%; /* 3 */
+}
+
+.DataActionTable-row .DataActionTable-cellHeader:first-child,
+.DataActionTable-row .DataActionTable-cellData:first-child {
+    padding-left: var(--DataActionTable-cell-padding-horizontal); /* 4 */
+}
+
+.DataActionTable-row .DataActionTable-cellHeader,
+.DataActionTable-row .DataActionTable-cellData {
+    padding-bottom: var(--DataActionTable-cell-padding-vertical);
+    padding-right: var(--DataActionTable-cell-padding-horizontal); /* 4 */
+    padding-top: var(--DataActionTable-cell-padding-vertical);
+}
+
+/**
+ * Rows
+ */
+
+.DataActionTable-body .DataActionTable-row {
+    background: var(--DataActionTable-row-background);
+    border: var(--DataActionTable-border-width) dotted var(--colour-transparent); /* 5 */
+}
+
+.DataActionTable-body .DataActionTable-row:nth-child(odd) {
+    background: var(--DataActionTable-row-background-odd); /* 6 */
+}
+
+.DataActionTable-body .DataActionTable-row:hover {
+    background: var(--DataActionTable-row-background-hover);
+    border: var(--DataActionTable-border-width) solid var(--DataActionTable-border-colour);
+}
+
+.DataActionTable-body .DataActionTable-row.is-selected {
+    background: var(--DataActionTable-row-background-selected);
+}
+
+/**
+ * Columns
+ */
+
+.DataActionTable-colUtility {
+    min-width: var(--DataActionTable-col-utility-width); /* 7 */
+}
+
+/**
+ * Cells
+ */
+
+.DataActionTable-cellHeader {
+    border-bottom: 1px solid var(--DataActionTable-border-colour);
+    white-space: nowrap; /* 8 */
+}
+
+.DataActionTable-cellHeaderItem {
+    color: var(--DataActionTable-cell-colour);
+    font-family: var(--font-family-proportional-semibold);
+    font-size: var(--font-size-small);
+}
+
+.DataActionTable-cellData {
+    white-space: nowrap; /* 8 */
+}
+
+.DataActionTable-cellDataItem {
+    color: var(--DataActionTable-cell-colour);
+}
+
+/**
+ * Sorting
+ */
+
+.DataActionTable-cellHeader.is-sortable .DataActionTable-cellHeaderItem {
+    background: url("../images/black-8-sorted-descending.svg") no-repeat right center;
+    cursor: pointer;
+    padding-right: 16px;
+}
+
+.DataActionTable-cellHeader.is-sorted .DataActionTable-cellHeaderItem {
+    color: var(--DataActionTable-cell-sorted-colour);
+}
+
+.DataActionTable-cellHeader.is-ascending .DataActionTable-cellHeaderItem {
+    background-image: url("../images/green-base-8-sorted-ascending.svg");
+}
+
+.DataActionTable-cellHeader.is-descending .DataActionTable-cellHeaderItem {
+    background-image: url("../images/green-base-8-sorted-descending.svg");
+}
