@@ -82,7 +82,7 @@
  * All supported browsers should automatically add appropriate quotemarks.
  */
 .Copy blockquote {
-    border-left: .25em solid var(--colour-base-highlight);
+    border-left: 0.25em solid var(--colour-base-highlight);
     padding-left: 1em;
 }
 
@@ -142,7 +142,7 @@
 
 .Copy th,
 .Copy td {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     text-align: left;
 }
 
