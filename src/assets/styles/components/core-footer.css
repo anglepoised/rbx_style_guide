@@ -63,7 +63,7 @@
     }
 
     .Footer-item:last-child {
-        border: none; /* 3 */
+        border: 0; /* 3 */
     }
 
     .Footer-itemInner {
