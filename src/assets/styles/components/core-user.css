@@ -1,0 +1,85 @@
+/** @define User; use strict */
+
+/**
+ * The `.User` component is a subcomponent of `.Header`.
+ *
+ * Can be used with any element, but should ideally be attached to a `<button>` element to preserve expected browser
+ * `:hover` and `:active` behaviours.
+ */
+
+:root {
+    --User-background: var(--colour-gray-tuna);
+    --User-item-colour: var(--colour-gray-tuna);
+}
+
+/**
+ * 1. Preserve spacing during inactive state
+ * 2. Move default outline from trigger to target
+ * 3. Move default cursor from trigger to target
+ * 4. Show items on `:focus` and `:hover`
+ */
+
+.User {
+    background: var(--colour-gray-tuna) url("../images/gray-ghost-16-user.svg") no-repeat 50% 6px;
+    border: 1px solid transparent; /* 1 */
+    border-bottom: 0;
+    display: block;
+    height: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+
+.User:hover,
+.User:focus {
+    background: var(--colour-white-alabaster) url("../images/green-base-16-user.svg") no-repeat 50% 6px;
+    border: 1px solid var(--colour-gray-ghost);
+    border-bottom: 0;
+    border-radius: 3px 3px 0 0;
+    cursor: pointer;
+    outline: none; /* 2 */
+}
+
+.User-items {
+    background: var(--colour-white-alabaster);
+    border: 1px solid var(--colour-gray-ghost);
+    border-radius: 3px 0 3px 3px;
+    cursor: default; /* 3 */
+    line-height: 1;
+    margin-top: -1px;
+    position: absolute;
+    right: 0;
+    top: 1.5em;
+    visibility: hidden; /* 4 */
+    z-index: -1;
+}
+
+.User:hover .User-items,
+.User:focus .User-items {
+    visibility: visible; /* 4 */
+}
+
+.User:focus .User-items {
+    outline: 1px dotted;  /* 2 */
+}
+
+@supports (-webkit-appearance:none) {
+    .User:focus .User-items {
+        outline: 5px auto -webkit-focus-ring-color; /* 2 */
+    }
+}
+
+.User-item {
+    color: var(--User-item-colour);
+    font-size: var(--font-size-small);
+    padding: 1em 0.5em 0;
+    text-align: right;
+}
+
+.User-item:last-child {
+    padding-bottom: 0.714285714em;
+}
+
+.User-itemInner {
+    cursor: pointer; /* 3 */
+    display: block;
+}
