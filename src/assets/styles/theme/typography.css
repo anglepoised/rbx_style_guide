@@ -54,40 +54,36 @@
     font-family: "ProximaNova";
     font-weight: normal;
     font-style: normal;
-    src:
-        url("../fonts/proximanova/2D133C_6_0.woff2") format("woff2"),
-        url("../fonts/proximanova/2D133C_6_0.woff") format("woff"),
-        url("../fonts/proximanova/2D133C_6_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D133C_6_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D133C_6_0.woff") format("woff"),
+         url("../fonts/proximanova/2D133C_6_0.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "ProximaNova";
     font-weight: bold;
     font-style: normal;
-    src:
-        url("../fonts/proximanova/2D133C_7_0.woff2") format("woff2"),
-        url("../fonts/proximanova/2D133C_7_0.woff") format("woff"),
-        url("../fonts/proximanova/2D133C_7_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D133C_7_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D133C_7_0.woff") format("woff"),
+         url("../fonts/proximanova/2D133C_7_0.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "ProximaNova";
     font-weight: normal;
     font-style: italic;
-    src:
-        url("../fonts/proximanova/2D133C_2_0.woff2") format("woff2"),
-        url("../fonts/proximanova/2D133C_2_0.woff") format("woff"),
-        url("../fonts/proximanova/2D133C_2_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D133C_2_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D133C_2_0.woff") format("woff"),
+         url("../fonts/proximanova/2D133C_2_0.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "ProximaNova";
     font-weight: bold;
     font-style: italic;
-    src:
-        url("../fonts/proximanova/2D133C_5_0.woff2") format("woff2"),
-        url("../fonts/proximanova/2D133C_5_0.woff") format("woff"),
-        url("../fonts/proximanova/2D133C_5_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D133C_5_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D133C_5_0.woff") format("woff"),
+         url("../fonts/proximanova/2D133C_5_0.ttf") format("truetype");
 }
 
 /* Light
@@ -96,18 +92,16 @@
 @font-face {
     font-family: "ProximaNova-Light";
     font-style: italic;
-    src:
-        url("../fonts/proximanova/2D133C_0_0.woff2") format("woff2"),
-        url("../fonts/proximanova/2D133C_0_0.woff") format("woff"),
-        url("../fonts/proximanova/2D133C_0_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D133C_0_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D133C_0_0.woff") format("woff"),
+         url("../fonts/proximanova/2D133C_0_0.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "ProximaNova-Light";
-    src:
-        url("../fonts/proximanova/2D133C_1_0.woff2") format("woff2"),
-        url("../fonts/proximanova/2D133C_1_0.woff") format("woff"),
-        url("../fonts/proximanova/2D133C_1_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D133C_1_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D133C_1_0.woff") format("woff"),
+         url("../fonts/proximanova/2D133C_1_0.ttf") format("truetype");
 }
 
 /* Semibold
@@ -115,19 +109,17 @@
 
 @font-face {
     font-family: "ProximaNova-Semibold";
-    src:
-        url("../fonts/proximanova/2D133C_4_0.woff2") format("woff2"),
-        url("../fonts/proximanova/2D133C_4_0.woff") format("woff"),
-        url("../fonts/proximanova/2D133C_4_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D133C_4_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D133C_4_0.woff") format("woff"),
+         url("../fonts/proximanova/2D133C_4_0.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "ProximaNova-Semibold";
     font-style: italic;
-    src:
-        url("../fonts/proximanova/2D133C_3_0.woff2") format("woff2"),
-        url("../fonts/proximanova/2D133C_3_0.woff") format("woff"),
-        url("../fonts/proximanova/2D133C_3_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D133C_3_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D133C_3_0.woff") format("woff"),
+         url("../fonts/proximanova/2D133C_3_0.ttf") format("truetype");
 }
 
 /**
