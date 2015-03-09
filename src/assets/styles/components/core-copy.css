@@ -142,27 +142,27 @@
 
 .Copy th,
 .Copy td {
-    padding: 0.5rem 1rem;
+    padding: 0.5em 0.8125em;
     text-align: left;
 }
 
 .Copy thead {
-    background: var(--colour-base-highlight);
-    border-bottom: 1px solid var(--colour-gray-regent);
+    border-bottom: 1px solid var(--colour-brand-green);
 }
 
-.Copy th,
-.Copy td {
-    text-align: left;
-}
-
-.Copy th {
-    font-weight: 500;
+.Copy thead td {
+    font-family: var(--font-family-proportional-semibold);
+    font-size: var(--font-size-small);
 }
 
 /* Zebra striping */
-.Copy tbody tr:nth-child(even) {
+.Copy tbody tr:nth-child(odd) {
+    background: var(--colour-white-alabaster);
+}
+
+.Copy tbody tr:hover {
     background: var(--colour-green-accent);
+    outline: 1px solid var(--colour-green-base);
 }
 
 /**
