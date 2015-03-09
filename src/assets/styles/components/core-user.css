@@ -3,8 +3,8 @@
 /**
  * The `.User` component is a subcomponent of `.Header`.
  *
- * Can be used with any element, but should ideally be attached to a `<button>` element to preserve expected browser
- * `:hover` and `:active` behaviours.
+ * Can be used with any element, but should ideally be attached to a `<div>` element with attributes
+ * `role="button" tabindex="0"` to ensure the component is focusable.
  */
 
 :root {
