@@ -107,7 +107,8 @@ linters:
     PropertySpelling:
         enabled: true
         severity: error
-        extra_properties: []
+        extra_properties:
+            - font-variant-numeric
 
     QualifyingElement:
         enabled: true

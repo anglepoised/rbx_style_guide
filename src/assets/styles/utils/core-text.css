@@ -142,3 +142,11 @@
     font-size: var(--font-size-small);
     text-transform: uppercase;
 }
+
+/**
+ * Tabular numbers
+ */
+.u-textTabularNums {
+    font-kerning: normal;
+    font-variant-numeric: tabular-nums;
+}
