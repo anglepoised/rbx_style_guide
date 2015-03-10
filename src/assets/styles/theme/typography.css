@@ -7,7 +7,7 @@
 
 /**
  * @license
- * MyFonts Webfont Build ID 2954044, 2015-01-15T11:26:48-0500
+ * MyFonts Webfont Build ID 2987157, 2015-03-09T09:55:06-0400
  *
  * The fonts listed in this notice are subject to the End User License
  * Agreement(s) entered into by the website owner. All other parties are
@@ -18,29 +18,29 @@
  * Webfont: ProximaNova-LightIt by Mark Simonson
  * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light-it/
  *
- * Webfont: ProximaNova-Light by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
- *
  * Webfont: ProximaNova-RegularIt by Mark Simonson
  * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
  *
  * Webfont: ProximaNova-SemiboldIt by Mark Simonson
  * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold-it/
  *
- * Webfont: ProximaNova-Semibold by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
- *
  * Webfont: ProximaNova-BoldIt by Mark Simonson
  * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold-it/
- *
- * Webfont: ProximaNova-Regular by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
  *
  * Webfont: ProximaNova-Bold by Mark Simonson
  * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
  *
+ * Webfont: ProximaNova-Light by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
  *
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=2954044
+ * Webfont: ProximaNova-Semibold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+ *
+ * Webfont: ProximaNova-Regular by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2987157
  * Licensed pageviews: 1,000,000
  * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
  *
@@ -54,36 +54,36 @@
     font-family: "ProximaNova";
     font-weight: normal;
     font-style: normal;
-    src: url("../fonts/proximanova/2D133C_6_0.woff2") format("woff2"),
-         url("../fonts/proximanova/2D133C_6_0.woff") format("woff"),
-         url("../fonts/proximanova/2D133C_6_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D9495_7_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D9495_7_0.woff") format("woff"),
+         url("../fonts/proximanova/2D9495_7_0.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "ProximaNova";
     font-weight: bold;
     font-style: normal;
-    src: url("../fonts/proximanova/2D133C_7_0.woff2") format("woff2"),
-         url("../fonts/proximanova/2D133C_7_0.woff") format("woff"),
-         url("../fonts/proximanova/2D133C_7_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D9495_4_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D9495_4_0.woff") format("woff"),
+         url("../fonts/proximanova/2D9495_4_0.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "ProximaNova";
     font-weight: normal;
     font-style: italic;
-    src: url("../fonts/proximanova/2D133C_2_0.woff2") format("woff2"),
-         url("../fonts/proximanova/2D133C_2_0.woff") format("woff"),
-         url("../fonts/proximanova/2D133C_2_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D9495_1_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D9495_1_0.woff") format("woff"),
+         url("../fonts/proximanova/2D9495_1_0.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "ProximaNova";
     font-weight: bold;
     font-style: italic;
-    src: url("../fonts/proximanova/2D133C_5_0.woff2") format("woff2"),
-         url("../fonts/proximanova/2D133C_5_0.woff") format("woff"),
-         url("../fonts/proximanova/2D133C_5_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D9495_3_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D9495_3_0.woff") format("woff"),
+         url("../fonts/proximanova/2D9495_3_0.ttf") format("truetype");
 }
 
 /* Light
@@ -92,16 +92,16 @@
 @font-face {
     font-family: "ProximaNova-Light";
     font-style: italic;
-    src: url("../fonts/proximanova/2D133C_0_0.woff2") format("woff2"),
-         url("../fonts/proximanova/2D133C_0_0.woff") format("woff"),
-         url("../fonts/proximanova/2D133C_0_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D9495_0_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D9495_0_0.woff") format("woff"),
+         url("../fonts/proximanova/2D9495_0_0.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "ProximaNova-Light";
-    src: url("../fonts/proximanova/2D133C_1_0.woff2") format("woff2"),
-         url("../fonts/proximanova/2D133C_1_0.woff") format("woff"),
-         url("../fonts/proximanova/2D133C_1_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D9495_5_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D9495_5_0.woff") format("woff"),
+         url("../fonts/proximanova/2D9495_5_0.ttf") format("truetype");
 }
 
 /* Semibold
@@ -109,17 +109,17 @@
 
 @font-face {
     font-family: "ProximaNova-Semibold";
-    src: url("../fonts/proximanova/2D133C_4_0.woff2") format("woff2"),
-         url("../fonts/proximanova/2D133C_4_0.woff") format("woff"),
-         url("../fonts/proximanova/2D133C_4_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D9495_6_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D9495_6_0.woff") format("woff"),
+         url("../fonts/proximanova/2D9495_6_0.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "ProximaNova-Semibold";
     font-style: italic;
-    src: url("../fonts/proximanova/2D133C_3_0.woff2") format("woff2"),
-         url("../fonts/proximanova/2D133C_3_0.woff") format("woff"),
-         url("../fonts/proximanova/2D133C_3_0.ttf") format("truetype");
+    src: url("../fonts/proximanova/2D9495_2_0.woff2") format("woff2"),
+         url("../fonts/proximanova/2D9495_2_0.woff") format("woff"),
+         url("../fonts/proximanova/2D9495_2_0.ttf") format("truetype");
 }
 
 /**
