@@ -1,7 +1,18 @@
 /** @define DataActionTable; use strict */
 
 /**
- * The `.DataActionTable` component...
+ * The `.DataActionTable` component consists of:
+ *
+ * - An optional `.DataActionTable-toolbar` descendent containing an action button and/or an incremental search field.
+ * - A mandatory `.DataActionTable-main` descendent to display the table part. The root element for this should always
+ *   be `<table>`.
+ *
+ * Columns in `.DataActionTable` can be sortable. The following classes should be used to indicate sorting state:
+ *
+ * - `.is-sortable`: adds background image to column header to indicate sortability
+ * - `.is-sorted`: changes column header style to indicate sorted state
+ * - `.is-ascending`: swaps background image for sorted ascending type
+ * - `.is-descending`: swaps background image for sorted descencing type
  */
 
 :root {

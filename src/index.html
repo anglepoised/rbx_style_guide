@@ -1342,8 +1342,30 @@
                         DataActionTable
                     </h3>
                     <p>
-                        The <code>.DataActionTable</code> component...
+                        The <code>.DataActionTable</code> component should be used when rows of tabular data are
+                        displayed with associated actions. It currently supports the following column types:
                     </p>
+                    <ul>
+                        <li>
+                            Utility column, which should always be centre-aligned and fixed width e.g. warnings count,
+                            campaign status, row-specific tools
+                        </li>
+                        <li>
+                            Row name and associated link to detail view
+                        </li>
+                        <li>
+                            Dates, with optional times
+                        </li>
+                        <li>
+                            Percentage data
+                        </li>
+                        <li>
+                            Fractional data e.g. "$10 / $100"
+                        </li>
+                        <li>
+                            Numeric data, which should always be right-aligned and use tabular figures
+                        </li>
+                    </ul>
 <div hljs language="html">
 <div class="DataActionTable">
     <div class="DataActionTable-toolbar">
