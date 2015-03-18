@@ -8,6 +8,8 @@ This project is an angular website, compiled by [Gulp](http://gulpjs.com/).
 
 * [Git](http://git-scm.com)
 * [Node.js](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)
+* [Ruby](https://www.ruby-lang.org/en/documentation/installation/). Gemfile location must be writable. On OS X, install
+  Ruby with [Homebrew](https://www.ruby-lang.org/en/documentation/installation/#homebrew)
 * [Gulp](http://gulpjs.com/): `npm install -g gulp`.
 * [Bower](http://bower.io): `npm install -g bower`.
 * [Selenium Server](https://www.npmjs.com/package/selenium-standalone): `npm install -g selenium-standalone`.
