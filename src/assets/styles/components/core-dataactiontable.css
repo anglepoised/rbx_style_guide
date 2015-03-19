@@ -136,20 +136,18 @@
  * Sorting
  */
 
-.DataActionTable-cellHeader.is-sortable .DataActionTable-cellHeaderItem {
+.DataActionTable-cellHeader--sortable .DataActionTable-cellHeaderItem {
     background: url("../images/black-8-sorted-descending.svg") no-repeat right center;
     cursor: pointer;
     padding-right: 16px;
 }
 
-.DataActionTable-cellHeader.is-sorted .DataActionTable-cellHeaderItem {
+.DataActionTable-cellHeader.is-sortedAscending .DataActionTable-cellHeaderItem {
+    background-image: url("../images/green-base-8-sorted-ascending.svg");
     color: var(--DataActionTable-cell-sorted-colour);
 }
 
-.DataActionTable-cellHeader.is-ascending .DataActionTable-cellHeaderItem {
-    background-image: url("../images/green-base-8-sorted-ascending.svg");
-}
-
-.DataActionTable-cellHeader.is-descending .DataActionTable-cellHeaderItem {
+.DataActionTable-cellHeader.is-sortedDescending .DataActionTable-cellHeaderItem {
     background-image: url("../images/green-base-8-sorted-descending.svg");
+    color: var(--DataActionTable-cell-sorted-colour);
 }
