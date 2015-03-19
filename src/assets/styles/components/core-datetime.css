@@ -1,0 +1,26 @@
+/** @define DateTime; use strict */
+
+/**
+ * The `.DateTime` component must be used for all representations of a date and/or time and consists of a date
+ * descendant an an optional time descendant.
+ *
+ * The `<time>` element must be used as the root element for this component.
+ */
+
+:root {
+    --DateTime-date-font-size: var(--font-size);
+    --DateTime-time-font-size: var(--font-size-x-small);
+}
+
+/**
+ * 1. Force date size to default.
+ * 2. Reduce time font size.
+ */
+
+.DateTime-date {
+    font-size: var(--DateTime-date-font-size); /* 1 */
+}
+
+.DateTime-time {
+    font-size: var(--DateTime-time-font-size); /* 2 */
+}
