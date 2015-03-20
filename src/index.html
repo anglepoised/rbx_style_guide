@@ -102,6 +102,9 @@
                         <a href="#Copy">Copy</a>
                     </li>
                     <li class="StyleguideNav-item">
+                        <a href="#Currency">Currency</a>
+                    </li>
+                    <li class="StyleguideNav-item">
                         <a href="#DateTime">DateTime</a>
                     </li>
                     <li class="StyleguideNav-item">
@@ -1296,6 +1299,38 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </article>
+            <article class="Article" id="Currency">
+                <div class="Copy">
+                    <h3 class="u-headingStyleguide">
+                        Currency
+                    </h3>
+                    <p>
+                        The <code>.Currency</code> component must be used to render all representations of a currency.
+                        It should not be used for any other type of number.
+                    </p>
+                    <p>
+                        The <code>&lt;data&gt;</code> element must be used as the root element for this component and
+                        the <code>value</code> attribute must be populated with a number fixed to two decimal places.
+                    </p>
+                    <p>
+                        The rendered currency should follow the
+                        <a href="http://style.ons.gov.uk/numbers/money/">Style.ONS guide</a>.
+                    </p>
+<div hljs language="html">
+<data class="Currency" value="$9999999.99">
+    <span class="Currency-unit">$9,999,999</span><span class="Currency-cent">.99</span>
+</data>
+</div>
+                    <p>
+                        Which renders as:
+                    </p>
+                </div>
+                <div>
+                    <data class="Currency" value="$9999999.99">
+                        <span class="Currency-unit">$9,999,999</span><span class="Currency-cent">.99</span>
+                    </data>
                 </div>
             </article>
             <article class="Article" id="DateTime">
