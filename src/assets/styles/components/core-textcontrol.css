@@ -1,0 +1,127 @@
+/** @define TextControl; use strict */
+
+/**
+ * The `.TextControl` component groups simple, text-based fields that share a set of common states.
+ *
+ * Various states are available and can be stacked. The `disabled` state always takes visual priority over other states.
+ *
+ * A single is available for an entire instance: `TextControl--small`. This reduces the size of the field.
+ */
+
+:root {
+    --TextControl-field-background-colour: var(--colour-form-field-background);
+    --TextControl-field-border-colour: var(--colour-gray-ghost);
+    --TextControl-field-border-radius: 4px;
+    --TextControl-field-colour: var(--colour-gray-tuna);
+    --TextControl-field-disabled-background-colour: var(--colour-white-catskill);
+    --TextControl-field-disabled-colour: var(--colour-gray-regent);
+    --TextControl-field-focus-border-colour: var(--colour-green-base);
+    --TextControl-field-invalid-border-colour: var(--colour-red-base);
+    --TextControl-field-invalid-colour: var(--colour-red-base);
+    --TextControl-field-placeholder-colour: var(--colour-gray-ghost);
+    --TextControl-label-invalid-colour: var(--colour-red-base);
+    --TextControl-message-invalid-background-colour: var(--colour-red-base);
+    --TextControl-message-invalid-colour: var(--colour-white);
+}
+
+/**
+ * 1. Set consistent spacing after every field.
+ * 2. Remove `outline` in favour of `border`.
+ * 3. Nudge `required` indicator from top right corner.
+ * 4. Swap background when chained to match other state colours.
+ * 5. Disabled state always overrides other states.
+ * 6. Prevent text selection on disabled field.
+ */
+
+.TextControl {
+    display: flex;
+    flex-direction: column;
+}
+
+/**
+ * Default
+ */
+
+.TextControl-field {
+    background: var(--TextControl-field-background-colour);
+    border: 1px solid var(--TextControl-field-border-colour);
+    border-radius: var(--TextControl-field-border-radius);
+    color: var(--TextControl-field-colour);
+    margin-bottom: 0.5em; /* 1 */
+    padding: 0.75em 0.75em 0.5em;
+}
+
+.TextControl-field::placeholder {
+    color: var(--TextControl-field-placeholder-colour);
+}
+
+.TextControl-field:focus,
+.TextControl-field.is-focused {
+    border-color: var(--TextControl-field-focus-border-colour);
+    outline: none; /* 2 */
+}
+
+.TextControl-message {
+    display: block;
+    font-size: var(--font-size-x-small);
+}
+
+/**
+ * Invalid
+ */
+
+.TextControl.is-invalid .TextControl-label {
+    color: var(--TextControl-label-invalid-colour);
+}
+
+.TextControl-field:invalid:focus,
+.TextControl.is-invalid .TextControl-field {
+    border-color: var(--TextControl-field-invalid-border-colour);
+}
+
+.TextControl.is-invalid .TextControl-message {
+    background: var(--TextControl-message-invalid-background-colour);
+    border-radius: var(--TextControl-field-border-radius);
+    color: var(--TextControl-message-invalid-colour);
+    padding: 0.75em 0.75em 0.5em;
+}
+
+/**
+ * Required
+ */
+
+.TextControl-field:required,
+.TextControl-field.is-required {
+    background: var(--TextControl-field-background-colour) url("../images/Control-required.svg") no-repeat;
+    background-position: right 6px top 6px; /* 3 */
+    outline: none; /* 2 */
+}
+
+.TextControl-field:focus:required:invalid {
+    background-image: url("../images/Control-required-invalid.svg"); /* 4 */
+}
+
+/**
+ * Disabled
+ */
+
+.TextControl-field:disabled,
+.TextControl-field.is-disabled {
+    background: var(--TextControl-field-disabled-background-colour) url("../images/Control-disabled.svg") no-repeat calc(100% - 12px) center !important; /* 5 */
+    border: 1px solid var(--TextControl-field-border-colour) !important; /* 5 */
+    color: var(--TextControl-field-disabled-colour) !important; /* 5 */
+    user-select: none; /* 6 */
+}
+
+.TextControl-field:disabled::placeholder,
+.TextControl-field.is-disabled::placeholder {
+    color: var(--TextControl-field-disabled-colour) !important; /* 5 */
+}
+
+/**
+ * Small
+ */
+
+.TextControl--small .TextControl-field {
+    font-size: var(--font-size-x-small);
+}
