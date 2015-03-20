@@ -98,7 +98,7 @@
         bottom: 0;
         content: "";
         height: 0;
-        left: 50%;
+        left: calc(50% - var(--Navigation-is-active-arrow-size));
         position: absolute;
         width: 0;
     }
