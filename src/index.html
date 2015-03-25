@@ -111,6 +111,9 @@
                         <a href="#Footer">Footer</a>
                     </li>
                     <li class="StyleguideNav-item">
+                        <a href="#FullPage">FullPage</a>
+                    </li>
+                    <li class="StyleguideNav-item">
                         <a href="#Header">Header</a>
                     </li>
                     <li class="StyleguideNav-item">
@@ -1420,6 +1423,61 @@
                             <p>Copyright notice</p>
                         </div>
                     </footer>
+                </div>
+            </article>
+            <article class="Article" id="FullPage">
+                <div class="Copy">
+                    <h3 class="u-headingStyleguide">
+                        FullPage
+                    </h3>
+                    <p>
+                        <code>.FullPage</code> is a wrapper component intended for use on single-purpose pages. It fills
+                        the whole viewport and sets a scaling background image. Any component contained within the
+                        <code>.FullPage-body</code> class will be centered.
+                    </p>
+                    <p>
+                        It can optionally contain a single instance of the <code>.Footer</code> component,
+                        which should be contained in the <code>.FullPage-footer</code> descendent.
+                    </p>
+<div hljs language="html">
+<div class="FullPage">
+    <div class="FullPage-body">
+        <main>
+            <div>
+                Contained component
+            </div>
+        </main>
+    </div>
+    <div class="FullPage-footer">
+        <footer class="Footer" role="contentinfo">
+            <div class="Footer-copyright">
+                <p>Copyright © 2015 Rockabox Limited</p>
+            </div>
+        </footer>
+    </div>
+</div>
+</div>
+                    <p>
+                        Which renders as:
+                    </p>
+                </div>
+                <div>
+                    <div class="FullPage">
+                        <div class="FullPage-body">
+                            <main>
+                                <div>
+                                    Contained component
+                                </div>
+                            </main>
+                        </div>
+                        <div class="FullPage-footer">
+                            <footer class="Footer" role="contentinfo">
+                                <div class="Footer-copyright">
+                                    <p>Copyright © 2015 Rockabox Limited</p>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
                 </div>
             </article>
             <article class="Article" id="Header">
