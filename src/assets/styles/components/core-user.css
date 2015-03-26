@@ -17,6 +17,7 @@
  * 2. Move default outline from trigger to target
  * 3. Move default cursor from trigger to target
  * 4. Show items on `:focus` and `:hover`
+ * 5. Prevent individual items wrapping, so container expands to width of longest item
  */
 
 .User {
@@ -50,6 +51,7 @@
     right: 0;
     top: 1.5em;
     visibility: hidden; /* 4 */
+    white-space: nowrap; /* 5 */
     z-index: -1;
 }
 
