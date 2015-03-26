@@ -75,6 +75,7 @@
 }
 
 .TextControl-field:invalid:focus,
+.TextControl-field:invalid:not(:focus),
 .TextControl-field.is-invalid {
     border-color: var(--TextControl-field-invalid-border-colour);
 }
