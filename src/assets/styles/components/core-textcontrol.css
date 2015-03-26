@@ -70,16 +70,16 @@
  * Invalid
  */
 
-.TextControl.is-invalid .TextControl-label {
+.TextControl-label.is-invalid {
     color: var(--TextControl-label-invalid-colour);
 }
 
 .TextControl-field:invalid:focus,
-.TextControl.is-invalid .TextControl-field {
+.TextControl-field.is-invalid {
     border-color: var(--TextControl-field-invalid-border-colour);
 }
 
-.TextControl.is-invalid .TextControl-message {
+.TextControl-message.is-invalid {
     background: var(--TextControl-message-invalid-background-colour);
     border-radius: var(--TextControl-field-border-radius);
     color: var(--TextControl-message-invalid-colour);

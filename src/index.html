@@ -1113,14 +1113,14 @@
                     </p>
 <div hljs language="html">
 <div class="TextControl TextControl--email TextControl--small is-disabled is-invalid is-required">
-    <label class="TextControl-label u-textLabel" for="f-stack-example">Label</label>
-    <input class="TextControl-field" id="f-stack-example" name="email" placeholder="Placeholder" type="email" disabled required>
+    <label class="TextControl-label is-invalid u-textLabel" for="f-stack-example">Label</label>
+    <input class="TextControl-field is-invalid" id="f-stack-example" name="email" placeholder="Placeholder" type="email" disabled required>
 </div>
 </div>
                 </div>
                 <div class="TextControl TextControl--email TextControl--small is-disabled is-invalid is-required">
-                    <label class="TextControl-label u-textLabel" for="f-stack-example">Label</label>
-                    <input class="TextControl-field" id="f-stack-example" name="email" placeholder="Placeholder" type="email" disabled required>
+                    <label class="TextControl-label is-invalid u-textLabel" for="f-stack-example">Label</label>
+                    <input class="TextControl-field is-invalid" id="f-stack-example" name="email" placeholder="Placeholder" type="email" disabled required>
                 </div>
                 <div class="Copy">
                     <p>
@@ -1167,18 +1167,21 @@
                     </h4>
 <div hljs language="html">
 <div class="TextControl is-invalid">
-    <label class="TextControl-label u-textLabel" for="f-Text-is-invalid">Invalid label</label>
-    <input class="TextControl-field" id="f-Text-is-invalid" name="text" placeholder="Text" type="text">
-    <div class="TextControl-message">
+    <label class="TextControl-label is-invalid u-textLabel" for="f-Text-is-invalid">Invalid label</label>
+    <input class="TextControl-field is-invalid" id="f-Text-is-invalid" name="text" placeholder="Text" type="text">
+    <div class="TextControl-message is-invalid">
         Invalid message
     </div>
 </div>
 </div>
                 </div>
                 <div class="TextControl is-invalid">
-                    <label class="TextControl-label u-textLabel" for="f-Text-is-invalid">Invalid label</label>
-                    <input class="TextControl-field" id="f-Text-is-invalid" name="text" placeholder="Text" type="text">
+                    <label class="TextControl-label is-invalid u-textLabel" for="f-Text-is-invalid">Invalid label</label>
+                    <input class="TextControl-field is-invalid" id="f-Text-is-invalid" name="text" placeholder="Text" type="text">
                     <div class="TextControl-message">
+                        Optional help message
+                    </div>
+                    <div class="TextControl-message is-invalid">
                         Invalid message
                     </div>
                 </div>
@@ -1187,15 +1190,21 @@
                         Required state
                     </h4>
 <div hljs language="html">
-<div class="TextControl">
+<div class="TextControl is-required">
     <label class="TextControl-label is-required" for="f-Text-required">Required</label>
-    <input class="TextControl-field" id="f-Text-required" name="text" placeholder="Required" type="text" required>
+    <input class="TextControl-field is-required" id="f-Text-required" name="text" placeholder="Required" type="text" required>
+    <div class="TextControl-message is-required">
+        Optional help message
+    </div>
 </div>
 </div>
                 </div>
-                <div class="TextControl">
+                <div class="TextControl is-required">
                     <label class="TextControl-label is-required" for="f-Text-required">Required</label>
-                    <input class="TextControl-field" id="f-Text-required" name="text" placeholder="Required" type="text" required>
+                    <input class="TextControl-field is-required" id="f-Text-required" name="text" placeholder="Required" type="text" required>
+                    <div class="TextControl-message is-required">
+                        Optional help message
+                    </div>
                 </div>
                 <div class="Copy">
                     <h4 class="u-headingStyleguide">
