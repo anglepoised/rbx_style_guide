@@ -176,18 +176,18 @@
  * Campaign States
  */
 :root {
-    --colour-status-ended: var(--colour-gray-regent);
-    --colour-status-inbuild: var(--colour-gray-shark);
+    --colour-status-finished: var(--colour-gray-shark);
+    --colour-status-incomplete: var(--colour-blue-base);
     --colour-status-live: var(--colour-green-base);
-    --colour-status-ready: var(--colour-blue-base);
-    --colour-status-warning: var(--colour-orange-base);
+    --colour-status-paused: var(--colour-red-base);
+    --colour-status-pending: var(--colour-orange-base);
 }
 
-.u-colourBgStatusInBuild { background: var(--colour-status-inbuild); }
-.u-colourBgStatusReady { background: var(--colour-status-ready); }
+.u-colourBgStatusIncomplete { background: var(--colour-status-incomplete); }
 .u-colourBgStatusLive { background: var(--colour-status-live); }
-.u-colourBgStatusWarning { background: var(--colour-status-warning); }
-.u-colourBgStatusEnded { background: var(--colour-status-ended); }
+.u-colourBgStatusPending { background: var(--colour-status-pending); }
+.u-colourBgStatusPaused { background: var(--colour-status-paused); }
+.u-colourBgStatusFinished { background: var(--colour-status-finished); }
 
 /**
  * Base colours
