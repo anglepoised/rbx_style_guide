@@ -6,11 +6,11 @@
     "doctype-first"             : true,
     "doctype-html5"             : true,
     "id-class-value"            : true,
-    "id-unique"                 : false,    // OK to repeat IDs in style guide
+    "id-unique"                 : false,
     "space-tab-mixed-disabled"  : true,
     "spec-char-escape"          : true,
     "src-not-empty"             : true,
-    "style-disabled"            : true,     // Prohibit `<style>` tags
+    "style-disabled"            : true,
     "tag-pair"                  : true,
     "tagname-lowercase"         : true
 }
