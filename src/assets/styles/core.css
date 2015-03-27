@@ -23,6 +23,7 @@
 @import "utils/core-display.css";
 @import "utils/core-link.css";
 @import "utils/core-text.css";
+@import "utils/core-typography.css";
 @import "utils/styleguide.css";
 
 /**
@@ -32,6 +33,7 @@
 @import "components/core-code.css";
 @import "components/core-copy.css";
 @import "components/core-currency.css";
+@import "components/core-dataactiontable.css";
 @import "components/core-datetime.css";
 @import "components/core-footer.css";
 @import "components/core-header.css";

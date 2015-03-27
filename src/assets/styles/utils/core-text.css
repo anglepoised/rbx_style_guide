@@ -1,151 +1,64 @@
 /* Text utilities
-   ========================================================================== */
+    ========================================================================== */
 
 /**
- * Headings
- */
-
-.u-textHeading1 {
-    font-family: var(--font-family-proportional-light);
-    font-size: 3.2rem;
-    font-weight: 300;
-}
-
-.u-textHeading2 {
-    font-family: var(--font-family-proportional-light);
-    font-size: 2.5rem;
-    font-weight: 300;
-}
-
-.u-textHeading3 {
-    font-family: var(--font-family-proportional);
-    font-size: 1.9rem;
-    font-weight: 400;
-}
-
-.u-textHeading4 {
-    font-family: var(--font-family-proportional-semibold);
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.u-textHeading5 {
-    font-family: var(--font-family-proportional-semibold);
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.u-textHeading6 {
-    font-family: var(--font-family-proportional-semibold);
-    font-size: 1.3rem;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-/**
- * Weights
+ * Word breaking
  *
+ * Break strings when their length exceeds the width of their container.
  */
 
-.u-textLight {
-    font-family: var(--font-family-proportional-light);
-    font-weight: 300;
-}
-
-.u-textRegular {
-    font-family: var(--font-family-proportional);
-    font-weight: 400;
-}
-
-.u-textSemibold {
-    font-family: var(--font-family-proportional-semibold);
-    font-weight: 500;
-}
-
-.u-textBold {
-    font-family: var(--font-family-proportional);
-    font-weight: 700;
+.u-textBreak {
+    word-wrap: break-word !important;
 }
 
 /**
- * Default type
+ * Horizontal text alignment
+ */
+
+.u-textCenter {
+    text-align: center !important;
+}
+
+.u-textLeft {
+    text-align: left !important;
+}
+
+.u-textRight {
+    text-align: right !important;
+}
+
+/**
+ * Inherit the ancestor's text color.
+ */
+
+.u-textInheritColor {
+    color: inherit !important;
+}
+
+/**
+ * Prevent whitespace wrapping
+ */
+
+.u-textNoWrap {
+    white-space: nowrap !important;
+}
+
+/**
+ * Text truncation
  *
- * Standard body copy sizing, in case it needs specifying explicitly.
- */
-
-.u-textDefault {
-    font-size: var(--font-size);
-}
-
-/**
- * Large type
+ * Prevent text from wrapping onto multiple lines, and truncate with an
+ * ellipsis.
  *
- * For more important body copy.
+ * 1. Ensure that the node has a maximum width after which truncation can
+ *    occur.
+ * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+ *    nodes.
  */
 
-.u-textLarge {
-    font-size: var(--font-size-large);
-}
-
-/**
- * Small type
- *
- * For less important body copy.
- */
-
-.u-textSmall {
-    font-size: var(--font-size-small);
-}
-
-/**
- * Extra small type
- *
- * For time and decimalised figures in tables.
- */
-
-.u-textXSmall {
-    font-size: var(--font-size-x-small);
-}
-
-/**
- * Monospaced type
- *
- * For explicit monospaced type.
- */
-
-.u-textMonospaced {
-    font-family: var(--font-family-monospaced);
-}
-
-/**
- * Code type
- *
- * For inline code.
- */
-.u-textCode {
-    background: var(--colour-gray-mystic);
-    border-radius: 3px;
-    display: inline-block;
-    padding: 0.15em 0.5em 0;
-    white-space: nowrap;
-}
-
-/**
- * Label type
- *
- * For form labels.
- */
-
-.u-textLabel {
-    font-size: var(--font-size-small);
-}
-
-/**
- * Tabular numbers
- */
-.u-textTabularNums {
-    font-kerning: normal;
-    font-variant-numeric: tabular-nums;
+.u-textTruncate {
+    max-width: 100%; /* 1 */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */
 }

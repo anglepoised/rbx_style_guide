@@ -105,6 +105,9 @@
                         <a href="#Currency">Currency</a>
                     </li>
                     <li class="StyleguideNav-item">
+                        <a href="#DataActionTable">DataActionTable</a>
+                    </li>
+                    <li class="StyleguideNav-item">
                         <a href="#DateTime">DateTime</a>
                     </li>
                     <li class="StyleguideNav-item">
@@ -1331,6 +1334,651 @@
                     <data class="Currency" value="$9999999.99">
                         <span class="Currency-unit">$9,999,999</span><span class="Currency-cent">.99</span>
                     </data>
+                </div>
+            </article>
+            <article class="Article" id="DataActionTable">
+                <div class="Copy">
+                    <h3 class="u-headingStyleguide">
+                        DataActionTable
+                    </h3>
+                    <p>
+                        The <code>.DataActionTable</code> component should be used when rows of tabular data are
+                        displayed with associated actions. It currently supports the following column types:
+                    </p>
+                    <ul>
+                        <li>
+                            Utility column, which should always be centre-aligned and fixed width e.g. warnings count,
+                            campaign status, row-specific tools
+                        </li>
+                        <li>
+                            Row name and associated link to detail view
+                        </li>
+                        <li>
+                            Dates, with optional times
+                        </li>
+                        <li>
+                            Percentage data
+                        </li>
+                        <li>
+                            Fractional data e.g. "$10 ⁄ $100"
+                        </li>
+                        <li>
+                            Numeric data, which should always be right-aligned and use tabular figures
+                        </li>
+                    </ul>
+<div hljs language="html">
+<div class="DataActionTable">
+    <div class="DataActionTable-toolbar">
+        <div class="DataActionTable-action">
+            <button class="Button" type="button">
+                Action
+            </button>
+        </div>
+        <div class="DataActionTable-search">
+            <form>
+                <div class="TextControl">
+                    <label class="TextControl-label u-hiddenVisually u-textLabel" for="f-search">Search table</label>
+                    <input class="TextControl-field" id="f-search" name="s" placeholder="Search" type="search">
+                </div>
+            </form>
+        </div>
+    </div>
+    <table class="DataActionTable-main">
+        <thead>
+            <tr class="DataActionTable-row">
+                <th class="DataActionTable-cellHeader DataActionTable-colUtility DataActionTable-cellHeader--sortable u-textCenter" scope="col">
+                    <span class="DataActionTable-cellHeaderItem u-hiddenVisually">
+                        Hidden utility column heading
+                    </span>
+                </th>
+                <th class="DataActionTable-cellHeader DataActionTable-colUtility DataActionTable-cellHeader--sortable u-textCenter" scope="col">
+                    <a class="DataActionTable-cellHeaderItem">Status</a>
+                </th>
+                <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable is-sortedDescending" scope="col">
+                    <a class="DataActionTable-cellHeaderItem">Row name</a>
+                </th>
+                <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable" scope="col">
+                    <a class="DataActionTable-cellHeaderItem">Start</a>
+                </th>
+                <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable" scope="col">
+                    <a class="DataActionTable-cellHeaderItem">End</a>
+                </th>
+                <th class="DataActionTable-cellHeader is-ascending DataActionTable-cellHeader--sortable is-sortedAscending" scope="col">
+                    <a class="DataActionTable-cellHeaderItem">% <span class="u-hiddenVisually">Percentage</span> Data</a>
+                </th>
+                <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable" scope="col">
+                    <a class="DataActionTable-cellHeaderItem">Split ⁄ Data</a>
+                </th>
+                <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable u-textRight" scope="col">
+                    <a class="DataActionTable-cellHeaderItem">Numeric Data</a>
+                </th>
+                <th class="DataActionTable-cellHeader DataActionTable-colUtility">
+                    <span class="DataActionTable-cellHeaderItem u-hiddenVisually">
+                        Line actions
+                    </span>
+                </th>
+            </tr>
+        </thead>
+        <tbody class="DataActionTable-body">
+            <tr class="DataActionTable-row">
+                <td class="DataActionTable-cellData u-textCenter">
+                    <span class="DataActionTable-cellDataItem">
+                        <div class="WarningCount">
+                            <span class="WarningCount-body">6 !</span> <span class="WarningCount-details">Warnings on this item</span>
+                        </div>
+                    </span>
+                </td>
+                <td class="DataActionTable-cellData u-textCenter">
+                    <span class="DataActionTable-cellDataItem">St</span>
+                </td>
+                <th class="DataActionTable-cellData" scope="row">
+                    <a class="DataActionTable-cellDataItem" href="#">Row name</a>
+                </th>
+                <td class="DataActionTable-cellData">
+                    <span class="DataActionTable-cellDataItem">
+                        <time class="DateTime" datetime="1970-01-01T00:00">
+                            <span class="DateTime-date">01 Jan 1970</span>
+                            <span class="DateTime-time">00:00</span>
+                        </time>
+                    </span>
+                </td>
+                <td class="DataActionTable-cellData">
+                    <span class="DataActionTable-cellDataItem">
+                        <time class="DateTime" datetime="1970-01-01T00:00">
+                            <span class="DateTime-date">01 Jan 1970</span>
+                            <span class="DateTime-time">00:00</span>
+                        </time>
+                    </span>
+                </td>
+                <td class="DataActionTable-cellData">
+                    <span class="DataActionTable-cellDataItem">99%</span>
+                </td>
+                <td class="DataActionTable-cellData">
+                    <span class="DataActionTable-cellDataItem">
+                        <data class="Currency" value="$9999999.99">
+                            <span class="Currency-unit">$9,999,999</span>
+                        </data>
+                        ⁄
+                        <data class="Currency" value="$9999999.99">
+                            <span class="Currency-unit">$9,999,999</span>
+                        </data>
+                    </span>
+                </td>
+                <td class="DataActionTable-cellData u-textRight">
+                    <span class="DataActionTable-cellDataItem u-textTabularNums">
+                        <data class="Currency" value="$9999999.99">
+                            <span class="Currency-unit">$0,999,999</span>
+                        </data>
+                    </span>
+                </td>
+                <td class="DataActionTable-cellData u-textCenter">
+                    <a href="#">
+                        <span class="Icon Icon--black-16-pause">Row action item</span>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+                <p>
+                    Which renders as:
+                </p>
+                </div>
+                <div>
+                    <div class="DataActionTable">
+                        <div class="DataActionTable-toolbar">
+                            <div class="DataActionTable-action">
+                                <button class="Button" type="button">
+                                    Action
+                                </button>
+                            </div>
+                            <div class="DataActionTable-search">
+                                <form>
+                                    <div class="TextControl">
+                                        <label class="TextControl-label u-hiddenVisually u-textLabel" for="f-search">Search table</label>
+                                        <input class="TextControl-field" id="f-search" name="s" placeholder="Search" type="search">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <table class="DataActionTable-main">
+                            <thead>
+                                <tr class="DataActionTable-row">
+                                    <th class="DataActionTable-cellHeader DataActionTable-colUtility DataActionTable-cellHeader--sortable u-textCenter" scope="col">
+                                        <span class="DataActionTable-cellHeaderItem u-hiddenVisually">
+                                            Hidden utility column heading
+                                        </span>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-colUtility DataActionTable-cellHeader--sortable u-textCenter" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Status</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable is-sortedDescending" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Row name</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Start</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">End</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader is-ascending DataActionTable-cellHeader--sortable is-sortedAscending" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">% <span class="u-hiddenVisually">Percentage</span> Data</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Split ⁄ Data</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable u-textRight" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Numeric Data</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-colUtility">
+                                        <span class="DataActionTable-cellHeaderItem u-hiddenVisually">
+                                            Line actions
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="DataActionTable-body">
+                                <tr class="DataActionTable-row">
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <div class="WarningCount">
+                                                <span class="WarningCount-body">6 !</span> <span class="WarningCount-details">Warnings on this item</span>
+                                            </div>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <span class="DataActionTable-cellDataItem">St</span>
+                                    </td>
+                                    <th class="DataActionTable-cellData" scope="row">
+                                        <a class="DataActionTable-cellDataItem" href="#">Row name</a>
+                                    </th>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <time class="DateTime" datetime="1970-01-01T00:00">
+                                                <span class="DateTime-date">01 Jan 1970</span>
+                                                <span class="DateTime-time">00:00</span>
+                                            </time>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <time class="DateTime" datetime="1970-01-01T00:00">
+                                                <span class="DateTime-date">01 Jan 1970</span>
+                                                <span class="DateTime-time">00:00</span>
+                                            </time>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">99%</span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <data class="Currency" value="$9999999.99"><span class="Currency-unit">$9,999,999</span></data> ⁄ <data class="Currency" value="$9999999.99"><span class="Currency-unit">$9,999,999</span></data>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textRight">
+                                        <span class="DataActionTable-cellDataItem u-textTabularNums">
+                                            <data class="Currency" value="$9999999.99">
+                                                <span class="Currency-unit">$0,999,999</span>
+                                            </data>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <a href="#">
+                                            <span class="Icon Icon--black-16-pause">Row action item</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="DataActionTable-row">
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <div class="WarningCount">
+                                                <span class="WarningCount-body">6 !</span> <span class="WarningCount-details">Warnings on this item</span>
+                                            </div>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <span class="DataActionTable-cellDataItem">St</span>
+                                    </td>
+                                    <th class="DataActionTable-cellData" scope="row">
+                                        <a class="DataActionTable-cellDataItem" href="#">Row name</a>
+                                    </th>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <time class="DateTime" datetime="1970-01-01T00:00">
+                                                <span class="DateTime-date">01 Jan 1970</span>
+                                                <span class="DateTime-time">00:00</span>
+                                            </time>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <time class="DateTime" datetime="1970-01-01T00:00">
+                                                <span class="DateTime-date">01 Jan 1970</span>
+                                                <span class="DateTime-time">00:00</span>
+                                            </time>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">99%</span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <data class="Currency" value="$9999999.99"><span class="Currency-unit">$9,999,999</span></data> ⁄ <data class="Currency" value="$9999999.99"><span class="Currency-unit">$9,999,999</span></data>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textRight">
+                                        <span class="DataActionTable-cellDataItem u-textTabularNums">
+                                            <data class="Currency" value="$9999999.99">
+                                                <span class="Currency-unit">$0,999,999</span>
+                                            </data>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <a href="#">
+                                            <span class="Icon Icon--black-16-pause">Row action item</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="DataActionTable-row">
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <div class="WarningCount">
+                                                <span class="WarningCount-body">6 !</span> <span class="WarningCount-details">Warnings on this item</span>
+                                            </div>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <span class="DataActionTable-cellDataItem">St</span>
+                                    </td>
+                                    <th class="DataActionTable-cellData" scope="row">
+                                        <a class="DataActionTable-cellDataItem" href="#">Row name</a>
+                                    </th>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <time class="DateTime" datetime="1970-01-01T00:00">
+                                                <span class="DateTime-date">01 Jan 1970</span>
+                                                <span class="DateTime-time">00:00</span>
+                                            </time>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <time class="DateTime" datetime="1970-01-01T00:00">
+                                                <span class="DateTime-date">01 Jan 1970</span>
+                                                <span class="DateTime-time">00:00</span>
+                                            </time>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">99%</span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <data class="Currency" value="$9999999.99"><span class="Currency-unit">$9,999,999</span></data> ⁄ <data class="Currency" value="$9999999.99"><span class="Currency-unit">$9,999,999</span></data>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textRight">
+                                        <span class="DataActionTable-cellDataItem u-textTabularNums">
+                                            <data class="Currency" value="$9999999.99">
+                                                <span class="Currency-unit">$0,999,999</span>
+                                            </data>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <a href="#">
+                                            <span class="Icon Icon--black-16-pause">Row action item</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="is-selected DataActionTable-row">
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <div class="WarningCount">
+                                                <span class="WarningCount-body">6 !</span> <span class="WarningCount-details">Warnings on this item</span>
+                                            </div>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <span class="DataActionTable-cellDataItem">St</span>
+                                    </td>
+                                    <th class="DataActionTable-cellData" scope="row">
+                                        <a class="DataActionTable-cellDataItem" href="#">Selected row name</a>
+                                    </th>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <time class="DateTime" datetime="1970-01-01T00:00">
+                                                <span class="DateTime-date">01 Jan 1970</span>
+                                                <span class="DateTime-time">00:00</span>
+                                            </time>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <time class="DateTime" datetime="1970-01-01T00:00">
+                                                <span class="DateTime-date">01 Jan 1970</span>
+                                                <span class="DateTime-time">00:00</span>
+                                            </time>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">99%</span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <data class="Currency" value="$9999999.99"><span class="Currency-unit">$9,999,999</span></data> ⁄ <data class="Currency" value="$9999999.99"><span class="Currency-unit">$9,999,999</span></data>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textRight">
+                                        <span class="DataActionTable-cellDataItem u-textTabularNums">
+                                            <data class="Currency" value="$9999999.99">
+                                                <span class="Currency-unit">$0,999,999</span>
+                                            </data>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <a href="#">
+                                            <span class="Icon Icon--black-16-pause">Row action item</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="DataActionTable-row">
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <div class="WarningCount">
+                                                <span class="WarningCount-body">6 !</span> <span class="WarningCount-details">Warnings on this item</span>
+                                            </div>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <span class="DataActionTable-cellDataItem">St</span>
+                                    </td>
+                                    <th class="DataActionTable-cellData" scope="row">
+                                        <a class="DataActionTable-cellDataItem" href="#">Row name</a>
+                                    </th>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <time class="DateTime" datetime="1970-01-01T00:00">
+                                                <span class="DateTime-date">01 Jan 1970</span>
+                                                <span class="DateTime-time">00:00</span>
+                                            </time>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <time class="DateTime" datetime="1970-01-01T00:00">
+                                                <span class="DateTime-date">01 Jan 1970</span>
+                                                <span class="DateTime-time">00:00</span>
+                                            </time>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">99%</span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <data class="Currency" value="$9999999.99"><span class="Currency-unit">$9,999,999</span></data> ⁄ <data class="Currency" value="$9999999.99"><span class="Currency-unit">$9,999,999</span></data>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textRight">
+                                        <span class="DataActionTable-cellDataItem u-textTabularNums">
+                                            <data class="Currency" value="$9999999.99">
+                                                <span class="Currency-unit">$0,999,999</span>
+                                            </data>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <a href="#">
+                                            <span class="Icon Icon--black-16-pause">Row action item</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="DataActionTable-row">
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <div class="WarningCount">
+                                                <span class="WarningCount-body">6 !</span> <span class="WarningCount-details">Warnings on this item</span>
+                                            </div>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <span class="DataActionTable-cellDataItem">St</span>
+                                    </td>
+                                    <th class="DataActionTable-cellData" scope="row">
+                                        <a class="DataActionTable-cellDataItem" href="#">Row name</a>
+                                    </th>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <time class="DateTime" datetime="1970-01-01T00:00">
+                                                <span class="DateTime-date">01 Jan 1970</span>
+                                                <span class="DateTime-time">00:00</span>
+                                            </time>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <time class="DateTime" datetime="1970-01-01T00:00">
+                                                <span class="DateTime-date">01 Jan 1970</span>
+                                                <span class="DateTime-time">00:00</span>
+                                            </time>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">99%</span>
+                                    </td>
+                                    <td class="DataActionTable-cellData">
+                                        <span class="DataActionTable-cellDataItem">
+                                            <data class="Currency" value="$9999999.99"><span class="Currency-unit">$9,999,999</span></data> ⁄ <data class="Currency" value="$9999999.99"><span class="Currency-unit">$9,999,999</span></data>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textRight">
+                                        <span class="DataActionTable-cellDataItem u-textTabularNums">
+                                            <data class="Currency" value="$1111.11">
+                                                <span class="Currency-unit">$1,111.11</span>
+                                            </data>
+                                        </span>
+                                    </td>
+                                    <td class="DataActionTable-cellData u-textCenter">
+                                        <a href="#">
+                                            <span class="Icon Icon--black-16-pause">Row action item</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="Copy">
+                    No items state:
+                </div>
+                <div>
+                    <div class="DataActionTable">
+                        <div class="DataActionTable-toolbar">
+                            <div class="DataActionTable-action">
+                                <button class="Button" type="button">
+                                    Action
+                                </button>
+                            </div>
+                        </div>
+                        <table class="DataActionTable-main">
+                            <thead>
+                                <tr class="DataActionTable-row">
+                                    <th class="DataActionTable-cellHeader DataActionTable-colUtility DataActionTable-cellHeader--sortable u-textCenter" scope="col">
+                                        <span class="DataActionTable-cellHeaderItem u-hiddenVisually">
+                                            Hidden utility column heading
+                                        </span>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-colUtility DataActionTable-cellHeader--sortable u-textCenter" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Status</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable is-sortedDescending" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Row name</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Start</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">End</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader is-ascending DataActionTable-cellHeader--sortable is-sortedAscending" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">% <span class="u-hiddenVisually">Percentage</span> Data</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Split ⁄ Data</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable u-textRight" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Numeric Data</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-colUtility">
+                                        <span class="DataActionTable-cellHeaderItem u-hiddenVisually">
+                                            Line actions
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="DataActionTable-body">
+                                <tr class="DataActionTable-row">
+                                    <td class="DataActionTable-cellData u-textCenter" colspan="100">
+                                        <p>
+                                            You haven’t created a DATAITEM yet!
+                                        </p>
+                                        <p>
+                                            <a href="#">Create a new DATAITEM to begin.</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="Copy">
+                    No results state:
+                </div>
+                <div>
+                    <div class="DataActionTable">
+                        <div class="DataActionTable-toolbar">
+                            <div class="DataActionTable-action">
+                                <button class="Button" type="button">
+                                    Action
+                                </button>
+                            </div>
+                            <div class="DataActionTable-search">
+                                <form>
+                                    <div class="TextControl">
+                                        <label class="TextControl-label u-hiddenVisually u-textLabel" for="f-search">Search table</label>
+                                        <input class="TextControl-field" id="f-search" name="s" placeholder="Search" type="search">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <table class="DataActionTable-main">
+                            <thead>
+                                <tr class="DataActionTable-row">
+                                    <th class="DataActionTable-cellHeader DataActionTable-colUtility DataActionTable-cellHeader--sortable u-textCenter" scope="col">
+                                        <span class="DataActionTable-cellHeaderItem u-hiddenVisually">
+                                            Hidden utility column heading
+                                        </span>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-colUtility DataActionTable-cellHeader--sortable u-textCenter" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Status</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable is-sortedDescending" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Row name</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Start</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">End</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader is-ascending DataActionTable-cellHeader--sortable is-sortedAscending" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">% <span class="u-hiddenVisually">Percentage</span> Data</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Split ⁄ Data</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-cellHeader--sortable u-textRight" scope="col">
+                                        <a class="DataActionTable-cellHeaderItem">Numeric Data</a>
+                                    </th>
+                                    <th class="DataActionTable-cellHeader DataActionTable-colUtility">
+                                        <span class="DataActionTable-cellHeaderItem u-hiddenVisually">
+                                            Line actions
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="DataActionTable-body">
+                                <tr class="DataActionTable-row">
+                                    <td class="DataActionTable-cellData u-textCenter" colspan="100">
+                                        <p>
+                                            No results.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </article>
             <article class="Article" id="DateTime">
