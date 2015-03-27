@@ -99,6 +99,14 @@
                         <a href="#Button">Button</a>
                     </li>
                     <li class="StyleguideNav-item">
+                        <a href="#Controls">Controls</a>
+                        <ol>
+                            <li class="StyleguideNav-item">
+                                <a href="#TextControl">TextControl</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="StyleguideNav-item">
                         <a href="#Copy">Copy</a>
                     </li>
                     <li class="StyleguideNav-item">
@@ -1084,6 +1092,233 @@
                     <button class="Button Button--icon" type="button">
                         <span class="Icon Icon--white-alabaster-8-plus">Hidden Text</span>
                     </button>
+                </div>
+            </article>
+            <article class="Article" id="Controls">
+                <div class="Copy">
+                    <h3 class="u-headingStyleguide">
+                        Controls
+                    </h3>
+                    <p>
+                        The Controls components are groupings of form elements.
+                    </p>
+                    <p>
+                        All form elements used within a <code>.Control</code> <strong>must</strong> be associated
+                        with a <code>label</code> element.
+                    </p>
+                    <h4 class="u-headingStyleguide" id="TextControl">
+                        TextControl
+                    </h4>
+                    <p>
+                        The <code>.TextControl</code> component groups simple, text-based fields that share a set of
+                        common states. Status and modifier classes can be applied to any field type and can be stacked,
+                        e.g.
+                    </p>
+<div hljs language="html">
+<div class="TextControl TextControl--email TextControl--small is-disabled is-invalid is-required">
+    <label class="TextControl-label is-invalid u-textLabel" for="f-stack-example">Label</label>
+    <input class="TextControl-field is-invalid" id="f-stack-example" name="email" placeholder="Placeholder" type="email" disabled required>
+</div>
+</div>
+                </div>
+                <div class="TextControl TextControl--email TextControl--small is-disabled is-invalid is-required">
+                    <label class="TextControl-label is-invalid u-textLabel" for="f-stack-example">Label</label>
+                    <input class="TextControl-field is-invalid" id="f-stack-example" name="email" placeholder="Placeholder" type="email" disabled required>
+                </div>
+                <div class="Copy">
+                    <p>
+                        All <code>input</code> and <code>textarea</code> elements within a <code>.TextControl</code>
+                        component must have a <code>name</code> attribute that matches the type of data expected (e.g.
+                        <code>&lt;input type="email" name="email"&gt;</code>.
+                    </p>
+                    <p>
+                        The <code>placeholder</code> attribute should be used where this will aid usability but should
+                        <strong>not</strong> be used in place of a <code>label</code> element.
+                    </p>
+                    <p>
+                        The <code>autocomplete="off"</code> attribute should <strong>not</strong> be used for password
+                        fields, but should be used for other sensitive data types (e.g. credit card information).
+                    </p>
+                    <p>
+                        The <code>autofocus</code> attribute should <strong>only</strong> be used once per page, and
+                        <strong>only</strong> on the first field on a composed page that has a single, simple form
+                        (e.g. Login).
+                    </p>
+                    <h4 class="u-headingStyleguide">
+                        Default state
+                    </h4>
+<div hljs language="html">
+<div class="TextControl">
+    <label class="TextControl-label u-textLabel" for="f-Text">Default</label>
+    <input class="TextControl-field" id="f-Text" name="text" placeholder="Text" type="text">
+    <div class="TextControl-message">
+        Optional help message.
+    </div>
+</div>
+</div>
+                </div>
+                <div class="TextControl">
+                    <label class="TextControl-label u-textLabel" for="f-Text">Default</label>
+                    <input class="TextControl-field" id="f-Text" name="text" placeholder="Text" type="text">
+                    <div class="TextControl-message">
+                        Optional help message.
+                    </div>
+                </div>
+                <div class="Copy">
+                    <h4 class="u-headingStyleguide">
+                        Invalid state
+                    </h4>
+<div hljs language="html">
+<div class="TextControl is-invalid">
+    <label class="TextControl-label is-invalid u-textLabel" for="f-Text-is-invalid">Invalid label</label>
+    <input class="TextControl-field is-invalid" id="f-Text-is-invalid" name="text" placeholder="Text" type="text">
+    <div class="TextControl-message is-invalid">
+        Invalid message
+    </div>
+</div>
+</div>
+                </div>
+                <div class="TextControl is-invalid">
+                    <label class="TextControl-label is-invalid u-textLabel" for="f-Text-is-invalid">Invalid label</label>
+                    <input class="TextControl-field is-invalid" id="f-Text-is-invalid" name="text" placeholder="Text" type="text">
+                    <div class="TextControl-message">
+                        Optional help message
+                    </div>
+                    <div class="TextControl-message is-invalid">
+                        Invalid message
+                    </div>
+                </div>
+                <div class="Copy">
+                    <h4 class="u-headingStyleguide">
+                        Required state
+                    </h4>
+<div hljs language="html">
+<div class="TextControl is-required">
+    <label class="TextControl-label is-required" for="f-Text-required">Required</label>
+    <input class="TextControl-field is-required" id="f-Text-required" name="text" placeholder="Required" type="text" required>
+    <div class="TextControl-message is-required">
+        Optional help message
+    </div>
+</div>
+</div>
+                </div>
+                <div class="TextControl is-required">
+                    <label class="TextControl-label is-required" for="f-Text-required">Required</label>
+                    <input class="TextControl-field is-required" id="f-Text-required" name="text" placeholder="Required" type="text" required>
+                    <div class="TextControl-message is-required">
+                        Optional help message
+                    </div>
+                </div>
+                <div class="Copy">
+                    <h4 class="u-headingStyleguide">
+                        Disabled state
+                    </h4>
+<div hljs language="html">
+<div class="TextControl">
+    <label class="TextControl-label u-textLabel" for="f-Text-disabled">Disabled</label>
+    <input class="TextControl-field" id="f-Text-disabled" name="text" placeholder="Disabled" type="text" disabled>
+</div>
+</div>
+                </div>
+                <div class="TextControl">
+                    <label class="TextControl-label u-textLabel" for="f-Text-disabled">Disabled</label>
+                    <input class="TextControl-field" id="f-Text-disabled" name="text" placeholder="Disabled" type="text" disabled>
+                </div>
+                <div class="Copy">
+                    <h4 class="u-headingStyleguide">
+                        Field types
+                    </h4>
+                </div>
+                <div class="Copy">
+                    <h5 class="u-headingStyleguide">
+                        Email
+                    </h5>
+<div hljs language="html">
+<div class="TextControl TextControl--email">
+    <label class="TextControl-label u-textLabel" for="f-Text-email">Email label</label>
+    <input class="TextControl-field" id="f-Text-email" name="email" placeholder="Email" type="email">
+</div>
+</div>
+                </div>
+                <div class="TextControl TextControl--email">
+                    <label class="TextControl-label u-textLabel" for="f-Text-email">Email label</label>
+                    <input class="TextControl-field" id="f-Text-email" name="email" placeholder="Email" type="email">
+                </div>
+                <div class="Copy">
+                    <h5 class="u-headingStyleguide">
+                        Password
+                    </h5>
+<div hljs language="html">
+<div class="TextControl TextControl--password">
+    <label class="TextControl-label u-textLabel" for="f-Text-password">Password label</label>
+    <input class="TextControl-field" id="f-Text-password" name="password" placeholder="Password" type="password">
+</div>
+</div>
+                </div>
+                <div class="TextControl TextControl--password">
+                    <label class="TextControl-label u-textLabel" for="f-Text-password">Password label</label>
+                    <input class="TextControl-field" id="f-Text-password" name="password" placeholder="Password" type="password">
+                </div>
+                <div class="Copy">
+                    <h5 class="u-headingStyleguide">
+                        URL
+                    </h5>
+<div hljs language="html">
+<div class="TextControl TextControl--url">
+    <label class="TextControl-label u-textLabel" for="f-Text-url">URL label</label>
+    <input class="TextControl-field" id="f-Text-url" name="url" placeholder="URL" type="url">
+</div>
+</div>
+                </div>
+                <div class="TextControl TextControl--url">
+                    <label class="TextControl-label u-textLabel" for="f-Text-url">URL label</label>
+                    <input class="TextControl-field" id="f-Text-url" name="url" placeholder="URL" type="url">
+                </div>
+
+                <div class="Copy">
+                    <h5 class="u-headingStyleguide">
+                        Number
+                    </h5>
+<div hljs language="html">
+<div class="TextControl TextControl--number">
+    <label class="TextControl-label u-textLabel" for="f-Text-number">Number label</label>
+    <input class="TextControl-field" id="f-Text-number" name="number" placeholder="Number" type="number">
+</div>
+</div>
+                </div>
+                <div class="TextControl TextControl--number">
+                    <label class="TextControl-label u-textLabel" for="f-Text-number">Number label</label>
+                    <input class="TextControl-field" id="f-Text-number" name="number" placeholder="Number" type="number">
+                </div>
+                <div class="Copy">
+                    <h5 class="u-headingStyleguide">
+                        Textarea
+                    </h5>
+<div hljs language="html">
+<div class="TextControl TextControl--textarea">
+    <label class="TextControl-label u-textLabel" for="f-Text-texarea">Textarea label</label>
+    <textarea class="TextControl-field" id="f-Text-texarea" name="text" placeholder="Textarea"></textarea>
+</div>
+</div>
+                </div>
+                <div class="TextControl TextControl--textarea">
+                    <label class="TextControl-label u-textLabel" for="f-Text-texarea">Textarea label</label>
+                    <textarea class="TextControl-field" id="f-Text-texarea" name="text" placeholder="Textarea"></textarea>
+                </div>
+                <div class="Copy">
+                    <h4 class="u-headingStyleguide">
+                        Small modifier
+                    </h4>
+<div hljs language="html">
+<div class="TextControl TextControl--small">
+    <label class="TextControl-label u-textLabel" for="f-Text--small">Text small</label>
+    <input class="TextControl-field" id="f-Text--small" name="text-small" placeholder="Text small" type="text">
+</div>
+</div>
+                </div>
+                <div class="TextControl TextControl--small">
+                    <label class="TextControl-label u-textLabel" for="f-Text--small">Text small</label>
+                    <input class="TextControl-field" id="f-Text--small" name="text-small" placeholder="Text small" type="text">
                 </div>
             </article>
             <article class="Article Copy" id="Copy">
