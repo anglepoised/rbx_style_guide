@@ -1,0 +1,26 @@
+/** @define Disclaimer; use strict */
+
+/**
+ * The `.Disclaimer` component should be used for all inline disclaimer messages.
+ *
+ * The message any reasonable content. The information part can incorporate other microsyntax components,
+ * such as `.DateTime` and `.Currency`.
+ *
+ * Content is rendered in small italics and aligned to the right of the component.  Utility classes should be used to
+ * achieve specific text styling effects beyond this baseline.
+ */
+
+:root {
+    --Disclaimer-font-size: var(--font-size-x-small);
+    --Disclaimer-subject-font-family: var(--font-family-proportional-semibold);
+}
+
+.Disclaimer {
+    font-size: var(--Disclaimer-font-size);
+    font-style: italic;
+    text-align: right;
+}
+
+.Disclaimer-subject {
+    font-family: var(--Disclaimer-subject-font-family);
+}
