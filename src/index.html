@@ -16,9 +16,15 @@
             <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
         </a>
     </header>
-    <h1 class="u-textHeading1">
-        {{::title}}
-    </h1>
+    <div class="PageTitle">
+        <div class="PageTitle-inner">
+            <div class="PageTitle-body">
+                <h1 class="u-textHeading1">
+                    {{::title}}
+                </h1>
+            </div>
+        </div>
+    </div>
     <div ng-controller="mainCtrl as main">
     </div>
     <nav class="StyleguideNav">
@@ -129,6 +135,9 @@
                     </li>
                     <li class="StyleguideNav-item">
                         <a href="#Icon">Icon</a>
+                    </li>
+                    <li class="StyleguideNav-item">
+                        <a href="#PageTitle">PageTitle</a>
                     </li>
                     <li class="StyleguideNav-item">
                         <a href="#WarningMessages">WarningMessages</a>
@@ -2479,6 +2488,77 @@
 </div>
                 <div>
                     <span class="Icon Icon--green-base-175-logo-rockabox"></span>
+                </div>
+            </article>
+            <article class="Article" id="PageTitle">
+                <div class="Copy">
+                    <h3 class="u-headingStyleguide">
+                        PageTitle
+                    </h3>
+                    <p>
+                        The <code>.PageTitle</code> component...
+                    </p>
+<div hljs language="html">
+<div class="PageTitle">
+    <div class="PageTitle-inner">
+        <div class="PageTitle-navigation">
+            <a class="PageTitle-navigationItem" href="#">← Back somewhere</a>
+        </div>
+        <div class="PageTitle-body">
+            <div class="PageTitle-heading">
+                <h1 class="u-textHeading1">
+                    Page Title
+                </h1>
+            </div>
+            <div class="PageTitle-badge">
+                <div class="Badge">
+                    Status
+                </div>
+            </div>
+        </div>
+        <p class="PageTitle-sub">
+            Subheading
+        </p>
+    </div>
+    <div class="PageTitle-button">
+        <button class="Button">
+            Action
+        </button>
+    </div>
+</div>
+</div>
+                    <p>
+                        Which renders as:
+                    </p>
+                </div>
+                <div>
+                    <div class="PageTitle">
+                        <div class="PageTitle-inner">
+                            <div class="PageTitle-navigation">
+                                <a class="PageTitle-navigationItem" href="#">← Back somewhere</a>
+                            </div>
+                            <div class="PageTitle-body">
+                                <div class="PageTitle-heading">
+                                    <h1 class="u-textHeading1">
+                                        Page Title
+                                    </h1>
+                                </div>
+                                <div class="PageTitle-badge">
+                                    <div class="Badge">
+                                        Status
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="PageTitle-sub">
+                                Subheading
+                            </p>
+                        </div>
+                        <div class="PageTitle-button">
+                            <button class="Button">
+                                Action
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </article>
             <article class="Article" id="WarningMessages">
