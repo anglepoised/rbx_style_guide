@@ -10,7 +10,7 @@ gulp.task('html:lint', function () {
 
     return gulp.src(paths.src)
     .pipe(cached('html'))
-    .pipe(htmlhint())
+    .pipe(htmlhint({'htmlhintrc': '.htmlhintrc'}))
     .on('error', function (err) {
         console.log(err.message);
         this.emit('end');
