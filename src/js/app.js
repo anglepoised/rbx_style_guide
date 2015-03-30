@@ -4,7 +4,7 @@
  */
 angular
     .module('app', ['hljs']).run(function ($rootScope) {
-        $rootScope.title = 'rbx_style_guide';
+        $rootScope.title = 'RBX Style Guide';
     }).controller('mainCtrl', function () {
         this.message = 'rbx_style_guide angularified';
     });
