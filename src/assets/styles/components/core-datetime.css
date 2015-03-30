@@ -2,25 +2,25 @@
 
 /**
  * The `.DateTime` component must be used for all representations of a date and/or time and consists of a date
- * descendant an an optional time descendant.
+ * descendent and an optional time descendent.
+ *
+ * One modifier is available, `.DateTime--understateTime`, which de-emphasizes the time descendent.
  *
  * The `<time>` element must be used as the root element for this component.
  */
 
 :root {
-    --DateTime-date-font-size: var(--font-size);
-    --DateTime-time-font-size: var(--font-size-x-small);
+    --DateTime--understateTime-font-size: 0.75em;
 }
 
 /**
- * 1. Force date size to default.
- * 2. Reduce time font size.
+ * 1. Proportionally reduce font size of time.
  */
 
-.DateTime-date {
-    font-size: var(--DateTime-date-font-size); /* 1 */
-}
+/**
+ * understateTime modifier
+ */
 
-.DateTime-time {
-    font-size: var(--DateTime-time-font-size); /* 2 */
+.DateTime--understateTime .DateTime-time {
+    font-size: var(--DateTime--understateTime-font-size); /* 1 */
 }
