@@ -143,6 +143,9 @@
                         <a href="#PageTitle">PageTitle</a>
                     </li>
                     <li class="StyleguideNav-item">
+                        <a href="#Login">Login</a>
+                    </li>
+                    <li class="StyleguideNav-item">
                         <a href="#WarningMessages">WarningMessages</a>
                     </li>
                 </ol>
@@ -2615,6 +2618,91 @@
                                 Action
                             </button>
                         </div>
+                    </div>
+                </div>
+            </article>
+            <article class="Article" id="Login">
+                <div class="Copy">
+                    <h3 class="u-headingStyleguide">
+                        Login
+                    </h3>
+                    <p>
+                        The <code>.Login</code> component is a composed form component.
+                    </p>
+                    <p>
+                        The <code>autofocus</code> attribute should be added to the <code>email</code> field, presuming
+                        no other forms are used on the same composed page.
+                    </p>
+<div hljs language="html">
+<div class="Login">
+    <div class="Login-icon">
+        <span class="Icon Icon--white-alabaster-175-logo-rockabox"></span>
+    </div>
+    <form class="Login-body">
+        <fieldset>
+            <div class="Login-control">
+                <div class="TextControl TextControl--email">
+                    <label class="TextControl-label u-textLabel" for="f-Login-email">Email</label>
+                    <input class="TextControl-field" id="f-Login-email" name="email" placeholder="Email" type="email" autofocus required>
+                    <div class="TextControl-message is-invalid">
+                        Invalid message.
+                    </div>
+                </div>
+            </div>
+            <div class="Login-control">
+                <div class="TextControl TextControl--password">
+                    <label class="TextControl-label u-textLabel" for="f-Login-password">Password</label>
+                    <input class="TextControl-field" id="f-Login-password" name="password" placeholder="Password" type="password" required>
+                    <div class="TextControl-message is-invalid">
+                        Invalid message.
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="Login-button">
+            <button class="Button Button--green" type="button">
+                Login
+            </button>
+        </fieldset>
+    </form>
+</div>
+</div>
+                    <p>
+                        Which renders as:
+                    </p>
+                </div>
+                <div>
+                    <div class="Login">
+                        <div class="Login-icon">
+                            <span class="Icon Icon--white-alabaster-175-logo-rockabox"></span>
+                        </div>
+                        <form class="Login-body">
+                            <fieldset>
+                                <div class="Login-control">
+                                    <div class="TextControl TextControl--email">
+                                        <label class="TextControl-label u-textLabel" for="f-Login-email">Email</label>
+                                        <input class="TextControl-field" id="f-Login-email" name="email" placeholder="Email" type="email" required>
+                                        <div class="TextControl-message is-invalid">
+                                            Invalid message.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Login-control">
+                                    <div class="TextControl TextControl--password">
+                                        <label class="TextControl-label u-textLabel" for="f-Login-password">Password</label>
+                                        <input class="TextControl-field" id="f-Login-password" name="password" placeholder="Password" type="password" required>
+                                        <div class="TextControl-message is-invalid">
+                                            Invalid message.
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="Login-button">
+                                <button class="Button Button--green" type="button">
+                                    Login
+                                </button>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
             </article>
