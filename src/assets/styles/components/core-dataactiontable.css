@@ -16,6 +16,7 @@
  */
 
 :root {
+    --DataActionTable-background: var(--colour-white-catskill);
     --DataActionTable-border-colour: var(--colour-green-base);
     --DataActionTable-border-width: 1px;
     --DataActionTable-cell-colour: var(--colour-gray-tuna);
@@ -44,12 +45,18 @@
  * 8. Disallow wrapping of cell contents to increase scanability.
  */
 
+.DataActionTable {
+    background: var(--DataActionTable-background);
+    padding-top: 2em;
+}
+
 /**
  * Toolbar
  */
 
 .DataActionTable-toolbar {
     display: flex;
+    margin: 0 var(--layout-gutter);
 }
 
 .DataActionTable-search {
