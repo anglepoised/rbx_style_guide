@@ -52,3 +52,8 @@
 @import "components/styleguide-article.css";
 @import "components/styleguide-nav.css";
 @import "components/styleguide-swatch.css";
+
+/**
+ * Vendor
+ */
+@import "vendor/highlight.js/github.css";
