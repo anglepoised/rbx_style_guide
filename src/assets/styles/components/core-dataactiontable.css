@@ -147,6 +147,7 @@
     background: url("../images/black-8-sorted-descending.svg") no-repeat right center;
     cursor: pointer;
     padding-right: 16px;
+    user-select: none;
 }
 
 .DataActionTable-cellHeader.is-sortedAscending .DataActionTable-cellHeaderItem {
