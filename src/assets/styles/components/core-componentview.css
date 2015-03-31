@@ -1,0 +1,15 @@
+/** @define ComponentView; use strict */
+
+/**
+ * The `.ComponentView` component wraps a rendered component in Style Guide.
+ */
+
+:root {
+    --ComponentView-background: var(--colour-white-catskill);
+}
+
+.ComponentView {
+    background: var(--ComponentView-background);
+    margin: 1em 0;
+    padding: 1em 0.5em;
+}

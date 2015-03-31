@@ -887,17 +887,13 @@
 
 <input class="Button" type="submit" value="Submit">
 </div>
-                <div>
+                <div class="ComponentView">
                     <button class="Button" type="button">
                         Button
                     </button>
-                </div>
-                <div>
                     <a class="Button" href="#">
                         Link
                     </a>
-                </div>
-                <div>
                     <input class="Button" type="submit" value="Submit">
                 </div>
                 <p>
@@ -911,9 +907,11 @@
                 <p>
                     Gives:
                 </p>
-                <button class="Button Button--large Button--orange is-disabled" disabled>
-                    Large Orange Disabled Button
-                </button>
+                <div class="ComponentView">
+                    <button class="Button Button--large Button--orange is-disabled" disabled>
+                        Large Orange Disabled Button
+                    </button>
+                </div>
                 <h4 class="u-headingStyleguide">
                     Core states
                 </h4>
@@ -924,7 +922,7 @@
                     Buttons without modifier classes default to the standard size and blue colour and should be used for the
                     majority of actions.
                 </p>
-                <div>
+                <div class="ComponentView">
                     <button class="Button" type="button">
                         Standard Button
                     </button>
@@ -945,7 +943,7 @@
     Disabled Button
 </button>
 </div>
-                <div>
+                <div class="ComponentView">
                     <button class="Button is-disabled" type="button" disabled>
                         Disabled Button
                     </button>
@@ -961,7 +959,7 @@
     Pressed Button
 </button>
 </div>
-                <div>
+                <div class="ComponentView">
                     <button class="Button is-pressed" type="button">
                         Pressed Button
                     </button>
@@ -980,7 +978,7 @@
     Large Button
 </button>
 </div>
-                <div>
+                <div class="ComponentView">
                     <button class="Button Button--large" type="button">
                         Large Button
                     </button>
@@ -1002,7 +1000,7 @@
     Green Button
 </button>
 </div>
-                <div>
+                <div class="ComponentView">
                     <button class="Button Button--green" type="button">
                         Green Button
                     </button>
@@ -1018,7 +1016,7 @@
     Orange Button
 </button>
 </div>
-                <div>
+                <div class="ComponentView">
                     <button class="Button Button--orange" type="button">
                         Orange Button
                     </button>
@@ -1034,7 +1032,7 @@
     Red Button
 </button>
 </div>
-                <div>
+                <div class="ComponentView">
                     <button class="Button Button--red" type="button">
                         Red Button
                     </button>
@@ -1057,7 +1055,7 @@
 </button>
 </div>
                 <p>Gives:</p>
-                <div>
+                <div class="ComponentView">
                     <button class="Button Button--icon Button--large Button--orange is-disabled" disabled type="button">
                         <span class="Icon Icon--white-alabaster-8-plus"></span>
                         Large Orange Disabled Icon Button
@@ -1072,7 +1070,7 @@
                 <p>
                     Default icon buttons must use 8px x 8px icons.
                 </p>
-                <div>
+                <div class="ComponentView">
                     <button class="Button Button--icon" type="button">
                         <span class="Icon Icon--white-alabaster-8-plus"></span>
                         Icon Button
@@ -1084,7 +1082,7 @@
                 <p>
                     Large variant icon buttons must use 12px x 12px icons.
                 </p>
-                <div>
+                <div class="ComponentView">
                     <button class="Button Button--icon Button--large" type="button">
                         <span class="Icon Icon--white-alabaster-12-plus"></span>
                         <span>Icon Button Large</span>
@@ -1105,7 +1103,7 @@
                 <p>
                     Gives:
                 </p>
-                <div>
+                <div class="ComponentView">
                     <button class="Button Button--icon" type="button">
                         <span class="Icon Icon--white-alabaster-8-plus">Hidden Text</span>
                     </button>
@@ -1138,9 +1136,11 @@
 </div>
 </div>
                 </div>
-                <div class="TextControl TextControl--email TextControl--small is-disabled is-invalid is-required">
-                    <label class="TextControl-label is-invalid u-textLabel" for="f-stack-example">Label</label>
-                    <input class="TextControl-field is-invalid" id="f-stack-example" name="email" placeholder="Placeholder" type="email" disabled required>
+                <div class="ComponentView">
+                    <div class="TextControl TextControl--email TextControl--small is-disabled is-invalid is-required">
+                        <label class="TextControl-label is-invalid u-textLabel" for="f-stack-example">Label</label>
+                        <input class="TextControl-field is-invalid" id="f-stack-example" name="email" placeholder="Placeholder" type="email" disabled required>
+                    </div>
                 </div>
                 <div class="Copy">
                     <p>
@@ -1174,11 +1174,13 @@
 </div>
 </div>
                 </div>
-                <div class="TextControl">
-                    <label class="TextControl-label u-textLabel" for="f-Text">Default</label>
-                    <input class="TextControl-field" id="f-Text" name="text" placeholder="Text" type="text">
-                    <div class="TextControl-message">
-                        Optional help message.
+                <div class="ComponentView">
+                    <div class="TextControl">
+                        <label class="TextControl-label u-textLabel" for="f-Text">Default</label>
+                        <input class="TextControl-field" id="f-Text" name="text" placeholder="Text" type="text">
+                        <div class="TextControl-message">
+                            Optional help message.
+                        </div>
                     </div>
                 </div>
                 <div class="Copy">
@@ -1195,14 +1197,16 @@
 </div>
 </div>
                 </div>
-                <div class="TextControl is-invalid">
-                    <label class="TextControl-label is-invalid u-textLabel" for="f-Text-is-invalid">Invalid label</label>
-                    <input class="TextControl-field is-invalid" id="f-Text-is-invalid" name="text" placeholder="Text" type="text">
-                    <div class="TextControl-message">
-                        Optional help message
-                    </div>
-                    <div class="TextControl-message is-invalid">
-                        Invalid message
+                <div class="ComponentView">
+                    <div class="TextControl is-invalid">
+                        <label class="TextControl-label is-invalid u-textLabel" for="f-Text-is-invalid">Invalid label</label>
+                        <input class="TextControl-field is-invalid" id="f-Text-is-invalid" name="text" placeholder="Text" type="text">
+                        <div class="TextControl-message">
+                            Optional help message
+                        </div>
+                        <div class="TextControl-message is-invalid">
+                            Invalid message
+                        </div>
                     </div>
                 </div>
                 <div class="Copy">
@@ -1219,11 +1223,13 @@
 </div>
 </div>
                 </div>
-                <div class="TextControl is-required">
-                    <label class="TextControl-label is-required" for="f-Text-required">Required</label>
-                    <input class="TextControl-field is-required" id="f-Text-required" name="text" placeholder="Required" type="text" required>
-                    <div class="TextControl-message is-required">
-                        Optional help message
+                <div class="ComponentView">
+                    <div class="TextControl is-required">
+                        <label class="TextControl-label is-required" for="f-Text-required">Required</label>
+                        <input class="TextControl-field is-required" id="f-Text-required" name="text" placeholder="Required" type="text" required>
+                        <div class="TextControl-message is-required">
+                            Optional help message
+                        </div>
                     </div>
                 </div>
                 <div class="Copy">
@@ -1237,9 +1243,11 @@
 </div>
 </div>
                 </div>
-                <div class="TextControl">
-                    <label class="TextControl-label u-textLabel" for="f-Text-disabled">Disabled</label>
-                    <input class="TextControl-field" id="f-Text-disabled" name="text" placeholder="Disabled" type="text" disabled>
+                <div class="ComponentView">
+                    <div class="TextControl">
+                        <label class="TextControl-label u-textLabel" for="f-Text-disabled">Disabled</label>
+                        <input class="TextControl-field" id="f-Text-disabled" name="text" placeholder="Disabled" type="text" disabled>
+                    </div>
                 </div>
                 <div class="Copy">
                     <h4 class="u-headingStyleguide">
@@ -1257,9 +1265,11 @@
 </div>
 </div>
                 </div>
-                <div class="TextControl TextControl--email">
-                    <label class="TextControl-label u-textLabel" for="f-Text-email">Email label</label>
-                    <input class="TextControl-field" id="f-Text-email" name="email" placeholder="Email" type="email">
+                <div class="ComponentView">
+                    <div class="TextControl TextControl--email">
+                        <label class="TextControl-label u-textLabel" for="f-Text-email">Email label</label>
+                        <input class="TextControl-field" id="f-Text-email" name="email" placeholder="Email" type="email">
+                    </div>
                 </div>
                 <div class="Copy">
                     <h5 class="u-headingStyleguide">
@@ -1272,9 +1282,11 @@
 </div>
 </div>
                 </div>
-                <div class="TextControl TextControl--password">
-                    <label class="TextControl-label u-textLabel" for="f-Text-password">Password label</label>
-                    <input class="TextControl-field" id="f-Text-password" name="password" placeholder="Password" type="password">
+                <div class="ComponentView">
+                    <div class="TextControl TextControl--password">
+                        <label class="TextControl-label u-textLabel" for="f-Text-password">Password label</label>
+                        <input class="TextControl-field" id="f-Text-password" name="password" placeholder="Password" type="password">
+                    </div>
                 </div>
                 <div class="Copy">
                     <h5 class="u-headingStyleguide">
@@ -1287,11 +1299,12 @@
 </div>
 </div>
                 </div>
-                <div class="TextControl TextControl--url">
-                    <label class="TextControl-label u-textLabel" for="f-Text-url">URL label</label>
-                    <input class="TextControl-field" id="f-Text-url" name="url" placeholder="URL" type="url">
+                <div class="ComponentView">
+                    <div class="TextControl TextControl--url">
+                        <label class="TextControl-label u-textLabel" for="f-Text-url">URL label</label>
+                        <input class="TextControl-field" id="f-Text-url" name="url" placeholder="URL" type="url">
+                    </div>
                 </div>
-
                 <div class="Copy">
                     <h5 class="u-headingStyleguide">
                         Number
@@ -1303,9 +1316,11 @@
 </div>
 </div>
                 </div>
-                <div class="TextControl TextControl--number">
-                    <label class="TextControl-label u-textLabel" for="f-Text-number">Number label</label>
-                    <input class="TextControl-field" id="f-Text-number" name="number" placeholder="Number" type="number">
+                <div class="ComponentView">
+                    <div class="TextControl TextControl--number">
+                        <label class="TextControl-label u-textLabel" for="f-Text-number">Number label</label>
+                        <input class="TextControl-field" id="f-Text-number" name="number" placeholder="Number" type="number">
+                    </div>
                 </div>
                 <div class="Copy">
                     <h5 class="u-headingStyleguide">
@@ -1318,9 +1333,11 @@
 </div>
 </div>
                 </div>
-                <div class="TextControl TextControl--textarea">
-                    <label class="TextControl-label u-textLabel" for="f-Text-texarea">Textarea label</label>
-                    <textarea class="TextControl-field" id="f-Text-texarea" name="text" placeholder="Textarea"></textarea>
+                <div class="ComponentView">
+                    <div class="TextControl TextControl--textarea">
+                        <label class="TextControl-label u-textLabel" for="f-Text-texarea">Textarea label</label>
+                        <textarea class="TextControl-field" id="f-Text-texarea" name="text" placeholder="Textarea"></textarea>
+                    </div>
                 </div>
                 <div class="Copy">
                     <h4 class="u-headingStyleguide">
@@ -1333,227 +1350,223 @@
 </div>
 </div>
                 </div>
-                <div class="TextControl TextControl--small">
-                    <label class="TextControl-label u-textLabel" for="f-Text--small">Text small</label>
-                    <input class="TextControl-field" id="f-Text--small" name="text-small" placeholder="Text small" type="text">
+                <div class="ComponentView">
+                    <div class="TextControl TextControl--small">
+                        <label class="TextControl-label u-textLabel" for="f-Text--small">Text small</label>
+                        <input class="TextControl-field" id="f-Text--small" name="text-small" placeholder="Text small" type="text">
+                    </div>
                 </div>
             </article>
-            <article class="Article Copy" id="Copy">
-                <h3 class="u-headingStyleguide">
-                    Copy
-                </h3>
-                <p>
-                    The <code>.Copy</code> component is used to wrap sections of plain, class-free HTML that require
-                    default typographical styles and margins. Typographic elements used outside the context of
-                    <code>.Copy</code> <strong>do not have any margins attached</strong>.
-                </p>
-                <div id="paragraphs">
-                    <h4 class="u-headingStyleguide">
-                        Paragraph
-                    </h4>
+            <article class="Article" id="Copy">
+                <div class="Copy">
+                    <h3 class="u-headingStyleguide">
+                        Copy
+                    </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        <img alt="" src="http://placehold.it/1280x720&amp;text=16%20x%209">
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
+                        The <code>.Copy</code> component is used to wrap sections of plain, class-free HTML that require
+                        default typographical styles and margins. Typographic elements used outside the context of
+                        <code>.Copy</code> <strong>do not have any margins attached</strong>.
                     </p>
                 </div>
-                <div id="blockquotes">
-                    <h4 class="u-headingStyleguide">
-                        Blockquote
-                    </h4>
-                    <blockquote>
+                <div class="ComponentView">
+                    <div class="Copy">
+                        <h4 class="u-headingStyleguide">
+                            Paragraph
+                        </h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                         <p>
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum.
+                            <img alt="" src="http://placehold.it/1280x720&amp;text=16%20x%209">
                         </p>
-                    </blockquote>
-                </div>
-                <div id="unordered-list">
-                    <h4 class="u-headingStyleguide">
-                        Unordered list
-                    </h4>
-                    <ul>
-                        <li>
-                            This is a list item in an unordered list
-                        </li>
-                        <li>
-                            An unordered list is a list in which the sequence of items is not important. Sometimes, an
-                            unordered list is a bulleted list. And this is a long list item in an unordered list that can
-                            wrap onto a new line.
-                        </li>
-                        <li>
-                            Lists can be nested inside of each other
-                            <ul>
-                                <li>
-                                    This is a nested list item
-                                </li>
-                                <li>
-                                    This is another nested list item in an unordered list
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            This is the last list item
-                        </li>
-                    </ul>
-                </div>
-                <div id="ordered-list">
-                    <h4 class="u-headingStyleguide">
-                        Ordered list
-                    </h4>
-                    <ol>
-                        <li>
-                            This is a list item in an ordered list
-                        </li>
-                        <li>
-                            An ordered list is a list in which the sequence of items is important. An ordered list does not
-                            necessarily contain sequence characters.
-                        </li>
-                        <li>
-                            Lists can be nested inside of each other
-                            <ol>
-                                <li>
-                                    This is a nested list item</li>
-                                <li>
-                                    This is another nested list item in an ordered list
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            This is the last list item
-                        </li>
-                    </ol>
-                </div>
-                <div id="definition-list">
-                    <h4 class="u-headingStyleguide">
-                        Definition List
-                    </h4>
-                    <dl>
-                        <dt>
-                            This is a term
-                        </dt>
-                        <dd>
-                            A number of connected items or names written or printed consecutively, typically one below the
-                            other.
-                        </dd>
-                        <dt>
-                            This is a term.
-                        </dt>
-                        <dd>
-                            This is the definition of that term, which both live in a <code>dl</code>.
-                        </dd>
-                        <dt>
-                            Here is another term.
-                        </dt>
-                        <dd>
-                            And it gets a definition too, which is this line.
-                        </dd>
-                        <dt>
-                            Here is term that shares a definition with the term below.
-                        </dt>
-                        <dd>
-                            And it gets a definition too, which is this line.
-                        </dd>
-                    </dl>
-                </div>
-                <div id="table">
-                    <h4 class="u-headingStyleguide">
-                        Table
-                    </h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col">
-                                    Column 1
-                                </th>
-                                <th scope="col">
-                                    Column 2
-                                </th>
-                                <th scope="col">
-                                    Column 3
-                                </th>
-                                <th scope="col">
-                                    Column 4
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    Lorem
-                                </td>
-                                <td>
-                                    Ipsum Dolor Sit Amet
-                                </td>
-                                <td>
-                                    Consectetur Adipisicing
-                                </td>
-                                <td>
-                                    $1,000.00
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Elit Sed Do Eiusmod
-                                </td>
-                                <td>
-                                    Tempor Incididunt
-                                </td>
-                                <td>
-                                    Ut Enim Ad
-                                </td>
-                                <td>
-                                    $990.00
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Minim Veniam
-                                </td>
-                                <td>
-                                    Quis Nostrud Exercitation Ullamco
-                                </td>
-                                <td>
-                                    Laboris Nisi Ut Aliquip Ex Ea Commodo
-                                </td>
-                                <td>
-                                    $1.00
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Minim Veniam
-                                </td>
-                                <td>
-                                    Quis Nostrud Exercitation Ullamco
-                                </td>
-                                <td>
-                                    Laboris Nisi Ut Aliquip Ex Ea Commodo
-                                </td>
-                                <td>
-                                    $1.00
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <h4 class="u-headingStyleguide">
+                            Blockquote
+                        </h4>
+                        <blockquote>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
+                            </p>
+                        </blockquote>
+                        <h4 class="u-headingStyleguide">
+                            Unordered list
+                        </h4>
+                        <ul>
+                            <li>
+                                This is a list item in an unordered list
+                            </li>
+                            <li>
+                                An unordered list is a list in which the sequence of items is not important. Sometimes, an
+                                unordered list is a bulleted list. And this is a long list item in an unordered list that can
+                                wrap onto a new line.
+                            </li>
+                            <li>
+                                Lists can be nested inside of each other
+                                <ul>
+                                    <li>
+                                        This is a nested list item
+                                    </li>
+                                    <li>
+                                        This is another nested list item in an unordered list
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                This is the last list item
+                            </li>
+                        </ul>
+                        <h4 class="u-headingStyleguide">
+                            Ordered list
+                        </h4>
+                        <ol>
+                            <li>
+                                This is a list item in an ordered list
+                            </li>
+                            <li>
+                                An ordered list is a list in which the sequence of items is important. An ordered list does not
+                                necessarily contain sequence characters.
+                            </li>
+                            <li>
+                                Lists can be nested inside of each other
+                                <ol>
+                                    <li>
+                                        This is a nested list item</li>
+                                    <li>
+                                        This is another nested list item in an ordered list
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                This is the last list item
+                            </li>
+                        </ol>
+                        <h4 class="u-headingStyleguide">
+                            Definition List
+                        </h4>
+                        <dl>
+                            <dt>
+                                This is a term
+                            </dt>
+                            <dd>
+                                A number of connected items or names written or printed consecutively, typically one below the
+                                other.
+                            </dd>
+                            <dt>
+                                This is a term.
+                            </dt>
+                            <dd>
+                                This is the definition of that term, which both live in a <code>dl</code>.
+                            </dd>
+                            <dt>
+                                Here is another term.
+                            </dt>
+                            <dd>
+                                And it gets a definition too, which is this line.
+                            </dd>
+                            <dt>
+                                Here is term that shares a definition with the term below.
+                            </dt>
+                            <dd>
+                                And it gets a definition too, which is this line.
+                            </dd>
+                        </dl>
+                        <h4 class="u-headingStyleguide">
+                            Table
+                        </h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Column 1
+                                    </th>
+                                    <th scope="col">
+                                        Column 2
+                                    </th>
+                                    <th scope="col">
+                                        Column 3
+                                    </th>
+                                    <th scope="col">
+                                        Column 4
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Lorem
+                                    </td>
+                                    <td>
+                                        Ipsum Dolor Sit Amet
+                                    </td>
+                                    <td>
+                                        Consectetur Adipisicing
+                                    </td>
+                                    <td>
+                                        $1,000.00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Elit Sed Do Eiusmod
+                                    </td>
+                                    <td>
+                                        Tempor Incididunt
+                                    </td>
+                                    <td>
+                                        Ut Enim Ad
+                                    </td>
+                                    <td>
+                                        $990.00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Minim Veniam
+                                    </td>
+                                    <td>
+                                        Quis Nostrud Exercitation Ullamco
+                                    </td>
+                                    <td>
+                                        Laboris Nisi Ut Aliquip Ex Ea Commodo
+                                    </td>
+                                    <td>
+                                        $1.00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Minim Veniam
+                                    </td>
+                                    <td>
+                                        Quis Nostrud Exercitation Ullamco
+                                    </td>
+                                    <td>
+                                        Laboris Nisi Ut Aliquip Ex Ea Commodo
+                                    </td>
+                                    <td>
+                                        $1.00
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </article>
             <article class="Article" id="Currency">
@@ -1582,7 +1595,7 @@
                         Which renders as:
                     </p>
                 </div>
-                <div>
+                <div class="ComponentView">
                     <data class="Currency" value="$9999999.99">
                         <span class="Currency-unit">$9,999,999</span><span class="Currency-cent">.99</span>
                     </data>
@@ -1737,7 +1750,7 @@
                     Which renders as:
                 </p>
                 </div>
-                <div>
+                <div class="ComponentView">
                     <div class="DataActionTable">
                         <div class="DataActionTable-toolbar">
                             <div class="DataActionTable-action">
@@ -2104,7 +2117,7 @@
                 <div class="Copy">
                     No items state:
                 </div>
-                <div>
+                <div class="ComponentView">
                     <div class="DataActionTable">
                         <div class="DataActionTable-toolbar">
                             <div class="DataActionTable-action">
@@ -2167,7 +2180,7 @@
                 <div class="Copy">
                     No results state:
                 </div>
-                <div>
+                <div class="ComponentView">
                     <div class="DataActionTable">
                         <div class="DataActionTable-toolbar">
                             <div class="DataActionTable-action">
@@ -2261,7 +2274,7 @@
                         Which renders as:
                     </p>
                 </div>
-                <div>
+                <div class="ComponentView">
                     <time class="DateTime" datetime="1970-01-01T00:00">
                         <span class="DateTime-date">01 Jan 1970</span>
                         <span class="DateTime-time">00:00</span>
@@ -2282,7 +2295,7 @@
                         Which renders as:
                     </p>
                 </div>
-                <div>
+                <div class="ComponentView">
                     <time class="DateTime DateTime--understateTime" datetime="1970-01-01T00:00">
                         <span class="DateTime-date">01 Jan 1970</span>
                         <span class="DateTime-time">00:00</span>
@@ -2306,7 +2319,7 @@
                         Which renders as:
                     </p>
                 </div>
-                <div>
+                <div class="ComponentView">
                     <div class="Disclaimer">
                         <span class="Disclaimer-subject">Disclaimer subject:</span> <span class="Disclaimer-information">disclaimer information</span>
                     </div>
@@ -2341,7 +2354,7 @@
                         Which renders as:
                     </p>
                 </div>
-                <div>
+                <div class="ComponentView">
                     <footer class="Footer" role="contentinfo">
                         <ul class="Footer-items">
                             <li class="Footer-item">
@@ -2402,7 +2415,7 @@
                         Which renders as:
                     </p>
                 </div>
-                <div>
+                <div class="ComponentView">
                     <div class="FullPage">
                         <div class="FullPage-body">
                             <main>
@@ -2465,7 +2478,7 @@
                     Logo-only header:
                 </p>
                 </div>
-                <div>
+                <div class="ComponentView">
                     <header class="Header" role="banner">
                         <a class="Header-logo" href="#">
                             <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
@@ -2475,7 +2488,7 @@
                 <div class="Copy">
                     Logo and user header:
                 </div>
-                <div>
+                <div class="ComponentView">
                     <header class="Header" role="banner">
                         <a class="Header-logo" href="#">
                             <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
@@ -2497,7 +2510,7 @@
                 <div class="Copy">
                     Full header:
                 </div>
-                <div>
+                <div class="ComponentView">
                     <header class="Header" role="banner">
                         <a class="Header-logo" href="#">
                             <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
@@ -2546,7 +2559,7 @@
 <div hljs language="html">
 <span class="Icon Icon--green-base-175-logo-rockabox"></span>
 </div>
-                <div>
+                <div class="ComponentView">
                     <span class="Icon Icon--green-base-175-logo-rockabox"></span>
                 </div>
             </article>
@@ -2591,7 +2604,7 @@
                         Which renders as:
                     </p>
                 </div>
-                <div>
+                <div class="ComponentView">
                     <div class="PageTitle">
                         <div class="PageTitle-inner">
                             <div class="PageTitle-navigation">
@@ -2671,7 +2684,7 @@
                         Which renders as:
                     </p>
                 </div>
-                <div>
+                <div class="ComponentView">
                     <div class="Login">
                         <div class="Login-icon">
                             <span class="Icon Icon--white-alabaster-175-logo-rockabox"></span>
@@ -2741,7 +2754,7 @@
 </div>
 </div>
                 </div>
-                <div>
+                <div class="ComponentView">
                     <div class="WarningMessages">
                         <ul class="WarningMessages-items">
                             <li class="WarningMessages-item">
