@@ -1,6 +1,8 @@
 # For SCSS-Lint v0.34.0
 
-exclude: 'src/assets/styles/boot/normalize.css'
+exclude:
+    - 'src/assets/styles/boot/normalize.css'
+    - 'src/assets/styles/vendor/**'
 
 linters:
 
