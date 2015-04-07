@@ -8,7 +8,8 @@
     --Button-color: var(--colour-white-alabaster);
     --Button-disabled-opacity: 0.5;
     --Button-font: inherit;
-    --Button-padding: 0.5em 1em;
+    --Button-line-height: 2.5;
+    --Button-padding: 0 1em;
 }
 
 /**
@@ -22,7 +23,7 @@
  * 2. Hide back face for transition.
  * 3. Ensure no `text-decoration` on anchors.
  * 4. Prevent button text from being selectable.
- * 5. Make sure `input` will wrap text across multiple lines.
+ * 5. Prevent text wrapping (allows controlling space with line height).
  */
 
 .Button {
@@ -36,6 +37,7 @@
     cursor: pointer;
     display: inline-block;
     font: var(--Button-font);
+    line-height: var(--Button-line-height);
     margin: 0;
     padding: var(--Button-padding);
     position: relative;
@@ -45,7 +47,7 @@
     transition-duration: 0.2s;
     transition-property: background-color;
     user-select: none; /* 4 */
-    white-space: normal; /* 5 */
+    white-space: nowrap; /* 5 */
 }
 
 /**
@@ -109,12 +111,14 @@
 
 :root {
     --Button--large-font-size: var(--font-size-large);
-    --Button--large-padding: 0.583333333em 1.111111111em;
+    --Button--large-line-height: 2.666666667;
+    --Button--large-padding: 0 1.111111111em;
     --Button-border-radius: 3px;
 }
 
 .Button--large {
     font-size: var(--Button--large-font-size);
+    line-height: var(--Button--large-line-height);
     padding: var(--Button--large-padding);
 }
 
@@ -125,12 +129,14 @@
 :root {
     --Button--small-border-radius: 1px;
     --Button--small-font-size: var(--font-size-small);
-    --Button--small-padding: 0.392857143em 0.857142857em;
+    --Button--small-line-height: 2.285714286;
+    --Button--small-padding: 0 0.857142857em;
 }
 
 .Button--small {
     border-radius: var(--Button--small-border-radius);
     font-size: var(--Button--small-font-size);
+    line-height: var(--Button--small-line-height);
     padding: var(--Button--small-padding);
 }
 
