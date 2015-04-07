@@ -42,7 +42,7 @@
     text-align: center;
     text-decoration: none; /* 3 */
     text-transform: capitalize;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     transition-property: background-color;
     user-select: none; /* 4 */
     white-space: normal; /* 5 */
