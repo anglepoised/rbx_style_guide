@@ -108,7 +108,8 @@
 
 :root {
     --Button--large-font-size: var(--font-size-large);
-    --Button--large-padding: 1.111111111em;
+    --Button--large-padding: 0.583333333em 1.111111111em;
+    --Button-border-radius: 3px;
 }
 
 .Button--large {
