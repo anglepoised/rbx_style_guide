@@ -878,12 +878,17 @@
                     The <code>.Button</code> component defines button styles for <code>&lt;button&gt;</code> and
                     <code>&lt;a&gt;</code> elements.
                 </p>
+                <p>
+                    When using a <code>&lt;button&gt;</code> element, <strong>always specify a
+                    <code>type</code></strong>. When using a <code>&lt;a&gt;</code> element, <strong>always add
+                    <code>role="button"</code></strong>.
+                </p>
 <div hljs language="html">
 <button class="Button" type="button">
     Button
 </button>
 
-<a class="Button" href="#">
+<a class="Button" href="#" role="button">
     Link
 </a>
 </div>
@@ -891,7 +896,7 @@
                     <button class="Button" type="button">
                         Button
                     </button>
-                    <a class="Button" href="#">
+                    <a class="Button" href="#" role="button">
                         Link
                     </a>
                 </div>
@@ -899,7 +904,7 @@
                     Combinations of states can be applied by stacking class modifiers. For example:
                 </p>
 <div hljs language="html">
-<button class="Button Button--large Button--warning is-disabled" disabled>
+<button class="Button Button--large Button--warning is-disabled" type="button" disabled>
     Large Disabled Warning Button
 </button>
 </div>
@@ -907,7 +912,7 @@
                     Gives:
                 </p>
                 <div class="ComponentView">
-                    <button class="Button Button--large Button--warning is-disabled" disabled>
+                    <button class="Button Button--large Button--warning is-disabled" type="button" disabled>
                         Large Disabled Warning Button
                     </button>
                 </div>
@@ -938,7 +943,7 @@
                     JavaScript event handlers from firing.
                 </p>
 <div hljs language="html">
-<button class="Button is-disabled" disabled>
+<button class="Button is-disabled" type="button" disabled>
     Disabled Button
 </button>
 </div>
