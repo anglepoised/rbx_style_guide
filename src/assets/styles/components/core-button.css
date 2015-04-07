@@ -3,17 +3,17 @@
 :root {
     --Button-background: var(--colour-blue-base);
     --Button-background-hover: var(--colour-blue-hover);
-    --Button-background-shadow: var(--colour-blue-shadow);
-    --Button-border-radius: 4px;
-    --Button-box-shadow: inset 0 -3px 0 0;
+    --Button-background-pressed: var(--colour-blue-shadow);
+    --Button-border-radius: 2px;
     --Button-color: var(--colour-white-alabaster);
     --Button-disabled-opacity: 0.5;
     --Button-font: inherit;
-    --Button-padding: 0.9375em 1em;
+    --Button-line-height: 2.5;
+    --Button-padding: 0 1em;
 }
 
 /**
- * The button classes are best applied to links, buttons, and submit inputs.
+ * The button classes are best applied to link and button elements.
  * These components can be used in forms, as calls to action, or as part of the
  * general UI of the site/app.
  */
@@ -21,10 +21,9 @@
 /**
  * 1. Corrects inability to style clickable `input` types in iOS.
  * 2. Hide back face for transition.
- * 3. Proportional line height to strip vertical space from enclosed inline-block elements.
- * 4. Ensure no `text-decoration` on anchors.
- * 5. Prevent button text from being selectable.
- * 6. Make sure `input` will wrap text across multiple lines.
+ * 3. Ensure no `text-decoration` on anchors.
+ * 4. Prevent button text from being selectable.
+ * 5. Prevent text wrapping (allows controlling space with line height).
  */
 
 .Button {
@@ -34,22 +33,21 @@
     border-radius: var(--Button-border-radius);
     border-style: none;
     border-width: 0;
-    box-shadow: var(--Button-box-shadow) var(--Button-background-shadow);
     color: var(--Button-color);
     cursor: pointer;
     display: inline-block;
     font: var(--Button-font);
-    line-height: 0.6%;  /* 3 */
+    line-height: var(--Button-line-height);
     margin: 0;
     padding: var(--Button-padding);
     position: relative;
     text-align: center;
-    text-decoration: none; /* 4 */
+    text-decoration: none; /* 3 */
     text-transform: capitalize;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     transition-property: background-color;
-    user-select: none; /* 5 */
-    white-space: normal; /* 6 */
+    user-select: none; /* 4 */
+    white-space: nowrap; /* 5 */
 }
 
 /**
@@ -97,7 +95,7 @@
 
 .Button:active,
 .Button.is-pressed {
-    background-color: var(--Button-background-shadow);
+    background-color: var(--Button-background-pressed);
 }
 
 .Button:disabled,
@@ -113,120 +111,128 @@
 
 :root {
     --Button--large-font-size: var(--font-size-large);
-    --Button--large-padding: 1.111111111em;
+    --Button--large-line-height: 2.666666667;
+    --Button--large-padding: 0 1.111111111em;
+    --Button-border-radius: 3px;
 }
 
 .Button--large {
     font-size: var(--Button--large-font-size);
+    line-height: var(--Button--large-line-height);
     padding: var(--Button--large-padding);
 }
 
 /**
- * Green variant
+ * Small variant
  */
 
 :root {
-    --Button--green-background: var(--colour-green-base);
-    --Button--green-background-hover: var(--colour-green-hover);
-    --Button--green-background-shadow: var(--colour-green-shadow);
+    --Button--small-border-radius: 1px;
+    --Button--small-font-size: var(--font-size-small);
+    --Button--small-line-height: 2.285714286;
+    --Button--small-padding: 0 0.857142857em;
 }
 
-.Button--green {
-    background-color: var(--Button--green-background);
-    box-shadow: var(--Button-box-shadow) var(--Button--green-background-shadow);
-}
-
-.Button--green:hover,
-.Button--green:focus {
-    background-color: var(--Button--green-background-hover);
-}
-
-.Button--green:active,
-.Button--green.is-pressed {
-    background-color: var(--Button--green-background-shadow);
-}
-
-.Button--green:disabled,
-.Button--green.is-disabled {
-    background-color: var(--Button--green-background);
+.Button--small {
+    border-radius: var(--Button--small-border-radius);
+    font-size: var(--Button--small-font-size);
+    line-height: var(--Button--small-line-height);
+    padding: var(--Button--small-padding);
 }
 
 /**
- * Orange variant
+ * Block variant
  */
 
-:root {
-    --Button--orange-background: var(--colour-orange-base);
-    --Button--orange-background-hover: var(--colour-orange-hover);
-    --Button--orange-background-shadow: var(--colour-orange-shadow);
-}
-
-.Button--orange {
-    background-color: var(--Button--orange-background);
-    box-shadow: var(--Button-box-shadow) var(--Button--orange-background-shadow);
-}
-
-.Button--orange:hover,
-.Button--orange:focus {
-    background-color: var(--Button--orange-background-hover);
-}
-
-.Button--orange:active,
-.Button--orange.is-pressed {
-    background-color: var(--Button--orange-background-shadow);
-}
-
-.Button--orange:disabled,
-.Button--orange.is-disabled {
-    background-color: var(--Button--orange-background);
+.Button--block {
+    display: block;
+    text-align: center;
+    width: 100%;
 }
 
 /**
- * Red variant
+ * Positive variant
  */
 
 :root {
-    --Button--red-background: var(--colour-red-base);
-    --Button--red-background-hover: var(--colour-red-hover);
-    --Button--red-background-shadow: var(--colour-red-shadow);
+    --Button--positive-background: var(--colour-green-base);
+    --Button--positive-background-hover: var(--colour-green-hover);
+    --Button--positive-background-pressed: var(--colour-green-shadow);
 }
 
-.Button--red {
-    background-color: var(--Button--red-background);
-    box-shadow: var(--Button-box-shadow) var(--Button--red-background-shadow);
+.Button--positive {
+    background-color: var(--Button--positive-background);
 }
 
-.Button--red:hover,
-.Button--red:focus {
-    background-color: var(--Button--red-background-hover);
+.Button--positive:hover,
+.Button--positive:focus {
+    background-color: var(--Button--positive-background-hover);
 }
 
-.Button--red:active,
-.Button--red.is-pressed {
-    background-color: var(--Button--red-background-shadow);
+.Button--positive:active,
+.Button--positive.is-pressed {
+    background-color: var(--Button--positive-background-pressed);
 }
 
-.Button--red:disabled,
-.Button--red.is-disabled {
-    background-color: var(--Button--red-background);
+.Button--positive:disabled,
+.Button--positive.is-disabled {
+    background-color: var(--Button--positive-background);
 }
 
 /**
- * Icon variant
- *
- * Default size should use 8px square icons.
- * Large size should use 12px square icons.
+ * Warning variant
  */
 
 :root {
-    --Button--icon-padding: 0.6875em;
-    --Button--icon-padding--large: 0.777777778em;
+    --Button--warning-background: var(--colour-orange-base);
+    --Button--warning-background-hover: var(--colour-orange-hover);
+    --Button--warning-background-pressed: var(--colour-orange-shadow);
 }
 
-.Button--icon {
-    padding: var(--Button--icon-padding);
+.Button--warning {
+    background-color: var(--Button--warning-background);
 }
 
-.Button--icon.Button--large {
-    padding: var(--Button--icon-padding--large);
+.Button--warning:hover,
+.Button--warning:focus {
+    background-color: var(--Button--warning-background-hover);
+}
+
+.Button--warning:active,
+.Button--warning.is-pressed {
+    background-color: var(--Button--warning-background-pressed);
+}
+
+.Button--warning:disabled,
+.Button--warning.is-disabled {
+    background-color: var(--Button--warning-background);
+}
+
+/**
+ * Danger variant
+ */
+
+:root {
+    --Button--danger-background: var(--colour-red-base);
+    --Button--danger-background-hover: var(--colour-red-hover);
+    --Button--danger-background-pressed: var(--colour-red-shadow);
+}
+
+.Button--danger {
+    background-color: var(--Button--danger-background);
+}
+
+.Button--danger:hover,
+.Button--danger:focus {
+    background-color: var(--Button--danger-background-hover);
+}
+
+.Button--danger:active,
+.Button--danger.is-pressed {
+    background-color: var(--Button--danger-background-pressed);
+}
+
+.Button--danger:disabled,
+.Button--danger.is-disabled {
+    background-color: var(--Button--danger-background);
 }
