@@ -3,11 +3,11 @@
 :root {
     --Button-background: var(--colour-blue-base);
     --Button-background-hover: var(--colour-blue-hover);
-    --Button-border-radius: 4px;
+    --Button-border-radius: 2px;
     --Button-color: var(--colour-white-alabaster);
     --Button-disabled-opacity: 0.5;
     --Button-font: inherit;
-    --Button-padding: 0.9375em 1em;
+    --Button-padding: 0.5em 1em;
 }
 
 /**
