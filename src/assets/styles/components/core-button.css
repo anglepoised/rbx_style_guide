@@ -3,6 +3,7 @@
 :root {
     --Button-background: var(--colour-blue-base);
     --Button-background-hover: var(--colour-blue-hover);
+    --Button-background-pressed: var(--colour-blue-shadow);
     --Button-border-radius: 2px;
     --Button-color: var(--colour-white-alabaster);
     --Button-disabled-opacity: 0.5;
@@ -92,7 +93,7 @@
 
 .Button:active,
 .Button.is-pressed {
-    background-color: var(--Button-background-shadow);
+    background-color: var(--Button-background-pressed);
 }
 
 .Button:disabled,
@@ -140,7 +141,7 @@
 :root {
     --Button--positive-background: var(--colour-green-base);
     --Button--positive-background-hover: var(--colour-green-hover);
-    --Button--positive-background-shadow: var(--colour-green-shadow);
+    --Button--positive-background-pressed: var(--colour-green-shadow);
 }
 
 .Button--positive {
@@ -154,7 +155,7 @@
 
 .Button--positive:active,
 .Button--positive.is-pressed {
-    background-color: var(--Button--positive-background-shadow);
+    background-color: var(--Button--positive-background-pressed);
 }
 
 .Button--positive:disabled,
@@ -169,7 +170,7 @@
 :root {
     --Button--warning-background: var(--colour-orange-base);
     --Button--warning-background-hover: var(--colour-orange-hover);
-    --Button--warning-background-shadow: var(--colour-orange-shadow);
+    --Button--warning-background-pressed: var(--colour-orange-shadow);
 }
 
 .Button--warning {
@@ -183,7 +184,7 @@
 
 .Button--warning:active,
 .Button--warning.is-pressed {
-    background-color: var(--Button--warning-background-shadow);
+    background-color: var(--Button--warning-background-pressed);
 }
 
 .Button--warning:disabled,
@@ -198,7 +199,7 @@
 :root {
     --Button--danger-background: var(--colour-red-base);
     --Button--danger-background-hover: var(--colour-red-hover);
-    --Button--danger-background-shadow: var(--colour-red-shadow);
+    --Button--danger-background-pressed: var(--colour-red-shadow);
 }
 
 .Button--danger {
@@ -212,7 +213,7 @@
 
 .Button--danger:active,
 .Button--danger.is-pressed {
-    background-color: var(--Button--danger-background-shadow);
+    background-color: var(--Button--danger-background-pressed);
 }
 
 .Button--danger:disabled,
