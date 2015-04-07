@@ -870,19 +870,20 @@
             <h2 class="u-headingStyleguide">
                 Components
             </h2>
-            <article class="Article Copy" id="Button">
-                <h3 class="u-headingStyleguide">
-                    Button
-                </h3>
-                <p>
-                    The <code>.Button</code> component defines button styles for <code>&lt;button&gt;</code> and
-                    <code>&lt;a&gt;</code> elements.
-                </p>
-                <p>
-                    When using a <code>&lt;button&gt;</code> element, <strong>always specify a
-                    <code>type</code></strong>. When using a <code>&lt;a&gt;</code> element, <strong>always add
-                    <code>role="button"</code></strong>.
-                </p>
+            <article class="Article" id="Button">
+                <div class="Copy">
+                    <h3 class="u-headingStyleguide">
+                        Button
+                    </h3>
+                    <p>
+                        The <code>.Button</code> component defines button styles for <code>&lt;button&gt;</code> and
+                        <code>&lt;a&gt;</code> elements.
+                    </p>
+                    <p>
+                        When using a <code>&lt;button&gt;</code> element, <strong>always specify a
+                        <code>type</code></strong>. When using a <code>&lt;a&gt;</code> element, <strong>always add
+                        <code>role="button"</code></strong>.
+                    </p>
 <div hljs language="html">
 <button class="Button" type="button">
     Button
@@ -896,6 +897,7 @@
     Link
 </a>
 </div>
+                </div>
                 <div class="ComponentView">
                     <button class="Button" type="button">
                         Button
@@ -907,172 +909,190 @@
                         Link
                     </a>
                 </div>
-                <p>
-                    Combinations of states can be applied by stacking class modifiers. For example:
-                </p>
+                <div class="Copy">
+                    <p>
+                        Combinations of states can be applied by stacking class modifiers. For example:
+                    </p>
 <div hljs language="html">
 <button class="Button Button--large Button--warning is-disabled" type="button" disabled>
     Large Disabled Warning Button
 </button>
 </div>
-                <p>
-                    Gives:
-                </p>
+                    <p>
+                        Gives:
+                    </p>
+                </div>
                 <div class="ComponentView">
                     <button class="Button Button--large Button--warning is-disabled" type="button" disabled>
                         Large Disabled Warning Button
                     </button>
                 </div>
-                <h4 class="u-headingStyleguide">
-                    Default state
-                </h4>
-                <p>
-                    Buttons without modifier classes default to the standard size and blue colour and should be used for the
-                    majority of actions.
-                </p>
+                <div class="Copy">
+                    <h4 class="u-headingStyleguide">
+                        Default state
+                    </h4>
+                    <p>
+                        Buttons without modifier classes default to the standard size and blue colour and should be used for the
+                        majority of actions.
+                    </p>
+                </div>
                 <div class="ComponentView">
                     <button class="Button" type="button">
                         Standard Button
                     </button>
                 </div>
-                <h4 class="u-headingStyleguide">
-                    Disabled state
-                </h4>
-                <p>
-                    Set by adding a <code>disabled</code> attribute. The <code>.is-disabled</code> class can be added for
-                    clarity.
-                </p>
-                <p>
-                    For <code>&lt;a&gt;</code> elements, you should also remove the <code>href</code> attribute and prevent
-                    JavaScript event handlers from firing.
-                </p>
+                <div class="Copy">
+                    <h4 class="u-headingStyleguide">
+                        Disabled state
+                    </h4>
+                    <p>
+                        Set by adding a <code>disabled</code> attribute. The <code>.is-disabled</code> class can be added for
+                        clarity.
+                    </p>
+                    <p>
+                        For <code>&lt;a&gt;</code> elements, you should also remove the <code>href</code> attribute and prevent
+                        JavaScript event handlers from firing.
+                    </p>
 <div hljs language="html">
 <button class="Button is-disabled" type="button" disabled>
     Disabled Button
 </button>
 </div>
+                </div>
                 <div class="ComponentView">
                     <button class="Button is-disabled" type="button" disabled>
                         Disabled Button
                     </button>
                 </div>
-                <h4 class="u-headingStyleguide">
-                    Pressed state
-                </h4>
-                <p>
-                    The <code>.is-pressed</code> class is used here to demonstrate this state, but should never be used.
-                </p>
+                <div class="Copy">
+                    <h4 class="u-headingStyleguide">
+                        Pressed state
+                    </h4>
+                    <p>
+                        The <code>.is-pressed</code> class is used here to demonstrate this state, but should never be used.
+                    </p>
 <div hljs language="html">
 <button class="Button is-pressed" type="button">
     Pressed Button
 </button>
 </div>
+                </div>
                 <div class="ComponentView">
                     <button class="Button is-pressed" type="button">
                         Pressed Button
                     </button>
                 </div>
-                <h4 class="u-headingStyleguide">
-                    Large modifier
-                </h4>
-                <p>
-                    Large buttons should be used for primary save actions.
-                </p>
+                <div class="Copy">
+                    <h4 class="u-headingStyleguide">
+                        Large modifier
+                    </h4>
+                    <p>
+                        Large buttons should be used for primary save actions.
+                    </p>
 <div hljs language="html">
 <button class="Button Button--large" type="button">
     Large Button
 </button>
 </div>
+                </div>
                 <div class="ComponentView">
                     <button class="Button Button--large" type="button">
                         Large Button
                     </button>
                 </div>
-                <h4 class="u-headingStyleguide">
-                    Small modifier
-                </h4>
-                <p>
-                    Small buttons should be used for secondary save actions.
-                </p>
+                <div class="Copy">
+                    <h4 class="u-headingStyleguide">
+                        Small modifier
+                    </h4>
+                    <p>
+                        Small buttons should be used for secondary save actions.
+                    </p>
 <div hljs language="html">
 <button class="Button Button--small" type="button">
     Small Button
 </button>
 </div>
+                </div>
                 <div class="ComponentView">
                     <button class="Button Button--small" type="button">
                         Small Button
                     </button>
                 </div>
-
-                <h4 class="u-headingStyleguide">
-                    Block modifier
-                </h4>
-                <p>
-                    The block modifier should be used to make a button full-width. It adds <code>width: 100%;</code>,
-                    changes the display from <code>inline-block</code> to <code>block</code>, and centers the button
-                    text.
-                </p>
+                <div class="Copy">
+                    <h4 class="u-headingStyleguide">
+                        Block modifier
+                    </h4>
+                    <p>
+                        The block modifier should be used to make a button full-width. It adds <code>width: 100%;</code>,
+                        changes the display from <code>inline-block</code> to <code>block</code>, and centers the button
+                        text.
+                    </p>
 <div hljs language="html">
 <button class="Button Button--block" type="button">
     Block Button
 </button>
 </div>
+                </div>
                 <div class="ComponentView">
                     <button class="Button Button--block" type="button">
                         Block Button
                     </button>
                 </div>
-
-                <h4 class="u-headingStyleguide">
-                    Action modifiers
-                </h4>
-                <p>
-                    Action modifiers help users understand the consequences of different types of action.
-                </p>
-                <h5 class="u-headingStyleguide">
-                   Positive
-                </h5>
-                <p>
-                    Positive buttons are green. They indicate a successful or positive action.
-                </p>
+                <div class="Copy">
+                    <h4 class="u-headingStyleguide">
+                        Action modifiers
+                    </h4>
+                    <p>
+                        Action modifiers help users understand the consequences of different types of action.
+                    </p>
+                    <h5 class="u-headingStyleguide">
+                       Positive
+                    </h5>
+                    <p>
+                        Positive buttons are green. They indicate a successful or positive action.
+                    </p>
 <div hljs language="html">
 <button class="Button Button--positive" type="button">
     Positive Button
 </button>
 </div>
+                </div>
                 <div class="ComponentView">
                     <button class="Button Button--positive" type="button">
                         Positive Button
                     </button>
                 </div>
-                <h5 class="u-headingStyleguide">
-                    Warning
-                </h5>
-                <p>
-                    Warning buttons are orange. They indicate that care should be taken with this action.
-                </p>
+                <div class="Copy">
+                    <h5 class="u-headingStyleguide">
+                        Warning
+                    </h5>
+                    <p>
+                        Warning buttons are orange. They indicate that care should be taken with this action.
+                    </p>
 <div hljs language="html">
 <button class="Button Button--warning" type="button">
     Warning Button
 </button>
 </div>
+                </div>
                 <div class="ComponentView">
                     <button class="Button Button--warning" type="button">
                         Warning Button
                     </button>
                 </div>
-                <h5 class="u-headingStyleguide">
-                    Danger
-                </h5>
-                <p>
-                    Danger buttons are red. They indicate a potentially destructive action.
-                </p>
+                <div class="Copy">
+                    <h5 class="u-headingStyleguide">
+                        Danger
+                    </h5>
+                    <p>
+                        Danger buttons are red. They indicate a potentially destructive action.
+                    </p>
 <div hljs language="html">
 <button class="Button Button--danger" type="button">
     Danger Button
 </button>
 </div>
+                </div>
                 <div class="ComponentView">
                     <button class="Button Button--danger" type="button">
                         Danger Button
