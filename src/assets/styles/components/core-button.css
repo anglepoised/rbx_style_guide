@@ -210,23 +210,3 @@
 .Button--red.is-disabled {
     background-color: var(--Button--red-background);
 }
-
-/**
- * Icon variant
- *
- * Default size should use 8px square icons.
- * Large size should use 12px square icons.
- */
-
-:root {
-    --Button--icon-padding: 0.6875em;
-    --Button--icon-padding--large: 0.777777778em;
-}
-
-.Button--icon {
-    padding: var(--Button--icon-padding);
-}
-
-.Button--icon.Button--large {
-    padding: var(--Button--icon-padding--large);
-}
