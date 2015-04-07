@@ -21,10 +21,9 @@
 /**
  * 1. Corrects inability to style clickable `input` types in iOS.
  * 2. Hide back face for transition.
- * 3. Proportional line height to strip vertical space from enclosed inline-block elements.
- * 4. Ensure no `text-decoration` on anchors.
- * 5. Prevent button text from being selectable.
- * 6. Make sure `input` will wrap text across multiple lines.
+ * 3. Ensure no `text-decoration` on anchors.
+ * 4. Prevent button text from being selectable.
+ * 5. Make sure `input` will wrap text across multiple lines.
  */
 
 .Button {
@@ -39,17 +38,16 @@
     cursor: pointer;
     display: inline-block;
     font: var(--Button-font);
-    line-height: 0.6%;  /* 3 */
     margin: 0;
     padding: var(--Button-padding);
     position: relative;
     text-align: center;
-    text-decoration: none; /* 4 */
+    text-decoration: none; /* 3 */
     text-transform: capitalize;
     transition-duration: 0.3s;
     transition-property: background-color;
-    user-select: none; /* 5 */
-    white-space: normal; /* 6 */
+    user-select: none; /* 4 */
+    white-space: normal; /* 5 */
 }
 
 /**
