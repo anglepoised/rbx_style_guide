@@ -135,6 +135,16 @@
 }
 
 /**
+ * Block variant
+ */
+
+.Button--block {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/**
  * Positive variant
  */
 
