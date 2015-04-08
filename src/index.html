@@ -2176,7 +2176,16 @@
                         Header
                     </h3>
                     <p>
-                        The <code>.Header</code> component...
+                        The <code>.Header</code> component should be used across all products. It consists of:
+                    </p>
+                    <ul>
+                       <li>A mandatory logo</li>
+                       <li>An optional <code>.Navigation</code> subcomponent</li>
+                       <li>An optional <code>.User</code> subcomponent</li>
+                    </ul>
+                    <p>
+                        It must be enclosed within the primary page <code>&lt;header&gt;</code> element, and must always
+                        have a <code>role="banner"</code> attribute on the component's root element.
                     </p>
 <div hljs language="html">
 <div class="Header" role="banner">
@@ -2390,7 +2399,18 @@
                         PageTitle
                     </h3>
                     <p>
-                        The <code>.PageTitle</code> component...
+                        The <code>.PageTitle</code> component can be used across all products. It consists of:
+                    </p>
+                    <ul>
+                        <li>An optional navigation descendent (generally pointing back to an index)</li>
+                        <li>A mandatory page body, containing a mandatory page heading</li>
+                        <li>An optional badge, displayed near the page heading</li>
+                        <li>An optional subheading</li>
+                        <li>An optional button</li>
+                    </ul>
+                    <p>
+                        It must be enclosed within the primary page <code>&lt;header&gt;</code> element and must follow
+                        the <code><a href="#Header">.Header</a></code> component if one is also used on the page.
                     </p>
 <div hljs language="html">
 <div class="PageTitle">
