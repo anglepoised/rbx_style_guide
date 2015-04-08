@@ -129,9 +129,6 @@
                         <a href="#Footer">Footer</a>
                     </li>
                     <li class="StyleguideNav-item">
-                        <a href="#FullPage">FullPage</a>
-                    </li>
-                    <li class="StyleguideNav-item">
                         <a href="#Header">Header</a>
                     </li>
                     <li class="StyleguideNav-item">
@@ -139,6 +136,9 @@
                     </li>
                     <li class="StyleguideNav-item">
                         <a href="#Login">Login</a>
+                    </li>
+                    <li class="StyleguideNav-item">
+                        <a href="#Main">Main</a>
                     </li>
                     <li class="StyleguideNav-item">
                         <a href="#PageTitle">PageTitle</a>
@@ -2115,61 +2115,6 @@
                     </footer>
                 </div>
             </article>
-            <article class="Article Article--styleGuide" id="FullPage">
-                <div class="RawHTML">
-                    <h3 class="u-headingStyleguide">
-                        FullPage
-                    </h3>
-                    <p>
-                        <code>.FullPage</code> is a wrapper component intended for use on single-purpose pages. It fills
-                        the whole viewport and sets a scaling background image. Any component contained within the
-                        <code>.FullPage-body</code> class will be centered.
-                    </p>
-                    <p>
-                        It can optionally contain a single instance of the <code>.Footer</code> component,
-                        which should be contained in the <code>.FullPage-footer</code> descendent.
-                    </p>
-<div hljs language="html">
-<div class="FullPage">
-    <div class="FullPage-body">
-        <main>
-            <div>
-                Contained component
-            </div>
-        </main>
-    </div>
-    <div class="FullPage-footer">
-        <footer class="Footer" role="contentinfo">
-            <div class="Footer-copyright">
-                <p>Copyright © 2015 Rockabox Limited</p>
-            </div>
-        </footer>
-    </div>
-</div>
-</div>
-                    <p>
-                        Which renders as:
-                    </p>
-                </div>
-                <div class="ComponentView">
-                    <div class="FullPage">
-                        <div class="FullPage-body">
-                            <main>
-                                <div>
-                                    Contained component
-                                </div>
-                            </main>
-                        </div>
-                        <div class="FullPage-footer">
-                            <footer class="Footer" role="contentinfo">
-                                <div class="Footer-copyright">
-                                    <p>Copyright © 2015 Rockabox Limited</p>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </div>
-            </article>
             <article class="Article Article--styleGuide" id="Header">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
@@ -2390,6 +2335,90 @@
                                 </button>
                             </fieldset>
                         </form>
+                    </div>
+                </div>
+            </article>
+            <article class="Article Article--styleGuide" id="Main">
+                <div class="RawHTML">
+                    <h3 class="u-headingStyleguide">
+                        Main
+                    </h3>
+                    <p>
+                        The <code>.Main</code> should be used to wrap the main content of the page i.e. any components
+                        not contained in <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code>. It must always
+                        have a <code>role="main"</code> attribute on the root element.
+                    </p>
+                    <p>
+                        Two stackable modifiers are available:
+                    </p>
+                    <ul>
+                        <li>
+                            <code>.Main--background</code>: sets a covering background image.
+                        </li>
+                        <li>
+                            <code>.Main--center</code>: vertically and horizontally centers all children.
+                        </li>
+                    </ul>
+                    <p>
+                        When modifiers are used:
+                    </p>
+                    <ul>
+                        <li>
+                            <code>.Main</code> must be a direct child of the <code>.Site</code> component.
+                        </li>
+                        <li>
+                            <code>.Main--background</code> should not be used without also using
+                            <code>.Main--center</code>.
+                        </li>
+                        <li>
+                            When used, both <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> must be direct
+                            children of the <code>.Site</code> component.
+                        </li>
+                    </ul>
+<div hljs language="html">
+<div class="Site">
+    <div class="Header" role="banner">
+        <a class="Header-logo" href="#">
+            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+        </a>
+    </div>
+    <main class="Main Main--background Main--center" role="main">
+        <div>
+            Contained component
+        </div>
+    </main>
+    <footer class="Footer" role="contentinfo">
+        <div class="Footer-copyright">
+            <p>
+                Footer
+            </p>
+        </div>
+    </footer>
+</div>
+</div>
+                    <p>
+                        Which renders as:
+                    </p>
+                </div>
+                <div class="ComponentView">
+                    <div class="Site">
+                        <div class="Header" role="banner">
+                            <a class="Header-logo" href="#">
+                                <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+                            </a>
+                        </div>
+                        <main class="Main Main--background Main--center" role="main">
+                            <div>
+                                Contained component
+                            </div>
+                        </main>
+                        <footer class="Footer" role="contentinfo">
+                            <div class="Footer-copyright">
+                                <p>
+                                    Footer
+                                </p>
+                            </div>
+                        </footer>
                     </div>
                 </div>
             </article>
