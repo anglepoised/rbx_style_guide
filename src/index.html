@@ -150,6 +150,9 @@
                         <a href="#RawHTML">RawHTML</a>
                     </li>
                     <li class="StyleguideNav-item">
+                        <a href="#Site">Site</a>
+                    </li>
+                    <li class="StyleguideNav-item">
                         <a href="#WarningMessages">WarningMessages</a>
                     </li>
                 </ol>
@@ -2364,7 +2367,7 @@
                     </p>
                     <ul>
                         <li>
-                            <code>.Main</code> must be a direct child of the <code>.Site</code> component.
+                            <code>.Main</code> must be a direct child of the <code><a href="#Site">.Site</a></code> component.
                         </li>
                         <li>
                             <code>.Main--background</code> should not be used without also using
@@ -2737,6 +2740,25 @@
                 <div class="ComponentView">
                     <span class="Ratio">99%</span>
                 </div>
+            </article>
+            <article class="Article Article--styleGuide" id="Site">
+                <div class="RawHTML">
+                    <h3 class="u-headingStyleguide">
+                        Site
+                    </h3>
+                    <p>
+                        The <code>.Site</code> component should wrap all content on a page and is used in conjunction
+                        with <code><a href="#Main">.Main</a></code> to create sticky footer and centred content effects.
+                    </p>
+<div hljs language="html">
+<div class="Site">
+    <header></header>
+    <main></main>
+    <footer></footer>
+</div>
+</div>
+                </div>
+
             </article>
             <article class="Article Article--styleGuide" id="WarningMessages">
                 <div class="RawHTML">
