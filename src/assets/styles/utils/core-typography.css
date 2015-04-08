@@ -6,42 +6,42 @@
  */
 
 .u-textHeading1 {
-    font-family: var(--font-family-proportional-light);
-    font-size: 3.2rem;
-    font-weight: 300;
+    font-family: var(--font-family-proportional-light) !important;
+    font-size: 3.2rem !important;
+    font-weight: 300 !important;
 }
 
 .u-textHeading2 {
-    font-family: var(--font-family-proportional-light);
-    font-size: 2.5rem;
-    font-weight: 300;
+    font-family: var(--font-family-proportional-light) !important;
+    font-size: 2.5rem !important;
+    font-weight: 300 !important;
 }
 
 .u-textHeading3 {
-    font-family: var(--font-family-proportional);
-    font-size: 1.9rem;
-    font-weight: 400;
+    font-family: var(--font-family-proportional) !important;
+    font-size: 1.9rem !important;
+    font-weight: 400 !important;
 }
 
 .u-textHeading4 {
-    font-family: var(--font-family-proportional-semibold);
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-family: var(--font-family-proportional-semibold) !important;
+    font-size: 1.6rem !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
 }
 
 .u-textHeading5 {
-    font-family: var(--font-family-proportional-semibold);
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-family: var(--font-family-proportional-semibold) !important;
+    font-size: 1.4rem !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
 }
 
 .u-textHeading6 {
-    font-family: var(--font-family-proportional-semibold);
-    font-size: 1.3rem;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-family: var(--font-family-proportional-semibold) !important;
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
 }
 
 /**
@@ -50,23 +50,23 @@
  */
 
 .u-textLight {
-    font-family: var(--font-family-proportional-light);
-    font-weight: 300;
+    font-family: var(--font-family-proportional-light) !important;
+    font-weight: 300 !important;
 }
 
 .u-textRegular {
-    font-family: var(--font-family-proportional);
-    font-weight: 400;
+    font-family: var(--font-family-proportional) !important;
+    font-weight: 400 !important;
 }
 
 .u-textSemibold {
-    font-family: var(--font-family-proportional-semibold);
-    font-weight: 500;
+    font-family: var(--font-family-proportional-semibold) !important;
+    font-weight: 500 !important;
 }
 
 .u-textBold {
-    font-family: var(--font-family-proportional);
-    font-weight: 700;
+    font-family: var(--font-family-proportional) !important;
+    font-weight: 700 !important;
 }
 
 /**
@@ -76,7 +76,7 @@
  */
 
 .u-textDefault {
-    font-size: var(--font-size);
+    font-size: var(--font-size) !important;
 }
 
 /**
@@ -86,7 +86,7 @@
  */
 
 .u-textLarge {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-large) !important;
 }
 
 /**
@@ -96,7 +96,7 @@
  */
 
 .u-textSmall {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-small) !important;
 }
 
 /**
@@ -106,7 +106,7 @@
  */
 
 .u-textXSmall {
-    font-size: var(--font-size-x-small);
+    font-size: var(--font-size-x-small) !important;
 }
 
 /**
@@ -116,7 +116,7 @@
  */
 
 .u-textMonospaced {
-    font-family: var(--font-family-monospaced);
+    font-family: var(--font-family-monospaced) !important;
 }
 
 /**
@@ -125,11 +125,11 @@
  * For inline code.
  */
 .u-textCode {
-    background: var(--colour-gray-mystic);
-    border-radius: 3px;
-    display: inline-block;
-    padding: 0.15em 0.5em 0;
-    white-space: nowrap;
+    background: var(--colour-gray-mystic) !important;
+    border-radius: 3px !important;
+    display: inline-block !important;
+    padding: 0.15em 0.5em 0 !important;
+    white-space: nowrap !important;
 }
 
 /**
@@ -139,13 +139,13 @@
  */
 
 .u-textLabel {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-small) !important;
 }
 
 /**
  * Tabular numbers
  */
 .u-textTabularNums {
-    font-kerning: normal;
-    font-variant-numeric: tabular-nums;
+    font-kerning: normal !important;
+    font-variant-numeric: tabular-nums !important;
 }

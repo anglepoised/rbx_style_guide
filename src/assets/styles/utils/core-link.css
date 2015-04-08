@@ -8,13 +8,13 @@
 * Explicitly specify default link style.
 */
 .u-linkDefault {
-    color: var(--colour-base-link-default);
+    color: var(--colour-base-link-default) !important;
 }
 
 .u-linkDefault:hover,
 .u-linkDefault:focus,
 .u-linkDefault:active {
-    color: var(--colour-base-link-hover);
+    color: var(--colour-base-link-hover) !important;
 }
 
 /**
