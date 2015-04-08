@@ -11,6 +11,6 @@
  * Designed to be distinct from standard headings.
  */
 .u-headingStyleguide {
-    color: var(--colour-gray-regent);
-    width: 100%;
+    color: var(--colour-gray-regent) !important;
+    width: 100% !important;
 }
