@@ -29,6 +29,7 @@
 /**
  * Components
  */
+@import "components/core-article.css";
 @import "components/core-button.css";
 @import "components/core-code.css";
 @import "components/core-componentview.css";
@@ -51,7 +52,6 @@
 @import "components/core-textcontrol.css";
 @import "components/core-user.css";
 @import "components/core-warningmessages.css";
-@import "components/styleguide-article.css";
 @import "components/styleguide-nav.css";
 @import "components/styleguide-swatch.css";
 
