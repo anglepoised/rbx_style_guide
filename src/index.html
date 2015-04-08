@@ -10,20 +10,22 @@
     <script src="js/main.js"></script>
 </head>
 <body ng-app="app" id="app">
-    <header class="Header" role="banner">
-        <a class="Header-logo" href="/">
-            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
-        </a>
-    </header>
-    <div class="PageTitle">
-        <div class="PageTitle-inner">
-            <div class="PageTitle-body">
-                <h1 class="u-textHeading1">
-                    {{::title}}
-                </h1>
+    <header>
+        <div class="Header" role="banner">
+            <a class="Header-logo" href="/">
+                <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+            </a>
+        </div>
+        <div class="PageTitle">
+            <div class="PageTitle-inner">
+                <div class="PageTitle-body">
+                    <h1 class="u-textHeading1">
+                        {{::title}}
+                    </h1>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
     <div ng-controller="mainCtrl as main">
     </div>
     <nav class="StyleguideNav">
@@ -2177,7 +2179,7 @@
                         The <code>.Header</code> component...
                     </p>
 <div hljs language="html">
-<header class="Header" role="banner">
+<div class="Header" role="banner">
     <a class="Header-logo" href="#">
         <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
     </a>
@@ -2206,24 +2208,24 @@
             </ul>
         </div>
     </div>
-</header>
+</div>
 </div>
                 <p>
                     Logo-only header:
                 </p>
                 </div>
                 <div class="ComponentView">
-                    <header class="Header" role="banner">
+                    <div class="Header" role="banner">
                         <a class="Header-logo" href="#">
                             <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
                         </a>
-                    </header>
+                    </div>
                 </div>
                 <div class="RawHTML">
                     Logo and user header:
                 </div>
                 <div class="ComponentView">
-                    <header class="Header" role="banner">
+                    <div class="Header" role="banner">
                         <a class="Header-logo" href="#">
                             <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
                         </a>
@@ -2239,13 +2241,13 @@
                                 </ul>
                             </div>
                         </div>
-                    </header>
+                    </div>
                 </div>
                 <div class="RawHTML">
                     Full header:
                 </div>
                 <div class="ComponentView">
-                    <header class="Header" role="banner">
+                    <div class="Header" role="banner">
                         <a class="Header-logo" href="#">
                             <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
                         </a>
@@ -2279,7 +2281,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </header>
+                    </div>
                 </div>
             </article>
             <article class="Article RawHTML" id="Icon">
