@@ -109,6 +109,16 @@
 }
 
 /**
+ * Row message
+ *
+ * Expects a single cell spanning all columns.
+ */
+
+.DataActionTable-body .DataActionTable-rowMessage .DataActionTable-cellData {
+    padding: 2em var(--layout-gutter);
+}
+
+/**
  * Columns
  */
 
