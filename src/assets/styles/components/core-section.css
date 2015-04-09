@@ -1,0 +1,11 @@
+/** @define Section; use strict */
+
+/**
+ * The `.Section` component is generally attached to `<section>` elements.
+ *
+ * One modifier is available, `.Section--gutter`, which introduces the site-wide gutter.
+ */
+
+.Section--gutter {
+    margin: 2em var(--layout-gutter);
+}

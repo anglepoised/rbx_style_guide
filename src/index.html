@@ -10,22 +10,24 @@
     <script src="js/main.js"></script>
 </head>
 <body ng-app="app" id="app">
-    <header class="Header" role="banner">
-        <a class="Header-logo" href="/">
-            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
-        </a>
-    </header>
-    <div class="PageTitle">
-        <div class="PageTitle-inner">
-            <div class="PageTitle-body">
-                <h1 class="u-textHeading1">
-                    {{::title}}
-                </h1>
+    <div ng-controller="mainCtrl as main">
+    <div class="Site">
+    <header>
+        <div class="Header" role="banner">
+            <a class="Header-logo" href="/">
+                <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+            </a>
+        </div>
+        <div class="PageTitle">
+            <div class="PageTitle-inner">
+                <div class="PageTitle-body">
+                    <h1 class="u-textHeading1">
+                        {{::title}}
+                    </h1>
+                </div>
             </div>
         </div>
-    </div>
-    <div ng-controller="mainCtrl as main">
-    </div>
+    </header>
     <nav class="StyleguideNav">
         <ol class="StyleguideNav-items">
             <li class="StyleguideNav-item">
@@ -127,9 +129,6 @@
                         <a href="#Footer">Footer</a>
                     </li>
                     <li class="StyleguideNav-item">
-                        <a href="#FullPage">FullPage</a>
-                    </li>
-                    <li class="StyleguideNav-item">
                         <a href="#Header">Header</a>
                     </li>
                     <li class="StyleguideNav-item">
@@ -137,6 +136,9 @@
                     </li>
                     <li class="StyleguideNav-item">
                         <a href="#Login">Login</a>
+                    </li>
+                    <li class="StyleguideNav-item">
+                        <a href="#Main">Main</a>
                     </li>
                     <li class="StyleguideNav-item">
                         <a href="#PageTitle">PageTitle</a>
@@ -148,6 +150,9 @@
                         <a href="#RawHTML">RawHTML</a>
                     </li>
                     <li class="StyleguideNav-item">
+                        <a href="#Site">Site</a>
+                    </li>
+                    <li class="StyleguideNav-item">
                         <a href="#WarningMessages">WarningMessages</a>
                     </li>
                 </ol>
@@ -155,11 +160,11 @@
         </ol>
     </nav>
     <main class="Main" role="main">
-        <section id="base">
+        <section class="Section Section--gutter" id="base">
             <h2 class="u-headingStyleguide">
                 Base
             </h2>
-            <article class="Article" id="layout">
+            <article class="Article Article--styleGuide" id="layout">
                 <h3 class="u-headingStyleguide">
                     Layout
                 </h3>
@@ -169,7 +174,7 @@
                     </p>
                 </div>
             </article>
-            <article class="Article" id="responsive">
+            <article class="Article Article--styleGuide" id="responsive">
                 <h3 class="u-headingStyleguide">
                     Responsive
                 </h3>
@@ -180,11 +185,11 @@
                 </div>
             </article>
         </section>
-        <section id="theme">
+        <section class="Section Section--gutter" id="theme">
             <h2 class="u-headingStyleguide">
                 Theme
             </h2>
-            <article class="Article" id="colours">
+            <article class="Article Article--styleGuide" id="colours">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         Colours
@@ -598,7 +603,7 @@
                     </ul>
                 </div>
             </article>
-            <article class="Article" id="typography">
+            <article class="Article Article--styleGuide" id="typography">
                 <h3 class="u-headingStyleguide">
                     Typography
                 </h3>
@@ -763,11 +768,11 @@
                 </div>
             </article>
         </section>
-        <section id="utils">
+        <section class="Section Section--gutter" id="utils">
             <h2 class="u-headingStyleguide">
                 Utilities
             </h2>
-            <article class="Article RawHTML" id="utils-text">
+            <article class="Article Article--styleGuide RawHTML" id="utils-text">
                 <h3 class="u-headingStyleguide">
                     Text
                 </h3>
@@ -850,7 +855,7 @@
                     </p>
                 </div>
             </article>
-            <article class="Article RawHTML" id="utils-link">
+            <article class="Article Article Article--styleGuide RawHTML" id="utils-link">
                 <h3 class="u-headingStyleguide">
                     Link
                 </h3>
@@ -866,11 +871,11 @@
                 </p>
             </article>
         </section>
-        <section id="components">
+        <section class="Section Section--gutter" id="components">
             <h2 class="u-headingStyleguide">
                 Components
             </h2>
-            <article class="Article" id="Button">
+            <article class="Article Article--styleGuide" id="Button">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         Button
@@ -1099,7 +1104,7 @@
                     </button>
                 </div>
             </article>
-            <article class="Article" id="Controls">
+            <article class="Article Article--styleGuide" id="Controls">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         Controls
@@ -1353,7 +1358,7 @@
                     </div>
                 </div>
             </article>
-            <article class="Article" id="Currency">
+            <article class="Article Article--styleGuide" id="Currency">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         Currency
@@ -1381,7 +1386,7 @@
                     <data class="Currency" value="$9999999.99"><span class="Currency-unit">$9,999,999</span><span class="Currency-cent">.99</span></data>
                 </div>
             </article>
-            <article class="Article" id="DataActionTable">
+            <article class="Article Article--styleGuide" id="DataActionTable">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         DataActionTable
@@ -2026,7 +2031,7 @@
                     </div>
                 </div>
             </article>
-            <article class="Article" id="DateTime">
+            <article class="Article Article--styleGuide" id="DateTime">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         DateTime
@@ -2070,7 +2075,7 @@
                     <time class="DateTime DateTime--understateTime" datetime="1970-01-01T00:00"><span class="DateTime-date">01 Jan 1970</span> <span class="DateTime-time">00:00</span></time>
                 </div>
             </article>
-            <article class="Article" id="Disclaimer">
+            <article class="Article Article--styleGuide" id="Disclaimer">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         Disclaimer
@@ -2093,7 +2098,7 @@
                     </div>
                 </div>
             </article>
-            <article class="Article" id="Footer">
+            <article class="Article Article--styleGuide" id="Footer">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         Footer
@@ -2147,71 +2152,25 @@
                     </footer>
                 </div>
             </article>
-            <article class="Article" id="FullPage">
-                <div class="RawHTML">
-                    <h3 class="u-headingStyleguide">
-                        FullPage
-                    </h3>
-                    <p>
-                        <code>.FullPage</code> is a wrapper component intended for use on single-purpose pages. It fills
-                        the whole viewport and sets a scaling background image. Any component contained within the
-                        <code>.FullPage-body</code> class will be centered.
-                    </p>
-                    <p>
-                        It can optionally contain a single instance of the <code>.Footer</code> component,
-                        which should be contained in the <code>.FullPage-footer</code> descendent.
-                    </p>
-<div hljs language="html">
-<div class="FullPage">
-    <div class="FullPage-body">
-        <main>
-            <div>
-                Contained component
-            </div>
-        </main>
-    </div>
-    <div class="FullPage-footer">
-        <footer class="Footer" role="contentinfo">
-            <div class="Footer-copyright">
-                <p>Copyright © 2015 Rockabox Limited</p>
-            </div>
-        </footer>
-    </div>
-</div>
-</div>
-                    <p>
-                        Which renders as:
-                    </p>
-                </div>
-                <div class="ComponentView">
-                    <div class="FullPage">
-                        <div class="FullPage-body">
-                            <main>
-                                <div>
-                                    Contained component
-                                </div>
-                            </main>
-                        </div>
-                        <div class="FullPage-footer">
-                            <footer class="Footer" role="contentinfo">
-                                <div class="Footer-copyright">
-                                    <p>Copyright © 2015 Rockabox Limited</p>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="Article" id="Header">
+            <article class="Article Article--styleGuide" id="Header">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         Header
                     </h3>
                     <p>
-                        The <code>.Header</code> component...
+                        The <code>.Header</code> component should be used across all products. It consists of:
+                    </p>
+                    <ul>
+                       <li>A mandatory logo</li>
+                       <li>An optional <code>.Navigation</code> subcomponent</li>
+                       <li>An optional <code>.User</code> subcomponent</li>
+                    </ul>
+                    <p>
+                        It must be enclosed within the primary page <code>&lt;header&gt;</code> element, and must always
+                        have a <code>role="banner"</code> attribute on the component's root element.
                     </p>
 <div hljs language="html">
-<header class="Header" role="banner">
+<div class="Header" role="banner">
     <a class="Header-logo" href="#">
         <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
     </a>
@@ -2240,24 +2199,24 @@
             </ul>
         </div>
     </div>
-</header>
+</div>
 </div>
                 <p>
                     Logo-only header:
                 </p>
                 </div>
                 <div class="ComponentView">
-                    <header class="Header" role="banner">
+                    <div class="Header" role="banner">
                         <a class="Header-logo" href="#">
                             <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
                         </a>
-                    </header>
+                    </div>
                 </div>
                 <div class="RawHTML">
                     Logo and user header:
                 </div>
                 <div class="ComponentView">
-                    <header class="Header" role="banner">
+                    <div class="Header" role="banner">
                         <a class="Header-logo" href="#">
                             <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
                         </a>
@@ -2273,13 +2232,13 @@
                                 </ul>
                             </div>
                         </div>
-                    </header>
+                    </div>
                 </div>
                 <div class="RawHTML">
                     Full header:
                 </div>
                 <div class="ComponentView">
-                    <header class="Header" role="banner">
+                    <div class="Header" role="banner">
                         <a class="Header-logo" href="#">
                             <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
                         </a>
@@ -2313,10 +2272,10 @@
                                 </ul>
                             </div>
                         </div>
-                    </header>
+                    </div>
                 </div>
             </article>
-            <article class="Article RawHTML" id="Icon">
+            <article class="Article Article Article--styleGuide RawHTML" id="Icon">
                 <h3 class="u-headingStyleguide">
                     Icon
                 </h3>
@@ -2331,7 +2290,7 @@
                     <span class="Icon Icon--green-base-175-logo-rockabox"></span>
                 </div>
             </article>
-            <article class="Article" id="Login">
+            <article class="Article Article--styleGuide" id="Login">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         Login
@@ -2416,13 +2375,108 @@
                     </div>
                 </div>
             </article>
-            <article class="Article" id="PageTitle">
+            <article class="Article Article--styleGuide" id="Main">
+                <div class="RawHTML">
+                    <h3 class="u-headingStyleguide">
+                        Main
+                    </h3>
+                    <p>
+                        The <code>.Main</code> should be used to wrap the main content of the page i.e. any components
+                        not contained in <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code>. It must always
+                        have a <code>role="main"</code> attribute on the root element.
+                    </p>
+                    <p>
+                        Two stackable modifiers are available:
+                    </p>
+                    <ul>
+                        <li>
+                            <code>.Main--background</code>: sets a covering background image.
+                        </li>
+                        <li>
+                            <code>.Main--center</code>: vertically and horizontally centers all children.
+                        </li>
+                    </ul>
+                    <p>
+                        When modifiers are used:
+                    </p>
+                    <ul>
+                        <li>
+                            <code>.Main</code> must be a direct child of the <code><a href="#Site">.Site</a></code> component.
+                        </li>
+                        <li>
+                            <code>.Main--background</code> should not be used without also using
+                            <code>.Main--center</code>.
+                        </li>
+                        <li>
+                            When used, both <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> must be direct
+                            children of the <code>.Site</code> component.
+                        </li>
+                    </ul>
+<div hljs language="html">
+<div class="Site">
+    <div class="Header" role="banner">
+        <a class="Header-logo" href="#">
+            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+        </a>
+    </div>
+    <main class="Main Main--background Main--center" role="main">
+        <div>
+            Contained component
+        </div>
+    </main>
+    <footer class="Footer" role="contentinfo">
+        <div class="Footer-copyright">
+            <p>
+                Footer
+            </p>
+        </div>
+    </footer>
+</div>
+</div>
+                    <p>
+                        Which renders as:
+                    </p>
+                </div>
+                <div class="ComponentView">
+                    <div class="Site">
+                        <div class="Header" role="banner">
+                            <a class="Header-logo" href="#">
+                                <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+                            </a>
+                        </div>
+                        <main class="Main Main--background Main--center" role="main">
+                            <div>
+                                Contained component
+                            </div>
+                        </main>
+                        <footer class="Footer" role="contentinfo">
+                            <div class="Footer-copyright">
+                                <p>
+                                    Footer
+                                </p>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </article>
+            <article class="Article Article--styleGuide" id="PageTitle">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         PageTitle
                     </h3>
                     <p>
-                        The <code>.PageTitle</code> component...
+                        The <code>.PageTitle</code> component can be used across all products. It consists of:
+                    </p>
+                    <ul>
+                        <li>An optional navigation descendent (generally pointing back to an index)</li>
+                        <li>A mandatory page body, containing a mandatory page heading</li>
+                        <li>An optional badge, displayed near the page heading</li>
+                        <li>An optional subheading</li>
+                        <li>An optional button</li>
+                    </ul>
+                    <p>
+                        It must be enclosed within the primary page <code>&lt;header&gt;</code> element and must follow
+                        the <code><a href="#Header">.Header</a></code> component if one is also used on the page.
                     </p>
 <div hljs language="html">
 <div class="PageTitle">
@@ -2487,7 +2541,7 @@
                     </div>
                 </div>
             </article>
-            <article class="Article" id="RawHTML">
+            <article class="Article Article--styleGuide" id="RawHTML">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         RawHTML
@@ -2699,7 +2753,7 @@
                     </div>
                 </div>
             </article>
-            <article class="Article" id="Ratio">
+            <article class="Article Article--styleGuide" id="Ratio">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         Ratio
@@ -2721,7 +2775,26 @@
                     <span class="Ratio">99%</span>
                 </div>
             </article>
-            <article class="Article" id="WarningMessages">
+            <article class="Article Article--styleGuide" id="Site">
+                <div class="RawHTML">
+                    <h3 class="u-headingStyleguide">
+                        Site
+                    </h3>
+                    <p>
+                        The <code>.Site</code> component should wrap all content on a page and is used in conjunction
+                        with <code><a href="#Main">.Main</a></code> to create sticky footer and centred content effects.
+                    </p>
+<div hljs language="html">
+<div class="Site">
+    <header></header>
+    <main></main>
+    <footer></footer>
+</div>
+</div>
+                </div>
+
+            </article>
+            <article class="Article Article--styleGuide" id="WarningMessages">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
                         WarningMessages
@@ -2788,5 +2861,7 @@
             </p>
         </div>
     </footer>
+    </div>
+    </div>
 </body>
 </html>

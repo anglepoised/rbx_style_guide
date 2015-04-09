@@ -4,9 +4,31 @@
  * The `.Main` class is generally attached to the `<main>` element.
  * Used to create Sticky Footer in conjunction with `.Site`.
  * See: http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+ *
+ * Two modifiers are available:
+ *
+ * - `.Main--background`: sets a covering background image.
+ * - `.Main--center`: vertically and horizontally centers all children.
+ */
+
+/**
+ * 1. Set and centre background image.
+ * 2. Expand background image over whole container.
  */
 
 .Main {
     flex: 1;
-    margin: 2em var(--layout-gutter);
+}
+
+.Main--background {
+    background: url("../images/Main-background.jpg") no-repeat center center; /* 1 */
+    background-size: cover; /* 2 */
+}
+
+.Main--center {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 0 var(--layout-gutter);
 }

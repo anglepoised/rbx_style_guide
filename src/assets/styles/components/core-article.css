@@ -1,0 +1,18 @@
+/** @define Article; use strict */
+
+/**
+ * Article
+ */
+
+:root {
+    --Article--styleGuide-outline: var(--colour-gray-regent);
+}
+
+.Article--styleGuide {
+    outline: 1px solid var(--Article--styleGuide-outline);
+    padding: 1em;
+}
+
+.Article--styleGuide + .Article--styleGuide {
+    margin-top: 1em;
+}

@@ -29,6 +29,7 @@
 /**
  * Components
  */
+@import "components/core-article.css";
 @import "components/core-button.css";
 @import "components/core-code.css";
 @import "components/core-componentview.css";
@@ -37,7 +38,6 @@
 @import "components/core-datetime.css";
 @import "components/core-disclaimer.css";
 @import "components/core-footer.css";
-@import "components/core-fullpage.css";
 @import "components/core-header.css";
 @import "components/core-icon.css";
 @import "components/core-login.css";
@@ -46,11 +46,11 @@
 @import "components/core-pagetitle.css";
 @import "components/core-rawhtml.css";
 @import "components/core-ratio.css";
+@import "components/core-section.css";
 @import "components/core-site.css";
 @import "components/core-textcontrol.css";
 @import "components/core-user.css";
 @import "components/core-warningmessages.css";
-@import "components/styleguide-article.css";
 @import "components/styleguide-nav.css";
 @import "components/styleguide-swatch.css";
 
