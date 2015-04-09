@@ -17,6 +17,7 @@
     --TextControl-field-disabled-colour: var(--colour-gray-regent);
     --TextControl-field-disabled-image: "../images/Control-disabled.svg";
     --TextControl-field-focus-border-colour: var(--colour-green-base);
+    --TextControl-field-image-padding: 2.5em;
     --TextControl-field-invalid-border-colour: var(--colour-red-base);
     --TextControl-field-invalid-colour: var(--colour-red-base);
     --TextControl-field-placeholder-colour: var(--colour-gray-ghost);
@@ -127,4 +128,18 @@
 
 .TextControl--small .TextControl-field {
     font-size: var(--font-size-x-small);
+}
+
+/**
+ * Search
+ */
+.TextControl--search .TextControl-field {
+    background-image: url("../images/Control-search.svg");
+    background-position: 12px center;
+    background-repeat: no-repeat;
+    padding-left: var(--TextControl-field-image-padding);
+}
+
+.TextControl--search .TextControl-field:focus {
+    background-image: url("../images/Control-search-focus.svg");
 }
