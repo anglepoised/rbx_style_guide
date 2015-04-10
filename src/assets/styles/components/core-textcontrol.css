@@ -15,10 +15,14 @@
     --TextControl-field-colour: var(--colour-gray-tuna);
     --TextControl-field-disabled-background-colour: var(--colour-white-catskill);
     --TextControl-field-disabled-colour: var(--colour-gray-regent);
+    --TextControl-field-disabled-image: "../images/Control-disabled.svg";
     --TextControl-field-focus-border-colour: var(--colour-green-base);
+    --TextControl-field-image-padding: 2.5em;
     --TextControl-field-invalid-border-colour: var(--colour-red-base);
     --TextControl-field-invalid-colour: var(--colour-red-base);
     --TextControl-field-placeholder-colour: var(--colour-gray-ghost);
+    --TextControl-field-required-image: "../images/Control-required.svg";
+    --TextControl-field-required-invalid-image: "../images/Control-required-invalid.svg";
     --TextControl-label-invalid-colour: var(--colour-red-base);
     --TextControl-message-invalid-background-colour: var(--colour-red-base);
     --TextControl-message-invalid-colour: var(--colour-white);
@@ -92,13 +96,13 @@
 
 .TextControl-field:required,
 .TextControl-field.is-required {
-    background: var(--TextControl-field-background-colour) url("../images/Control-required.svg") no-repeat;
+    background: var(--TextControl-field-background-colour) url(var(--TextControl-field-required-image)) no-repeat;
     background-position: right 6px top 6px; /* 3 */
     outline: none; /* 2 */
 }
 
 .TextControl-field:focus:required:invalid {
-    background-image: url("../images/Control-required-invalid.svg"); /* 4 */
+    background-image: url(var(--TextControl-field-required-invalid-image)); /* 4 */
 }
 
 /**
@@ -107,7 +111,7 @@
 
 .TextControl-field:disabled,
 .TextControl-field.is-disabled {
-    background: var(--TextControl-field-disabled-background-colour) url("../images/Control-disabled.svg") no-repeat calc(100% - 12px) center !important; /* 5 */
+    background: var(--TextControl-field-disabled-background-colour) url(var(--TextControl-field-disabled-image)) no-repeat calc(100% - 12px) center !important; /* 5 */
     border: 1px solid var(--TextControl-field-border-colour) !important; /* 5 */
     color: var(--TextControl-field-disabled-colour) !important; /* 5 */
     user-select: none; /* 6 */
@@ -124,4 +128,18 @@
 
 .TextControl--small .TextControl-field {
     font-size: var(--font-size-x-small);
+}
+
+/**
+ * Search
+ */
+.TextControl--search .TextControl-field {
+    background-image: url("../images/Control-search.svg");
+    background-position: 12px center;
+    background-repeat: no-repeat;
+    padding-left: var(--TextControl-field-image-padding);
+}
+
+.TextControl--search .TextControl-field:focus {
+    background-image: url("../images/Control-search-focus.svg");
 }
