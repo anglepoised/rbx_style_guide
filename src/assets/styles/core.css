@@ -50,10 +50,10 @@
 @import "components/core-section.css";
 @import "components/core-site.css";
 @import "components/core-swatch.css";
+@import "components/core-tableofcontents.css";
 @import "components/core-textcontrol.css";
 @import "components/core-user.css";
 @import "components/core-warningmessages.css";
-@import "components/styleguide-nav.css";
 
 /**
  * Vendor
