@@ -1,20 +1,20 @@
-/** @define StyleguideNav; use strict */
+/** @define TableOfContents; use strict */
 
 /**
- * StyleguideNav
+ * TableOfContents
  *
  * Temporary jumplist for styleguide.
  */
 
-.StyleguideNav {
+.TableOfContents {
     margin: 2em var(--layout-gutter);
 }
 
-.StyleguideNav-items {
+.TableOfContents-items {
     margin-left: 0.4em;
 }
 
-.StyleguideNav-item {
+.TableOfContents-item {
     list-style-type: decimal;
     margin-left: 1.6em;
 }

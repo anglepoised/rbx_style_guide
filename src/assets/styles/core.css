@@ -29,31 +29,31 @@
 /**
  * Components
  */
-@import "components/core-article.css";
-@import "components/core-button.css";
-@import "components/core-code.css";
-@import "components/core-componentview.css";
-@import "components/core-currency.css";
-@import "components/core-dataactiontable.css";
-@import "components/core-datetime.css";
-@import "components/core-disclaimer.css";
-@import "components/core-footer.css";
-@import "components/core-header.css";
-@import "components/core-icon.css";
-@import "components/core-loading.css";
-@import "components/core-login.css";
-@import "components/core-main.css";
-@import "components/core-navigation.css";
-@import "components/core-pagetitle.css";
-@import "components/core-ratio.css";
-@import "components/core-rawhtml.css";
-@import "components/core-section.css";
-@import "components/core-site.css";
-@import "components/core-textcontrol.css";
-@import "components/core-user.css";
-@import "components/core-warningmessages.css";
-@import "components/styleguide-nav.css";
-@import "components/styleguide-swatch.css";
+@import "components/article.css";
+@import "components/button.css";
+@import "components/code.css";
+@import "components/componentview.css";
+@import "components/currency.css";
+@import "components/dataactiontable.css";
+@import "components/datetime.css";
+@import "components/disclaimer.css";
+@import "components/footer.css";
+@import "components/header.css";
+@import "components/icon.css";
+@import "components/loading.css";
+@import "components/login.css";
+@import "components/main.css";
+@import "components/navigation.css";
+@import "components/pagetitle.css";
+@import "components/ratio.css";
+@import "components/rawhtml.css";
+@import "components/section.css";
+@import "components/site.css";
+@import "components/swatch.css";
+@import "components/tableofcontents.css";
+@import "components/textcontrol.css";
+@import "components/user.css";
+@import "components/warningmessages.css";
 
 /**
  * Vendor
