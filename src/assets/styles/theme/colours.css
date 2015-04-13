@@ -176,18 +176,28 @@
  * Campaign States
  */
 :root {
-    --colour-status-finished: var(--colour-gray-shark);
-    --colour-status-incomplete: var(--colour-blue-base);
-    --colour-status-live: var(--colour-green-base);
-    --colour-status-paused: var(--colour-red-base);
-    --colour-status-pending: var(--colour-orange-base);
+    --colour-status-finished-base: var(--colour-gray-shark);
+    --colour-status-finished-accent: var(--colour-gray-mystic);
+    --colour-status-incomplete-base: var(--colour-blue-base);
+    --colour-status-incomplete-accent: var(--colour-blue-accent);
+    --colour-status-live-base: var(--colour-green-base);
+    --colour-status-live-accent: var(--colour-green-accent);
+    --colour-status-paused-base: var(--colour-red-base);
+    --colour-status-paused-accent: var(--colour-red-accent);
+    --colour-status-pending-base: var(--colour-orange-base);
+    --colour-status-pending-accent: var(--colour-orange-accent);
 }
 
-.u-colourBgStatusIncomplete { background: var(--colour-status-incomplete); }
-.u-colourBgStatusLive { background: var(--colour-status-live); }
-.u-colourBgStatusPending { background: var(--colour-status-pending); }
-.u-colourBgStatusPaused { background: var(--colour-status-paused); }
-.u-colourBgStatusFinished { background: var(--colour-status-finished); }
+.u-colourBgStatusIncompleteBase { background: var(--colour-status-incomplete-base); }
+.u-colourBgStatusIncompleteAccent { background: var(--colour-status-incomplete-accent); }
+.u-colourBgStatusLiveBase { background: var(--colour-status-live-base); }
+.u-colourBgStatusLiveAccent { background: var(--colour-status-live-accent); }
+.u-colourBgStatusPendingBase { background: var(--colour-status-pending-base); }
+.u-colourBgStatusPendingAccent { background: var(--colour-status-pending-accent); }
+.u-colourBgStatusPausedBase { background: var(--colour-status-paused-base); }
+.u-colourBgStatusPausedAccent { background: var(--colour-status-paused-accent); }
+.u-colourBgStatusFinishedBase { background: var(--colour-status-finished-base); }
+.u-colourBgStatusFinishedAccent { background: var(--colour-status-finished-accent); }
 
 /**
  * Base colours
