@@ -153,18 +153,18 @@
  */
 
 .DataActionTable-cellHeader--sortable .DataActionTable-cellHeaderItem {
-    background: url("../images/black-8-sorted-descending.svg") no-repeat right center;
+    background: url("../images/DataActionTable-cellHeader--sortable.svg") no-repeat right center;
     cursor: pointer;
     padding-right: 16px;
     user-select: none;
 }
 
 .DataActionTable-cellHeader.is-sortedAscending .DataActionTable-cellHeaderItem {
-    background-image: url("../images/green-base-8-sorted-ascending.svg");
+    background-image: url("../images/DataActionTable-cellHeader.is-sortedAscending.svg");
     color: var(--DataActionTable-cell-sorted-colour);
 }
 
 .DataActionTable-cellHeader.is-sortedDescending .DataActionTable-cellHeaderItem {
-    background-image: url("../images/green-base-8-sorted-descending.svg");
+    background-image: url("../images/DataActionTable-cellHeader.is-sortedDescending.svg");
     color: var(--DataActionTable-cell-sorted-colour);
 }
