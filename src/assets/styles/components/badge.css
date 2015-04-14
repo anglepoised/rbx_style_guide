@@ -15,9 +15,6 @@
  */
 
 :root {
-    --Badge-accent: var(--colour-gray-mystic);
-    --Badge-base: var(--colour-gray-shark);
-    --Badge-body-colour: var(--colour-white);
     --Badge-border-radius: 500px;
     --Badge-border-width: 1px;
     --Badge-details-offset: 1.4em;
@@ -44,23 +41,17 @@
 }
 
 .Badge-body {
-    background: var(--Badge-base);
     border: var(--Badge-border-width) solid;
-    border-color: var(--Badge-base);
     border-radius: var(--Badge-border-radius); /* 2 */
-    color: var(--Badge-body-colour);
     display: inline-block;
     padding: var(--Badge-padding-top) var(--Badge-padding-horizontal) var(--Badge-padding-bottom);
     position: relative; /* 3 */
 }
 
 .Badge-details {
-    background: var(--Badge-accent);
     border: var(--Badge-border-width) solid;
     border-bottom-right-radius: var(--Badge-border-radius); /* 2 */
-    border-color: var(--Badge-base);
     border-top-right-radius: var(--Badge-border-radius); /* 2 */
-    color: var(--Badge-base);
     display: inline-block;
     margin-left: calc(-var(--Badge-details-offset) + 0.1em);
     padding: var(--Badge-padding-top) var(--Badge-padding-horizontal) var(--Badge-padding-bottom) var(--Badge-details-offset);
