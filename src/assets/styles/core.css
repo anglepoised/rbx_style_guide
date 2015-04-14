@@ -30,6 +30,7 @@
  * Components
  */
 @import "components/article.css";
+@import "components/badge.css";
 @import "components/button.css";
 @import "components/code.css";
 @import "components/componentview.css";
