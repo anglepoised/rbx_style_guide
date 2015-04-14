@@ -11,14 +11,14 @@
  */
 
 :root {
-    --Navigation-background: var(--colour-gray-tuna);
-    --Navigation-background-hover: var(--colour-gray-shark);
-    --Navigation-color: var(--colour-gray-ghost);
-    --Navigation-color-active: var(--colour-white-alabaster);
-    --Navigation-color-hover: var(--colour-white-alabaster);
+    --Navigation-background: var(--color-gray-tuna);
+    --Navigation-background-hover: var(--color-gray-shark);
+    --Navigation-color: var(--color-gray-ghost);
+    --Navigation-color-active: var(--color-white-alabaster);
+    --Navigation-color-hover: var(--color-white-alabaster);
     --Navigation-font-size: var(--font-size);
     --Navigation-is-active-arrow-size: var(0.25em);
-    --Navigation-is-active-background: var(--colour-brand-green);
+    --Navigation-is-active-background: var(--color-brand-green);
 }
 
 /**
@@ -93,8 +93,8 @@
 
     .Navigation-itemInner.is-active::after {
         border-bottom: var(--Navigation-is-active-arrow-size) solid var(--Navigation-is-active-background); /* 8 */
-        border-left: var(--Navigation-is-active-arrow-size) solid var(--colour-transparent); /* 9 */
-        border-right: var(--Navigation-is-active-arrow-size) solid var(--colour-transparent); /* 11 */
+        border-left: var(--Navigation-is-active-arrow-size) solid var(--color-transparent); /* 9 */
+        border-right: var(--Navigation-is-active-arrow-size) solid var(--color-transparent); /* 11 */
         bottom: 0;
         content: "";
         height: 0;

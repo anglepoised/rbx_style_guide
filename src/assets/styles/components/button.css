@@ -1,11 +1,11 @@
 /** @define Button; use strict */
 
 :root {
-    --Button-background: var(--colour-blue-base);
-    --Button-background-hover: var(--colour-blue-hover);
-    --Button-background-pressed: var(--colour-blue-shadow);
+    --Button-background: var(--color-blue-base);
+    --Button-background-hover: var(--color-blue-hover);
+    --Button-background-pressed: var(--color-blue-shadow);
     --Button-border-radius: 2px;
-    --Button-color: var(--colour-white-alabaster);
+    --Button-color: var(--color-white-alabaster);
     --Button-disabled-opacity: 0.5;
     --Button-font: inherit;
     --Button-line-height: 2.5;
@@ -71,7 +71,7 @@
  */
 
 .Button:-moz-focusring {
-    outline: 1px dotted var(--colour-moz-focusring);
+    outline: 1px dotted var(--color-moz-focusring);
 }
 
 /**
@@ -155,9 +155,9 @@
  */
 
 :root {
-    --Button--positive-background: var(--colour-green-base);
-    --Button--positive-background-hover: var(--colour-green-hover);
-    --Button--positive-background-pressed: var(--colour-green-shadow);
+    --Button--positive-background: var(--color-green-base);
+    --Button--positive-background-hover: var(--color-green-hover);
+    --Button--positive-background-pressed: var(--color-green-shadow);
 }
 
 .Button--positive {
@@ -184,9 +184,9 @@
  */
 
 :root {
-    --Button--warning-background: var(--colour-orange-base);
-    --Button--warning-background-hover: var(--colour-orange-hover);
-    --Button--warning-background-pressed: var(--colour-orange-shadow);
+    --Button--warning-background: var(--color-orange-base);
+    --Button--warning-background-hover: var(--color-orange-hover);
+    --Button--warning-background-pressed: var(--color-orange-shadow);
 }
 
 .Button--warning {
@@ -213,9 +213,9 @@
  */
 
 :root {
-    --Button--danger-background: var(--colour-red-base);
-    --Button--danger-background-hover: var(--colour-red-hover);
-    --Button--danger-background-pressed: var(--colour-red-shadow);
+    --Button--danger-background: var(--color-red-base);
+    --Button--danger-background-hover: var(--color-red-hover);
+    --Button--danger-background-pressed: var(--color-red-shadow);
 }
 
 .Button--danger {

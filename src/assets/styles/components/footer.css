@@ -7,9 +7,9 @@
  */
 
 :root {
-    --Footer-background: var(--colour-gray-tuna);
-    --Footer-color: var(--colour-gray-regent);
-    --Footer-color-hover: var(--colour-white-alabaster);
+    --Footer-background: var(--color-gray-tuna);
+    --Footer-color: var(--color-gray-regent);
+    --Footer-color-hover: var(--color-white-alabaster);
     --Footer-font-size: var(--font-size-small);
     --Footer-padding-vertical: var(0.642857143em);
 }

@@ -11,8 +11,8 @@
  */
 
 :root {
-    --PageTitle-background: var(--colour-white-alabaster);
-    --PageTitle-border: var(--colour-green-base);
+    --PageTitle-background: var(--color-white-alabaster);
+    --PageTitle-border: var(--color-green-base);
 }
 
 /**

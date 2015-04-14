@@ -5,7 +5,7 @@
  */
 
 :root {
-    --ComponentView-background: var(--colour-white-catskill);
+    --ComponentView-background: var(--color-white-catskill);
 }
 
 .ComponentView {

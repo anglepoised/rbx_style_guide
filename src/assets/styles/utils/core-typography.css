@@ -125,7 +125,7 @@
  * For inline code.
  */
 .u-textCode {
-    background: var(--colour-gray-mystic) !important;
+    background: var(--color-gray-mystic) !important;
     border-radius: 3px !important;
     display: inline-block !important;
     padding: 0.15em 0.5em 0 !important;
