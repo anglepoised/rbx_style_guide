@@ -1,7 +1,7 @@
 /** @define Badge; use strict */
 
 /**
- * The `.Badge` component consists of two mandatory descendants:
+ * The `.Badge` component consists of two mandatory descendents:
  *
  * - body: either an icon or numeral.
  * - detail: a text description.
