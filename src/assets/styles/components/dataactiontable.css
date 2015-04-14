@@ -7,12 +7,11 @@
  * - A mandatory `.DataActionTable-main` descendent to display the table part. The root element for this should always
  *   be `<table>`.
  *
- * Columns in `.DataActionTable` can be sortable. The following classes should be used to indicate sorting state:
+ * Columns in `.DataActionTable` can be sortable. The following modifiers should be used to indicate sorting state:
  *
- * - `.is-sortable`: adds background image to column header to indicate sortability
- * - `.is-sorted`: changes column header style to indicate sorted state
- * - `.is-ascending`: swaps background image for sorted ascending type
- * - `.is-descending`: swaps background image for sorted descencing type
+ * - `DataActionTable-cellHeader--sortable`: adds background image to column header to indicate sortability.
+ * - `.is-sortedAscending`: changes column header style to indicate ascending.
+ * - `.is-sortedDescending`: changes column header style to show sorted descending.
  */
 
 :root {
