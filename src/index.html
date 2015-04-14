@@ -13,8 +13,8 @@
     <div ng-controller="mainCtrl as main">
     <div class="Site">
     <header>
-        <div class="Header" role="banner">
-            <a class="Header-logo" href="/">
+        <div class="PageHeader" role="banner">
+            <a class="PageHeader-logo" href="/">
                 <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
             </a>
         </div>
@@ -128,9 +128,6 @@
                             <a href="#Footer">Footer</a>
                         </li>
                         <li class="TableOfContents-item">
-                            <a href="#Header">Header</a>
-                        </li>
-                        <li class="TableOfContents-item">
                             <a href="#Icon">Icon</a>
                         </li>
                         <li class="TableOfContents-item">
@@ -141,6 +138,9 @@
                         </li>
                         <li class="TableOfContents-item">
                             <a href="#Main">Main</a>
+                        </li>
+                        <li class="TableOfContents-item">
+                            <a href="#PageHeader">PageHeader</a>
                         </li>
                         <li class="TableOfContents-item">
                             <a href="#PageTitle">PageTitle</a>
@@ -2281,129 +2281,6 @@
                     </footer>
                 </div>
             </article>
-            <article class="Article Article--styleGuide" id="Header">
-                <div class="RawHTML">
-                    <h3 class="u-headingStyleguide">
-                        Header
-                    </h3>
-                    <p>
-                        The <code>.Header</code> component should be used across all products. It consists of:
-                    </p>
-                    <ul>
-                       <li>A mandatory logo</li>
-                       <li>An optional <code>.Navigation</code> subcomponent</li>
-                       <li>An optional <code>.User</code> subcomponent</li>
-                    </ul>
-                    <p>
-                        It must be enclosed within the primary page <code>&lt;header&gt;</code> element, and must always
-                        have a <code>role="banner"</code> attribute on the component's root element.
-                    </p>
-<div hljs language="html">
-<div class="Header" role="banner">
-    <a class="Header-logo" href="#">
-        <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
-    </a>
-    <div class="Header-nav">
-        <nav class="Navigation" role="navigation">
-            <ul class="Navigation-items">
-                <li class="Navigation-item">
-                    <a class="Navigation-itemInner" href="#">Item</a>
-                </li>
-                <li class="Navigation-item">
-                    <a class="Navigation-itemInner is-active" href="#">Item active</a>
-                </li>
-                ...
-            </ul>
-        </nav>
-    </div>
-    <div class="Header-user">
-        <div class="User" role="button" tabindex="0">
-            <ul class="User-items">
-                <li class="User-item">
-                    test@example.com
-                </li>
-                <li class="User-item">
-                    <a class="User-itemInner" href="#">Sign out</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-</div>
-                <p>
-                    Logo-only header:
-                </p>
-                </div>
-                <div class="ComponentView">
-                    <div class="Header" role="banner">
-                        <a class="Header-logo" href="#">
-                            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="RawHTML">
-                    Logo and user header:
-                </div>
-                <div class="ComponentView">
-                    <div class="Header" role="banner">
-                        <a class="Header-logo" href="#">
-                            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
-                        </a>
-                        <div class="Header-user">
-                            <div class="User" role="button" tabindex="0">
-                                <ul class="User-items">
-                                    <li class="User-item">
-                                        test@example.com
-                                    </li>
-                                    <li class="User-item">
-                                        <a class="User-itemInner" href="#">Sign out</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="RawHTML">
-                    Full header:
-                </div>
-                <div class="ComponentView">
-                    <div class="Header" role="banner">
-                        <a class="Header-logo" href="#">
-                            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
-                        </a>
-                        <div class="Header-nav">
-                            <nav class="Navigation" role="navigation">
-                                <ul class="Navigation-items">
-                                    <li class="Navigation-item">
-                                        <a class="Navigation-itemInner" href="#">Item</a>
-                                    </li>
-                                    <li class="Navigation-item">
-                                        <a class="Navigation-itemInner is-active" href="#">Item active</a>
-                                    </li>
-                                    <li class="Navigation-item">
-                                        <a class="Navigation-itemInner" href="#">Item</a>
-                                    </li>
-                                    <li class="Navigation-item">
-                                        <a class="Navigation-itemInner" href="#">Item</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="Header-user">
-                            <div class="User" role="button" tabindex="0">
-                                <ul class="User-items">
-                                    <li class="User-item">
-                                        test@example.com
-                                    </li>
-                                    <li class="User-item">
-                                        <a class="User-itemInner" href="#">Sign out</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
             <article class="Article Article Article--styleGuide RawHTML" id="Icon">
                 <h3 class="u-headingStyleguide">
                     Icon
@@ -2579,8 +2456,8 @@
 <div hljs language="html">
 <div class="Site">
     <header>
-        <div class="Header" role="banner">
-            <a class="Header-logo" href="#">
+        <div class="PageHeader" role="banner">
+            <a class="PageHeader-logo" href="#">
                 <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
             </a>
         </div>
@@ -2606,8 +2483,8 @@
                 <div class="ComponentView">
                     <div class="Site">
                         <header>
-                            <div class="Header" role="banner">
-                                <a class="Header-logo" href="#">
+                            <div class="PageHeader" role="banner">
+                                <a class="PageHeader-logo" href="#">
                                     <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
                                 </a>
                             </div>
@@ -2627,6 +2504,130 @@
                     </div>
                 </div>
             </article>
+            <article class="Article Article--styleGuide" id="PageHeader">
+                <div class="RawHTML">
+                    <h3 class="u-headingStyleguide">
+                        PageHeader
+                    </h3>
+                    <p>
+                        The <code>.PageHeader</code> component should be used across all products. It consists of:
+                    </p>
+                    <ul>
+                       <li>A mandatory logo</li>
+                       <li>An optional <code>.Navigation</code> subcomponent</li>
+                       <li>An optional <code>.User</code> subcomponent</li>
+                    </ul>
+                    <p>
+                        It must be enclosed within the primary page <code>&lt;header&gt;</code> element, and must always
+                        have a <code>role="banner"</code> attribute on the component's root element.
+                    </p>
+<div hljs language="html">
+<div class="PageHeader" role="banner">
+    <a class="PageHeader-logo" href="#">
+        <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+    </a>
+    <div class="PageHeader-nav">
+        <nav class="Navigation" role="navigation">
+            <ul class="Navigation-items">
+                <li class="Navigation-item">
+                    <a class="Navigation-itemInner" href="#">Item</a>
+                </li>
+                <li class="Navigation-item">
+                    <a class="Navigation-itemInner is-active" href="#">Item active</a>
+                </li>
+                ...
+            </ul>
+        </nav>
+    </div>
+    <div class="PageHeader-user">
+        <div class="User" role="button" tabindex="0">
+            <ul class="User-items">
+                <li class="User-item">
+                    test@example.com
+                </li>
+                <li class="User-item">
+                    <a class="User-itemInner" href="#">Sign out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+                <p>
+                    Logo-only version:
+                </p>
+                </div>
+                <div class="ComponentView">
+                    <div class="PageHeader" role="banner">
+                        <a class="PageHeader-logo" href="#">
+                            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="RawHTML">
+                    Logo and user version:
+                </div>
+                <div class="ComponentView">
+                    <div class="PageHeader" role="banner">
+                        <a class="PageHeader-logo" href="#">
+                            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+                        </a>
+                        <div class="PageHeader-user">
+                            <div class="User" role="button" tabindex="0">
+                                <ul class="User-items">
+                                    <li class="User-item">
+                                        test@example.com
+                                    </li>
+                                    <li class="User-item">
+                                        <a class="User-itemInner" href="#">Sign out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="RawHTML">
+                    Full version:
+                </div>
+                <div class="ComponentView">
+                    <div class="PageHeader" role="banner">
+                        <a class="PageHeader-logo" href="#">
+                            <div class="Icon Icon--white-alabaster-100-logo-rockabox">Rockabox</div>
+                        </a>
+                        <div class="PageHeader-nav">
+                            <nav class="Navigation" role="navigation">
+                                <ul class="Navigation-items">
+                                    <li class="Navigation-item">
+                                        <a class="Navigation-itemInner" href="#">Item</a>
+                                    </li>
+                                    <li class="Navigation-item">
+                                        <a class="Navigation-itemInner is-active" href="#">Item active</a>
+                                    </li>
+                                    <li class="Navigation-item">
+                                        <a class="Navigation-itemInner" href="#">Item</a>
+                                    </li>
+                                    <li class="Navigation-item">
+                                        <a class="Navigation-itemInner" href="#">Item</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="PageHeader-user">
+                            <div class="User" role="button" tabindex="0">
+                                <ul class="User-items">
+                                    <li class="User-item">
+                                        test@example.com
+                                    </li>
+                                    <li class="User-item">
+                                        <a class="User-itemInner" href="#">Sign out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
             <article class="Article Article--styleGuide" id="PageTitle">
                 <div class="RawHTML">
                     <h3 class="u-headingStyleguide">
@@ -2644,7 +2645,8 @@
                     </ul>
                     <p>
                         It must be enclosed within the primary page <code>&lt;header&gt;</code> element and must follow
-                        the <code><a href="#Header">.Header</a></code> component if one is also used on the page.
+                        the <code><a href="#PageHeader">.PageHeader</a></code> component if one is also used on the
+                        page.
                     </p>
 <div hljs language="html">
 <div class="PageTitle">

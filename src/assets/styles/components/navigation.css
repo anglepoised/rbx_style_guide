@@ -1,7 +1,7 @@
 /** @define Navigation; use strict */
 
 /**
- * The `.Navigation` component is a subcomponent of `.Header`.
+ * The `.Navigation` component is a subcomponent of `.PageHeader`.
  *
  * Links in this component should point to the root pages of discrete applications.
  *
