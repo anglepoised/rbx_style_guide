@@ -1,7 +1,7 @@
 /** @define User; use strict */
 
 /**
- * The `.User` component is a subcomponent of `.Header`.
+ * The `.User` component is a subcomponent of `.PageHeader`.
  *
  * Can be used with any element, but should ideally be attached to a `<div>` element with attributes
  * `role="button" tabindex="0"` to ensure the component is focusable.

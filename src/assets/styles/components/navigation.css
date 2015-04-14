@@ -1,7 +1,7 @@
 /** @define Navigation; use strict */
 
 /**
- * The `.Navigation` component is a subcomponent of `.Header`.
+ * The `.Navigation` component is a subcomponent of `.PageHeader`.
  *
  * Links in this component should point to the root pages of discrete applications.
  *
@@ -11,7 +11,7 @@
  */
 
 :root {
-    --Navigation-background: var(--Header-background);
+    --Navigation-background: var(--colour-gray-tuna);
     --Navigation-background-hover: var(--colour-gray-shark);
     --Navigation-color: var(--colour-gray-ghost);
     --Navigation-color-active: var(--colour-white-alabaster);
