@@ -931,17 +931,8 @@
 </div>
 </div>
                     <p>
-                        Which renders as:
-                    </p>
-                </div>
-                <div class="ComponentView">
-                    <div class="Badge">
-                        <span class="Badge-body">Body</span> <span class="Badge-details">Details</span>
-                    </div>
-                </div>
-                <div class="RawHTML">
-                    <p>
-                        One state is available: <code>.is-collapsed</code>, which displays details on hover.
+                        One state is available: <code>.is-collapsed</code>, which displays details to the right on
+                        hover. This state should never be used in right-aligned components.
                     </p>
                     <p>
                         A <code>tabindex="0"</code> attribute should be added when the collapsed state is used.
@@ -952,18 +943,17 @@
 </div>
 </div>
                     <p>
-                        Which renders as:
+                        The <code>.Badge</code> component should never be used without a modifier.
                     </p>
-                </div>
-                <div class="ComponentView">
-                    <div class="Badge is-collapsed" tabindex="0">
-                        <span class="Badge-body">Body</span> <span class="Badge-details">Details</span>
-                    </div>
-                </div>
-                <div class="RawHTML">
-                    <h4 class="u-headingStyleguide">Warning Counts</h4>
+                    <h4 class="u-headingStyleguide">
+                        Warning Count Modifier
+                    </h4>
 <div hljs language="html">
 <div class="Badge Badge--warning" tabindex="0">
+    <span class="Badge-body">N !</span> <span class="Badge-details">Warnings on this item</span>
+</div>
+
+<div class="Badge Badge--warning is-collapsed" tabindex="0">
     <span class="Badge-body">N !</span> <span class="Badge-details">Warnings on this item</span>
 </div>
 </div>
@@ -973,9 +963,12 @@
                     <div class="Badge Badge--warning" tabindex="0">
                         <span class="Badge-body">N !</span> <span class="Badge-details">Warnings on this item</span>
                     </div>
+                    <div class="Badge Badge--warning is-collapsed" tabindex="0">
+                        <span class="Badge-body">N !</span> <span class="Badge-details">Warnings on this item</span>
+                    </div>
                 </div>
                 <div class="RawHTML">
-                    <h4 class="u-headingStyleguide">Status Indicators</h4>
+                    <h4 class="u-headingStyleguide">Status Indicator Modifiers</h4>
 <div hljs language="html">
 <div class="Badge Badge--statusIncomplete">
     <span class="Badge-body">&nbsp;</span> <span class="Badge-details">Incomplete</span>
