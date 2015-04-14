@@ -176,16 +176,16 @@
  * Campaign States
  */
 :root {
-    --colour-status-finished-base: var(--colour-gray-shark);
     --colour-status-finished-accent: var(--colour-gray-mystic);
-    --colour-status-incomplete-base: var(--colour-blue-base);
+    --colour-status-finished-base: var(--colour-gray-shark);
     --colour-status-incomplete-accent: var(--colour-blue-accent);
-    --colour-status-live-base: var(--colour-green-base);
+    --colour-status-incomplete-base: var(--colour-blue-base);
     --colour-status-live-accent: var(--colour-green-accent);
-    --colour-status-paused-base: var(--colour-red-base);
+    --colour-status-live-base: var(--colour-green-base);
     --colour-status-paused-accent: var(--colour-red-accent);
-    --colour-status-pending-base: var(--colour-orange-base);
+    --colour-status-paused-base: var(--colour-red-base);
     --colour-status-pending-accent: var(--colour-orange-accent);
+    --colour-status-pending-base: var(--colour-orange-base);
 }
 
 .u-colourBgStatusIncompleteBase { background: var(--colour-status-incomplete-base); }
