@@ -10,6 +10,15 @@
 
 .ComponentView {
     background: var(--ComponentView-background);
-    margin: 1em 0;
     padding: 1em 0.5em;
+}
+
+.ComponentView > * {
+    margin: 1em 0;
+}
+
+.ComponentView--grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
