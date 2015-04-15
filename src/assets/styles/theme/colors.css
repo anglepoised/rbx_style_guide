@@ -1,0 +1,208 @@
+/**
+ * Colours
+ *
+ * All colour definitions should be made with rgb(a), with equivalent hex value following in comments for ease of
+ * look-up.
+ *
+ * Neutral names from: http://chir.ag/projects/name-that-color/
+ * Hex to RGBA converter: http://hex2rgba.devoth.com/
+ */
+
+/**
+ * Utility colours
+ */
+
+:root {
+    --color-moz-focusring: rgba(33, 33, 33, 1); /* #212121 */
+    --color-transparent: rgba(0, 0, 0, 0);
+}
+
+/**
+ * Descriptive colours
+ */
+
+/**
+ * Dark neutral palette
+ */
+:root {
+    --color-gray-regent: rgba(141, 150, 163, 1); /* #8d96a3 */
+    --color-gray-shark: rgba(29, 31, 35, 1); /* #1d1f23 */
+    --color-gray-trout: rgba(77, 81, 91, 1); /* #4d515b */
+    --color-gray-tuna: rgba(53, 53, 58, 1); /* #35353a */
+}
+
+.u-colorBgGrayShark { background: var(--color-gray-shark); }
+.u-colorBgGrayTuna { background: var(--color-gray-tuna); }
+.u-colorBgGrayTrout { background: var(--color-gray-trout); }
+.u-colorBgGrayRegent { background: var(--color-gray-regent); }
+
+
+/**
+ * Light neutral palette
+ */
+:root {
+    --color-gray-ghost: rgba(196, 204, 215, 1); /* #c4ccd7 */
+    --color-gray-mystic: rgba(220, 227, 235, 1); /* #dce3eb */
+    --color-white: rgba(255, 255, 255, 1); /* #fff */
+    --color-white-alabaster: rgba(252, 252, 252, 1); /* #fcfcfc */
+    --color-white-catskill: rgba(241, 244, 248, 1); /* #f1f4f8 */
+}
+
+.u-colorBgGrayGhost { background: var(--color-gray-ghost); }
+.u-colorBgGrayMystic { background: var(--color-gray-mystic); }
+.u-colorBgWhiteCatskill { background: var(--color-white-catskill); }
+.u-colorBgWhiteAlabaster { background: var(--color-white-alabaster); }
+.u-colorBgWhite { background: var(--color-white); }
+
+/**
+ * Green palette
+ */
+:root {
+    --color-green-accent: rgba(232, 246, 241, 1); /* #d5f0e5 */
+    --color-green-base: rgba(57, 190, 137, 1); /* #39be89 */
+    --color-green-hover: rgba(48, 172, 123, 1); /* #30ac7b */
+    --color-green-shadow: rgba(44, 147, 106, 1); /* #2c936a */
+}
+
+.u-colorBgGreenAccent { background: var(--color-green-accent); }
+.u-colorBgGreenBase { background: var(--color-green-base); }
+.u-colorBgGreenHover { background: var(--color-green-hover); }
+.u-colorBgGreenShadow { background: var(--color-green-shadow); }
+
+/**
+ * Blue palette
+ */
+:root {
+    --color-blue-accent: rgba(241, 245, 250, 1); /* #d8e6f7 */
+    --color-blue-base: rgba(70, 142, 228, 1); /* #468ee4 */
+    --color-blue-hover: rgba(58, 123, 201, 1); /* #3a7bc9 */
+    --color-blue-shadow: rgba(44, 96, 158, 1); /* #2c609e */
+}
+
+.u-colorBgBlueAccent { background: var(--color-blue-accent); }
+.u-colorBgBlueBase { background: var(--color-blue-base); }
+.u-colorBgBlueHover { background: var(--color-blue-hover); }
+.u-colorBgBlueShadow { background: var(--color-blue-shadow); }
+
+/**
+ * Orange palette
+ */
+:root {
+    --color-orange-accent: rgba(249, 239, 229, 1); /* #f9e7d6 */
+    --color-orange-base: rgba(237, 148, 60, 1); /* #ed943c */
+    --color-orange-hover: rgba(211, 130, 50, 1); /* #d38232 */
+    --color-orange-shadow: rgba(181, 111, 42, 1); /* #b56f2a */
+}
+
+.u-colorBgOrangeAccent { background: var(--color-orange-accent); }
+.u-colorBgOrangeBase { background: var(--color-orange-base); }
+.u-colorBgOrangeHover { background: var(--color-orange-hover); }
+.u-colorBgOrangeShadow { background: var(--color-orange-shadow); }
+
+/**
+ * Red palette
+ */
+:root {
+    --color-red-accent: rgba(250, 235, 235, 1); /* #f0d8d8 */
+    --color-red-base: rgba(194, 74, 74, 1); /* #c24a4a */
+    --color-red-hover: rgba(177, 63, 63, 1); /* #b13f3f */
+    --color-red-shadow: rgba(158, 54, 54, 1); /* #9e3636 */
+}
+
+.u-colorBgRedAccent { background: var(--color-red-accent); }
+.u-colorBgRedBase { background: var(--color-red-base); }
+.u-colorBgRedHover { background: var(--color-red-hover); }
+.u-colorBgRedShadow { background: var(--color-red-shadow); }
+
+/**
+ * Functional colours
+ */
+
+/**
+ * General
+ */
+:root {
+    --color-base-background: var(--color-white-catskill);
+    --color-base-font: var(--color-gray-tuna);
+    --color-base-highlight: var(--color-green-base);
+    --color-base-link-default: var(--color-blue-base);
+    --color-base-link-hover: var(--color-blue-hover);
+    --color-code-background: var(--color-gray-mystic);
+}
+
+.u-colorBgBaseFont { background: var(--color-base-font); }
+.u-colorBgBaseBackground { background: var(--color-base-background); }
+.u-colorBgBaseLinkDefault { background: var(--color-base-link-default); }
+.u-colorBgBaseLinkHover { background: var(--color-base-link-hover); }
+.u-colorBgBaseHighlight { background: var(--color-base-highlight); }
+.u-colorBgCodeBackground { background: var(--color-code-background); }
+
+/**
+ * Form
+ */
+:root {
+    --color-form-field-background: var(--color-white);
+}
+
+.u-colorBgFormFieldBackground { background: var(--color-form-field-background); }
+
+/**
+ * Brand
+ */
+:root {
+    --color-brand-gray: var(--color-gray-tuna);
+    --color-brand-green: var(--color-green-base);
+}
+
+.u-colorBgBrandGreen { background: var(--color-brand-green); }
+.u-colorBgBrandGray { background: var(--color-brand-gray); }
+
+/**
+ * Actions
+ */
+:root {
+    --color-action-danger: var(--color-green-base);
+    --color-action-neutral: var(--color-green-base);
+    --color-action-positive: var(--color-green-base);
+    --color-action-warning: var(--color-green-base);
+}
+
+.u-colorBgActionNeutral { background: var(--color-blue-base); }
+.u-colorBgActionPositive { background: var(--color-green-base); }
+.u-colorBgActionWarning { background: var(--color-orange-base); }
+.u-colorBgActionDanger { background: var(--color-red-base); }
+
+/**
+ * Campaign States
+ */
+:root {
+    --color-status-finished-accent: var(--color-gray-mystic);
+    --color-status-finished-base: var(--color-gray-shark);
+    --color-status-incomplete-accent: var(--color-blue-accent);
+    --color-status-incomplete-base: var(--color-blue-base);
+    --color-status-live-accent: var(--color-green-accent);
+    --color-status-live-base: var(--color-green-base);
+    --color-status-paused-accent: var(--color-red-accent);
+    --color-status-paused-base: var(--color-red-base);
+    --color-status-pending-accent: var(--color-orange-accent);
+    --color-status-pending-base: var(--color-orange-base);
+}
+
+.u-colorBgStatusIncompleteBase { background: var(--color-status-incomplete-base); }
+.u-colorBgStatusIncompleteAccent { background: var(--color-status-incomplete-accent); }
+.u-colorBgStatusLiveBase { background: var(--color-status-live-base); }
+.u-colorBgStatusLiveAccent { background: var(--color-status-live-accent); }
+.u-colorBgStatusPendingBase { background: var(--color-status-pending-base); }
+.u-colorBgStatusPendingAccent { background: var(--color-status-pending-accent); }
+.u-colorBgStatusPausedBase { background: var(--color-status-paused-base); }
+.u-colorBgStatusPausedAccent { background: var(--color-status-paused-accent); }
+.u-colorBgStatusFinishedBase { background: var(--color-status-finished-base); }
+.u-colorBgStatusFinishedAccent { background: var(--color-status-finished-accent); }
+
+/**
+ * Base colours
+ */
+body {
+    background: var(--color-base-background);
+    color: var(--color-base-font);
+}

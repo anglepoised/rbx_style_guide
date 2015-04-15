@@ -82,15 +82,15 @@
  */
 
 :root {
-    --Badge--warning-accent: var(--colour-orange-accent);
-    --Badge--warning-base: var(--colour-orange-base);
-    --Badge--warning-body-colour: var(--colour-white);
+    --Badge--warning-accent: var(--color-orange-accent);
+    --Badge--warning-base: var(--color-orange-base);
+    --Badge--warning-body-color: var(--color-white);
 }
 
 .Badge--warning .Badge-body {
     background: var(--Badge--warning-base);
     border-color: var(--Badge--warning-base);
-    color: var(--Badge--warning-body-colour);
+    color: var(--Badge--warning-body-color);
 }
 
 .Badge--warning .Badge-details {
@@ -104,8 +104,8 @@
  */
 
 :root {
-    --Badge--statusIncomplete-accent: var(--colour-blue-accent);
-    --Badge--statusIncomplete-base: var(--colour-blue-base);
+    --Badge--statusIncomplete-accent: var(--color-blue-accent);
+    --Badge--statusIncomplete-base: var(--color-blue-base);
 }
 
 .Badge--statusIncomplete .Badge-body {
@@ -124,8 +124,8 @@
  */
 
 :root {
-    --Badge--statusLive-accent: var(--colour-status-live-accent);
-    --Badge--statusLive-base: var(--colour-status-live-base);
+    --Badge--statusLive-accent: var(--color-status-live-accent);
+    --Badge--statusLive-base: var(--color-status-live-base);
 }
 
 .Badge--statusLive .Badge-body {
@@ -144,8 +144,8 @@
  */
 
 :root {
-    --Badge--statusPending-accent: var(--colour-status-pending-accent);
-    --Badge--statusPending-base: var(--colour-status-pending-base);
+    --Badge--statusPending-accent: var(--color-status-pending-accent);
+    --Badge--statusPending-base: var(--color-status-pending-base);
 }
 
 .Badge--statusPending .Badge-body {
@@ -164,8 +164,8 @@
  */
 
 :root {
-    --Badge--statusPaused-accent: var(--colour-status-paused-accent);
-    --Badge--statusPaused-base: var(--colour-status-paused-base);
+    --Badge--statusPaused-accent: var(--color-status-paused-accent);
+    --Badge--statusPaused-base: var(--color-status-paused-base);
 }
 
 .Badge--statusPaused .Badge-body {
@@ -184,8 +184,8 @@
  */
 
 :root {
-    --Badge--statusFinished-accent: var(--colour-status-finished-accent);
-    --Badge--statusFinished-base: var(--colour-status-finished-base);
+    --Badge--statusFinished-accent: var(--color-status-finished-accent);
+    --Badge--statusFinished-base: var(--color-status-finished-base);
 }
 
 .Badge--statusFinished .Badge-body {

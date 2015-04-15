@@ -7,9 +7,9 @@
  */
 
 :root {
-    --WarningMessages-background: var(--colour-orange-accent);
-    --WarningMessages-border: var(--colour-orange-base);
-    --WarningMessages-color: var(--colour-gray-tuna);
+    --WarningMessages-background: var(--color-orange-accent);
+    --WarningMessages-border: var(--color-orange-base);
+    --WarningMessages-color: var(--color-gray-tuna);
 }
 
 /**

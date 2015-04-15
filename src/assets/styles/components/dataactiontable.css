@@ -15,18 +15,18 @@
  */
 
 :root {
-    --DataActionTable-background: var(--colour-white-catskill);
-    --DataActionTable-border-colour: var(--colour-green-base);
+    --DataActionTable-background: var(--color-white-catskill);
+    --DataActionTable-border-color: var(--color-green-base);
     --DataActionTable-border-width: 1px;
-    --DataActionTable-cell-colour: var(--colour-gray-tuna);
+    --DataActionTable-cell-color: var(--color-gray-tuna);
     --DataActionTable-cell-padding-horizontal: var(--layout-gutter);
     --DataActionTable-cell-padding-vertical: 0.8125em;
-    --DataActionTable-cell-sorted-colour: var(--colour-green-base);
+    --DataActionTable-cell-sorted-color: var(--color-green-base);
     --DataActionTable-col-utility-width: 30px;
-    --DataActionTable-row-background: var(--colour-white-catskill);
-    --DataActionTable-row-background-hover: var(--colour-green-accent);
-    --DataActionTable-row-background-odd: var(--colour-white-alabaster);
-    --DataActionTable-row-background-selected: var(--colour-green-accent);
+    --DataActionTable-row-background: var(--color-white-catskill);
+    --DataActionTable-row-background-hover: var(--color-green-accent);
+    --DataActionTable-row-background-odd: var(--color-white-alabaster);
+    --DataActionTable-row-background-selected: var(--color-green-accent);
 }
 
 /**
@@ -91,7 +91,7 @@
 
 .DataActionTable-body .DataActionTable-row {
     background: var(--DataActionTable-row-background);
-    border: var(--DataActionTable-border-width) dotted var(--colour-transparent); /* 5 */
+    border: var(--DataActionTable-border-width) dotted var(--color-transparent); /* 5 */
 }
 
 .DataActionTable-body .DataActionTable-row:nth-child(odd) {
@@ -100,7 +100,7 @@
 
 .DataActionTable-body .DataActionTable-row:hover {
     background: var(--DataActionTable-row-background-hover);
-    border: var(--DataActionTable-border-width) solid var(--DataActionTable-border-colour);
+    border: var(--DataActionTable-border-width) solid var(--DataActionTable-border-color);
 }
 
 .DataActionTable-body .DataActionTable-row.is-selected {
@@ -130,12 +130,12 @@
  */
 
 .DataActionTable-cellHeader {
-    border-bottom: 1px solid var(--DataActionTable-border-colour);
+    border-bottom: 1px solid var(--DataActionTable-border-color);
     white-space: nowrap; /* 8 */
 }
 
 .DataActionTable-cellHeaderItem {
-    color: var(--DataActionTable-cell-colour);
+    color: var(--DataActionTable-cell-color);
     font-family: var(--font-family-proportional-semibold);
     font-size: var(--font-size-small);
 }
@@ -145,7 +145,7 @@
 }
 
 .DataActionTable-cellDataItem {
-    color: var(--DataActionTable-cell-colour);
+    color: var(--DataActionTable-cell-color);
 }
 
 /**
@@ -161,10 +161,10 @@
 
 .DataActionTable-cellHeader.is-sortedAscending .DataActionTable-cellHeaderItem {
     background-image: url("../images/DataActionTable-cellHeader.is-sortedAscending.svg");
-    color: var(--DataActionTable-cell-sorted-colour);
+    color: var(--DataActionTable-cell-sorted-color);
 }
 
 .DataActionTable-cellHeader.is-sortedDescending .DataActionTable-cellHeaderItem {
     background-image: url("../images/DataActionTable-cellHeader.is-sortedDescending.svg");
-    color: var(--DataActionTable-cell-sorted-colour);
+    color: var(--DataActionTable-cell-sorted-color);
 }

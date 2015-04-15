@@ -200,9 +200,9 @@ h6 {
  * Standard link
  */
 a {
-    color: var(--colour-base-link-default);
+    color: var(--color-base-link-default);
 }
 
 a:hover {
-    color: var(--colour-base-link-hover);
+    color: var(--color-base-link-hover);
 }

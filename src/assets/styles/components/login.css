@@ -5,7 +5,7 @@
  */
 
 :root {
-    --Login-colour: var(--colour-white-alabaster);
+    --Login-color: var(--color-white-alabaster);
 }
 
 /**
@@ -13,7 +13,7 @@
  */
 
 .Login {
-    color: var(--Login-colour);
+    color: var(--Login-color);
 }
 
 .Login-icon {
