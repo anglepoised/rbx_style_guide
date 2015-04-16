@@ -6,47 +6,47 @@
  * Variables
  */
 
-@import "variables.css";
+@import "./variables.css";
 
 /**
  * Boot
  */
 
-@import "boot/normalize.css";
-@import "boot/base.css";
-@import "boot/box-sizing.css";
-@import "boot/responsive.css";
-@import "boot/page.css";
-@import "boot/fonts.css";
-@import "boot/typography.css";
+@import "./boot/normalize.css";
+@import "./boot/base.css";
+@import "./boot/box-sizing.css";
+@import "./boot/responsive.css";
+@import "./boot/page.css";
+@import "./boot/fonts.css";
+@import "./boot/typography.css";
 
 /**
  * Utilities
  */
 
-@import "utils/core-colors.css";
-@import "utils/core-display.css";
-@import "utils/core-link.css";
-@import "utils/core-text.css";
-@import "utils/core-typography.css";
+@import "./utils/core-colors.css";
+@import "./utils/core-display.css";
+@import "./utils/core-link.css";
+@import "./utils/core-text.css";
+@import "./utils/core-typography.css";
 
 /**
  * Components
  */
 
-@import "components/article.css";
-@import "components/code.css";
-@import "components/componentview.css";
-@import "components/currency.css";
-@import "components/disclaimer.css";
-@import "components/rawhtml.css";
-@import "components/section.css";
-@import "components/swatch.css";
-@import "components/tableofcontents.css";
-@import "components/warningmessages.css";
+@import "./components/article.css";
+@import "./components/code.css";
+@import "./components/componentview.css";
+@import "./components/currency.css";
+@import "./components/disclaimer.css";
+@import "./components/rawhtml.css";
+@import "./components/section.css";
+@import "./components/swatch.css";
+@import "./components/tableofcontents.css";
+@import "./components/warningmessages.css";
 
 /**
  * Vendor
  */
 
-@import "vendor/highlight.js/github.css";
+@import "./vendor/highlight.js/github.css";
