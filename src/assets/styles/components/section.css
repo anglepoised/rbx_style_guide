@@ -6,6 +6,10 @@
  * One modifier is available, `.Section--gutter`, which introduces the site-wide gutter.
  */
 
+.Section + .Section {
+    margin-top: 2em;
+}
+
 .Section--gutter {
     margin: 2em var(--layout-gutter);
 }

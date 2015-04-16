@@ -1,0 +1,69 @@
+/**
+ * Typography
+ */
+
+/**
+ * Base font size, for easy to understand values
+ *
+ * See: http://snook.ca/archives/html_and_css/font-size-with-rem
+ */
+
+html {
+    font-size: 62.5%;
+}
+
+/**
+ * Default font family, sizing and line-height
+ */
+
+body {
+    font-family: var(--font-family-proportional);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+
+/**
+ * Monospaced text
+ *
+ * Fix monospace elements with nicer fonts in a reasonable stack and explicitly
+ * set size.
+ */
+
+pre,
+code,
+kbd,
+samp {
+    font-family: var(--font-family-monospaced);
+    font-size: var(--font-size-small);
+}
+
+/**
+ * Headings
+ *
+ * Flatten headings and use classes, as visual designs rarely fit with an actual
+ * document outline and ability to override is helpful.
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: var(--font-size);
+}
+
+/* Inline elements
+   ========================================================================== */
+
+/**
+ * Standard link
+ */
+
+a {
+    color: var(--color-base-link-default);
+}
+
+a:hover {
+    color: var(--color-base-link-hover);
+}

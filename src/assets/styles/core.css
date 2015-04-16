@@ -1,25 +1,30 @@
 /**
- * rbx_style_guide
+ * RBX Style Guide
  */
+
+/**
+ * Variables
+ */
+
+@import "variables.css";
 
 /**
  * Boot
  */
+
 @import "boot/normalize.css";
 @import "boot/base.css";
 @import "boot/box-sizing.css";
-@import "boot/layout.css";
 @import "boot/responsive.css";
-
-/**
- * Theme
- */
-@import "theme/colors.css";
-@import "theme/typography.css";
+@import "boot/page.css";
+@import "boot/fonts.css";
+@import "boot/typography.css";
 
 /**
  * Utilities
  */
+
+@import "utils/core-colors.css";
 @import "utils/core-display.css";
 @import "utils/core-link.css";
 @import "utils/core-text.css";
@@ -28,6 +33,7 @@
 /**
  * Components
  */
+
 @import "components/article.css";
 @import "components/badge.css";
 @import "components/button.css";
@@ -58,4 +64,5 @@
 /**
  * Vendor
  */
+
 @import "vendor/highlight.js/github.css";
