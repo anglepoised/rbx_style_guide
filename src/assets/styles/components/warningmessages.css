@@ -46,6 +46,7 @@
 
 .WarningMessages-itemAction {
     align-self: flex-end;
+    cursor: pointer;
     display: block;
     flex: none;
     margin: 0 0.5em auto auto;
