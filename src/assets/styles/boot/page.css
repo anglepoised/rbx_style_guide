@@ -1,0 +1,12 @@
+/**
+ * Page
+ */
+
+/**
+ * Base colours
+ */
+
+body {
+    background: var(--color-base-background);
+    color: var(--color-base-font);
+}

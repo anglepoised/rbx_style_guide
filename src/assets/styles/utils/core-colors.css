@@ -1,0 +1,115 @@
+/**
+ * Colours
+ */
+
+/**
+ * Descriptive colours
+ */
+
+
+/**
+ * Dark neutral palette
+ */
+
+.u-colorBgGrayShark { background: var(--color-gray-shark); }
+.u-colorBgGrayTuna { background: var(--color-gray-tuna); }
+.u-colorBgGrayTrout { background: var(--color-gray-trout); }
+.u-colorBgGrayRegent { background: var(--color-gray-regent); }
+
+/**
+ * Light neutral palette
+ */
+
+.u-colorBgGrayGhost { background: var(--color-gray-ghost); }
+.u-colorBgGrayMystic { background: var(--color-gray-mystic); }
+.u-colorBgWhiteCatskill { background: var(--color-white-catskill); }
+.u-colorBgWhiteAlabaster { background: var(--color-white-alabaster); }
+.u-colorBgWhite { background: var(--color-white); }
+
+/**
+ * Green palette
+ */
+
+.u-colorBgGreenAccent { background: var(--color-green-accent); }
+.u-colorBgGreenBase { background: var(--color-green-base); }
+.u-colorBgGreenHover { background: var(--color-green-hover); }
+.u-colorBgGreenShadow { background: var(--color-green-shadow); }
+
+/**
+ * Blue palette
+ */
+
+.u-colorBgBlueAccent { background: var(--color-blue-accent); }
+.u-colorBgBlueBase { background: var(--color-blue-base); }
+.u-colorBgBlueHover { background: var(--color-blue-hover); }
+.u-colorBgBlueShadow { background: var(--color-blue-shadow); }
+
+/**
+ * Orange palette
+ */
+
+.u-colorBgOrangeAccent { background: var(--color-orange-accent); }
+.u-colorBgOrangeBase { background: var(--color-orange-base); }
+.u-colorBgOrangeHover { background: var(--color-orange-hover); }
+.u-colorBgOrangeShadow { background: var(--color-orange-shadow); }
+
+/**
+ * Red palette
+ */
+
+.u-colorBgRedAccent { background: var(--color-red-accent); }
+.u-colorBgRedBase { background: var(--color-red-base); }
+.u-colorBgRedHover { background: var(--color-red-hover); }
+.u-colorBgRedShadow { background: var(--color-red-shadow); }
+
+/**
+ * Functional colours
+ */
+
+/**
+ * General
+ */
+
+.u-colorBgBaseFont { background: var(--color-base-font); }
+.u-colorBgBaseBackground { background: var(--color-base-background); }
+.u-colorBgBaseLinkDefault { background: var(--color-base-link-default); }
+.u-colorBgBaseLinkHover { background: var(--color-base-link-hover); }
+.u-colorBgBaseHighlight { background: var(--color-base-highlight); }
+.u-colorBgCodeBackground { background: var(--color-code-background); }
+
+/**
+ * Form
+ */
+
+.u-colorBgFormFieldBackground { background: var(--color-form-field-background); }
+
+/**
+ * Brand
+ */
+
+.u-colorBgBrandGreen { background: var(--color-brand-green); }
+.u-colorBgBrandGray { background: var(--color-brand-gray); }
+
+/**
+ * Actions
+ */
+
+.u-colorBgActionNeutral { background: var(--color-blue-base); }
+.u-colorBgActionPositive { background: var(--color-green-base); }
+.u-colorBgActionWarning { background: var(--color-orange-base); }
+.u-colorBgActionDanger { background: var(--color-red-base); }
+
+/**
+ * Campaign States
+ */
+
+.u-colorBgStatusIncompleteBase { background: var(--color-status-incomplete-base); }
+.u-colorBgStatusIncompleteAccent { background: var(--color-status-incomplete-accent); }
+.u-colorBgStatusLiveBase { background: var(--color-status-live-base); }
+.u-colorBgStatusLiveAccent { background: var(--color-status-live-accent); }
+.u-colorBgStatusPendingBase { background: var(--color-status-pending-base); }
+.u-colorBgStatusPendingAccent { background: var(--color-status-pending-accent); }
+.u-colorBgStatusPausedBase { background: var(--color-status-paused-base); }
+.u-colorBgStatusPausedAccent { background: var(--color-status-paused-accent); }
+.u-colorBgStatusFinishedBase { background: var(--color-status-finished-base); }
+.u-colorBgStatusFinishedAccent { background: var(--color-status-finished-accent); }

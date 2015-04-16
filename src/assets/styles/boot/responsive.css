@@ -5,8 +5,9 @@
  */
 
 /**
-* Responsive elements
-*/
+ * Responsive elements
+ */
+
 canvas,
 iframe,
 img,
@@ -19,5 +20,6 @@ video {
 /**
  * Breakpoints
  */
+
 @custom-media --md-viewport (min-width: 40em);
 @custom-media --lg-viewport (min-width: 60em);
