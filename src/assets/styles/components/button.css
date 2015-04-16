@@ -106,7 +106,7 @@
 }
 
 /**
- * Large variant
+ * Large modifier
  */
 
 :root {
@@ -123,7 +123,7 @@
 }
 
 /**
- * Small variant
+ * Small modifier
  */
 
 :root {
@@ -141,7 +141,7 @@
 }
 
 /**
- * Block variant
+ * Block modifier
  */
 
 .Button--block {
@@ -151,7 +151,7 @@
 }
 
 /**
- * Positive variant
+ * Positive modifier
  */
 
 :root {
@@ -180,7 +180,7 @@
 }
 
 /**
- * Warning variant
+ * Warning modifier
  */
 
 :root {
@@ -209,7 +209,7 @@
 }
 
 /**
- * Danger variant
+ * Danger modifier
  */
 
 :root {
