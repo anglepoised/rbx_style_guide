@@ -931,14 +931,11 @@
 </div>
 </div>
                     <p>
-                        One state is available: <code>.is-collapsed</code>, which displays details to the right on
-                        hover. This state should never be used in right-aligned components.
-                    </p>
-                    <p>
-                        A <code>tabindex="0"</code> attribute should be added when the collapsed state is used.
+                        One state is available: <code>.is-collapsed</code>, which hides the detail part and adds a
+                        title attribute to the component's root element.
                     </p>
 <div hljs language="html">
-<div class="Badge is-collapsed" tabindex="0">
+<div class="Badge is-collapsed" title="Details">
     <span class="Badge-body">Body</span> <span class="Badge-details">Details</span>
 </div>
 </div>
@@ -949,21 +946,21 @@
                         Warning Count Modifier
                     </h4>
 <div hljs language="html">
-<div class="Badge Badge--warning" tabindex="0">
+<div class="Badge Badge--warning">
     <span class="Badge-body">N</span> <span class="Badge-details">Warnings on this item</span>
 </div>
 
-<div class="Badge Badge--warning is-collapsed" tabindex="0">
+<div class="Badge Badge--warning is-collapsed" title="N Warnings on this item">
     <span class="Badge-body">N</span> <span class="Badge-details">Warnings on this item</span>
 </div>
 </div>
 
                 </div>
                 <div class="ComponentView">
-                    <div class="Badge Badge--warning" tabindex="0">
+                    <div class="Badge Badge--warning">
                         <span class="Badge-body">N</span> <span class="Badge-details">Warnings on this item</span>
                     </div>
-                    <div class="Badge Badge--warning is-collapsed" tabindex="0">
+                    <div class="Badge Badge--warning is-collapsed" title="N Warnings on this item">
                         <span class="Badge-body">N</span> <span class="Badge-details">Warnings on this item</span>
                     </div>
                 </div>
@@ -1624,14 +1621,14 @@
             <tr class="DataActionTable-row">
                 <td class="DataActionTable-cellData u-textCenter">
                     <div class="DataActionTable-cellDataItem">
-                        <div class="Badge Badge--warning is-collapsed" tabindex="0">
+                        <div class="Badge Badge--warning is-collapsed" title="6 Warnings on this item">
                             <span class="Badge-body">6</span> <span class="Badge-details">Warnings on this item</span>
                         </div>
                     </div>
                 </td>
                 <td class="DataActionTable-cellData u-textCenter">
                     <div class="DataActionTable-cellDataItem">
-                        <div class="Badge Badge--statusIncomplete is-collapsed" tabindex="0">
+                        <div class="Badge Badge--statusIncomplete is-collapsed" title="Incomplete">
                             <span class="Badge-body">&nbsp;</span> <span class="Badge-details">Incomplete</span>
                         </div>
                     </div>
@@ -1739,14 +1736,14 @@
                                 <tr class="DataActionTable-row">
                                     <td class="DataActionTable-cellData u-textCenter">
                                         <div class="DataActionTable-cellDataItem">
-                                            <div class="Badge Badge--warning is-collapsed" tabindex="0">
+                                            <div class="Badge Badge--warning is-collapsed" title="60 Warnings on this item">
                                                 <span class="Badge-body">60</span> <span class="Badge-details">Warnings on this item</span>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="DataActionTable-cellData u-textCenter">
                                         <div class="DataActionTable-cellDataItem">
-                                            <div class="Badge Badge--statusIncomplete is-collapsed" tabindex="0">
+                                            <div class="Badge Badge--statusIncomplete is-collapsed" title="Incomplete">
                                                 <span class="Badge-body">&nbsp;</span> <span class="Badge-details">Incomplete</span>
                                             </div>
                                         </div>
@@ -1792,14 +1789,14 @@
                                 <tr class="DataActionTable-row">
                                     <td class="DataActionTable-cellData u-textCenter">
                                         <div class="DataActionTable-cellDataItem">
-                                            <div class="Badge Badge--warning is-collapsed" tabindex="0">
+                                            <div class="Badge Badge--warning is-collapsed" title="6 Warnings on this item">
                                                 <span class="Badge-body">6</span> <span class="Badge-details">Warnings on this item</span>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="DataActionTable-cellData u-textCenter">
                                         <div class="DataActionTable-cellDataItem">
-                                            <div class="Badge Badge--statusIncomplete is-collapsed" tabindex="0">
+                                            <div class="Badge Badge--statusIncomplete is-collapsed" title="Incomplete">
                                                 <span class="Badge-body">&nbsp;</span> <span class="Badge-details">Incomplete</span>
                                             </div>
                                         </div>
@@ -1845,14 +1842,14 @@
                                 <tr class="DataActionTable-row">
                                     <td class="DataActionTable-cellData u-textCenter">
                                         <div class="DataActionTable-cellDataItem">
-                                            <div class="Badge Badge--warning is-collapsed" tabindex="0">
+                                            <div class="Badge Badge--warning is-collapsed" title="6 Warnings on this item">
                                                 <span class="Badge-body">6</span> <span class="Badge-details">Warnings on this item</span>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="DataActionTable-cellData u-textCenter">
                                         <div class="DataActionTable-cellDataItem">
-                                            <div class="Badge Badge--statusIncomplete is-collapsed" tabindex="0">
+                                            <div class="Badge Badge--statusIncomplete is-collapsed" title="Incomplete">
                                                 <span class="Badge-body">&nbsp;</span> <span class="Badge-details">Incomplete</span>
                                             </div>
                                         </div>
@@ -1898,14 +1895,14 @@
                                 <tr class="is-selected DataActionTable-row">
                                     <td class="DataActionTable-cellData u-textCenter">
                                         <div class="DataActionTable-cellDataItem">
-                                            <div class="Badge Badge--warning is-collapsed" tabindex="0">
+                                            <div class="Badge Badge--warning is-collapsed" title="6 Warnings on this item">
                                                 <span class="Badge-body">6</span> <span class="Badge-details">Warnings on this item</span>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="DataActionTable-cellData u-textCenter">
                                         <div class="DataActionTable-cellDataItem">
-                                            <div class="Badge Badge--statusIncomplete is-collapsed" tabindex="0">
+                                            <div class="Badge Badge--statusIncomplete is-collapsed" title="Incomplete">
                                                 <span class="Badge-body">&nbsp;</span> <span class="Badge-details">Incomplete</span>
                                             </div>
                                         </div>
@@ -1951,14 +1948,14 @@
                                 <tr class="DataActionTable-row">
                                     <td class="DataActionTable-cellData u-textCenter">
                                         <div class="DataActionTable-cellDataItem">
-                                            <div class="Badge Badge--warning is-collapsed" tabindex="0">
+                                            <div class="Badge Badge--warning is-collapsed" title="6 Warnings on this item">
                                                 <span class="Badge-body">6</span> <span class="Badge-details">Warnings on this item</span>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="DataActionTable-cellData u-textCenter">
                                         <div class="DataActionTable-cellDataItem">
-                                            <div class="Badge Badge--statusIncomplete is-collapsed" tabindex="0">
+                                            <div class="Badge Badge--statusIncomplete is-collapsed" title="Incomplete">
                                                 <span class="Badge-body">&nbsp;</span> <span class="Badge-details">Incomplete</span>
                                             </div>
                                         </div>
@@ -2004,14 +2001,14 @@
                                 <tr class="DataActionTable-row">
                                     <td class="DataActionTable-cellData u-textCenter">
                                         <div class="DataActionTable-cellDataItem">
-                                            <div class="Badge Badge--warning is-collapsed" tabindex="0">
+                                            <div class="Badge Badge--warning is-collapsed" title="6 Warnings on this item">
                                                 <span class="Badge-body">6</span> <span class="Badge-details">Warnings on this item</span>
                                             </div>
                                         </div>
                                     </td>
                                     <td class="DataActionTable-cellData u-textCenter">
                                         <div class="DataActionTable-cellDataItem">
-                                            <div class="Badge Badge--statusIncomplete is-collapsed" tabindex="0">
+                                            <div class="Badge Badge--statusIncomplete is-collapsed" title="Incomplete">
                                                 <span class="Badge-body">&nbsp;</span> <span class="Badge-details">Incomplete</span>
                                             </div>
                                         </div>
@@ -2771,7 +2768,7 @@
                 </h1>
             </div>
             <div class="PageTitle-badge">
-                <div class="Badge" tabindex="0">
+                <div class="Badge">
                     Status
                 </div>
             </div>
