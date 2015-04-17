@@ -1,6 +1,7 @@
 {
   "name": "rbx_style_guide",
   "version": "0.1.0",
+  "main": "src/assets/styles/core.css",
   "authors": [
     {
       "name": "Rockabox"
