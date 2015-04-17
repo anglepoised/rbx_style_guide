@@ -1013,68 +1013,92 @@
                     </h3>
                     <p>
                         The <code>.Button</code> component defines button styles for <code>&lt;button&gt;</code> and
-                        <code>&lt;a&gt;</code> elements.
+                        <code>&lt;a&gt;</code> elements. When using a <code>&lt;button&gt;</code> element,
+                        <strong>always specify a <code>type</code></strong>. When using a <code>&lt;a&gt;</code>
+                        element, <strong>always add <code>role="button"</code></strong>.
                     </p>
                     <p>
-                        When using a <code>&lt;button&gt;</code> element, <strong>always specify a
-                        <code>type</code></strong>. When using a <code>&lt;a&gt;</code> element, <strong>always add
-                        <code>role="button"</code></strong>.
+                        Two primary modifiers are available. One must always be used on each button.
+                    </p>
+                    <ul>
+                        <li>
+                            <code>.Button--standard</code>: solid buttons, used for the majority of actions.
+                        </li>
+                        <li>
+                            <code>.Button--outline</code>: outline buttons, used for less important actions.
+                        </li>
+                    </ul>
+                    <p>
+                        When in doubt, use a standard button.
                     </p>
 <div hljs language="html">
-<button class="Button" type="button">
-    Button
+<button class="Button Button--standard" type="button">
+    Standard Button
 </button>
 
-<button class="Button" type="submit">
-    Submit Button
+<button class="Button Button--outline" type="button">
+    Outline Button
 </button>
 
-<a class="Button" href="#" role="button">
-    Link
+<button class="Button Button--standard" type="submit">
+    Standard Submit
+</button>
+
+<button class="Button Button--outline" type="submit">
+    Outline Submit
+</button>
+
+<a class="Button Button--standard" href="#" role="button">
+    Standard Link
+</a>
+<a class="Button Button--outline" href="#" role="button">
+    Outline Link
 </a>
 </div>
                 </div>
                 <div class="ComponentView ComponentView--grid">
-                    <button class="Button" type="button">
-                        Button
+                    <button class="Button Button--standard" type="button">
+                        Standard Button
                     </button>
-                    <button class="Button" type="submit">
-                        Submit Button
+                    <button class="Button Button--outline" type="button">
+                        Outline Button
                     </button>
-                    <a class="Button" href="#" role="button">
-                        Link
+                    <button class="Button Button--standard" type="submit">
+                        Standard Submit
+                    </button>
+                    <button class="Button Button--outline" type="submit">
+                        Outline Submit
+                    </button>
+                    <a class="Button Button--standard" href="#" role="button">
+                        Standard Link
+                    </a>
+                    <a class="Button Button--outline" href="#" role="button">
+                        Outline Link
                     </a>
                 </div>
                 <div class="RawHTML">
+                    <h3>
+                        Button states
+                    </h3>
                     <p>
-                        Combinations of states can be applied by stacking class modifiers. For example:
+                        Various button states can be used. Combinations of states can be applied by stacking modifiers.
                     </p>
 <div hljs language="html">
-<button class="Button Button--large Button--warning is-disabled" type="button" disabled>
+<button class="Button Button--large Button--standard Button--warning is-disabled" type="button" disabled>
+    Large Disabled Warning Button
+</button>
+
+<button class="Button Button--large Button--outline Button--warning is-disabled" type="button" disabled>
     Large Disabled Warning Button
 </button>
 </div>
-                    <p>
-                        Gives:
-                    </p>
                 </div>
-                <div class="ComponentView">
-                    <button class="Button Button--large Button--warning is-disabled" type="button" disabled>
+                <div class="ComponentView ComponentView--grid">
+                    <button class="Button Button--large Button--standard Button--warning is-disabled" type="button" disabled>
                         Large Disabled Warning Button
                     </button>
-                </div>
-                <div class="RawHTML">
-                    <h4>
-                        Default state
-                    </h4>
-                    <p>
-                        Buttons without modifier classes default to the standard size and blue colour and should be used for the
-                        majority of actions.
-                    </p>
-                </div>
-                <div class="ComponentView">
-                    <button class="Button" type="button">
-                        Standard Button
+                    <button class="Button Button--large Button--outline Button--warning is-disabled" type="button" disabled>
+                        Large Disabled Warning Button
                     </button>
                 </div>
                 <div class="RawHTML">
@@ -1090,13 +1114,20 @@
                         JavaScript event handlers from firing.
                     </p>
 <div hljs language="html">
-<button class="Button is-disabled" type="button" disabled>
+<button class="Button Button--standard is-disabled" type="button" disabled>
+    Disabled Button
+</button>
+
+<button class="Button Button--outline is-disabled" type="button" disabled>
     Disabled Button
 </button>
 </div>
                 </div>
-                <div class="ComponentView">
-                    <button class="Button is-disabled" type="button" disabled>
+                <div class="ComponentView ComponentView--grid">
+                    <button class="Button Button--standard is-disabled" type="button" disabled>
+                        Disabled Button
+                    </button>
+                    <button class="Button Button--outline is-disabled" type="button" disabled>
                         Disabled Button
                     </button>
                 </div>
@@ -1105,20 +1136,37 @@
                         Pressed state
                     </h4>
                     <p>
-                        The <code>.is-pressed</code> class is used here to demonstrate this state, but should never be used.
+                        Triggered when a button is pressed.
+                    </p>
+                    <p>
+                        The <code>.is-pressed</code> class mirrors the <code>:active</code> pseudo-class that triggers
+                        this state, but should be used for demonstration purposes only.
                     </p>
 <div hljs language="html">
-<button class="Button is-pressed" type="button">
+<button class="Button Button--standard is-pressed" type="button">
+    Pressed Button
+</button>
+
+<button class="Button Button--outline is-pressed" type="button">
     Pressed Button
 </button>
 </div>
                 </div>
-                <div class="ComponentView">
-                    <button class="Button is-pressed" type="button">
+                <div class="ComponentView ComponentView--grid">
+                    <button class="Button Button--standard is-pressed" type="button">
+                        Pressed Button
+                    </button>
+                    <button class="Button Button--outline is-pressed" type="button">
                         Pressed Button
                     </button>
                 </div>
                 <div class="RawHTML">
+                    <h3>
+                        Secondary modifiers
+                    </h3>
+                    <p>
+                        Change the size or colour of a button.
+                    </p>
                     <h4>
                         Large modifier
                     </h4>
@@ -1126,13 +1174,20 @@
                         Large buttons should be used for primary save actions.
                     </p>
 <div hljs language="html">
-<button class="Button Button--large" type="button">
+<button class="Button Button--large Button--standard" type="button">
+    Large Button
+</button>
+
+<button class="Button Button--large Button--outline" type="button">
     Large Button
 </button>
 </div>
                 </div>
-                <div class="ComponentView">
-                    <button class="Button Button--large" type="button">
+                <div class="ComponentView ComponentView--grid">
+                    <button class="Button Button--large Button--standard" type="button">
+                        Large Button
+                    </button>
+                    <button class="Button Button--large Button--outline" type="button">
                         Large Button
                     </button>
                 </div>
@@ -1144,13 +1199,20 @@
                         Small buttons should be used for secondary save actions.
                     </p>
 <div hljs language="html">
-<button class="Button Button--small" type="button">
+<button class="Button Button--standard Button--small" type="button">
+    Small Button
+</button>
+
+<button class="Button Button--outline Button--small" type="button">
     Small Button
 </button>
 </div>
                 </div>
-                <div class="ComponentView">
-                    <button class="Button Button--small" type="button">
+                <div class="ComponentView ComponentView--grid">
+                    <button class="Button Button--small Button--standard" type="button">
+                        Small Button
+                    </button>
+                    <button class="Button Button--outline Button--small" type="button">
                         Small Button
                     </button>
                 </div>
@@ -1164,13 +1226,20 @@
                         text.
                     </p>
 <div hljs language="html">
-<button class="Button Button--block" type="button">
+<button class="Button Button--block Button--standard" type="button">
+    Block Button
+</button>
+
+<button class="Button Button--block Button--outline" type="button">
     Block Button
 </button>
 </div>
                 </div>
-                <div class="ComponentView">
-                    <button class="Button Button--block" type="button">
+                <div class="ComponentView ComponentView--grid">
+                    <button class="Button Button--block Button--standard" type="button">
+                        Block Button
+                    </button>
+                    <button class="Button Button--block Button--outline" type="button">
                         Block Button
                     </button>
                 </div>
@@ -1179,7 +1248,8 @@
                         Action modifiers
                     </h4>
                     <p>
-                        Action modifiers help users understand the consequences of different types of action.
+                        Standard buttons are blue. Action modifiers change the colour of buttons and can be used to help
+                         indicate the likely consequences of different types of action.
                     </p>
                     <h5>
                        Positive
@@ -1188,13 +1258,20 @@
                         Positive buttons are green. They indicate a successful or positive action.
                     </p>
 <div hljs language="html">
-<button class="Button Button--positive" type="button">
+<button class="Button Button--positive Button--standard" type="button">
+    Positive Button
+</button>
+
+<button class="Button Button--outline Button--positive" type="button">
     Positive Button
 </button>
 </div>
                 </div>
-                <div class="ComponentView">
-                    <button class="Button Button--positive" type="button">
+                <div class="ComponentView ComponentView--grid">
+                    <button class="Button Button--positive Button--standard" type="button">
+                        Positive Button
+                    </button>
+                    <button class="Button Button--outline Button--positive" type="button">
                         Positive Button
                     </button>
                 </div>
@@ -1206,13 +1283,20 @@
                         Warning buttons are orange. They indicate that care should be taken with this action.
                     </p>
 <div hljs language="html">
-<button class="Button Button--warning" type="button">
+<button class="Button Button--standard Button--warning" type="button">
+    Warning Button
+</button>
+
+<button class="Button Button--outline Button--warning" type="button">
     Warning Button
 </button>
 </div>
                 </div>
-                <div class="ComponentView">
-                    <button class="Button Button--warning" type="button">
+                <div class="ComponentView ComponentView--grid">
+                    <button class="Button Button--standard Button--warning" type="button">
+                        Warning Button
+                    </button>
+                    <button class="Button Button--outline Button--warning" type="button">
                         Warning Button
                     </button>
                 </div>
@@ -1224,13 +1308,20 @@
                         Danger buttons are red. They indicate a potentially destructive action.
                     </p>
 <div hljs language="html">
-<button class="Button Button--danger" type="button">
+<button class="Button Button--danger Button--standard" type="button">
+    Danger Button
+</button>
+
+<button class="Button Button--danger Button--outline" type="button">
     Danger Button
 </button>
 </div>
                 </div>
-                <div class="ComponentView">
-                    <button class="Button Button--danger" type="button">
+                <div class="ComponentView ComponentView--grid">
+                    <button class="Button Button--danger Button--standard" type="button">
+                        Danger Button
+                    </button>
+                    <button class="Button Button--danger Button--outline" type="button">
                         Danger Button
                     </button>
                 </div>
@@ -1568,7 +1659,7 @@
 <div class="DataActionTable">
     <div class="DataActionTable-toolbar">
         <div class="DataActionTable-action">
-            <button class="Button" type="button">
+            <button class="Button Button--standard" type="button">
                 Action
             </button>
         </div>
@@ -1683,7 +1774,7 @@
                     <div class="DataActionTable">
                         <div class="DataActionTable-toolbar">
                             <div class="DataActionTable-action">
-                                <button class="Button" type="button">
+                                <button class="Button Button--standard" type="button">
                                     Action
                                 </button>
                             </div>
@@ -2062,7 +2153,7 @@
                     <div class="DataActionTable">
                         <div class="DataActionTable-toolbar">
                             <div class="DataActionTable-action">
-                                <button class="Button" type="button">
+                                <button class="Button Button--standard" type="button">
                                     Action
                                 </button>
                             </div>
@@ -2128,7 +2219,7 @@
                     <div class="DataActionTable">
                         <div class="DataActionTable-toolbar">
                             <div class="DataActionTable-action">
-                                <button class="Button" type="button">
+                                <button class="Button Button--standard" type="button">
                                     Action
                                 </button>
                             </div>
@@ -2198,7 +2289,7 @@
                         <div class="DataActionTable">
                             <div class="DataActionTable-toolbar">
                                 <div class="DataActionTable-action">
-                                    <button class="Button" type="button">
+                                    <button class="Button Button--standard" type="button">
                                         Action
                                     </button>
                                 </div>
@@ -2477,7 +2568,7 @@
             </div>
         </fieldset>
         <fieldset class="Login-button">
-            <button class="Button Button--block Button--positive" type="button">
+            <button class="Button Button--block Button--positive Button--standard" type="button">
                 Login
             </button>
         </fieldset>
@@ -2515,7 +2606,7 @@
                                 </div>
                             </fieldset>
                             <fieldset class="Login-button">
-                                <button class="Button Button--block Button--positive" type="button">
+                                <button class="Button Button--block Button--positive Button--standard" type="button">
                                     Login
                                 </button>
                             </fieldset>
@@ -2778,7 +2869,7 @@
         </p>
     </div>
     <div class="PageTitle-button">
-        <button class="Button">
+        <button class="Button Button--standard">
             Action
         </button>
     </div>
@@ -2811,7 +2902,7 @@
                             </p>
                         </div>
                         <div class="PageTitle-button">
-                            <button class="Button">
+                            <button class="Button Button--standard">
                                 Action
                             </button>
                         </div>
