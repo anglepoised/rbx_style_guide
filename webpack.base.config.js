@@ -40,7 +40,10 @@ config = {
             new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('bower.json', ['main']),
             new webpack.ResolverPlugin.FileAppendPlugin(['index.js'])
         ]),
-        new ExtractTextPlugin('style.css')
+        new ExtractTextPlugin('style.css'),
+        new HtmlWebpackPlugin({
+            template: 'src/index.html'
+        })
     ],
 
     module: {
