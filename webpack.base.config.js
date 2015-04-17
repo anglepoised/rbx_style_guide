@@ -28,7 +28,7 @@ config = {
         ],
         alias: {
             dev: path.join(__dirname, 'dev'),
-            components: path.join(__dirname, 'src')
+            components: path.join(bowerRoot, 'rbx-ui-components/src')
         }
     },
 
