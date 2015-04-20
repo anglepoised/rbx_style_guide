@@ -33,6 +33,3 @@ dist
 
 # Bower directory
 /vendor/
-
-# Environment
-/env.yml
