@@ -177,6 +177,14 @@
 }
 
 /**
+ * Effects
+ */
+
+:root {
+    --effect-box-shadow: 0 0 1.5em 0.5em var(--color-shadow);
+}
+
+/**
  * Stacking
  */
 
