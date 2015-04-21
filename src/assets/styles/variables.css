@@ -175,3 +175,18 @@
     --line-height-looser: 1.8;
     --line-height-tighter: 1.4;
 }
+
+/**
+ * Stacking
+ */
+
+:root {
+    --stacking-page: auto; /* implicit */
+    --stacking-user: auto;  /* implicit */
+    --stacking-page-loader: 10;
+    --stacking-overlay: 20;
+    --stacking-overlay-tools: 30;
+    --stacking-overlay-loader: 40;
+    --stacking-modal-confirm: 80;
+    --stacking-system-message: 90;
+}
