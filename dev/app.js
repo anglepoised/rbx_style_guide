@@ -3,6 +3,7 @@ define([
     'html!./demo.html',
     'components/rb-badge/demo',
     'components/rb-button/demo',
+    'components/rb-currency/demo',
     'components/rb-date-time/demo',
     'components/rb-footer/demo',
     'components/rb-header/demo',
@@ -16,9 +17,9 @@ define([
     'components/rb-text-control/demo',
     'rb-table/src/demo',
     '../src/assets/styles/core.css'
-], function (uiRouter, template, rbBadgeDemo, rbButtonDemo, rbDateTimeDemo, rbFooterDemo, rbHeaderDemo, rbLoadingDemo,
-    rbLoginFormDemo, rbMainDemo, rbPageHeaderDemo, rbPageTitleDemo, rbRatioDemo, rbSiteDemo, rbTextControlDemo,
-    rbTableDemo, baseCss) {
+], function (uiRouter, template, rbBadgeDemo, rbButtonDemo, rbCurrencyDemo, rbDateTimeDemo, rbFooterDemo, rbHeaderDemo,
+    rbLoadingDemo, rbLoginFormDemo, rbMainDemo, rbPageHeaderDemo, rbPageTitleDemo, rbRatioDemo, rbSiteDemo,
+    rbTextControlDemo, rbTableDemo, baseCss) {
     /**
      * This code is just for angular instantiation testing purposes
      * Set to change in coming tasks.
@@ -30,6 +31,7 @@ define([
             'ui.router',
             rbBadgeDemo.name,
             rbButtonDemo.name,
+            rbCurrencyDemo.name,
             rbDateTimeDemo.name,
             rbFooterDemo.name,
             rbHeaderDemo.name,
