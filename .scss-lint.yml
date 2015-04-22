@@ -104,7 +104,7 @@ linters:
 
     PropertySortOrder:
         enabled: true
-        severity: error
+        severity: warning
 
     PropertySpelling:
         enabled: true
