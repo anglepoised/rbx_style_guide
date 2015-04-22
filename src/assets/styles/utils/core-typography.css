@@ -89,8 +89,8 @@
  * Extra large type
  */
 
-.u-textLarge {
-    font-size: var(--font-size-large) !important;
+.u-textXLarge {
+    font-size: var(--font-size-x-large) !important;
 }
 
 /**
