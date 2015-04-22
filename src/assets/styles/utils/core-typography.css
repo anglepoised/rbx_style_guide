@@ -7,39 +7,39 @@
 
 .u-textHeading1 {
     font-family: var(--font-family-proportional-light) !important;
-    font-size: 3.2rem !important;
+    font-size: var(--font-size-mega) !important;
     font-weight: 300 !important;
 }
 
 .u-textHeading2 {
     font-family: var(--font-family-proportional-light) !important;
-    font-size: 2.5rem !important;
+    font-size: var(--font-size-xlarge) !important;
     font-weight: 300 !important;
 }
 
 .u-textHeading3 {
     font-family: var(--font-family-proportional) !important;
-    font-size: 1.9rem !important;
+    font-size: var(--font-size-large) !important;
     font-weight: 400 !important;
 }
 
 .u-textHeading4 {
     font-family: var(--font-family-proportional-semibold) !important;
-    font-size: 1.6rem !important;
+    font-size: var(--font-size) !important;
     font-weight: 500 !important;
     text-transform: uppercase !important;
 }
 
 .u-textHeading5 {
     font-family: var(--font-family-proportional-semibold) !important;
-    font-size: 1.4rem !important;
+    font-size: var(--font-size-small) !important;
     font-weight: 500 !important;
     text-transform: uppercase !important;
 }
 
 .u-textHeading6 {
     font-family: var(--font-family-proportional-semibold) !important;
-    font-size: 1.3rem !important;
+    font-size: var(--font-size-x-small) !important;
     font-weight: 500 !important;
     text-transform: uppercase !important;
 }
@@ -71,8 +71,6 @@
 
 /**
  * Default type
- *
- * Standard body copy sizing, in case it needs specifying explicitly.
  */
 
 .u-textDefault {
@@ -81,8 +79,14 @@
 
 /**
  * Large type
- *
- * For more important body copy.
+ */
+
+.u-textLarge {
+    font-size: var(--font-size-large) !important;
+}
+
+/**
+ * Extra large type
  */
 
 .u-textLarge {
@@ -91,8 +95,6 @@
 
 /**
  * Small type
- *
- * For less important body copy.
  */
 
 .u-textSmall {
@@ -101,12 +103,18 @@
 
 /**
  * Extra small type
- *
- * For time and decimalised figures in tables.
  */
 
 .u-textXSmall {
     font-size: var(--font-size-x-small) !important;
+}
+
+/**
+ * Mega type
+ */
+
+.u-textMega {
+    font-size: var(--font-size-mega) !important;
 }
 
 /**
