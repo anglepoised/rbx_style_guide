@@ -25,7 +25,9 @@
  */
 
 :root {
+    --color-lightbox: rgba(1, 1, 1, 0.8);
     --color-moz-focusring: rgba(33, 33, 33, 1); /* #212121 */
+    --color-shadow: rgba(1, 1, 1, 0.1);
     --color-transparent: rgba(0, 0, 0, 0);
 }
 
