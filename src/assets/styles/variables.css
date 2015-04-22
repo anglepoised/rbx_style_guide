@@ -196,9 +196,9 @@
     --stacking-page: auto; /* implicit */
     --stacking-user: auto;  /* implicit */
     --stacking-page-loader: 10;
-    --stacking-overlay: 20;
-    --stacking-overlay-tools: 30;
-    --stacking-overlay-loader: 40;
-    --stacking-modal-confirm: 80;
-    --stacking-system-message: 90;
+    --stacking-overlay-panel: 20;
+    --stacking-overlay-panel-tools: 30;
+    --stacking-overlay-panel-loader: 40;
+    --stacking-overlay-modal: 80;
+    --stacking-overlay-modeless: 90;
 }
