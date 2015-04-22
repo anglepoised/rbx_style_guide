@@ -14,12 +14,14 @@ define([
     'components/rb-page-title/demo',
     'components/rb-ratio/demo',
     'components/rb-site/demo',
+    'components/rb-system-message/demo',
     'components/rb-text-control/demo',
+    'components/rb-warning-messages/demo',
     'rb-table/src/demo',
     '../src/assets/styles/core.css'
 ], function (uiRouter, template, rbBadgeDemo, rbButtonDemo, rbCurrencyDemo, rbDateTimeDemo, rbFooterDemo, rbHeaderDemo,
     rbLoadingDemo, rbLoginFormDemo, rbMainDemo, rbPageHeaderDemo, rbPageTitleDemo, rbRatioDemo, rbSiteDemo,
-    rbTextControlDemo, rbTableDemo, baseCss) {
+    rbSystemMessage, rbTextControlDemo, rbWarningMessages, rbTableDemo, baseCss) {
     /**
      * This code is just for angular instantiation testing purposes
      * Set to change in coming tasks.
@@ -42,7 +44,9 @@ define([
             rbPageTitleDemo.name,
             rbRatioDemo.name,
             rbSiteDemo.name,
+            rbSystemMessage.name,
             rbTextControlDemo.name,
+            rbWarningMessages.name,
             rbTableDemo.name
         ])
         .run(function ($rootScope) {
