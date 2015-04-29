@@ -10,11 +10,7 @@
 
 .ComponentView {
     background: var(--ComponentView-background);
-    padding: 1em 0.5em;
-}
-
-.ComponentView > * {
-    margin: 1em 0;
+    padding: 1em 0;
 }
 
 .ComponentView--grid {
