@@ -151,6 +151,16 @@
 }
 
 /**
+ * Legend type
+ *
+ * For form labels.
+ */
+
+.u-textLegend {
+    text-transform: uppercase;
+}
+
+/**
  * Tabular numbers
  */
 .u-textTabularNums {
