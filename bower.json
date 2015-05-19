@@ -14,10 +14,10 @@
   ],
   "dependencies": {
     "angularjs": "~1.3.11",
-    "angular-ui-router": "~0.2.13",
-    "rb-table": "~1.1.1"
+    "angular-ui-router": "~0.2.13"
   },
   "devDependencies": {
+      "rb-table": "~1.1.1",
       "rbx-ui-components": "rockabox/rbx_ui_components#~1.0.0"
     },
   "resolutions": {
