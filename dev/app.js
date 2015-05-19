@@ -4,7 +4,7 @@ define([
     'components/rb-badge/demo',
     'components/rb-button/demo',
     'components/rb-currency/demo',
-    'components/rb-date-time/demo',
+    'components/rb-datetime/demo',
     'components/rb-footer/demo',
     'components/rb-header/demo',
     'components/rb-loading/demo',
