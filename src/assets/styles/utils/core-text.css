@@ -36,6 +36,29 @@
 }
 
 /**
+ * Add a keyline to the right of a text element
+ */
+
+.u-textKeyline {
+    overflow: hidden;
+}
+
+.u-textKeyline::after {
+    background-color: var(--color-gray-ghost);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.u-textKeyline::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/**
  * Prevent whitespace wrapping
  */
 
