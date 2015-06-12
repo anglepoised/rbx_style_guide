@@ -26,6 +26,7 @@
 
 @import "./utils/core-colors.css";
 @import "./utils/core-display.css";
+@import "./utils/core-column.css";
 @import "./utils/core-link.css";
 @import "./utils/core-text.css";
 @import "./utils/core-typography.css";

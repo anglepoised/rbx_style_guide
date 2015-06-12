@@ -1,0 +1,10 @@
+/* Column utilities
+    ========================================================================== */
+
+.u-columnCount2 {
+    column-count: 2;
+}
+
+.u-columnCount3 {
+    column-count: 3;
+}
