@@ -52,18 +52,3 @@ h5,
 h6 {
     font-size: var(--font-size);
 }
-
-/* Inline elements
-   ========================================================================== */
-
-/**
- * Standard link
- */
-
-a {
-    color: var(--color-base-link-default);
-}
-
-a:hover {
-    color: var(--color-base-link-hover);
-}
