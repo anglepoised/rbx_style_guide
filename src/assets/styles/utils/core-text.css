@@ -40,22 +40,17 @@
  */
 
 .u-textKeyline {
-    overflow: hidden;
+    align-items: center;
+    display: flex;
 }
 
 .u-textKeyline::after {
     background-color: var(--color-gray-ghost);
     content: "";
-    display: inline-block;
+    flex: 2;
     height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 100%;
-}
-
-.u-textKeyline::after {
-    left: 0.5em;
-    margin-right: -50%;
+    margin-left: 1.25em;
+    min-width: 1em;
 }
 
 /**
