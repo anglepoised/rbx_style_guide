@@ -158,6 +158,8 @@
     --color-status-paused-base: var(--color-red-base);
     --color-status-pending-accent: var(--color-orange-accent);
     --color-status-pending-base: var(--color-orange-base);
+    --color-status-pending-live-accent: var(--color-orange-accent);
+    --color-status-pending-live-base: var(--color-orange-base);
 }
 
 /**

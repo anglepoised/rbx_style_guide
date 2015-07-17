@@ -109,6 +109,8 @@
 .u-colorBgStatusLiveAccent { background: var(--color-status-live-accent); }
 .u-colorBgStatusPendingBase { background: var(--color-status-pending-base); }
 .u-colorBgStatusPendingAccent { background: var(--color-status-pending-accent); }
+.u-colorBgStatusPendingLiveBase { background: var(--color-status-pending-live-base); }
+.u-colorBgStatusPendingLiveAccent { background: var(--color-status-pending-live-accent); }
 .u-colorBgStatusPausedBase { background: var(--color-status-paused-base); }
 .u-colorBgStatusPausedAccent { background: var(--color-status-paused-accent); }
 .u-colorBgStatusFinishedBase { background: var(--color-status-finished-base); }
