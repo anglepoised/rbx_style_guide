@@ -143,6 +143,16 @@
 }
 
 /**
+ * Label type
+ *
+ * For form labels.
+ */
+
+.u-textLabelLarge {
+    font-size: var(--font-size) !important;
+}
+
+/**
  * Legend type
  *
  * For form labels.
