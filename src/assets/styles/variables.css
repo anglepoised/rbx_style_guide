@@ -158,6 +158,8 @@
     --color-status-paused-base: var(--color-red-base);
     --color-status-pending-accent: var(--color-orange-accent);
     --color-status-pending-base: var(--color-orange-base);
+    --color-status-ready-accent: var(--color-green-accent);
+    --color-status-ready-base: var(--color-green-base);
     --color-status-scheduled-accent: var(--color-orange-accent);
     --color-status-scheduled-base: var(--color-orange-base);
 }
