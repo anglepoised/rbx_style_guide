@@ -59,10 +59,10 @@
  */
 
 :root {
-    --color-green-accent: rgba(232, 246, 241, 1); /* #d5f0e5 */
-    --color-green-base: rgba(57, 190, 137, 1); /* #39be89 */
-    --color-green-hover: rgba(48, 172, 123, 1); /* #30ac7b */
-    --color-green-shadow: rgba(44, 147, 106, 1); /* #2c936a */
+    --color-green-accent: rgba(223, 249, 237, 1); /* #dff9ed */
+    --color-green-base: rgba(62, 185, 128, 1); /* #3eb980 */
+    --color-green-hover: rgba(53, 171, 116, 1); /* #35ab74 */
+    --color-green-shadow: rgba(41, 150, 99, 1); /* #299663 */
 }
 
 /**
@@ -70,10 +70,10 @@
  */
 
 :root {
-    --color-blue-accent: rgba(241, 245, 250, 1); /* #d8e6f7 */
-    --color-blue-base: rgba(70, 142, 228, 1); /* #468ee4 */
-    --color-blue-hover: rgba(58, 123, 201, 1); /* #3a7bc9 */
-    --color-blue-shadow: rgba(44, 96, 158, 1); /* #2c609e */
+    --color-blue-accent: rgba(222, 240, 249, 1); /* #def0f9 */
+    --color-blue-base: rgba(7, 153, 220, 1); /* #0799dc */
+    --color-blue-hover: rgba(6, 141, 203, 1); /* #068dcb */
+    --color-blue-shadow: rgba(4, 124, 180, 1); /* #047cb4 */
 }
 
 /**
@@ -81,10 +81,10 @@
  */
 
 :root {
-    --color-orange-accent: rgba(249, 239, 229, 1); /* #f9e7d6 */
-    --color-orange-base: rgba(237, 148, 60, 1); /* #ed943c */
-    --color-orange-hover: rgba(211, 130, 50, 1); /* #d38232 */
-    --color-orange-shadow: rgba(181, 111, 42, 1); /* #b56f2a */
+    --color-orange-accent: rgba(247, 238, 223, 1); /* #f7eedf */
+    --color-orange-base: rgba(234, 145, 58, 1); /* #ea913a */
+    --color-orange-hover: rgba(218, 133, 50, 1); /* #da8532 */
+    --color-orange-shadow: rgba(202, 121, 42, 1); /* #ca792a */
 }
 
 /**
@@ -92,10 +92,10 @@
  */
 
 :root {
-    --color-red-accent: rgba(250, 235, 235, 1); /* #f0d8d8 */
-    --color-red-base: rgba(194, 74, 74, 1); /* #c24a4a */
-    --color-red-hover: rgba(177, 63, 63, 1); /* #b13f3f */
-    --color-red-shadow: rgba(158, 54, 54, 1); /* #9e3636 */
+    --color-red-accent: rgba(247, 228, 228, 1); /* #f7e4e4 */
+    --color-red-base: rgba(213, 79, 79, 1); /* #d54f4f */
+    --color-red-hover: rgba(197, 67, 67, 1); /* #c54343 */
+    --color-red-shadow: rgba(183, 57, 57, 1); /* #b73939 */
 }
 
 /**
