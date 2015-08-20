@@ -11,7 +11,7 @@
  */
 
 :root {
-    --Disclaimer-font-size: var(--font-size-x-small);
+    --Disclaimer-font-size: var(--font-size-small);
     --Disclaimer-subject-font-family: var(--font-family-proportional-semibold);
 }
 

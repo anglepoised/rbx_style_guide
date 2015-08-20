@@ -173,12 +173,11 @@
     --font-family-proportional: "ProximaNova", sans-serif;
     --font-family-proportional-light: "ProximaNova-Light", sans-serif;
     --font-family-proportional-semibold: "ProximaNova-Semibold", sans-serif;
-    --font-size-mega: 3.2rem;
-    --font-size-x-large: 2.4rem;
-    --font-size-large: 2rem;
-    --font-size: 1.6rem;
-    --font-size-small: 1.4rem;
-    --font-size-x-small: 1.2rem;
+    --font-size-mega: 2.4rem;
+    --font-size-x-large: 2rem;
+    --font-size-large: 1.8rem;
+    --font-size: 1.4rem;
+    --font-size-small: 1.2rem;
     --line-height: 1.5;
     --line-height-looser: 1.8;
     --line-height-tighter: 1.4;

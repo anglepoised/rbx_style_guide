@@ -39,7 +39,7 @@
 
 .u-textHeading6 {
     font-family: var(--font-family-proportional-semibold) !important;
-    font-size: var(--font-size-x-small) !important;
+    font-size: var(--font-size-small) !important;
     font-weight: 500 !important;
     text-transform: uppercase !important;
 }
@@ -102,14 +102,6 @@
 }
 
 /**
- * Extra small type
- */
-
-.u-textXSmall {
-    font-size: var(--font-size-x-small) !important;
-}
-
-/**
  * Mega type
  */
 
@@ -148,6 +140,16 @@
 
 .u-textLabel {
     font-size: var(--font-size-small) !important;
+}
+
+/**
+ * Label type
+ *
+ * For form labels.
+ */
+
+.u-textLabelLarge {
+    font-size: var(--font-size) !important;
 }
 
 /**
