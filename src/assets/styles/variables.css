@@ -99,6 +99,16 @@
 }
 
 /**
+ * Brand
+ */
+
+:root {
+    --color-brand-blue: rgba(32, 216, 229, 1); /* #20d8e5 */
+    --color-brand-green: rgba(47, 234, 166, 1); /* #2feaa6 */
+    --color-brand-pink: rgba(255, 72, 138, 1); /* #ff488a */
+}
+
+/**
  * Functional colours
  */
 
@@ -121,15 +131,6 @@
 
 :root {
     --color-form-field-background: var(--color-white);
-}
-
-/**
- * Brand
- */
-
-:root {
-    --color-brand-gray: var(--color-gray-tuna);
-    --color-brand-green: var(--color-green-base);
 }
 
 /**
