@@ -113,5 +113,7 @@
 .u-colorBgStatusScheduledAccent { background: var(--color-status-scheduled-accent); }
 .u-colorBgStatusPausedBase { background: var(--color-status-paused-base); }
 .u-colorBgStatusPausedAccent { background: var(--color-status-paused-accent); }
+.u-colorBgStatusReadyBase { background: var(--color-status-ready-base); }
+.u-colorBgStatusReadyAccent { background: var(--color-status-ready-accent); }
 .u-colorBgStatusFinishedBase { background: var(--color-status-finished-base); }
 .u-colorBgStatusFinishedAccent { background: var(--color-status-finished-accent); }
