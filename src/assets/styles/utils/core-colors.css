@@ -63,6 +63,14 @@
 .u-colorBgRedShadow { background: var(--color-red-shadow); }
 
 /**
+ * Brand palette
+ */
+
+.u-colorBgBrandBlue { background: var(--color-brand-blue); }
+.u-colorBgBrandGreen { background: var(--color-brand-green); }
+.u-colorBgBrandPink { background: var(--color-brand-pink); }
+
+/**
  * Functional colours
  */
 
@@ -82,13 +90,6 @@
  */
 
 .u-colorBgFormFieldBackground { background: var(--color-form-field-background); }
-
-/**
- * Brand
- */
-
-.u-colorBgBrandGreen { background: var(--color-brand-green); }
-.u-colorBgBrandGray { background: var(--color-brand-gray); }
 
 /**
  * Actions
