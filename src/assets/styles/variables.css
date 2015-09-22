@@ -203,6 +203,6 @@
     --stacking-overlay-panel: 20;
     --stacking-overlay-panel-tools: 30;
     --stacking-overlay-panel-loader: 40;
-    --stacking-overlay-modal: 80;
+    --stacking-overlay-modal: 2000;
     --stacking-overlay-modeless: 90;
 }
