@@ -1,0 +1,25 @@
+/** @define Icon; use strict */
+
+/**
+ * The icon class is used to display single-colour SVG icons as CSS backgrounds.
+ *
+ * It should always be attached to a `<span>` element and be followed with the required class modifiers, which control
+ * icon, colour and size.
+ *
+ * Modifiers can be found in `dist/assets/icons` on build.
+ */
+
+.Icon {
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+}
+
+.Icon--black-16-trash {
+    background-color: transparent;
+    background-image: url("./../icons/black/16-trash.svg");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}
