@@ -71,3 +71,20 @@ th {
 [tabindex="-1"]:focus {
     outline: none !important;
 }
+
+/**
+ * Reconcile with material css.
+ */
+
+html *, body * {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: subpixel-antialiased;
+}
+
+html *:focus {
+    outline: initial;
+}
+
+section.Section {
+    background-color: rgb(244, 247, 250);
+}
