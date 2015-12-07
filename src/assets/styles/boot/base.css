@@ -85,6 +85,14 @@ html *:focus {
     outline: initial;
 }
 
+body {
+    /**
+     * Override Angular Material body { height: 100%; } to fix
+     * white space appearing near the lower end of the body.
+     */
+    height: auto !important;
+}
+
 section.Section {
     background-color: rgb(244, 247, 250);
 }
