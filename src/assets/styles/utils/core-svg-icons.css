@@ -11,6 +11,11 @@
     display: block;
 }
 
+.SvgIcon--8 svg {
+    width: 8px;
+    height: 8px;
+}
+
 .SvgIcon--10 svg {
     width: 10px;
     height: 10px;
