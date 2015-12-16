@@ -40,3 +40,8 @@
 .SvgIcon--white-alabaster-hover:hover svg path {
     fill: var(--color-white-alabaster);
 }
+
+.SvgIcon--gray-ghost svg path,
+.SvgIcon--gray-ghost-hover:hover svg path {
+    fill: var(--color-gray-ghost);
+}
