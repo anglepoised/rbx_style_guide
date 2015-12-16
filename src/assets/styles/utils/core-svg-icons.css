@@ -1,0 +1,37 @@
+/** @define SvgIcon; use strict */
+
+.SvgIcon {
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+    background: transparent;
+}
+.SvgIcon svg {
+    display: block;
+}
+
+.SvgIcon--10 svg {
+    width: 10px;
+    height: 10px;
+}
+
+.SvgIcon--12 svg {
+    width: 12px;
+    height: 12px;
+}
+
+.SvgIcon--16 svg {
+    width: 16px;
+    height: 16px;
+}
+
+.SvgIcon--gray-regent svg path,
+.SvgIcon--gray-regent-hover:hover svg path {
+    fill: var(--color-gray-regent);
+}
+
+.SvgIcon--white-alabaster svg path,
+.SvgIcon--white-alabaster-hover:hover svg path {
+    fill: var(--color-white-alabaster);
+}

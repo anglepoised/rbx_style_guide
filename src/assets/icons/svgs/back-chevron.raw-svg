@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>BackChevron</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-21.000000, -238.000000)" id="Utility-Icons" fill="#C4CCD7">
+            <g sketch:type="MSLayerGroup" transform="translate(17.000000, 72.000000)">
+                <path d="M4.3598156,171.231779 C3.88006147,171.631574 3.88006147,172.368426 4.3598156,172.768221 L10.3598156,177.768221 C10.7840925,178.121785 11.4146572,178.064461 11.7682213,177.640184 C12.1217854,177.215908 12.0644613,176.585343 11.6401844,176.231779 L6.5,172 L11.6401844,167.768221 C12.0644613,167.414657 12.1217854,166.784092 11.7682213,166.359816 C11.4146572,165.935539 10.7840925,165.878215 10.3598156,166.231779 L4.3598156,171.231779 Z" id="BackChevron" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
