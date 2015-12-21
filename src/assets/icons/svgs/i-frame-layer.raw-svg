@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4 (381) - http://www.bohemiancoding.com/sketch -->
+    <title>iFrameLayer</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-738.000000, -238.000000)" id="Layer-Icons" fill="#F4F7FA">
+            <g sketch:type="MSLayerGroup" transform="translate(736.000000, 72.000000)">
+                <path d="M2,166 L3,166 L3,170 L2,170 L2,166 Z M13,166 L14,166 L14,170 L13,170 L13,166 Z M3,166 L6,166 L6,167 L3,167 L3,166 Z M3,177 L6,177 L6,178 L3,178 L3,177 Z M10,177 L13,177 L13,178 L10,178 L10,177 Z M10,166 L13,166 L13,167 L10,167 L10,166 Z M13,174 L14,174 L14,178 L13,178 L13,174 Z M2,174 L3,174 L3,178 L2,178 L2,174 Z M7,171 L9,171 L9,176 L7,176 L7,171 Z M7,169 C7,168.447715 7.44386482,168 8,168 C8.55228475,168 9,168.443865 9,169 C9,169.552285 8.55613518,170 8,170 C7.44771525,170 7,169.556135 7,169 Z" id="iFrameLayer" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
