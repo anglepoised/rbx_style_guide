@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4 (381) - http://www.bohemiancoding.com/sketch -->
+    <title>ButtonLayer</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-738.000000, -142.000000)" id="Layer-Icons" fill="#F4F7FA">
+            <g sketch:type="MSLayerGroup" transform="translate(736.000000, 72.000000)">
+                <path d="M2,70 L14,70 L14,82 L2,82 L2,70 Z M12,77 L7,77 L9,79 L7,78.9554443 L4,76.0003662 L7,73 L9,73 L7,75 L12,75 L12,77 Z" id="ButtonLayer" sketch:type="MSShapeGroup" transform="translate(8.000000, 76.000000) scale(-1, 1) translate(-8.000000, -76.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

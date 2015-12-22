@@ -53,3 +53,7 @@
 .u-tableRow {
     display: table-row !important;
 }
+
+.u-clear {
+    clear: both !important;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="9px" height="12px" viewBox="0 0 9 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4 (381) - http://www.bohemiancoding.com/sketch -->
+    <title>ButtonActions</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-415.000000, -69.000000)" id="Property-icons" fill="#FCFCFC">
+            <g sketch:type="MSLayerGroup" transform="translate(404.000000, 69.000000)">
+                <path d="M16.0467257,0.104700182 L11.0467365,7.10468501 C10.9922367,7.18068484 10.9847367,7.28068463 11.0277366,7.36418444 C11.0702365,7.44718426 11.1562363,7.50018415 11.2502361,7.50018415 L14.9382281,7.50018415 L14.0062301,11.6956751 C13.9802302,11.8116748 14.0397301,11.9296745 14.1482298,11.9781744 C14.2562296,12.0271743 14.3847293,11.9911744 14.4532292,11.8951746 L19.4532183,4.8951898 C19.5082182,4.81968996 19.5147182,4.71869018 19.4722183,4.63519036 C19.4292184,4.55219054 19.3432186,4.50019065 19.2502188,4.50019065 L15.5617268,4.50019065 L16.4942247,0.304199749 C16.5197247,0.188200001 16.4602248,0.0702002565 16.351725,0.0217003616 C16.2432253,-0.0267995332 16.1157256,0.00820039088 16.0467257,0.104700182 Z" id="ButtonActions" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

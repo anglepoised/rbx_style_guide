@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="8px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4 (381) - http://www.bohemiancoding.com/sketch -->
+    <title>VideoProperties</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-413.000000, -96.000000)" id="Property-icons" fill="#FCFCFC">
+            <g sketch:type="MSLayerGroup" transform="translate(404.000000, 69.000000)">
+                <path d="M16.2505173,27 L9.75005352,27 C9.33652401,27 9,27.3840274 9,27.857204 L9,34.1433668 C9,34.6154005 9.33652401,35.0005708 9.75005352,34.9999994 L16.2505173,34.9999994 C16.6640468,35.0005708 17.0005708,34.6154005 17.0005708,34.1433668 L17.0005708,27.857204 C17.0005708,27.3840274 16.6640468,27 16.2505173,27 Z M20.8824478,28.0376996 C20.8089426,27.991705 20.716436,27.9877054 20.6389304,28.0262009 L17.6387164,29.5260249 C17.5542103,29.5690199 17.5007065,29.6550098 17.5007065,29.7504986 L17.5007065,32.2502053 C17.5007065,32.3441943 17.5542103,32.4306841 17.6387164,32.4736791 L20.6389304,33.9735031 C20.674433,33.9910011 20.7129357,34 20.7509384,34 C20.7964417,34 20.8419449,33.9870015 20.8824478,33.9625044 C20.955953,33.9170097 21.0009563,33.8365192 21.0009563,33.7500293 L21.0009563,28.2506746 C21.0009563,28.1636848 20.955953,28.0831942 20.8824478,28.0376996 Z" id="VideoProperties" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

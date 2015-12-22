@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4 (381) - http://www.bohemiancoding.com/sketch -->
+    <title>VideoLayer</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-738.000000, -190.000000)" id="Layer-Icons" fill="#F4F7FA">
+            <g sketch:type="MSLayerGroup" transform="translate(736.000000, 72.000000)">
+                <path d="M11.12375,124.33 L6.272,126.955 C6.2165,126.985 6.155,127 6.09425,127 C6.0275,127 5.96075,126.982 5.90225,126.94675 C5.78825,126.87925 5.71925,126.757 5.71925,126.625 L5.71925,121.375 C5.71925,121.24225 5.78825,121.12075 5.90225,121.0525 C6.01475,120.985 6.15575,120.982 6.272,121.045 L11.12375,123.67 C11.24525,123.73525 11.32025,123.862 11.32025,124 C11.32025,124.13725 11.24525,124.264 11.12375,124.33 M8,118 C4.691,118 2,120.691 2,124 C2,127.30825 4.691,130 8,130 C11.30825,130 14,127.30825 14,124 C14,120.691 11.30825,118 8,118" id="VideoLayer" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
