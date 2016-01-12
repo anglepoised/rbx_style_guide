@@ -1,6 +1,6 @@
 {
   "name": "rbx_style_guide",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/rockabox/rbx_style_guide.git"
@@ -28,6 +28,7 @@
     "webpack-postcss-tools": "~1.0.2"
   },
   "devDependencies": {
+    "bump-tag": "~1.1.0",
     "exports-loader": "~0.6.2",
     "extend": "~2.0.0",
     "grunt": "~0.4.5",
@@ -41,6 +42,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --content-base dist --port 7001 --history-api-fallback",
-    "test": "grunt test"
+    "test": "grunt test",
+    "bump": "bump $1"
   }
 }
