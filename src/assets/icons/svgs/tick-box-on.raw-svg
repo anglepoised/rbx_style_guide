@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4 (381) - http://www.bohemiancoding.com/sketch -->
+    <title>TickBoxOn</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-17.000000, -212.000000)" id="Utility-Icons" fill="#3EB980">
+            <g sketch:type="MSLayerGroup" transform="translate(17.000000, 72.000000)">
+                <path d="M13.3325013,145.332885 L6.66583467,151.999552 C6.68015758,152.051798 2.66583467,147.999552 2.66583467,147.999552 L3.99770315,146.660034 L6.66583466,149.332885 L11.999168,143.999552 L13.3325013,145.332885 Z M8,140 C3.58866667,140 0,143.589333 0,148 C0,152.410667 3.58866667,156 8,156 C12.4106667,156 16,152.410667 16,148 C16,143.589333 12.4106667,140 8,140" id="TickBoxOn" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
