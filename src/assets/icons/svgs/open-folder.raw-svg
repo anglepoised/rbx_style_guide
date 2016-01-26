@@ -8,8 +8,8 @@
         <g sketch:type="MSArtboardGroup" transform="translate(-737.000000, -96.000000)" id="Layer-Icons">
             <g sketch:type="MSLayerGroup" transform="translate(736.000000, 72.000000)">
                 <g id="OpenFolder" transform="translate(1.000000, 24.000000)" sketch:type="MSShapeGroup">
-                    <path d="M3,4 L0,4 L2,8 L12,8 L14,5 L3,5 L3,4 Z" id="Folder-Icon" fill="#FCFCFC"></path>
-                    <path d="M5,0 L2,0 L2,8 L12,8 L12,1 L5,1 L5,0 Z" id="Folder-Icon" stroke="#FCFCFC" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M3,4 L0,4 L2,8 L12,8 L14,5 L3,5 L3,4 Z" id="Folder-Icon" fill="#C4CCD7"></path>
+                    <path d="M5,0 L2,0 L2,8 L12,8 L12,1 L5,1 L5,0 Z" id="Folder-Icon" stroke="#C4CCD7" stroke-linecap="round" stroke-linejoin="round"></path>
                 </g>
             </g>
         </g>
