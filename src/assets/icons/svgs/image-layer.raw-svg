@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: sketchtool 3.4 (381) - http://www.bohemiancoding.com/sketch -->
-    <title>ImageLayer</title>
+<svg width="15px" height="12px" viewBox="0 0 15 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>Image Icon</title>
     <desc>Created with sketchtool.</desc>
     <defs></defs>
-    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g sketch:type="MSArtboardGroup" transform="translate(-738.000000, -166.000000)" id="Layer-Icons" fill="#F4F7FA">
-            <g sketch:type="MSLayerGroup" transform="translate(736.000000, 72.000000)">
-                <path d="M14,106 L2,106 L2,94 L14,94 L14,106 Z M5.5,99 C6.32842712,99 7,98.3284271 7,97.5 C7,96.6715729 6.32842712,96 5.5,96 C4.67157288,96 4,96.6715729 4,97.5 C4,98.3284271 4.67157288,99 5.5,99 Z M3,104 C3,104 4.08108108,100.875 5.43243243,100.875 C6.78378378,100.875 7.86486486,102.75 7.86486486,102.75 L9.49459459,99.52 C9.65675676,99.1975 9.95513514,99 10.2772973,99 C10.6210811,99 10.9351351,99.224375 11.0881081,99.58 L13,104 L3,104 Z" id="ImageLayer" sketch:type="MSShapeGroup"></path>
-            </g>
+    <g id="Treeview" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Treeview-Assets" sketch:type="MSArtboardGroup" transform="translate(-410.000000, -111.000000)" fill="#C4CCD7">
+            <path d="M415.000006,114.499991 C415.000006,113.671865 414.32813,112.999989 413.500004,112.999989 C412.671878,112.999989 412.000002,113.671865 412.000002,114.499991 C412.000002,115.328117 412.671878,115.999993 413.500004,115.999993 C414.32813,115.999993 415.000006,115.328117 415.000006,114.499991 L415.000006,114.499991 Z M423.000015,117.499995 L419.750012,114.249991 L415.750007,118.249996 L414.500005,116.999994 L412.000002,119.499997 L412.000002,120.999999 L423.000015,120.999999 L423.000015,117.499995 Z M423.750016,111.999988 C423.882829,111.999988 424.000017,112.117176 424.000017,112.249988 L424.000017,121.75 C424.000017,121.882812 423.882829,122 423.750016,122 L411.250001,122 C411.117189,122 411.000001,121.882812 411.000001,121.75 L411.000001,112.249988 C411.000001,112.117176 411.117189,111.999988 411.250001,111.999988 L423.750016,111.999988 Z M425.000018,112.249988 C425.000018,111.562488 424.437517,110.999987 423.750016,110.999987 L411.250001,110.999987 C410.562501,110.999987 410,111.562488 410,112.249988 L410,121.75 C410,122.437501 410.562501,123.000001 411.250001,123.000001 L423.750016,123.000001 C424.437517,123.000001 425.000018,122.437501 425.000018,121.75 L425.000018,112.249988 Z" id="Image-Icon" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>
