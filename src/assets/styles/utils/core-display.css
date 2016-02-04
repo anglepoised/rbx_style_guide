@@ -54,6 +54,10 @@
     display: table-row !important;
 }
 
+.u-disableSelection {
+    user-select: none;
+}
+
 .u-clear {
     clear: both !important;
 }
