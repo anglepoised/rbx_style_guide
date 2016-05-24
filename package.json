@@ -43,6 +43,7 @@
   "scripts": {
     "start": "webpack-dev-server --content-base dist --port 7001 --history-api-fallback",
     "test": "grunt test",
-    "bump": "bump $1"
+    "bump": "bump $1",
+    "preinstall": "true"
   }
 }
