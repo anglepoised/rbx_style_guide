@@ -1,6 +1,6 @@
 # RBX Style Guide
 
-[![Circle CI](https://circleci.com/gh/rockabox/rbx_style_guide.svg?style=shield&circle-token=3025f8d21ea5b4518eff75aef1ce8c128097d0ec)](https://circleci.com/gh/rockabox/rbx_style_guide)
+[![Travis CI](https://img.shields.io/travis/rockabox/rbx_style_guide/master.svg)](https://travis-ci.org/rockabox/rbx_style_guide)
 
 This project is an angular website, compiled by [Gulp](http://gulpjs.com/).
 
