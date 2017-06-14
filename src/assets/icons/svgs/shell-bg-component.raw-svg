@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="48" style="background:#4d5466" viewBox="0 0 64 48">
+    <g fill="none" fill-rule="evenodd" transform="translate(8 4)">
+        <rect id="creative-shell-bg" width="48" height="40" fill="#DDE0EB" rx="2"/>
+        <path id="bg-shell-bg" fill="#858EA6" d="M14 0h20v40H14z"/>
+    </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="48" style="background:#4d5466" viewBox="0 0 64 48">
+    <g fill="none" fill-rule="evenodd">
+        <path id="right-prism" fill="#A3A9BF" d="M38 4l8.143 3.257C47.168 7.667 48 8.889 48 10.002v27.996c0 1.106-.835 2.336-1.857 2.745L38 44V4z"/>
+        <path id="left-prism" fill="#DDE0EB" d="M16 10.002c0-1.106.89-2.164 1.972-2.36L38 4v40l-20.028-3.642c-1.09-.197-1.972-1.247-1.972-2.36V10.002z"/>
+    </g>
+</svg>

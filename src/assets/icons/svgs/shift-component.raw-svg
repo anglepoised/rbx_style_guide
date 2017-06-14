@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="48" style="background:#4d5466" viewBox="0 0 64 48">
+    <g fill="none" fill-rule="evenodd" transform="translate(8 4)">
+        <rect id="top-shift" width="48" height="12" fill="#DDE0EB" rx="2"/>
+        <rect id="bottom-shift" width="48" height="26" y="14" fill="#858EA6" rx="2"/>
+    </g>
+</svg>
